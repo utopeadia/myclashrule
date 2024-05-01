@@ -38,6 +38,8 @@ jobs:
           echo >> rules/app/LLMProxy.list.new
           echo "# coze" >> rules/app/LLMProxy.list.new
           echo "DOMAIN-SUFFIX,coze.com" >> rules/app/LLMProxy.list.new
+          echo "# cohere" >> rules/app/LLMProxy.list.new
+          echo "DOMAIN-KEYWORD,cohere" >> rules/app/LLMProxy.list.new
           mv -f rules/app/LLMProxy.list.new rules/app/LLMProxy.list
           rm -f rules/app/OpenAI.list rules/app/Claude.list rules/app/Gemini.list
           
