@@ -148,8 +148,8 @@ jobs:
           sed -i '/^[0-9a-fA-F:]\+\/[0-9]\+$/!d' CERTNETV6.txt
           sed -i 's/^/IP-CIDR6,/' CERTNETV6.txt
           sed -i 's/$/,no-resolve/' CERTNETV6.txt
-          cat CERTNETV4.txt CERTNETV6.txt > rules/CARTNET.list.new
-          mv -f rules/CARTNET.list.new rules/CARTNET.list
+          cat CERTNETV4.txt CERTNETV6.txt > rules/CERTNET.list.new
+          mv -f rules/CERTNET.list.new rules/CERTNET.list
           rm -f CERTNETV4.txt CERTNETV6.txt
 
       - name: Add changes to the repository
