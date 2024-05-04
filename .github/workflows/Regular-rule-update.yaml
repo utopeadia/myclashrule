@@ -137,6 +137,15 @@ jobs:
           mv -f GeoIP2-CN.txt rules/GeoIP2-CN.list
           rm -f GeoIP2-CN.txt
 
+      - name: Download CERTNET rules
+        run: |
+          wget https://ispip.clang.cn/cernet.txt -O CERTNETV4.txt
+          sed -i '/^[0-9.]\+\/[0-9]\+$/!d' CERTNETV4.txt
+          sed -i 's/^/IP-CIDR,/' CERTNETV4.txt
+          sed -i 's/$/,no-resolve/' CERTNETV4.txt
+          mv -f CERTNETV4.txt rules/CERTNETV4.txt
+          rm -f CERTNETV4.txt
+
       - name: Add changes to the repository
         run: |
           git add .
