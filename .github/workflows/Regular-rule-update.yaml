@@ -140,10 +140,11 @@ jobs:
       - name: Download CERTNET rules
         run: |
           wget https://ispip.clang.cn/cernet.txt -O CERTNETV4.txt
-          wget https://ispip.clang.cn/cernet_ipv6.txt -O CERTNETV6.txt
           sed -i '/^[0-9.]\+\/[0-9]\+$/!d' CERTNETV4.txt
           sed -i 's/^/IP-CIDR,/' CERTNETV4.txt
           sed -i 's/$/,no-resolve/' CERTNETV4.txt
+          echo >> CERTNETV4.txt
+          wget https://ispip.clang.cn/cernet_ipv6.txt -O CERTNETV6.txt
           sed -i '/^[0-9a-fA-F:]\+\/[0-9]\+$/!d' CERTNETV6.txt
           sed -i 's/^/IP-CIDR6,/' CERTNETV6.txt
           sed -i 's/$/,no-resolve/' CERTNETV6.txt
