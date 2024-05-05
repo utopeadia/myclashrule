@@ -119,6 +119,7 @@ dns:
       - "+.poe.com"
       - "+.segment.io"
       - "+.sentry.io"
+      - "+.synn.cc"
       - "+.stripe.com"
       - "+.t.me"
       - "+.twitter.com"
