@@ -70,8 +70,5 @@ DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 
-
-# coze
-DOMAIN-SUFFIX,coze.com
 # cohere
 DOMAIN-KEYWORD,cohere
