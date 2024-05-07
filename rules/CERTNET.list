@@ -199,7 +199,7 @@ IP-CIDR6,2400:a984::/30,no-resolve
 IP-CIDR6,2400:d0c0::/32,no-resolve
 IP-CIDR6,2401:34a0::/32,no-resolve
 IP-CIDR6,2401:34a1::/32,no-resolve
-IP-CIDR6,2401:34a2::/31,no-resolve
+IP-CIDR6,2401:9b20::/31,no-resolve
 IP-CIDR6,2401:cc00::/32,no-resolve
 IP-CIDR6,2401:ec00::/32,no-resolve
 IP-CIDR6,2402:2000::/32,no-resolve
