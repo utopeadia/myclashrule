@@ -51,11 +51,11 @@ jobs:
           
       - name: Download GameDL rules
         run: |
-          curl -o rules/app/SteamCN-D.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list
-          echo >> rules/app/SteamCN-D.list
-          cat rules/app/SteamCN-D.list rules/app/GameCN.list rules/app/SteamCNIP.list > rules/app/GameDL.list.new
+          curl -o rules/app/SteamCN.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list
+          echo >> rules/app/SteamCN.list
+          cat rules/app/SteamCN.list rules/app/GameCN.list rules/app/SteamCNIP.list > rules/app/GameDL.list.new
           mv -f rules/app/GameDL.list.new rules/app/GameDL.list
-          rm -f rules/app/SteamCN-D.list
+          rm -f rules/app/SteamCN.list
 
       - name: Download CNAPP rules
         run: |
