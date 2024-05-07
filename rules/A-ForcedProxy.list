@@ -1,15 +1,10 @@
-# github gerop
 DOMAIN-KEYWORD,ghcr1production
 DOMAIN-SUFFIX,ghcr1production.blob.core.windows.net
 DOMAIN-SUFFIX,repo.anaconda.com
-
-# v2ex
+DOMAIN-SUFFIX,coze.com
 DOMAIN-KEYWORD,v2ex
 DOMAIN-SUFFIX,v2ex.com
-
-# ffq论坛
 DOMAIN-SUFFIX,ffqla.net
-# DNS污染域名
 DOMAIN-SUFFIX,help.minecraft.net
 # DNSCheck
 DOMAIN-SUFFIX,ipleak.net
