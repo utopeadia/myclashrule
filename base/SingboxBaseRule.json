@@ -9,41 +9,22 @@
                 "tag": "dns_proxy",
                 "address": "https://1.1.1.1/dns-query",
                 "address_resolver": "dns_resolver",
-                "strategy": "ipv4_only",
-                "detour": "proxy"
-            },
-            {
-                "tag": "dns_proxy",
-                "address": "https://cloudflare-dns.com/dns-query",
-                "address_resolver": "dns_resolver",
                 "strategy": "prefer_ipv4",
                 "detour": "proxy"
             },
             {
                 "tag": "dns_proxy",
-                "address": "https://dns.google/dns-query",
-                "address_resolver": "dns_resolver",
-                "strategy": "prefer_ipv6",
-                "detour": "proxy"
-            },
-            {
-                "tag": "dns_proxy",
-                "address": "tls://dns.google:853",
+                "address": "h3://8.8.8.8/dns-query",
                 "address_resolver": "dns_resolver",
                 "strategy": "prefer_ipv4",
                 "detour": "proxy"
             },
             {
-                "tag": "dns_proxy",
-                "address": "1.1.1.1",
-                "strategy": "ipv4_only",
-                "detour": "proxy"
-            },
-            {
-                "tag": "dns_proxy",
-                "address": "8.8.8.8",
-                "strategy": "ipv4_only",
-                "detour": "proxy"
+                "tag": "dns_direct",
+                "address": "dhcp://auto",
+                "address_resolver": "dns_resolver",
+                "strategy": "prefer_ipv4",
+                "detour": "direct"
             },
             {
                 "tag": "dns_direct",
@@ -58,54 +39,17 @@
                 "address_resolver": "dns_resolver",
                 "strategy": "prefer_ipv4",
                 "detour": "direct"
-            },
-            {
-                "tag": "dns_direct",
-                "address": "dot.pub",
-                "address_resolver": "dns_resolver",
-                "strategy": "prefer_ipv4",
-                "detour": "direct"
-            },
+            }
             {
                 "tag": "dns_direct",
                 "address": "223.5.5.5",
-                "strate": "ipv4_only",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns_direct",
-                "address": "121.251.251.250",
-                "strate": "ipv4_only",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns_direct",
-                "address": "121.251.251.251",
-                "strate": "ipv4_only",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns_direct",
-                "address": "180.76.76.76",
-                "strate": "ipv4_only",
+                "strate": "prefer_ipv4",
                 "detour": "direct"
             },
             {
                 "tag": "dns_direct",
                 "address": "119.29.29.29",
-                "strate": "ipv4_only",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns_direct",
-                "address": "117.50.11.11",
-                "strate": "ipv4_only",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns_direct",
-                "address": "114.114.114.114",
-                "strate": "ipv4_only",
+                "strate": "prefer_ipv4",
                 "detour": "direct"
             },
             {
@@ -119,65 +63,9 @@
                 "address": "2402:4e00::",
                 "strate": "ipv6_only",
                 "detour": "direct"
-            },
-            {
-                "tag": "dns_direct",
-                "address": "h3://dns.alidns.com/dns-query",
-                "address_resolver": "dns_resolver",
-                "strategy": "ipv4_performed",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns_block",
-                "address": "rcode://refused"
-            },
-            {
-                "tag": "dns_resolver",
-                "address": "223.5.5.5",
-                "strategy": "ipv4_only",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns_resolver",
-                "address": "2400:3200::1",
-                "strategy": "ipv6_only",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns_resolver",
-                "address": "114.114.114.114",
-                "strategy": "ipv4_only",
-                "detour": "direct"
             }
         ],
-        "rules": [
-            {
-                "outbound": [
-                    "any"
-                ],
-                "server": "dns_resolver"
-            },
-            {
-                "geosite": [
-                    "dns_proxy"
-                ],
-                "server": "dns_block",
-                "disable_cache": false
-            },
-            {
-                "geosite": [
-                    "geolocation-!cn"
-                ],
-                "server": "dns_proxy"
-            },
-            {
-                "geosite": [
-                    "cn",
-                    "private"
-                ],
-                "server": "dns_direct"
-            }
-        ]
+       "strategy": "prefer_ipv4"
     },
     "route": {
         "rules": [
