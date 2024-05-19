@@ -22,7 +22,12 @@
             {
                 "tag": "dns_direct",
                 "address": "dhcp://auto",
-                "address_resolver": "dns_resolver",
+                "strategy": "prefer_ipv4",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "dhcp://en0",
                 "strategy": "prefer_ipv4",
                 "detour": "direct"
             },
