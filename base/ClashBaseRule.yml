@@ -146,3 +146,28 @@ dns:
       - "+.x.com"
       - "+.xn--ngstr-lra8j.com"
       - "+.youtube.com"
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+  device: catun
+  mtu: 9000
+  strict-route: false
+  inet4-route-address:
+  - 0.0.0.0/1
+  - 128.0.0.0/1
+  inet6-route-address:
+  - "::/1"
+  - "8000::/1"
+  inet4-route-exclude-address:
+  - 192.168.0.0/16
+  inet6-route-exclude-address:
+  - fc00::/7
+  include-package:
+  - com.android.chrome
+  exclude-package:
+  - com.android.captiveportallogin
