@@ -21,6 +21,12 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
+
+      - name: Download LocalAreaNetwork rules
+        run: |
+          curl -o rules/LocalAreaNetwork.list.new https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+          sed -i '/IP-CIDR,192.168.0.0\/16,no-resolve/d' rules/LocalAreaNetwork.list.new
+          mv -f rules/LocalAreaNetwork.list.new rules/LocalAreaNetwork.list
           
       - name: Download MainProxy rules
         run: |
