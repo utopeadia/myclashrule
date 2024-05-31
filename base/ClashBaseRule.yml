@@ -65,6 +65,8 @@ dns:
     - controlplane.tailscale.com
     - log.tailscale.io
   default-nameserver:
+    - dhcp://en0
+    - system
     - 223.5.5.5
     - 119.29.29.29
   nameserver:
