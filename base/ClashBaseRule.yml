@@ -154,7 +154,7 @@ tun:
     - any:53
     - tcp://any:53
   device: utuncat
-  mtu: 9000
+  mtu: 1500
   strict-route: false
   include-package:
   - com.android.chrome
