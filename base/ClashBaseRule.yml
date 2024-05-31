@@ -153,7 +153,7 @@ tun:
   dns-hijack:
     - any:53
     - tcp://any:53
-  device: catun
+  device: utuncat
   mtu: 9000
   strict-route: false
   include-package:
