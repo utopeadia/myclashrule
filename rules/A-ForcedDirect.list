@@ -9,8 +9,6 @@ DOMAIN-SUFFIX,sbzyplay.com
 DOMAIN-SUFFIX,v6.pub
 
 # 某些可能影响其他工作的网站
-PROCESS-NAME,leigod
-USER-AGENT,leigod*
 DOMAIN-SUFFIX,tebex.io
 DOMAIN-SUFFIX,leigod.com
 DOMAIN-SUFFIX,ddnsto.com
@@ -32,6 +30,8 @@ DOMAIN-SUFFIX,alipan.com
 DOMAIN-SUFFIX,lanzouc.com
 DOMAIN-SUFFIX,123pan.com
 DOMAIN-SUFFIX,cn.download.nvidia.com
+DOMAIN-SUFFIX,verysync.cn
+
 # 某些机场订阅地址
 DOMAIN-SUFFIX,サブスクライブ.スチーム.コム
 DOMAIN-SUFFIX,xn--eckvarq8ld5k.xn--zckq7gxe.xn--tckwe
@@ -122,3 +122,6 @@ PROCESS-NAME,transmission,DIRECT
 PROCESS-NAME,uTorrent,DIRECT
 PROCESS-NAME,WebTorrent,DIRECT
 PROCESS-NAME,WebTorrent Helper,DIRECT
+PROCESS-NAME,leigod
+PROCESS-NAME,leigod.exe
+USER-AGENT,leigod*
