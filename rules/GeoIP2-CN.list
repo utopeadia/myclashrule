@@ -296,6 +296,7 @@ IP-CIDR,38.101.160.40/32,no-resolve
 IP-CIDR,38.101.162.120/32,no-resolve
 IP-CIDR,38.103.64.26/32,no-resolve
 IP-CIDR,38.196.176.0/24,no-resolve
+IP-CIDR,38.224.60.0/24,no-resolve
 IP-CIDR,39.0.0.0/24,no-resolve
 IP-CIDR,39.0.2.0/23,no-resolve
 IP-CIDR,39.0.4.0/22,no-resolve
