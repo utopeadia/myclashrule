@@ -3,3 +3,9 @@ DOMAIN-SUFFIX,ultramobile.com
 DOMAIN-SUFFIX,llmsresearch.com
 # US EDU
 DOMAIN-SUFFIX,umass.edu
+# 部分服务
+DOMAIN-SUFFIX,iknowu.top
+DOMAIN,url.112700.xyz
+DOMAIN,image.iswsh.com
+DOMAIN,search.iswsh.com
+DOMAIN,souai.iswsh.com
