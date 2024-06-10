@@ -1,6 +1,7 @@
 # US EDU
 DOMAIN-SUFFIX,umass.edu
 # 部分服务
+DOMAIN-KEYWORD,v2ex
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,ultramobile.com
