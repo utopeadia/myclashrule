@@ -1,3 +1,7 @@
+# US EDU
+DOMAIN-SUFFIX,umass.edu
+# 部分服务
+DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,ultramobile.com
 DOMAIN-SUFFIX,llmsresearch.com
@@ -5,14 +9,10 @@ DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
-IP-CIDR,66.94.0.0/19,no-resolve
-IP-CIDR,206.29.177.36/32,no-resolve
-IP-CIDR,208.54.0.0/16,no-resolve
-
-# US EDU
-DOMAIN-SUFFIX,umass.edu
-# 部分服务
 DOMAIN-SUFFIX,iknowu.top
 DOMAIN,image.iswsh.com
 DOMAIN,search.iswsh.com
 DOMAIN,souai.iswsh.com
+IP-CIDR,66.94.0.0/19,no-resolve
+IP-CIDR,206.29.177.36/32,no-resolve
+IP-CIDR,208.54.0.0/16,no-resolve
