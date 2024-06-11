@@ -73,7 +73,7 @@ jobs:
           echo >> rules/app/TwitterAndX.list
           curl -o rules/app/Instagram.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.list
           echo >> rules/app/Instagram.list
-          cat rules/app/TwitterAndX.list rules/app/Instagram.list rules/app/USAPP.MANUAL.lsit> rules/app/USAPP.list.new
+          cat rules/app/TwitterAndX.list rules/app/Instagram.list rules/app/USAPP.MANUAL.list> rules/app/USAPP.list.new
           mv -f rules/app/USAPP.list.new rules/app/USAPP.list
           rm -f rules/app/TwitterAndX.list rules/app/Instagram.list
 
@@ -86,7 +86,7 @@ jobs:
 
       - name: Download JPAPP rules
         run: |
-          cp rules/app/JPAPP.MANUAL.lsit> rules/app/JPAPP.list.new
+          cp rules/app/JPAPP.MANUAL.list> rules/app/JPAPP.list.new
           mv -f rules/app/JPAPP.list.new rules/app/JPAPP.list
       
       - name: Download eBay rules
