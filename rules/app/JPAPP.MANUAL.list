@@ -1,6 +1,7 @@
 # 常用服务
 DOMAIN-SUFFIX,teracloud.jp
 DOMAIN-KEYWORD,teracloud
+DOMAIN-SUFFIX,frp.iswsh.com
 DOMAIN-SUFFIX,jpfrp.iswsh.com
 DOMAIN-SUFFIX,alist.iswsh.com
 DOMAIN-SUFFIX,cloud.iswsh.com
