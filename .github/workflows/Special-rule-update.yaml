@@ -83,6 +83,11 @@ jobs:
           echo "DOMAIN-SUFFIX,vodafone.co.uk" >> rules/app/UKAPP.list.new
           echo "DOMAIN-SUFFIX,giffgaff.com" >> rules/app/UKAPP.list.new
           mv -f rules/app/UKAPP.list.new rules/app/UKAPP.list
+
+      - name: Download JPAPP rules
+        run: |
+          cp rules/app/JPAPP.MANUAL.lsit> rules/app/JPAPP.list.new
+          mv -f rules/app/JPAPP.list.new rules/app/JPAPP.list
       
       - name: Download eBay rules
         run: |
