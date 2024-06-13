@@ -70,5 +70,7 @@ DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 
+# poe
+DOMAIN-SUFFIX,poe.com
 # cohere
 DOMAIN-KEYWORD,cohere
