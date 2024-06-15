@@ -74,3 +74,5 @@ DOMAIN-KEYWORD,generativelanguage
 DOMAIN-SUFFIX,poe.com
 # cohere
 DOMAIN-KEYWORD,cohere
+# coze
+DOMAIN-SUFFIX,coze.com
