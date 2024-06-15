@@ -1,12 +1,7 @@
 DOMAIN-KEYWORD,ghcr1production
 DOMAIN-SUFFIX,ghcr1production.blob.core.windows.net
 DOMAIN-SUFFIX,repo.anaconda.com
-DOMAIN-SUFFIX,coze.com
 DOMAIN-SUFFIX,ffqla.net
 DOMAIN-SUFFIX,help.minecraft.net
 # DNSCheck
 DOMAIN-SUFFIX,ipleak.net
-# 部分国外网盘
-DOMAIN-KEYWORD,teracloud
-DOMAIN-KEYWORD,infini-cloud
-DOMAIN-SUFFIX,filen.io
