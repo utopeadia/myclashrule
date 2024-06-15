@@ -17,6 +17,9 @@ DOMAIN,image.iswsh.com
 DOMAIN,search.iswsh.com
 DOMAIN,souai.iswsh.com
 DOMAIN,sub.wsh.best
+DOMAIN-SUFFIX,zotero.org
+DOMAIN-SUFFIX,us-east-1.amazonaws.com
 IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
+
