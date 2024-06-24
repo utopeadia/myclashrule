@@ -79,9 +79,11 @@ jobs:
           echo >> rules/app/TwitterAndX.list
           curl -o rules/app/Instagram.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.list
           echo >> rules/app/Instagram.list
-          cat rules/app/TwitterAndX.list rules/app/Instagram.list rules/app/USAPP.MANUAL.list> rules/app/USAPP.list.new
+          curl -o rules/app/GitHub.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list
+          echo >> rules/app/GitHub.list
+          cat rules/app/TwitterAndX.list rules/app/Instagram.list rules/app/GitHub.list rules/app/USAPP.MANUAL.list> rules/app/USAPP.list.new
           mv -f rules/app/USAPP.list.new rules/app/USAPP.list
-          rm -f rules/app/TwitterAndX.list rules/app/Instagram.list
+          rm -f rules/app/TwitterAndX.list rules/app/Instagram.list rules/app/GitHub.list
 
       - name: Download UKAPP rules
         run: |
