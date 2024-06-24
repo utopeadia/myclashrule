@@ -65,11 +65,10 @@ jobs:
               # 添加 "DOMAIN,"
               echo "DOMAIN,$domain" >> rules/DirectDomain.list.new
             fi
-          done < <(tail -n +2 rules/DirectDomain.txt)
+          sed -i '/^$/d' rules/DirectDomain.list.new
           curl -o rules/ChinaMax.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.list
           echo >> rules/ChinaMax.list
           cat rules/DirectDomain.list.new rules/ChinaMax.list > rules/DirectDomain.list
-          sed -i '/^$/d' rules/DirectDomain.list
           rm -f rules/DirectDomain.txt rules/DirectDomain.list.new rules/ChinaMax.list
 
       - name: Download GFWDomain rules
