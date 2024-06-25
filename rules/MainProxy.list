@@ -208,10 +208,12 @@ DOMAIN,practivate.adobe.ipp
 DOMAIN,practivate.adobe.newoa
 DOMAIN,practivate.adobe.ntp
 DOMAIN,prdpriconneredive.akamaized.net
+DOMAIN,preprodpublicca.googleapis.com
 DOMAIN,productionopenaicomstorage.azureedge.net
 DOMAIN,psgintcentralus.cloudapp.net
 DOMAIN,psginteastus.cloudapp.net
 DOMAIN,publicuspingsx.api.clonoth.com
+DOMAIN,publicca.googleapis.com
 DOMAIN,pushapple.com.akadns.net
 DOMAIN,pvrhamivideo.cdn.hinet.net
 DOMAIN,qualcomm.sc.omtrdc.net
@@ -23166,7 +23168,6 @@ DOMAIN-SUFFIX,weiming.info
 DOMAIN-SUFFIX,weinvoiceit.com
 DOMAIN-SUFFIX,weiquanwang.org
 DOMAIN-SUFFIX,weisuo.ws
-DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weiyuksj.com
 DOMAIN-SUFFIX,weknowporn.com
 DOMAIN-SUFFIX,welcometobestbuy.ca
