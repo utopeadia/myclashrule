@@ -146,6 +146,8 @@ dns:
       - "+.synn.cc"
       - "+.stripe.com"
       - "+.t.me"
+      - "+.tailscale.com"
+      - "+.tailscale.io"
       - "+.twitter.com"
       - "+.usefathom.com"
       - "+.v2ex.com"
