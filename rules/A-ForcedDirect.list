@@ -57,10 +57,6 @@ DOMAIN-SUFFIX,hub.incept.pw
 DOMAIN-SUFFIX,hub.incept.pw
 DOMAIN-SUFFIX,kkgithub.com
 DOMAIN-SUFFIX,gitclone.com
-DOMAIN-SUFFIX,fastly.jsdelivr.net
-DOMAIN-SUFFIX,testingcf.jsdelivr.net
-DOMAIN-SUFFIX,raw.fastgit.org
-DOMAIN-SUFFIX,cdn.jsdelivr.net
 
 # IPV6Test
 DOMAIN-SUFFIX,test-ipv6.com
