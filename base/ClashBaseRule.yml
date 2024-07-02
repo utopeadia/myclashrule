@@ -164,14 +164,19 @@ tun:
   dns-hijack:
     - any:53
     - tcp://any:53
-  device: utuncat
+  device: utuncat0
   mtu: 1500
   strict-route: true
-  include-package:
-  - com.android.chrome
-  exclude-package:
-  - com.android.captiveportallogin
+  route-address:
+    - 0.0.0.0/1
+    - 128.0.0.0/1
+    - "::/1"
+    - "8000::/1"
   route-exclude-address:
-  - 100.64.0.0/10
-  - 192.168.128.0/17
-  - fd7a:115c:a1e0::/48
+    - 100.64.0.0/10
+    - 192.168.128.0/17
+    - fd7a:115c:a1e0::/48
+  include-package:
+    - com.android.chrome
+  exclude-package:
+    - com.android.captiveportallogin
