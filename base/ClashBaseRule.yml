@@ -130,6 +130,7 @@ dns:
       - "+.googleapis.cn"
       - "+.googlevideo.com"
       - "+.identrust.com"
+      - "+.infinitynewtab.com"
       - "+.instagram.com"
       - "+.intercom.io"
       - "+.live.com"
