@@ -150,20 +150,8 @@ jobs:
                 echo >> rules/app/Reddit.list
                 if  curl -f -s -o rules/app/USMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list && [[ -s rules/app/USMedia.list ]]; then
                   echo >> rules/app/USMedia.list
-                  if  curl -f -s -o rules/app/Instagram.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.list && [[ -s rules/app/Instagram.list ]]; then
-                    echo >> rules/app/Instagram.list
-                    if  curl -f -s -o rules/app/Facebook.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.list && [[ -s rules/app/Facebook.list ]]; then
-                      echo >> rules/app/Facebook.list
-                      cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/USMedia.list rules/app/Instagram.list rules/app/Facebook.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
-                      mv -f rules/app/USAPP.list.new rules/app/USAPP.list
-                      rm -f rules/app/Facebook.list
-                    else
-                      echo "Failed to download or empty Facebook.list, exiting."
-                    fi
-                    rm -f rules/app/Instagram.list
-                  else
-                    echo "Failed to download or empty Instagram.list, exiting."
-                  fi
+                  cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/USMedia.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
+                  mv -f rules/app/USAPP.list.new rules/app/USAPP.list
                   rm -f rules/app/USMedia.list
                 else
                   echo "Failed to download or empty USMedia.list, exiting."
