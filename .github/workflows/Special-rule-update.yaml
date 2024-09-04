@@ -87,7 +87,7 @@ jobs:
           else
             echo "Failed to download or empty Copilot.list, exiting."
           fi
-        
+
       - name: Download Game rules
         run: |
           if  curl -f -s -o rules/app/Game.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list && [[ -s rules/app/Game.list.new ]]; then
@@ -95,7 +95,6 @@ jobs:
           else
             echo "Failed to download or empty Game.list, exiting."
           fi
-            
 
       - name: Download GameDLCN rules
         run: |
@@ -113,7 +112,7 @@ jobs:
           else
             echo "Failed to download or empty SteamCN.list, exiting."
           fi
-      
+
       - name: Download GameDL rules
         run: |
           if  curl -f -s -o rules/app/GameDL.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownload/GameDownload.list && [[ -s rules/app/GameDL.list.new ]]; then
@@ -151,8 +150,20 @@ jobs:
                 echo >> rules/app/Reddit.list
                 if  curl -f -s -o rules/app/USMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list && [[ -s rules/app/USMedia.list ]]; then
                   echo >> rules/app/USMedia.list
-                  cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/USMedia.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
-                  mv -f rules/app/USAPP.list.new rules/app/USAPP.list
+                  if  curl -f -s -o rules/app/Instagram.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.list && [[ -s rules/app/Instagram.list ]]; then
+                    echo >> rules/app/Instagram.list
+                    if  curl -f -s -o rules/app/Facebook.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.list && [[ -s rules/app/Facebook.list ]]; then
+                      echo >> rules/app/Facebook.list
+                      cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/USMedia.list rules/app/Instagram.list rules/app/Facebook.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
+                      mv -f rules/app/USAPP.list.new rules/app/USAPP.list
+                      rm -f rules/app/Facebook.list
+                    else
+                      echo "Failed to download or empty Facebook.list, exiting."
+                    fi
+                    rm -f rules/app/Instagram.list
+                  else
+                    echo "Failed to download or empty Instagram.list, exiting."
+                  fi
                   rm -f rules/app/USMedia.list
                 else
                   echo "Failed to download or empty USMedia.list, exiting."
@@ -212,7 +223,7 @@ jobs:
       #     else
       #       echo "Failed to download or empty hk_cidr.txt, exiting."
       #     fi
-      
+
       - name: Download HKAPP rules
         run: |
           cp -f rules/app/HKAPP.MANUAL.list rules/app/HKAPP.MANUAL.list.new
@@ -266,7 +277,7 @@ jobs:
           else
             echo "Failed to download or empty Apple.list, exiting."
           fi
-      
+
       - name: Download Google rules
         run: |
           if curl -f -s -o rules/app/Google.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list && [[ -s rules/app/Google.list.new ]]; then
@@ -282,7 +293,7 @@ jobs:
           else
             echo "Failed to download or empty Youtube.list, exiting."
           fi
-      
+
       - name: Download Onedrive rules
         run: |
           if curl -f -s -o rules/app/OneDrive.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.list && [[ -s rules/app/OneDrive.list.new ]]; then
@@ -290,7 +301,7 @@ jobs:
           else
             echo "Failed to download or empty OneDrive.list, exiting."
           fi
-      
+
       - name: Download Microsoft rules
         run: |
           if curl -f -s -o rules/app/Microsoft.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list && [[ -s rules/app/Microsoft.list.new ]]; then
