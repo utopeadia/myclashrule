@@ -27,3 +27,12 @@ DOMAIN-SUFFIX,larksuiteimg-pre.com
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,linuxdo.org
 
+# OAI
+DOMAIN-SUFFIX,cdn.oaifree.com
+DOMAIN-SUFFIX,files.oaifree.com
+DOMAIN-SUFFIX,new.oaifree.com
+DOMAIN-SUFFIX,voice.oaifree.com
+DOMAIN-SUFFIX,oai.iknowu.top
+DOMAIN-SUFFIX,oai-account.wush.workers.dev
+DOMAIN-SUFFIX,oai-chat.wush.workers.dev
+DOMAIN-SUFFIX,oai-voice.wush.workers.dev
