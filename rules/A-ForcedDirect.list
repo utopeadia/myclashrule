@@ -9,7 +9,7 @@ DOMAIN-SUFFIX,sbzyplay.com
 DOMAIN-SUFFIX,v6.pub
 
 # 某些可能影响其他工作的网站
-DOMAIN-SUFFIX,oaifree.com
+DOMAIN-SUFFIX,shared.oaifree.com
 DOMAIN-SUFFIX,tebex.io
 DOMAIN-SUFFIX,leigod.com
 DOMAIN-SUFFIX,ddnsto.com
