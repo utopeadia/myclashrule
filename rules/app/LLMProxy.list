@@ -100,13 +100,3 @@ DOMAIN-SUFFIX,deepseek.com
 # SiderAI
 DOMAIN-SUFFIX,sider.ai
 
-# OAI
-DOMAIN-SUFFIX,cdn.oaifree.com
-DOMAIN-SUFFIX,files.oaifree.com
-DOMAIN-SUFFIX,new.oaifree.com
-DOMAIN-SUFFIX,voice.oaifree.com
-DOMAIN-SUFFIX,oai.iknowu.top
-DOMAIN-SUFFIX,oai-account.wush.workers.dev
-DOMAIN-SUFFIX,oai-chat.wush.workers.dev
-DOMAIN-SUFFIX,oai-voice.wush.workers.dev
-
