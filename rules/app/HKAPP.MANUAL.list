@@ -1,5 +1,6 @@
 # Other
 DOMAIN-SUFFIX,xaoxuu.com
+DOMAIN-SUFFIX,shared.oaifree.com
 # VPS
 IP-CIDR,47.76.0.0/16,no-resolve
 IP-CIDR,141.11.174.0/16,no-resolve
