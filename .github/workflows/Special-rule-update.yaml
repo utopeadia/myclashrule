@@ -21,6 +21,11 @@ jobs:
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
 
+      - name: Get MyDirect rules
+        run: |
+          cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list > rules/MyDirect.list.new
+          mv -f rules/MyDirect.list.new rules/MyDirect.list
+          
       - name: Download MyProxy rules
         run: |
           if  curl -f -s -o rules/app/Docker.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.list && [[ -s rules/app/Docker.list ]]; then
@@ -37,11 +42,6 @@ jobs:
           else
             echo "Failed to download or empty Docker.list, exiting."
           fi
-
-      - name: Get MyDirect rules
-        run: |
-          cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list > rules/MyDirect.list.new
-          mv -f rules/MyDirect.list.new rules/MyDirect.list
 
       - name: Download LLM(NoMSCopilot) rules
         run: |
