@@ -132,6 +132,7 @@ dns:
       - Mijia Cloud
       - dlg.io.mi.com
       - +.apple.com
+      - +.rc.sunlogin.net
 tun:
   enable: true
   stack: mixed
