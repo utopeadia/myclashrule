@@ -23,17 +23,25 @@ jobs:
 
       - name: Update MyDirect.SERVER.list
         run: |
-          cat rules/MyDirect.SERVER.list | while read line; do
-            if [[ "$line" =~ ^[a-zA-Z0-9.-]+$ ]]; then
-              echo "DOMAIN,$line" 
-            elif [[ "$line" =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; then
-              echo "IP-CIDR,$line/32,no-resolve" 
-            else 
-              echo "IP-CIDR6,$line/128,no-resolve" 
-            fi
-          done > rules/MyDirect.SERVER.list.new
-          mv -f rules/MyDirect.SERVER.list.new rules/MyDirect.SERVER.list
-
+          if [ -f rules/MyDirect.SERVER.update.list ]; then
+            cat rules/MyDirect.SERVER.update.list | while read line; do
+              line=$(echo "$line" | tr -d '\r' | xargs)
+              if [ -n "$line" ]; then
+                if [[ "$line" =~ ^[a-zA-Z0-9.-]+$ ]]; then
+                  echo "DOMAIN,$line" 
+                elif [[ "$line" =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; then
+                  echo "IP-CIDR,$line/32,no-resolve" 
+                else 
+                  echo "IP-CIDR6,$line/128,no-resolve" 
+                fi
+              fi
+            done > rules/MyDirect.SERVER.list.new
+            mv -f rules/MyDirect.SERVER.list.new rules/MyDirect.SERVER.list
+            rm -rf rules/MyDirect.SERVER.update.list
+          else
+            echo "MyDirect.SERVER.update.list not found, skipping..."
+          fi
+          
       - name: Get MyDirect rules
         run: |
           cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list > rules/MyDirect.list.new
