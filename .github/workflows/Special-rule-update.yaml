@@ -35,7 +35,7 @@ jobs:
                   echo "IP-CIDR6,$line/128,no-resolve" 
                 fi
               fi
-            done | sort -t, -k1,1 > rules/MyDirect.SERVER.list.new
+            done | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/MyDirect.SERVER.list.new
             mv -f rules/MyDirect.SERVER.list.new rules/MyDirect.SERVER.list
             rm -rf rules/MyDirect.SERVER.update.list
           else
@@ -44,7 +44,7 @@ jobs:
           
       - name: Get MyDirect rules
         run: |
-          cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list | sort -t, -k1,1 > rules/MyDirect.list.new
+          cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/MyDirect.list.new
           mv -f rules/MyDirect.list.new rules/MyDirect.list
           
       - name: Download MyProxy rules
@@ -53,7 +53,7 @@ jobs:
             if  curl -f -s -o rules/app/Github.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list && [[ -s rules/app/Github.list ]]; then
               echo >> rules/app/Docker.list
               echo >> rules/app/Github.list
-              cat rules/app/Docker.list rules/app/Github.list rules/MyProxy.MANUAL.list | sort -t, -k1,1 > rules/MyProxy.list.new
+              cat rules/app/Docker.list rules/app/Github.list rules/MyProxy.MANUAL.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/MyProxy.list.new
               mv -f rules/MyProxy.list.new rules/MyProxy.list
               rm -f rules/app/Github.list
             else
@@ -99,7 +99,7 @@ jobs:
               echo >> rules/app/Bing.list
               if  curl -f -s -o rules/app/Edge.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/MicrosoftEdge.list && [[ -s rules/app/Edge.list ]]; then
                 echo >> rules/app/Edge.list
-                cat rules/app/Copilot.list rules/app/Bing.list rules/app/Edge.list | sort -t, -k1,1 > rules/app/BingMSCopilot.list.new
+                cat rules/app/Copilot.list rules/app/Bing.list rules/app/Edge.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/app/BingMSCopilot.list.new
                 mv -f rules/app/BingMSCopilot.list.new rules/app/BingMSCopilot.list
                 rm -f rules/app/Edge.list
               else
@@ -128,7 +128,7 @@ jobs:
             if curl -f -s -o rules/app/GameDownloadCN.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.list && [[ -s rules/app/GameDownloadCN.list ]]; then
               echo >> rules/app/SteamCN.list
               echo >> rules/app/GameDownloadCN.list
-              cat rules/app/SteamCN.list rules/app/GameDownloadCN.list rules/app/GameDLCN.MANUAL.list | sort -t, -k1,1 > rules/app/GameDLCN.list.new
+              cat rules/app/SteamCN.list rules/app/GameDownloadCN.list rules/app/GameDLCN.MANUAL.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/app/GameDLCN.list.new
               mv -f rules/app/GameDLCN.list.new rules/app/GameDLCN.list
               rm -f rules/app/GameDownloadCN.list
             else
@@ -153,7 +153,7 @@ jobs:
       #       echo >> rules/app/Meituan.list
       #       if  curl -f -s -o rules/app/WeChat.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list && [[ -s rules/app/WeChat.list ]]; then
       #         echo >> rules/app/WeChat.list
-      #         cat rules/app/Meituan.list rules/app/WeChat.list | sort -t, -k1,1 > rules/app/CNAPP.list.new
+      #         cat rules/app/Meituan.list rules/app/WeChat.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/app/CNAPP.list.new
       #         echo "# other" >> rules/app/CNAPP.list.new
       #         echo "DOMAIN-SUFFIX,hcaptcha.com" >> rules/app/CNAPP.list.new
       #         mv -f rules/app/CNAPP.list.new rules/app/CNAPP.list
@@ -176,7 +176,7 @@ jobs:
                 echo >> rules/app/Reddit.list
                 if  curl -f -s -o rules/app/USMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list && [[ -s rules/app/USMedia.list ]]; then
                   echo >> rules/app/USMedia.list
-                  cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/USMedia.list rules/app/USAPP.MANUAL.list | sort -t, -k1,1 > rules/app/USAPP.list.new
+                  cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/USMedia.list rules/app/USAPP.MANUAL.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/app/USAPP.list.new
                   mv -f rules/app/USAPP.list.new rules/app/USAPP.list
                   rm -f rules/app/USMedia.list
                 else
@@ -199,7 +199,7 @@ jobs:
         run: |
           if  curl -f -s -o rules/app/UKMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UKMedia/UKMedia.list && [[ -s rules/app/UKMedia.list ]]; then
             echo >> rules/app/UKMedia.list
-            cat rules/app/UKMedia.list rules/app/UKAPP.MANUAL.list | sort -t, -k1,1 > rules/app/UKAPP.list.new
+            cat rules/app/UKMedia.list rules/app/UKAPP.MANUAL.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/app/UKAPP.list.new
             mv -f rules/app/UKAPP.list.new rules/app/UKAPP.list
             rm -f rules/app/UKMedia.list
           else
@@ -228,7 +228,7 @@ jobs:
       #         sed -i 's/^/IP-CIDR6,/' rules/app/HKV6.txt
       #         sed -i 's/$/,no-resolve/' rules/app/HKV6.txt
       #         echo >> rules/app/HKV6.txt
-      #         cat rules/app/HKV4.txt rules/app/HKV6.txt rules/app/HKAPP.MANUAL.list | sort -t, -k1,1 > rules/app/HKAPP.list.new
+      #         cat rules/app/HKV4.txt rules/app/HKV6.txt rules/app/HKAPP.MANUAL.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/app/HKAPP.list.new
       #         mv -f rules/app/HKAPP.list.new rules/app/HKAPP.list
       #         rm -f rules/app/HKV4.txt rules/app/HKV6.txt
       #       else
@@ -274,7 +274,7 @@ jobs:
             sed -i '/^$/d' rules/app/telegramcidr.list
             rm -f rules/app/telegramcidr.list.new rules/app/telegramcidr.txt
             if  curl -f -s -o rules/app/telegramdomain.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list && [[ -s rules/app/telegramdomain.list ]]; then
-              cat rules/app/telegramcidr.list rules/app/telegramdomain.list | sort -t, -k1,1 > rules/app/telegram.list.new
+              cat rules/app/telegramcidr.list rules/app/telegramdomain.list | sort -s -t, --field-separator=, -k1,1 <(echo "PROCESS-NAME") <(echo "DOMAIN") <(echo "DOMAIN-SUFFIX") <(echo "DOMAIN-KEYWORD") <(echo "IP-CIDR") <(echo "IP-CIDR6") <(echo "IP-ASN") >  rules/app/telegram.list.new
               mv -f rules/app/telegram.list.new rules/app/telegram.list
               rm -f rules/app/telegramcidr.list rules/app/telegramdomain.list
             else
