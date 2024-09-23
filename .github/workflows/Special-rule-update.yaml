@@ -35,7 +35,7 @@ jobs:
                   echo "IP-CIDR6,$line/128,no-resolve" 
                 fi
               fi
-            done | sort -t, -k1,1 -r > rules/MyDirect.SERVER.list.new
+            done | sort -t, -k1,1 > rules/MyDirect.SERVER.list.new
             mv -f rules/MyDirect.SERVER.list.new rules/MyDirect.SERVER.list
             rm -rf rules/MyDirect.SERVER.update.list
           else
