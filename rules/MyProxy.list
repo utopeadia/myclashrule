@@ -1,7 +1,91 @@
-DOMAIN
-DOMAIN-KEYWORD
-DOMAIN-SUFFIX
-IP-ASN
-IP-CIDR
-IP-CIDR6
-PROCESS-NAME
+# NAME: Docker
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:16:51
+# DOMAIN: 3
+# DOMAIN-SUFFIX: 4
+# TOTAL: 7
+DOMAIN,d1q6f0aelx0por.cloudfront.net
+DOMAIN,d2wy8f7a9ursnm.cloudfront.net
+DOMAIN,d36jcksde1wxzq.cloudfront.net
+DOMAIN-SUFFIX,compose-spec.io
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,dockerhub.com
+
+# NAME: GitHub
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:14:51
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 29
+# TOTAL: 30
+DOMAIN-SUFFIX,atom.io
+DOMAIN-SUFFIX,dependabot.com
+DOMAIN-SUFFIX,ghcr.io
+DOMAIN-SUFFIX,git.io
+DOMAIN-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net
+DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
+DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com
+DOMAIN-SUFFIX,github.blog
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.community
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubnext.com
+DOMAIN-SUFFIX,githubpreview.dev
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubuniverse.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,myoctocat.com
+DOMAIN-SUFFIX,npm.community
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,opensource.guide
+DOMAIN-SUFFIX,rawgit.com
+DOMAIN-SUFFIX,rawgithub.com
+DOMAIN-SUFFIX,repo.new
+DOMAIN-SUFFIX,thegithubshop.com
+DOMAIN-KEYWORD,github
+
+DOMAIN-KEYWORD,1password
+DOMAIN-KEYWORD,51cg
+DOMAIN-SUFFIX,racknerd.com
+DOMAIN-SUFFIX,colocrossing.com
+DOMAIN-SUFFIX,cloudcone.com
+DOMAIN-SUFFIX,wap.ac
+DOMAIN-KEYWORD,cosmotown
+DOMAIN-SUFFIX,clarity.ms
+DOMAIN-SUFFIX,spaceship.com
+DOMAIN-SUFFIX,spaceship-cdn.com
+DOMAIN-SUFFIX,agilebits.com
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,freeembyguide.eu.org
+DOMAIN-KEYWORD,muhanyun
+DOMAIN-SUFFIX,oracle.com
+DOMAIN-SUFFIX,ghcr.io
+DOMAIN-SUFFIX,larksuite.com
+DOMAIN-SUFFIX,larksuitepre.com
+DOMAIN-SUFFIX,larksuite.com.ttdns1.com
+DOMAIN-SUFFIX,larksuite.com.ttdns2.com
+DOMAIN-SUFFIX,larksuitecdn.com
+DOMAIN-SUFFIX,larksuiteimgboe.com
+DOMAIN-SUFFIX,larksuiteimgpre.com
+DOMAIN-SUFFIX,larksuiteimg.com
+DOMAIN-SUFFIX,larksuiteimg-boe.com
+DOMAIN-SUFFIX,larksuiteimg-pre.com
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,linuxdo.org
+
+# OAI
+DOMAIN-SUFFIX,cdn.oaifree.com
+DOMAIN-SUFFIX,files.oaifree.com
+DOMAIN-SUFFIX,new.oaifree.com
+DOMAIN-SUFFIX,voice.oaifree.com
+DOMAIN-SUFFIX,oai.iknowu.top
+DOMAIN-SUFFIX,oai-account.wush.workers.dev
+DOMAIN-SUFFIX,oai-chat.wush.workers.dev
+DOMAIN-SUFFIX,oai-voice.wush.workers.dev
