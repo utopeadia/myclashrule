@@ -56,7 +56,6 @@ dns:
       - 240.0.0.0/4
     geosite:
       - gfw
-      - geolocation-!cn
     domain:
       - '+.ai.com'
       - '+.algolia.net'
