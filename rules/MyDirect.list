@@ -97,6 +97,7 @@ DOMAIN,a498.dscd.akamai.net
 DOMAIN,a7d87c94162e6d0d.51522zzwiwibb.top
 DOMAIN,aaa.capoonetwork.com
 DOMAIN,aaaa-dws75rnrbtfr25hx.bestescargots.com
+DOMAIN,ah3-picfgde5bmwtmart.bestzumo.com
 DOMAIN,akari-hkg.nodenet.cloud
 DOMAIN,amzn-tokyo.nodenet.cloud
 DOMAIN,anl-tyo.nodenet.cloud
@@ -304,6 +305,7 @@ IP-CIDR,103.152.112.133/32,no-resolve
 IP-CIDR,103.152.112.152/32,no-resolve
 IP-CIDR,103.175.99.12/32,no-resolve
 IP-CIDR,103.186.117.38/32,no-resolve
+IP-CIDR,104.123.50.155/32,no-resolve
 IP-CIDR,106.75.254.132/32,no-resolve
 IP-CIDR,106.75.54.54/32,no-resolve
 IP-CIDR,111.29.57.18/32,no-resolve
@@ -314,13 +316,13 @@ IP-CIDR,112.26.33.58/32,no-resolve
 IP-CIDR,112.26.33.68/32,no-resolve
 IP-CIDR,112.29.210.155/32,no-resolve
 IP-CIDR,112.50.193.15/32,no-resolve
-IP-CIDR,112.83.133.187/32,no-resolve
 IP-CIDR,113.56.218.30/32,no-resolve
 IP-CIDR,114.37.223.197/32,no-resolve
 IP-CIDR,116.162.172.35/32,no-resolve
 IP-CIDR,116.162.172.37/32,no-resolve
 IP-CIDR,116.162.172.45/32,no-resolve
 IP-CIDR,116.162.172.53/32,no-resolve
+IP-CIDR,116.162.172.54/32,no-resolve
 IP-CIDR,116.80.77.36/32,no-resolve
 IP-CIDR,117.143.20.16/32,no-resolve
 IP-CIDR,117.157.132.57/32,no-resolve
@@ -359,9 +361,9 @@ IP-CIDR,148.135.85.56/32,no-resolve
 IP-CIDR,154.9.241.127/32,no-resolve
 IP-CIDR,157.254.193.24/32,no-resolve
 IP-CIDR,158.41.108.7/32,no-resolve
-IP-CIDR,159.138.86.100/32,no-resolve
 IP-CIDR,161.189.179.167/32,no-resolve
 IP-CIDR,163.177.58.112/32,no-resolve
+IP-CIDR,166.108.229.203/32,no-resolve
 IP-CIDR,178.236.37.50/32,no-resolve
 IP-CIDR,180.103.101.4/32,no-resolve
 IP-CIDR,183.192.116.140/32,no-resolve
@@ -422,7 +424,6 @@ IP-CIDR,52.81.6.98/32,no-resolve
 IP-CIDR,54.223.144.180/32,no-resolve
 IP-CIDR,59.120.251.232/32,no-resolve
 IP-CIDR,8.138.16.93/32,no-resolve
-IP-CIDR,8.7.198.46/32,no-resolve
 IP-CIDR,82.153.65.43/32,no-resolve
 IP-CIDR,89.213.164.201/32,no-resolve
 IP-CIDR6,2400:e3e0:f5a9:1cb4:c478:d2f7:2eaf:27d1/128,no-resolve
@@ -441,6 +442,8 @@ IP-CIDR6,2409:8c20:28c1:4::57/128,no-resolve
 IP-CIDR6,2409:8c30:1000:1b00:5:57b7:d498:93f6/128,no-resolve
 IP-CIDR6,2409:8c50:a00:2008::2/128,no-resolve
 IP-CIDR6,2409:8c54:1841:2008:0:1:0:8c/128,no-resolve
+IP-CIDR6,2600:1417:4400:10::1731:682c/128,no-resolve
+IP-CIDR6,2600:1417:4400:10::1731:6831/128,no-resolve
 IP-CIDR6,2607:f130:0:16b:216:3eff:fe05:856a/128,no-resolve
 IP-CIDR6,2607:f130:0:f8:ff:ff:d78b:4f96/128,no-resolve
 IP-CIDR6,2a02:26f0:9400::5f65:866a/128,no-resolve
