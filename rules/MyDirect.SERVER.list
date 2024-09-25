@@ -42,8 +42,6 @@ DOMAIN,a498.dscd.akamai.net
 DOMAIN,a7d87c94162e6d0d.51522zzwiwibb.top
 DOMAIN,aaa.capoonetwork.com
 DOMAIN,aaaa-dws75rnrbtfr25hx.bestescargots.com
-DOMAIN,ah1-xj6fwjj5fymdrn8y.bestzumo.com
-DOMAIN,ah3-picfgde5bmwtmart.bestzumo.com
 DOMAIN,akari-hkg.nodenet.cloud
 DOMAIN,amzn-tokyo.nodenet.cloud
 DOMAIN,anl-tyo.nodenet.cloud
@@ -282,6 +280,7 @@ IP-CIDR,111.29.57.18/32,no-resolve
 IP-CIDR,111.29.57.30/32,no-resolve
 IP-CIDR,111.45.33.78/32,no-resolve
 IP-CIDR,111.62.241.177/32,no-resolve
+IP-CIDR,112.120.127.65/32,no-resolve
 IP-CIDR,112.26.33.109/32,no-resolve
 IP-CIDR,112.26.33.58/32,no-resolve
 IP-CIDR,112.26.33.68/32,no-resolve
@@ -349,12 +348,21 @@ IP-CIDR,157.254.193.24/32,no-resolve
 IP-CIDR,158.101.195.118/32,no-resolve
 IP-CIDR,158.179.164.122/32,no-resolve
 IP-CIDR,158.41.108.7/32,no-resolve
+IP-CIDR,159.138.86.100/32,no-resolve
 IP-CIDR,161.189.179.167/32,no-resolve
 IP-CIDR,162.159.58.35/32,no-resolve
 IP-CIDR,163.123.192.112/32,no-resolve
 IP-CIDR,163.123.192.140/32,no-resolve
 IP-CIDR,163.123.192.186/32,no-resolve
 IP-CIDR,163.123.192.35/32,no-resolve
+IP-CIDR,163.181.228.225/32,no-resolve
+IP-CIDR,163.181.228.226/32,no-resolve
+IP-CIDR,163.181.228.227/32,no-resolve
+IP-CIDR,163.181.228.228/32,no-resolve
+IP-CIDR,163.181.228.229/32,no-resolve
+IP-CIDR,163.181.228.230/32,no-resolve
+IP-CIDR,163.181.228.231/32,no-resolve
+IP-CIDR,163.181.228.232/32,no-resolve
 IP-CIDR,163.181.35.230/32,no-resolve
 IP-CIDR,163.181.35.231/32,no-resolve
 IP-CIDR,163.181.35.232/32,no-resolve
@@ -363,7 +371,6 @@ IP-CIDR,163.181.35.234/32,no-resolve
 IP-CIDR,163.181.35.235/32,no-resolve
 IP-CIDR,163.181.35.236/32,no-resolve
 IP-CIDR,163.181.35.237/32,no-resolve
-IP-CIDR,166.108.229.203/32,no-resolve
 IP-CIDR,168.138.184.187/32,no-resolve
 IP-CIDR,168.138.188.106/32,no-resolve
 IP-CIDR,172.67.160.210/32,no-resolve
@@ -395,6 +402,8 @@ IP-CIDR,193.122.106.44/32,no-resolve
 IP-CIDR,193.122.116.235/32,no-resolve
 IP-CIDR,193.123.79.22/32,no-resolve
 IP-CIDR,198.23.236.158/32,no-resolve
+IP-CIDR,2.19.126.220/32,no-resolve
+IP-CIDR,2.19.126.224/32,no-resolve
 IP-CIDR,202.89.233.100/32,no-resolve
 IP-CIDR,202.89.233.101/32,no-resolve
 IP-CIDR,204.10.194.78/32,no-resolve
@@ -406,8 +415,6 @@ IP-CIDR,219.77.97.96/32,no-resolve
 IP-CIDR,220.246.58.222/32,no-resolve
 IP-CIDR,23.156.152.54/32,no-resolve
 IP-CIDR,23.247.139.58/32,no-resolve
-IP-CIDR,23.45.207.202/32,no-resolve
-IP-CIDR,23.45.207.203/32,no-resolve
 IP-CIDR,36.138.250.95/32,no-resolve
 IP-CIDR,36.139.111.208/32,no-resolve
 IP-CIDR,36.139.251.87/32,no-resolve
@@ -432,9 +439,7 @@ IP-CIDR,43.248.116.83/32,no-resolve
 IP-CIDR,45.131.69.2/32,no-resolve
 IP-CIDR,45.155.172.42/32,no-resolve
 IP-CIDR,46.232.120.17/32,no-resolve
-IP-CIDR,47.243.111.72/32,no-resolve
 IP-CIDR,48.218.160.218/32,no-resolve
-IP-CIDR,48.218.168.69/32,no-resolve
 IP-CIDR,48.218.202.95/32,no-resolve
 IP-CIDR,5.253.36.120/32,no-resolve
 IP-CIDR,54.179.4.150/32,no-resolve
@@ -442,6 +447,7 @@ IP-CIDR,54.223.144.180/32,no-resolve
 IP-CIDR,59.120.251.232/32,no-resolve
 IP-CIDR,77.37.33.136/32,no-resolve
 IP-CIDR,8.138.16.93/32,no-resolve
+IP-CIDR,8.210.96.175/32,no-resolve
 IP-CIDR,82.153.65.43/32,no-resolve
 IP-CIDR,89.116.161.168/32,no-resolve
 IP-CIDR,89.168.34.45/32,no-resolve
@@ -470,8 +476,6 @@ IP-CIDR6,2409:8c54:1841:2008:0:1:0:192/128,no-resolve
 IP-CIDR6,2409:8c54:1841:2008:0:1:0:8c/128,no-resolve
 IP-CIDR6,2600:1406:5e00:49::17ce:e5a8/128,no-resolve
 IP-CIDR6,2600:1406:5e00:49::17ce:e5ab/128,no-resolve
-IP-CIDR6,2600:1417:4400:10::1731:682c/128,no-resolve
-IP-CIDR6,2600:1417:4400:10::1731:6831/128,no-resolve
 IP-CIDR6,2606:4700:3030::ac43:a0d2/128,no-resolve
 IP-CIDR6,2606:4700:3031::6815:4be7/128,no-resolve
 IP-CIDR6,2606:4700:3031::ac43:b6e9/128,no-resolve
