@@ -221,10 +221,10 @@ IP-CIDR,38.47.97.70/32,no-resolve
 IP-CIDR,38.60.91.121/32,no-resolve
 IP-CIDR,42.157.128.162/32,no-resolve
 IP-CIDR,43.241.50.79/32,no-resolve
-IP-CIDR,47.243.111.72/32,no-resolve
 IP-CIDR,5.253.36.120/32,no-resolve
 IP-CIDR,54.223.144.180/32,no-resolve
 IP-CIDR,8.138.16.93/32,no-resolve
+IP-CIDR,8.210.96.175/32,no-resolve
 IP-CIDR,82.153.65.43/32,no-resolve
 IP-CIDR6,2400:e3e0:f5a9:1cb4:c478:d2f7:2eaf:27d1/128,no-resolve
 IP-CIDR6,2407:d840:51:1::18/128,no-resolve
