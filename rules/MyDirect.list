@@ -167,7 +167,6 @@ DOMAIN,us-relay.fxv2pro.com
 DOMAIN,zhongzhuan.centos.sh
 IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,101.227.55.93/32,no-resolve
-IP-CIDR,104.123.50.138/32,no-resolve
 IP-CIDR,111.29.57.30/32,no-resolve
 IP-CIDR,111.4.108.50/32,no-resolve
 IP-CIDR,112.26.33.58/32,no-resolve
@@ -184,8 +183,15 @@ IP-CIDR,141.11.174.187/32,no-resolve
 IP-CIDR,148.135.103.10/32,no-resolve
 IP-CIDR,148.135.85.56/32,no-resolve
 IP-CIDR,154.9.241.127/32,no-resolve
-IP-CIDR,159.138.86.100/32,no-resolve
 IP-CIDR,161.189.179.167/32,no-resolve
+IP-CIDR,163.181.228.225/32,no-resolve
+IP-CIDR,163.181.228.226/32,no-resolve
+IP-CIDR,163.181.228.227/32,no-resolve
+IP-CIDR,163.181.228.228/32,no-resolve
+IP-CIDR,163.181.228.229/32,no-resolve
+IP-CIDR,163.181.228.230/32,no-resolve
+IP-CIDR,163.181.228.231/32,no-resolve
+IP-CIDR,163.181.228.232/32,no-resolve
 IP-CIDR,163.181.35.230/32,no-resolve
 IP-CIDR,163.181.35.231/32,no-resolve
 IP-CIDR,163.181.35.232/32,no-resolve
@@ -194,6 +200,7 @@ IP-CIDR,163.181.35.234/32,no-resolve
 IP-CIDR,163.181.35.235/32,no-resolve
 IP-CIDR,163.181.35.236/32,no-resolve
 IP-CIDR,163.181.35.237/32,no-resolve
+IP-CIDR,166.108.229.203/32,no-resolve
 IP-CIDR,183.192.116.140/32,no-resolve
 IP-CIDR,183.236.49.196/32,no-resolve
 IP-CIDR,183.236.49.212/32,no-resolve
@@ -205,6 +212,8 @@ IP-CIDR,198.23.236.158/32,no-resolve
 IP-CIDR,211.99.115.226/32,no-resolve
 IP-CIDR,223.113.54.41/32,no-resolve
 IP-CIDR,223.113.54.42/32,no-resolve
+IP-CIDR,23.45.207.202/32,no-resolve
+IP-CIDR,23.45.207.203/32,no-resolve
 IP-CIDR,36.134.100.205/32,no-resolve
 IP-CIDR,36.134.2.217/32,no-resolve
 IP-CIDR,36.138.131.209/32,no-resolve
@@ -236,11 +245,11 @@ IP-CIDR6,2409:8730:40a3:9:6a38:f8d0:e99d:5097/128,no-resolve
 IP-CIDR6,2409:8754:c10:2005:0:10:1:6/128,no-resolve
 IP-CIDR6,2409:8c54:1020:36:1:1:0:20/128,no-resolve
 IP-CIDR6,2409:8c54:1841:2008:0:1:0:8c/128,no-resolve
+IP-CIDR6,2600:1406:4e00:8::17dc:4bc6/128,no-resolve
+IP-CIDR6,2600:1406:4e00:8::17dc:4bd0/128,no-resolve
 IP-CIDR6,2600:1417:4400:10::1731:682c/128,no-resolve
 IP-CIDR6,2600:1417:4400:10::1731:6831/128,no-resolve
 IP-CIDR6,2607:f130:0:16b:216:3eff:fe05:856a/128,no-resolve
 IP-CIDR6,2607:f130:0:f8:ff:ff:d78b:4f96/128,no-resolve
-IP-CIDR6,2a02:26f0:680:69::5c7a:a618/128,no-resolve
-IP-CIDR6,2a02:26f0:680:69::5c7a:a629/128,no-resolve
 IP-CIDR6,2a0e:97c0:7d4:ff2d::a/128,no-resolve
 IP-CIDR6,2a12:f8c1:50:8:88a0:82c0:23b4:9bb0/128,no-resolve
