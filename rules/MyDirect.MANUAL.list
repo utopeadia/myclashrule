@@ -67,6 +67,7 @@ PROCESS-NAME,Tailscale,DIRECT
 PROCESS-NAME,Tailscale Service,DIRECT
 PROCESS-NAME,Tailscale.exe,DIRECT
 PROCESS-NAME,Tailscale Service.exe,DIRECT
+PROCESS-NAME,eztest
 
 # 兜底LAN
 IP-CIDR,192.168.0.0/16,no-resolve
