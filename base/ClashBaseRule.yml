@@ -113,7 +113,7 @@ dns:
       - '+.xn--ngstr-lra8j.com'
       - '+.youtube.com'
   sniffer:
-    enable: false
+    enable: true
     force-dns-mapping: true
     parse-pure-ip: true
     override-destination: false
@@ -123,8 +123,10 @@ dns:
         override-destination: true
       TLS:
         ports: [443, 8443]
+        override-destination: true
       QUIC:
         ports: [443, 8443]
+        override-destination: true
     force-domain:
       - +.v2ex.com
       - +.google.com
