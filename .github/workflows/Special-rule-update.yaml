@@ -174,13 +174,19 @@ jobs:
               echo >> rules/app/GoogleVoice.list
               if  curl -f -s -o rules/app/Reddit.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.list && [[ -s rules/app/Reddit.list ]]; then
                 echo >> rules/app/Reddit.list
-                if  curl -f -s -o rules/app/USMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list && [[ -s rules/app/USMedia.list ]]; then
-                  echo >> rules/app/USMedia.list
-                  cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/USMedia.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
-                  mv -f rules/app/USAPP.list.new rules/app/USAPP.list
-                  rm -f rules/app/USMedia.list
+                if  curl -f -s -o rules/app/PayPal.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PayPal/PayPal.list && [[ -s rules/app/PayPal.list ]]; then
+                  echo >> rules/app/PayPal.list
+                  if  curl -f -s -o rules/app/USMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list && [[ -s rules/app/USMedia.list ]]; then
+                    echo >> rules/app/USMedia.list
+                    cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/PayPal.list rules/app/USMedia.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
+                    mv -f rules/app/USAPP.list.new rules/app/USAPP.list
+                    rm -f rules/app/USMedia.list
+                  else
+                    echo "Failed to download or empty USMedia.list, exiting."
+                  fi
+                  rm -f rules/app/PayPal.list
                 else
-                  echo "Failed to download or empty USMedia.list, exiting."
+                  echo "Failed to download or empty PayPal.list, exiting."
                 fi
                 rm -f rules/app/Reddit.list
               else
