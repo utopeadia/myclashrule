@@ -465,9 +465,11 @@ DOMAIN-SUFFIX,us-east-1.amazonaws.com
 DOMAIN-SUFFIX,namesilo.com
 DOMAIN-SUFFIX,cosmotown.com
 DOMAIN-SUFFIX,spaceship.com
+DOMAIN-SUFFIX,build.nvidia.com
 IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
+
 # VPS
 IP-CIDR,23.92.0.0/14,no-resolve
 IP-CIDR,38.60.0.0/14,no-resolve
