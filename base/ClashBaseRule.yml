@@ -158,6 +158,7 @@ dns:
       - rbsxbxp.vivox.com
       - rbspsxp.vivox.com
       - rbswxp.vivox.com
+      - basic-static-server.infinitynewtab.com
 
 tun:
   enable: true
