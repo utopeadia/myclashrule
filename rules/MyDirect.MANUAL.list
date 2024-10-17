@@ -13,40 +13,11 @@ DOMAIN-KEYWORD,embyvip
 DOMAIN-SUFFIX,acl.syyn.pw
 ## NICEDUCK
 DOMAIN-SUFFIX,sub.niceduck.cloud
-## 夜煞云
-DOMAIN-SUFFIX,sub3.download-hiccup.xyz
-DOMAIN-SUFFIX,su.iplcnetwork.com
+DOMAIN,sub.godya.cc
 ## 蛋挞云
 DOMAIN-SUFFIX,eggtartcloud.biz
-## TN
-DOMAIN-SUFFIX,sub-01.767564.xyz
-## 阿拉丁
-DOMAIN-SUFFIX,music.easygourl.xyz
-## 全球通
-DOMAIN-SUFFIX,service-jnkldbbg-1319821727.gz.apigw.tencentcs.com
 ## 尼尔云
 DOMAIN-SUFFIX,oj9veovs5n6u.51522zzwIwIbb.top
-## Foosber
-DOMAIN-SUFFIX,xn--eckvarq8ld5k.xn--zckq7gxe.xn--tckwe
-DOMAIN-SUFFIX,サブスクライブ.スチーム.コム
-## 赔钱机场
-DOMAIN-SUFFIX,xn--cp3a08l.com
-DOMAIN-SUFFIX,赔钱.comapi.acaisbest.online
-## 其他机场
-DOMAIN-SUFFIX,webget.yfjc.xyz
-DOMAIN-SUFFIX,cdn.1454250.xyz
-DOMAIN-SUFFIX,api-baobaog.rest
-DOMAIN-SUFFIX,cn-shanghai.fcapp.run
-DOMAIN-SUFFIX,link.dingyueapi.net
-DOMAIN-SUFFIX,mesl.gov.ltd
-DOMAIN-SUFFIX,sub2.riolu.one
-DOMAIN-SUFFIX,xsus.wiki
-DOMAIN-SUFFIX,万和涂装.com
-DOMAIN-SUFFIX,xn--chqu2nzsxv3y.com
-DOMAIN-SUFFIX,dogss-host.store
-DOMAIN-SUFFIX,api.yun.ovodisk.com
-DOMAIN-SUFFIX,sub3.yukihasu.top
-IPCIDR,45.88.192.25/32,no-resolve
 
 # SDWAN
 DST-PORT,9993,DIRECT
