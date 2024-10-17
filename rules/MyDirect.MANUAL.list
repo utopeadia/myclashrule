@@ -11,12 +11,8 @@ DOMAIN-KEYWORD,embyvip
 # 机场及订阅
 ## SYN
 DOMAIN-SUFFIX,acl.syyn.pw
-## NICEDUCK
-DOMAIN-SUFFIX,sub.niceduck.cloud
 ## 蛋挞云
 DOMAIN-SUFFIX,eggtartcloud.biz
-## 尼尔云
-DOMAIN-SUFFIX,oj9veovs5n6u.51522zzwIwIbb.top
 
 # SDWAN
 DST-PORT,9993,DIRECT
