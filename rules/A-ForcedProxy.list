@@ -1,3 +1,8 @@
+DOMAIN,dns.google
+IPCIDR,1.1.1.1,no-resolved
+DOMAIN,doh.opendns.com
+DOMAIN,dns.quad9.net
+
 DOMAIN-KEYWORD,ghcr1production
 DOMAIN-SUFFIX,ghcr1production.blob.core.windows.net
 DOMAIN-SUFFIX,repo.anaconda.com
