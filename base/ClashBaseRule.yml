@@ -7,14 +7,9 @@ allow-lan: false
 bind-address: '*'
 ipv6: true
 external-controller: 127.0.0.1:9090
-secret: "zQ!h9BBp"
+secret: "zQ!h90nBBp"
 mode: rule
 log-level: info
-profile:
-  store-selected: true
-  store-fake-ip: true
-tcp-concurrent: true
-unified-delay: true
 global-client-fingerprint: chrome
 global-ua: mihomo
 geo-auto-update: true
@@ -168,28 +163,3 @@ dns:
       - 110.242.69.63/32
       - 221.194.154.187/32
       - 36.248.45.62/32
-      
-tun:
-  enable: true
-  stack: mixed
-  auto-route: true
-  auto-redirect: true
-  auto-detect-interface: true
-  dns-hijack:
-    - any:53
-    - tcp://any:53
-  mtu: 1500
-  strict-route: true
-  include-package:
-    - com.android.chrome
-  exclude-package:
-    - com.android.captiveportallogin
-    
-proxy-groups:
-- name: "direct"
-  proxies:
-  - DIRECT
-  lazy: false
-  timeout: 5000
-  max-failed-times: 5
-  disable-udp: false
