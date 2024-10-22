@@ -41,7 +41,6 @@ DOMAIN,s.us5.niceduck.me
 DOMAIN,s.us6.niceduck.me
 DOMAIN,tjsedht.cfprefer1.xyz
 IP-CIDR,110.40.50.90/32,no-resolve
-IP-CIDR,111.4.88.212/32,no-resolve
 IP-CIDR,120.241.177.155/32,no-resolve
 IP-CIDR,43.241.50.79/32,no-resolve
 IP-CIDR6,2409:8754:c10:2005:0:10:1:6/128,no-resolve
