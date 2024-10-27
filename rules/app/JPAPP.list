@@ -24,6 +24,7 @@ DOMAIN-SUFFIX,wallos.iswsh.com
 DOMAIN-SUFFIX,chat.iswsh.com
 DOMAIN-SUFFIX,frpjp.112700.xyz
 DOMAIN-SUFFIX,chat.iknowu.top
+DOMAIN-SUFFIX,affine.iswsh.com
 # VPS
 IP-CIDR,38.46.0.0/14,no-resolve
 IP-CIDR,82.152.0.0/14,no-resolve
