@@ -53,7 +53,6 @@ DOMAIN-SUFFIX,jstor.org
 ## SAGE
 DOMAIN-SUFFIX,journals.sagepub.com
 ## 其他学术网站
-DOMAIN-KEYWORD,onepetro_org
 DOMAIN-SUFFIX,aps.org
 DOMAIN-SUFFIX,acs.org
 DOMAIN-SUFFIX,iop.org
@@ -81,6 +80,7 @@ DOMAIN-SUFFIX,webofscience.com
 DOMAIN-SUFFIX,clarivate.com
 DOMAIN-SUFFIX,taylorfrancis.com
 DOMAIN-SUFFIX,onepetro.org
+DOMAIN-KEYWORD,onepetro_org
 DOMAIN-SUFFIX,siam.org
 # WOS
 DOMAIN-SUFFIX,webofknowledge.com
