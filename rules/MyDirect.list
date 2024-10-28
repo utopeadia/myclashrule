@@ -1,3 +1,9 @@
+# 直连应用
+## 新加入 Steam下载
+DOMAIN-SUFFIX,gstore.val.manlaxy.com
+## vivo补充cn域名
+DOMAIN-SUFFIX,vivo.com.cn
+
 # 直连流媒体
 DOMAIN-SUFFIX,dpx1.niceduck.lol
 DOMAIN-SUFFIX,dpx1v6.niceduck.lol
