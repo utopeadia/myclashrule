@@ -4,6 +4,8 @@
 URL-REGEX,^https?:\/\/(www\.)?msftconnecttest\.com\/redirect
 DOMAIN-SUFFIX,msftconnecttest.com
 
+DOMAIN-SUFFIX,digicert.com
+
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
 
