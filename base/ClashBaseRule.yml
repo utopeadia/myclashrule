@@ -6,14 +6,13 @@ tproxy-port: 7894
 allow-lan: false
 bind-address: '*'
 ipv6: true
-external-controller: 127.0.0.1:9090
+external-controller: 0.0.0.0:9090
 secret: "zQ!h90nBBp"
 mode: rule
 log-level: info
 global-client-fingerprint: chrome
 global-ua: mihomo
 geo-auto-update: true
-geodata-mode: false
 geo-update-interval: 12
 geox-url:
   geoip: 'https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat'
@@ -22,6 +21,33 @@ geox-url:
 dns:
   enable: true
   ipv6: false
+  cache-algorithm: arc
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/15
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "connect.rom.miui.com"
+    - "+.miwifi.com"
+    - "+.ntp.org"
+    - "+.u-tools.cn"
+    - "+.mediatek.com"
+    - "+.cfprefer1.xyz"
+    - "+.wetab.link"
+    # QQ
+    - "localhost.ptlogin2.qq.com"
+    - "localhost.sec.qq.com"
+    # WeChat
+    - "localhost.work.weixin.qq.com"
+    - "+.weixin.qq.com"
+    - "+.wechat.com"
+    # Windows
+    - "time.windows.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "+.wpsmail.net"
+    - "+.henzanapp.com"
+    - "+.pconline.com.cn"
   default-nameserver:
     - 180.76.76.76
     - 223.5.5.5
