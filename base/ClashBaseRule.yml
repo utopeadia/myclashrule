@@ -4,7 +4,7 @@ redir-port: 7892
 mixed-port: 7893
 tproxy-port: 7894
 allow-lan: false
-bind-address: '*'
+bind-address: "*"
 ipv6: true
 external-controller: 0.0.0.0:9090
 secret: "zQ!h90nBBp"
@@ -15,15 +15,15 @@ global-ua: mihomo
 geo-auto-update: true
 geo-update-interval: 12
 geox-url:
-  geoip: 'https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat'
-  geosite: 'https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat'
-  mmdb: 'https://testingcf.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb'
+  geoip: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
+  geosite: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  mmdb: "https://testingcf.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb"
 dns:
   enable: true
   ipv6: false
   cache-algorithm: arc
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.0/15
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - "*"
     - "+.lan"
@@ -69,60 +69,60 @@ dns:
     geosite:
       - gfw
     domain:
-      - '+.ai.com'
-      - '+.algolia.net'
-      - '+.anthropic.com'
-      - '+.argotunnel.com'
-      - '+.arkoselabs.com'
-      - '+.auth0.com'
-      - '+.azure.com'
-      - '+.azureedge.net'
-      - '+.bing.com'
-      - '+.bingapis.com'
-      - '+.bugsnag.com'
-      - '+.chatgpt.com'
-      - '+.claude.ai'
-      - '+.cloudflare.net'
-      - '+.cloudflareinsights.com'
-      - '+.cohere.ai'
-      - '+.docker.com'
-      - '+.docker.io'
-      - '+.facebook.com'
-      - '+.github.com'
-      - '+.githubusercontent.com'
-      - '+.google'
-      - '+.google.com'
-      - '+.google.dev'
-      - '+.googleapis.cn'
-      - '+.googlevideo.com'
-      - '+.identrust.com'
-      - '+.instagram.com'
-      - '+.intercom.io'
-      - '+.live.com'
-      - '+.livekit.cloud'
-      - '+.meta.ai'
-      - '+.microsoft.com'
-      - '+.microsoftapp.net'
-      - '+.minecraft.net'
-      - '+.msn.com'
-      - '+.openai.com'
-      - '+.poe.com'
-      - '+.segment.com'
-      - '+.segment.io'
-      - '+.sentry.io'
-      - '+.synn.cc'
-      - '+.stripe.com'
-      - '+.t.me'
-      - '+.tailscale.com'
-      - '+.tailscale.io'
-      - '+.twitter.com'
-      - '+.usefathom.com'
-      - '+.v2ex.com'
-      - '+.windows.net'
-      - '+.wootric.com'
-      - '+.x.com'
-      - '+.xn--ngstr-lra8j.com'
-      - '+.youtube.com'
+      - "+.ai.com"
+      - "+.algolia.net"
+      - "+.anthropic.com"
+      - "+.argotunnel.com"
+      - "+.arkoselabs.com"
+      - "+.auth0.com"
+      - "+.azure.com"
+      - "+.azureedge.net"
+      - "+.bing.com"
+      - "+.bingapis.com"
+      - "+.bugsnag.com"
+      - "+.chatgpt.com"
+      - "+.claude.ai"
+      - "+.cloudflare.net"
+      - "+.cloudflareinsights.com"
+      - "+.cohere.ai"
+      - "+.docker.com"
+      - "+.docker.io"
+      - "+.facebook.com"
+      - "+.github.com"
+      - "+.githubusercontent.com"
+      - "+.google"
+      - "+.google.com"
+      - "+.google.dev"
+      - "+.googleapis.cn"
+      - "+.googlevideo.com"
+      - "+.identrust.com"
+      - "+.instagram.com"
+      - "+.intercom.io"
+      - "+.live.com"
+      - "+.livekit.cloud"
+      - "+.meta.ai"
+      - "+.microsoft.com"
+      - "+.microsoftapp.net"
+      - "+.minecraft.net"
+      - "+.msn.com"
+      - "+.openai.com"
+      - "+.poe.com"
+      - "+.segment.com"
+      - "+.segment.io"
+      - "+.sentry.io"
+      - "+.synn.cc"
+      - "+.stripe.com"
+      - "+.t.me"
+      - "+.tailscale.com"
+      - "+.tailscale.io"
+      - "+.twitter.com"
+      - "+.usefathom.com"
+      - "+.v2ex.com"
+      - "+.windows.net"
+      - "+.wootric.com"
+      - "+.x.com"
+      - "+.xn--ngstr-lra8j.com"
+      - "+.youtube.com"
   sniffer:
     enable: true
     force-dns-mapping: true
