@@ -92,6 +92,7 @@ jobs:
         run: |
           if  curl -f -s -o rules/app/Copilot.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list && [[ -s rules/app/Copilot.list ]]; then
             echo "DOMAIN,designer.microsoft.com" >> rules/app/Copilot.list
+            echo "DOMAIN-SUFFIX,githubcopilot.com" >> rules/app/Copilot.list
             echo "DOMAIN,copilot-telemetry.githubusercontent.com" >> rules/app/Copilot.list
             echo "DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com" >> rules/app/Copilot.list
             echo >> rules/app/Copilot.list
