@@ -1,6 +1,7 @@
 # cf认证
 DOMAIN-SUFFIX,challenges.cloudflare.com
-
+# ChatGPT其他
+DOMAIN-SUFFIX,chat.com
 # X.ai
 DOMAIN-SUFFIX,x.ai
 # LLM竞技场
