@@ -6,11 +6,11 @@ DOMAIN-SUFFIX,nau.edu
 DOMAIN-SUFFIX,arizona.edu
 DOMAIN-SUFFIX,utah.edu
 DOMAIN-SUFFIX,colostate.edu
-
 # 部分服务
 DOMAIN-KEYWORD,v2ex
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,reshot.ai
 DOMAIN-KEYWORD,huggingface
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,hf.space
