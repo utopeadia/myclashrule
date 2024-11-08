@@ -3,6 +3,8 @@
 DOMAIN-SUFFIX,gstore.val.manlaxy.com
 ## vivo补充cn域名
 DOMAIN-SUFFIX,vivo.com.cn
+## 硅基流动
+DOMAIN-SUFFIX,siliconflow.cn
 
 # 直连流媒体
 DOMAIN-SUFFIX,dpx1.niceduck.lol
