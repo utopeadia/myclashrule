@@ -4,6 +4,7 @@ DOMAIN-KEYWORD,teracloud
 DOMAIN-KEYWORD,infini-cloud
 DOMAIN-SUFFIX,frpjp.iswsh.com
 DOMAIN-SUFFIX,frpjp.112700.xyz
+DOMAIN-SUFFIX,jpakile0.112700.xyz
 # VPS
 IP-CIDR,38.46.0.0/14,no-resolve
 IP-CIDR,82.152.0.0/14,no-resolve
