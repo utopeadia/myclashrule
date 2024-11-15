@@ -3,6 +3,9 @@
 # WIN重定向网页
 URL-REGEX,^https?:\/\/(www\.)?msftconnecttest\.com\/redirect
 DOMAIN-SUFFIX,msftconnecttest.com
+# GoogleFCM
+DOMAIN-SUFFIX,mtalk.google.com
+DOMAIN-SUFFIX,m-talk.google.com
 
 DOMAIN-SUFFIX,digicert.com
 
