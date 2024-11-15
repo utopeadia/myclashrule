@@ -6,6 +6,16 @@ DOMAIN-SUFFIX,msftconnecttest.com
 # GoogleFCM
 DOMAIN-SUFFIX,mtalk.google.com
 DOMAIN-SUFFIX,m-talk.google.com
+DOMAIN-SUFFIX,alt1-mtalk.google.com
+DOMAIN-SUFFIX,alt2-mtalk.google.com
+DOMAIN-SUFFIX,alt3-mtalk.google.com
+DOMAIN-SUFFIX,alt4-mtalk.google.com
+DOMAIN-SUFFIX,alt5-mtalk.google.com
+DOMAIN-SUFFIX,alt6-mtalk.google.com
+DOMAIN-SUFFIX,alt7-mtalk.google.com
+DOMAIN-SUFFIX,alt8-mtalk.google.com
+DOMAIN-SUFFIX,alt9-mtalk.google.com
+DOMAIN-SUFFIX,alt10-mtalk.google.com
 
 DOMAIN-SUFFIX,digicert.com
 
