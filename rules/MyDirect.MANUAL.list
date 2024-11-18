@@ -16,11 +16,8 @@ DOMAIN-SUFFIX,jms2.niceduck.lol
 DOMAIN-SUFFIX,eggtartemby.itsmyduty.top
 DOMAIN-KEYWORD,embyvip
 
-# 机场及订阅
-## SYN
-DOMAIN-SUFFIX,acl.syyn.pw
-## 蛋挞云
-DOMAIN-SUFFIX,eggtartcloud.biz
+# 其他
+DOMAIN-SUFFIX,360buyimg.com
 
 # SDWAN
 DST-PORT,9993,DIRECT
