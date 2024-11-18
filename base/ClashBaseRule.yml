@@ -18,6 +18,16 @@ geox-url:
   geoip: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
   geosite: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
   mmdb: "https://testingcf.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb"
+tun:
+  enable: false
+  device: MihomoCore
+  stack: mixed
+  mtu: 9000
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-detect-interface: true
 dns:
   enable: true
   ipv6: false
@@ -124,11 +134,14 @@ dns:
       - "+.x.com"
       - "+.xn--ngstr-lra8j.com"
       - "+.youtube.com"
+  profile:
+    store-selected: true
+    store-fake-ip: true
   sniffer:
     enable: true
     force-dns-mapping: true
     parse-pure-ip: true
-    override-destination: false
+    override-destination: true
     sniff:
       HTTP:
         ports: [80, 8080-8880]
