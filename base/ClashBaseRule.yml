@@ -62,6 +62,9 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   direct-nameserver:
+    - 180.76.76.76
+    - 223.5.5.5
+    - 119.29.29.29
     - dhcp://en0
     - system
   nameserver:
