@@ -67,7 +67,6 @@ DOMAIN,3bd9.55dca.e048.f62-fef1f.yfjcs.com
 DOMAIN,3bd9.55dca.e048.f63-fef1f.yfjcs.com
 DOMAIN,3bd9.55dca.e048.f64-fef1f.yfjcs.com
 DOMAIN,5e445nfqavyrq5f95amnmboi62j2snha.04.02.tw.k7h.lol
-DOMAIN,6.cloudfront.182682.xyz
 DOMAIN,6mth1ik5ru50hi65yyjdshzkmi4fdb03.04.01.us.k7h.lol
 DOMAIN,7l16pb58767gy7h99qjxqapm3w7bonx5.04.02.hk.k7h.lol
 DOMAIN,84qgio2u5uj5i3ak407c8nn9rc2e98av.04.08.us.k7h.lol
@@ -111,7 +110,6 @@ DOMAIN,h3zjefhbzk645es9onczq9k2kl4co24t.04.01.de.k7h.lol
 DOMAIN,h9q9sa3kxlldu3vrp2zq1n8k9snnftc4.04.02.jp.k7h.lol
 DOMAIN,hi.niceduck.me
 DOMAIN,hk.fxv2pro.com
-DOMAIN,hkcft01.xqc.best
 DOMAIN,hnd.nnnrt.gtm.volcdns.com
 DOMAIN,i5bhrvpnjkx7mm58ck7xf0fl9kaivim4.04.01.ng.k7h.lol
 DOMAIN,ic7pimgq8zjvkpw418fc6yl2f8bvhjz1.04.02.ph.k7h.lol
@@ -120,7 +118,6 @@ DOMAIN,iepl2.097420.xyz
 DOMAIN,ipv6.hongxingdl.vip
 DOMAIN,iy642mcu175mkibqw1dnnpb5o852ezd9.04.09.jp.k7h.lol
 DOMAIN,jp-relay.fxv2pro.com
-DOMAIN,jpcft01.xqc.best
 DOMAIN,jsyd.cloudfisher.xyz
 DOMAIN,jsyd.niceduck.me
 DOMAIN,jsyd2.niceduck.me
@@ -187,7 +184,6 @@ DOMAIN,s.us5.niceduck.me
 DOMAIN,s.us6.niceduck.me
 DOMAIN,sa5k5ghu5h87k98hnvrj0vynr37cyqwu.04.03.jp.k7h.lol
 DOMAIN,sg-relay.fxv2pro.com
-DOMAIN,sgcft01.xqc.best
 DOMAIN,tlc037ngertk3uavi8vz56m3tdeilweb.04.05.us.k7h.lol
 DOMAIN,tls.01.node-for-bigairport.win
 DOMAIN,tls.02.node-for-bigairport.win
@@ -244,7 +240,6 @@ DOMAIN,x62ff5ud2pz8tuih5l5jiqqbxbz7hk2v.04.01.ca.k7h.lol
 DOMAIN,xdvd99ucigxhdgo2u2wsth1wsrdkb21c.04.01.it.k7h.lol
 DOMAIN,xefmxxu5ogaji3ytapf7fzm1fwhgn43r.04.04.sg.k7h.lol
 DOMAIN,xjv6.cloudfisher.xyz
-DOMAIN,xqccft.cfprefer1.xyz
 DOMAIN,y29iidl78jsy6v4zix716add1uqjmvq6.04.08.sg.k7h.lol
 DOMAIN,ygbc3ft3fnl1xee8kjapi39mjqv28uyj.04.05.hk.k7h.lol
 DOMAIN,yidong.oocnode.xyz
@@ -274,6 +269,7 @@ IP-CIDR,120.232.16.63/32,no-resolve
 IP-CIDR,120.232.16.72/32,no-resolve
 IP-CIDR,120.232.218.46/32,no-resolve
 IP-CIDR,120.233.150.113/32,no-resolve
+IP-CIDR,120.233.171.178/32,no-resolve
 IP-CIDR,120.233.171.81/32,no-resolve
 IP-CIDR,120.233.26.171/32,no-resolve
 IP-CIDR,120.233.30.240/32,no-resolve
@@ -290,7 +286,6 @@ IP-CIDR,129.154.254.128/32,no-resolve
 IP-CIDR,129.159.227.221/32,no-resolve
 IP-CIDR,13.112.197.73/32,no-resolve
 IP-CIDR,13.115.177.253/32,no-resolve
-IP-CIDR,13.225.171.114/32,no-resolve
 IP-CIDR,13.57.23.41/32,no-resolve
 IP-CIDR,132.226.171.133/32,no-resolve
 IP-CIDR,134.209.205.14/32,no-resolve
@@ -332,16 +327,11 @@ IP-CIDR,168.138.184.187/32,no-resolve
 IP-CIDR,168.138.188.106/32,no-resolve
 IP-CIDR,174.138.18.2/32,no-resolve
 IP-CIDR,178.128.107.213/32,no-resolve
-IP-CIDR,18.155.72.124/32,no-resolve
 IP-CIDR,18.162.193.57/32,no-resolve
 IP-CIDR,18.163.183.239/32,no-resolve
-IP-CIDR,18.172.29.80/32,no-resolve
 IP-CIDR,18.182.14.140/32,no-resolve
 IP-CIDR,18.183.11.232/32,no-resolve
 IP-CIDR,18.183.14.75/32,no-resolve
-IP-CIDR,18.65.189.152/32,no-resolve
-IP-CIDR,18.65.202.189/32,no-resolve
-IP-CIDR,18.65.210.49/32,no-resolve
 IP-CIDR,183.192.116.140/32,no-resolve
 IP-CIDR,183.236.51.101/32,no-resolve
 IP-CIDR,183.236.51.102/32,no-resolve
@@ -364,7 +354,6 @@ IP-CIDR,206.189.144.7/32,no-resolve
 IP-CIDR,206.189.82.130/32,no-resolve
 IP-CIDR,209.38.107.91/32,no-resolve
 IP-CIDR,218.78.70.14/32,no-resolve
-IP-CIDR,223.109.34.84/32,no-resolve
 IP-CIDR,3.115.8.34/32,no-resolve
 IP-CIDR,35.76.110.130/32,no-resolve
 IP-CIDR,35.77.45.129/32,no-resolve
@@ -414,12 +403,3 @@ IP-CIDR6,2408:8719:64:9b:1::5/128,no-resolve
 IP-CIDR6,2408:8719:64:9e:1::9/128,no-resolve
 IP-CIDR6,2409:8730:40a3:9:6a38:f8d0:e99d:5097/128,no-resolve
 IP-CIDR6,2409:8c20:26c2:4:b000::14/128,no-resolve
-IP-CIDR6,2600:9000:202f:1f0b:e3c:1d0e:63:1f68/128,no-resolve
-IP-CIDR6,2600:9000:21bd:2a4d:5b0f:75b3:1efb:9af/128,no-resolve
-IP-CIDR6,2600:9000:2216:2db:66d8:5dc7:5b6b:3c54/128,no-resolve
-IP-CIDR6,2600:9000:2216:4b47:5ce9:1ecd:2139:178c/128,no-resolve
-IP-CIDR6,2600:9000:221e:73f1:a28:2bd3:7c6a:614/128,no-resolve
-IP-CIDR6,2600:9000:2225:1f40:3ddd:e64:50ad:6990/128,no-resolve
-IP-CIDR6,2600:9000:2226:30e1:1fb0:7a68:924:7e8f/128,no-resolve
-IP-CIDR6,2600:9000:2226:50d9:1526:30e0:324f:722/128,no-resolve
-IP-CIDR6,2600:9000:2697:5f07:300c:d57:17bb:46cf/128,no-resolve
