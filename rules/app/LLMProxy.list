@@ -79,8 +79,6 @@ DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 
-# cf认证
-DOMAIN-SUFFIX,challenges.cloudflare.com
 # ChatGPT其他
 DOMAIN-SUFFIX,chat.com
 # X.ai
@@ -102,4 +100,5 @@ DOMAIN-SUFFIX,klingai.com
 DOMAIN-SUFFIX,deepseek.com
 # SiderAI
 DOMAIN-SUFFIX,sider.ai
-
+# MistralAI
+DOMAIN-SUFFIX,mistral.ai
