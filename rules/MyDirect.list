@@ -99,6 +99,7 @@ DOMAIN,cname08a-xp3zfkbmz8pyhmbf.xiaowangzi777.com
 DOMAIN,cname08b-xp3zfkbmz8pyhmbf.bestugali.com
 DOMAIN,cu.passip.me
 DOMAIN,d96vogj5gkm8y1wgwxdeheva4dxklg51.04.04.jp.k7h.lol
+DOMAIN,east.78cf9487bdd788cd4075consulting.club
 DOMAIN,en1wp6i950fv93maij8alnl3ngjp4nsd.04.04.hk.k7h.lol
 DOMAIN,f89h25r7sdoxfe6176o7iiv881jys9ge.04.05.jp.k7h.lol
 DOMAIN,ff8fchn0p3ezq5wd1ywdm2u9etu0dhxn.04.02.kr.k7h.lol
@@ -184,6 +185,7 @@ DOMAIN,s.us5.niceduck.me
 DOMAIN,s.us6.niceduck.me
 DOMAIN,sa5k5ghu5h87k98hnvrj0vynr37cyqwu.04.03.jp.k7h.lol
 DOMAIN,sg-relay.fxv2pro.com
+DOMAIN,south.78cf9487bdd788cd4075consulting.club
 DOMAIN,tlc037ngertk3uavi8vz56m3tdeilweb.04.05.us.k7h.lol
 DOMAIN,tls.01.node-for-bigairport.win
 DOMAIN,tls.02.node-for-bigairport.win
@@ -366,6 +368,7 @@ IP-CIDR,35.78.98.176/32,no-resolve
 IP-CIDR,36.140.111.150/32,no-resolve
 IP-CIDR,36.140.111.202/32,no-resolve
 IP-CIDR,36.140.93.32/32,no-resolve
+IP-CIDR,36.150.8.150/32,no-resolve
 IP-CIDR,36.151.195.29/32,no-resolve
 IP-CIDR,36.151.65.234/32,no-resolve
 IP-CIDR,36.151.65.91/32,no-resolve
