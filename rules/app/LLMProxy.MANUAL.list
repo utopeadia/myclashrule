@@ -21,3 +21,6 @@ DOMAIN-SUFFIX,deepseek.com
 DOMAIN-SUFFIX,sider.ai
 # MistralAI
 DOMAIN-SUFFIX,mistral.ai
+# codeium&windsurf
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN-SUFFIX,codeium.com
