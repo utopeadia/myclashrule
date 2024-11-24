@@ -26,6 +26,7 @@ DOMAIN-SUFFIX,chatb.iswsh.com
 DOMAIN-SUFFIX,chatb.iknowu.top
 DOMAIN-SUFFIX,affine.iswsh.com
 DOMAIN-SUFFIX,dnsmgr.iswsh.com
+DOMAIN-SUFFIX,img.iswsh.com
 
 # VPS
 IP-CIDR,103.244.91.0/24,no-resolve
