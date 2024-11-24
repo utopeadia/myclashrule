@@ -1,12 +1,6 @@
-# US EDU
-DOMAIN-SUFFIX,umass.edu
-DOMAIN-SUFFIX,cvtc.edu
-DOMAIN-SUFFIX,sunybroome.edu
-DOMAIN-SUFFIX,nau.edu
-DOMAIN-SUFFIX,arizona.edu
-DOMAIN-SUFFIX,utah.edu
-DOMAIN-SUFFIX,colostate.edu
 # 部分服务
+DOMAIN-SUFFIX,us1.kuxueyun.com
+DOMAIN-SUFFIX,ca.kuxueyun.com
 DOMAIN-SUFFIX,follow.is
 DOMAIN-KEYWORD,v2ex
 DOMAIN-SUFFIX,v2ex.com
@@ -63,3 +57,12 @@ IP-CIDR,216.44.0.0/14,no-resolve
 IP-CIDR6,2607:f130::/32,no-resolve
 IP-CIDR6,2607:fcd0::/32,no-resolve
 IP-CIDR6,2a12:bec0:161:a007::/32,no-resolve
+
+# US EDU
+DOMAIN-SUFFIX,umass.edu
+DOMAIN-SUFFIX,cvtc.edu
+DOMAIN-SUFFIX,sunybroome.edu
+DOMAIN-SUFFIX,nau.edu
+DOMAIN-SUFFIX,arizona.edu
+DOMAIN-SUFFIX,utah.edu
+DOMAIN-SUFFIX,colostate.edu
