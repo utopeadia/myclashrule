@@ -19,6 +19,12 @@ DOMAIN-SUFFIX,alt10-mtalk.google.com
 
 DOMAIN-SUFFIX,digicert.com
 
+DOMAIN-SUFFIX,cm.kuxueyun.com
+DOMAIN-SUFFIX,cu21.kuxueyun.com
+DOMAIN-SUFFIX,cu22.kuxueyun.com
+DOMAIN-SUFFIX,cu41.kuxueyun.com
+DOMAIN-SUFFIX,cu42.kuxueyun.com
+
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
 
