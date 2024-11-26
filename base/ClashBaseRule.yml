@@ -7,7 +7,7 @@ allow-lan: false
 bind-address: "*"
 ipv6: true
 external-controller: 0.0.0.0:9090
-secret: "zQ!h90nBBp"
+secret: "zQ!h90n@BBp"
 mode: rule
 log-level: info
 global-client-fingerprint: chrome
