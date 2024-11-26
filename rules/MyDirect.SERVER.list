@@ -77,6 +77,7 @@ DOMAIN,jsyd.niceduck.me
 DOMAIN,jsyd2.niceduck.me
 DOMAIN,jsyd3.niceduck.me
 DOMAIN,k07vvj28yqm9g0qk7w2x07tmbnqcs69u.04.01.tr.k7h.lol
+DOMAIN,k1-ipv6.gslb.ksyuncdn.com
 DOMAIN,kjv094serbaw9z0mbbij23a7pvrpupcp.04.09.sg.k7h.lol
 DOMAIN,kr-relay.fxv2pro.com
 DOMAIN,lm.passip.me
@@ -100,13 +101,13 @@ DOMAIN,p9tdhxqfjby44vtbbavmmkhpgfgg6eip.04.03.us.k7h.lol
 DOMAIN,pghlpazp0cgb3q4elwpk1vq5lo2sfbab.04.01.au.k7h.lol
 DOMAIN,phtug404kq8vti9rr9zzw417zxp5i8pc.04.07.sg.k7h.lol
 DOMAIN,pr36anfnxo16xn2jwxnewpzkxff9uyl8.04.07.us.k7h.lol
+DOMAIN,qwerabchk.cfprefer1.xyz
 DOMAIN,s.hk1.niceduck.me
 DOMAIN,s.hk2.niceduck.me
 DOMAIN,s.hk3.niceduck.me
 DOMAIN,s.hk4.niceduck.me
 DOMAIN,s.hk5.niceduck.me
 DOMAIN,s.hk6.niceduck.me
-DOMAIN,s.hkem1.niceduck.me
 DOMAIN,s.jp1.niceduck.me
 DOMAIN,s.jp2.niceduck.me
 DOMAIN,s.jp3.niceduck.me
@@ -325,6 +326,7 @@ IP-CIDR,36.151.195.29/32,no-resolve
 IP-CIDR,36.151.65.234/32,no-resolve
 IP-CIDR,36.151.65.91/32,no-resolve
 IP-CIDR,36.155.110.185/32,no-resolve
+IP-CIDR,39.91.190.8/32,no-resolve
 IP-CIDR,42.157.128.173/32,no-resolve
 IP-CIDR,43.202.101.11/32,no-resolve
 IP-CIDR,43.203.133.204/32,no-resolve
@@ -354,5 +356,7 @@ IP-CIDR6,2406:da1e:310:9b00:43b3:bb7f:a103:82ad/128,no-resolve
 IP-CIDR6,2408:864e:c03:1c:2:0:85fe:37c4/128,no-resolve
 IP-CIDR6,2408:864e:c03:1c:2:0:9cd5:6441/128,no-resolve
 IP-CIDR6,2408:864e:c03:1c:2:0:ed6c:bc7c/128,no-resolve
+IP-CIDR6,2408:8719:64:9b:1::5/128,no-resolve
+IP-CIDR6,2408:8719:64:9e:1::9/128,no-resolve
 IP-CIDR6,2409:8c20:26c2:4:b000::14/128,no-resolve
 IP-CIDR6,2409:8c30:1000:1b00:5:2c19:f3e4:ad1c/128,no-resolve
