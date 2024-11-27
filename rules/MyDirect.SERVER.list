@@ -215,7 +215,7 @@ DOMAIN,ygbc3ft3fnl1xee8kjapi39mjqv28uyj.04.05.hk.k7h.lol
 DOMAIN,yidong.oocnode.xyz
 DOMAIN,z.tw1.niceduck.me
 DOMAIN,zyx7klo63ah67m4i.mzstatic.cloud
-IP-CIDR,1.170.205.238/32,no-resolve
+IP-CIDR,1.168.167.126/32,no-resolve
 IP-CIDR,108.181.22.153/32,no-resolve
 IP-CIDR,108.181.23.241/32,no-resolve
 IP-CIDR,108.181.23.249/32,no-resolve
@@ -233,7 +233,7 @@ IP-CIDR,116.162.172.129/32,no-resolve
 IP-CIDR,116.162.172.35/32,no-resolve
 IP-CIDR,116.162.172.37/32,no-resolve
 IP-CIDR,116.162.172.45/32,no-resolve
-IP-CIDR,118.167.3.113/32,no-resolve
+IP-CIDR,118.167.1.96/32,no-resolve
 IP-CIDR,119.237.241.117/32,no-resolve
 IP-CIDR,119.237.241.123/32,no-resolve
 IP-CIDR,119.237.241.86/32,no-resolve
@@ -257,8 +257,8 @@ IP-CIDR,129.151.206.225/32,no-resolve
 IP-CIDR,129.154.237.229/32,no-resolve
 IP-CIDR,129.154.254.128/32,no-resolve
 IP-CIDR,129.159.227.221/32,no-resolve
+IP-CIDR,13.215.84.87/32,no-resolve
 IP-CIDR,13.229.104.219/32,no-resolve
-IP-CIDR,13.230.118.171/32,no-resolve
 IP-CIDR,13.230.203.151/32,no-resolve
 IP-CIDR,13.230.232.43/32,no-resolve
 IP-CIDR,13.230.25.162/32,no-resolve
@@ -280,6 +280,7 @@ IP-CIDR,143.47.236.28/32,no-resolve
 IP-CIDR,144.24.206.147/32,no-resolve
 IP-CIDR,146.190.105.72/32,no-resolve
 IP-CIDR,146.190.47.221/32,no-resolve
+IP-CIDR,15.164.196.158/32,no-resolve
 IP-CIDR,15.165.70.165/32,no-resolve
 IP-CIDR,150.230.147.10/32,no-resolve
 IP-CIDR,150.230.253.68/32,no-resolve
@@ -353,7 +354,6 @@ IP-CIDR,37.123.192.19/32,no-resolve
 IP-CIDR,39.91.190.8/32,no-resolve
 IP-CIDR,42.157.128.173/32,no-resolve
 IP-CIDR,42.157.129.219/32,no-resolve
-IP-CIDR,43.202.160.54/32,no-resolve
 IP-CIDR,43.203.216.138/32,no-resolve
 IP-CIDR,43.206.103.190/32,no-resolve
 IP-CIDR,43.206.155.70/32,no-resolve
@@ -361,10 +361,10 @@ IP-CIDR,43.207.188.130/32,no-resolve
 IP-CIDR,43.207.219.94/32,no-resolve
 IP-CIDR,43.207.59.44/32,no-resolve
 IP-CIDR,47.243.111.72/32,no-resolve
+IP-CIDR,52.193.139.70/32,no-resolve
 IP-CIDR,52.195.155.217/32,no-resolve
 IP-CIDR,52.198.245.56/32,no-resolve
 IP-CIDR,52.53.160.42/32,no-resolve
-IP-CIDR,54.151.151.177/32,no-resolve
 IP-CIDR,54.179.4.150/32,no-resolve
 IP-CIDR,54.183.13.48/32,no-resolve
 IP-CIDR,54.248.201.82/32,no-resolve
