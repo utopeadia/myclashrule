@@ -116,6 +116,7 @@ DOMAIN,ga8q1widchu9ent02gwye1lagohx6mrk.04.02.uk.k7h.lol
 DOMAIN,h3zjefhbzk645es9onczq9k2kl4co24t.04.01.de.k7h.lol
 DOMAIN,h8uht3qo6ly3lib9bdq3b3xfox9o9yevq7f5.biliapi.xyz
 DOMAIN,h9q9sa3kxlldu3vrp2zq1n8k9snnftc4.04.02.jp.k7h.lol
+DOMAIN,hi.niceduck.me
 DOMAIN,hk.fxv2pro.com
 DOMAIN,hk01.525536.xyz
 DOMAIN,hnd.nnnrt.gtm.volcdns.com
@@ -336,13 +337,13 @@ IP-CIDR,155.248.213.85/32,no-resolve
 IP-CIDR,157.245.144.122/32,no-resolve
 IP-CIDR,158.101.195.118/32,no-resolve
 IP-CIDR,158.179.164.122/32,no-resolve
-IP-CIDR,159.138.86.100/32,no-resolve
 IP-CIDR,159.223.11.80/32,no-resolve
 IP-CIDR,162.159.138.178/32,no-resolve
 IP-CIDR,163.123.192.112/32,no-resolve
 IP-CIDR,163.123.192.140/32,no-resolve
 IP-CIDR,163.123.192.186/32,no-resolve
 IP-CIDR,163.123.192.35/32,no-resolve
+IP-CIDR,166.108.229.203/32,no-resolve
 IP-CIDR,167.172.39.136/32,no-resolve
 IP-CIDR,167.71.220.69/32,no-resolve
 IP-CIDR,168.138.184.187/32,no-resolve
