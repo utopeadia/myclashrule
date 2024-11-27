@@ -27,6 +27,9 @@ jobs:
             cat rules/MyDirect.SERVER.update.list | while read line; do
               line=$(echo "$line" | tr -d '\r' | xargs)
               if [ -n "$line" ]; then
+                if [[ "$line" == \#* ]]; then
+                  continue
+                fi
                 if [[ "$line" =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; then
                   echo "IP-CIDR,$line/32,no-resolve" 
                 elif [[ "$line" =~ ^[a-zA-Z0-9.-]+$ ]]; then
