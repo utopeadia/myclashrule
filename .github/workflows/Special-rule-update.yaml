@@ -47,6 +47,29 @@ jobs:
           cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list > rules/MyDirect.list.new
           mv -f rules/MyDirect.list.new rules/MyDirect.list
           
+      - name: Update MyReject.list
+        run: |
+          if  curl -f -s -o rules/pcdn.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt && [[ -s rules/pcdn.txt ]]; then
+            cat rules/pcdn.txt | while read line; do
+              line=$(echo "$line" | tr -d '\r' | xargs)
+              if [ -n "$line" ]; then
+                if [[ "$line" =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; then
+                  echo "IP-CIDR,$line/32,no-resolve" 
+                elif [[ "$line" =~ ^[a-zA-Z0-9.-]+$ ]]; then
+                  echo "DOMAIN,$line"
+                else 
+                  echo "IP-CIDR6,$line/128,no-resolve" 
+                fi
+              fi
+            done | sort -t, -k1,1 > rules/pcdn.list
+            echo >> rules/pcdn.list
+            cat rules/MyReject.MANUAL.list rules/pcdn.list > rules/MyReject.list.new
+            mv -f rules/MyReject.list.new rules/MyReject.list
+            rm -rf rules/pcdn.list rules/pcdn.txt
+          else
+            echo "Failed to download or empty pcdn.txt, exiting."
+          fi
+          
       - name: Download MyProxy rules
         run: |
           if  curl -f -s -o rules/app/Docker.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.list && [[ -s rules/app/Docker.list ]]; then
