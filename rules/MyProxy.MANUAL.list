@@ -1,13 +1,5 @@
 DOMAIN-KEYWORD,1password
 DOMAIN-KEYWORD,51cg
-DOMAIN-SUFFIX,racknerd.com
-DOMAIN-SUFFIX,colocrossing.com
-DOMAIN-SUFFIX,cloudcone.com
-DOMAIN-SUFFIX,wap.ac
-DOMAIN-KEYWORD,cosmotown
-DOMAIN-SUFFIX,clarity.ms
-DOMAIN-SUFFIX,spaceship.com
-DOMAIN-SUFFIX,spaceship-cdn.com
 DOMAIN-SUFFIX,agilebits.com
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,freeembyguide.eu.org
@@ -28,6 +20,8 @@ DOMAIN-SUFFIX,browserleaks.com
 DOMAIN-SUFFIX,ipcheck.ing
 DOMAIN-SUFFIX,browserscan.net
 DOMAIN-SUFFIX,ipleak.net
+DOMAIN-SUFFIX,wap.ac
+DOMAIN-SUFFIX,clarity.ms
 
 # OAI
 DOMAIN-SUFFIX,cdn.oaifree.com
