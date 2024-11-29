@@ -1,11 +1,7 @@
-DOMAIN-KEYWORD,1password
 DOMAIN-KEYWORD,51cg
 DOMAIN-SUFFIX,agilebits.com
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,freeembyguide.eu.org
-DOMAIN-KEYWORD,muhanyun
-DOMAIN-SUFFIX,oracle.com
-DOMAIN-SUFFIX,ghcr.io
 DOMAIN-SUFFIX,larksuite.com
 DOMAIN-SUFFIX,larksuitepre.com
 DOMAIN-SUFFIX,larksuite.com.ttdns1.com
@@ -22,13 +18,3 @@ DOMAIN-SUFFIX,browserscan.net
 DOMAIN-SUFFIX,ipleak.net
 DOMAIN-SUFFIX,wap.ac
 DOMAIN-SUFFIX,clarity.ms
-
-# OAI
-DOMAIN-SUFFIX,cdn.oaifree.com
-DOMAIN-SUFFIX,files.oaifree.com
-DOMAIN-SUFFIX,new.oaifree.com
-DOMAIN-SUFFIX,voice.oaifree.com
-DOMAIN-SUFFIX,oai.iknowu.top
-DOMAIN-SUFFIX,oai-account.wush.workers.dev
-DOMAIN-SUFFIX,oai-chat.wush.workers.dev
-DOMAIN-SUFFIX,oai-voice.wush.workers.dev
