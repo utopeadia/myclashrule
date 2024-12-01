@@ -504,7 +504,7 @@ IP-CIDR,156.229.163.0/24,no-resolve
 IP-CIDR,162.254.85.0/24,no-resolve
 IP-CIDR,198.22.0.0/14,no-resolve
 IP-CIDR,216.44.0.0/14,no-resolve
-IP-CIDR6,2001:1980:e00c::da90::/64,no-resolve
+IP-CIDR6,2001:1980:e00c::da90:/64,no-resolve
 IP-CIDR6,2607:f130::/32,no-resolve
 IP-CIDR6,2607:fcd0::/32,no-resolve
 IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
