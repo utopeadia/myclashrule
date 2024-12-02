@@ -560,6 +560,38 @@ IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
 
+# ChatGPT其他
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+# X.ai
+DOMAIN-SUFFIX,x.ai
+# LLM竞技场
+DOMAIN-SUFFIX,lmsys.org
+# poe
+DOMAIN-SUFFIX,poe.com
+# cohere
+DOMAIN-KEYWORD,cohere
+# coze
+DOMAIN-SUFFIX,coze.com
+# JetBrains AI 
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+# KLing可灵
+DOMAIN-SUFFIX,klingai.com
+# Deepseek
+DOMAIN-SUFFIX,deepseek.com
+# SiderAI
+DOMAIN-SUFFIX,sider.ai
+# MistralAI
+DOMAIN-SUFFIX,mistral.ai
+# codeium&windsurf
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN-SUFFIX,codeium.com
+# hcompany.ai
+DOMAIN-SUFFIX,hcompany.ai
+DOMAIN-KEYWORD,hcompany
+
+
 # 邮箱
 DOMAIN-SUFFIX,smtp.gmail.com
 DOMAIN-SUFFIX,pop.gmail.com
