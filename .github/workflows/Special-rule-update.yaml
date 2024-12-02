@@ -93,30 +93,6 @@ jobs:
             echo "Failed to download or empty Docker.list, exiting."
           fi
 
-      - name: Download LLM(NoMSCopilot) rules
-        run: |
-          if  curl -f -s -o rules/app/OpenAI.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list && [[ -s rules/app/OpenAI.list ]]; then
-            echo "DOMAIN-SUFFIX,openaiapi-site.azureedge.net" >> rules/app/OpenAI.list
-            echo >> rules/app/OpenAI.list
-            if  curl -f -s -o rules/app/Claude.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list && [[ -s rules/app/Claude.list ]]; then
-              echo >> rules/app/Claude.list
-              if  curl -f -s -o rules/app/Gemini.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list && [[ -s rules/app/Gemini.list ]]; then
-                echo >> rules/app/Gemini.list
-                cat rules/app/OpenAI.list rules/app/Claude.list rules/app/Gemini.list rules/app/LLMProxy.MANUAL.list > rules/app/LLMProxy.list.new
-                mv -f rules/app/LLMProxy.list.new rules/app/LLMProxy.list
-                rm -f rules/app/Gemini.list
-              else
-                echo "Failed to download or empty Gemini.list, exiting."
-              fi
-              rm -f rules/app/Claude.list
-            else
-              echo "Failed to download or empty Claude.list, exiting."
-            fi
-            rm -f rules/app/OpenAI.list
-          else
-            echo "Failed to download or empty OpenAI.list, exiting."
-          fi
-
       - name: Download Bing and MicrosoftCopilot rules
         run: |
           if  curl -f -s -o rules/app/Copilot.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list && [[ -s rules/app/Copilot.list ]]; then
@@ -177,25 +153,6 @@ jobs:
             echo "Failed to download or empty GameDownload.list, exiting."
           fi
 
-      # - name: Download CNAPP rules
-      #   run: |
-      #     if  curl -f -s -o rules/app/Meituan.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MeiTuan/MeiTuan.list && [[ -s rules/app/Meituan.list ]]; then
-      #       echo >> rules/app/Meituan.list
-      #       if  curl -f -s -o rules/app/WeChat.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list && [[ -s rules/app/WeChat.list ]]; then
-      #         echo >> rules/app/WeChat.list
-      #         cat rules/app/Meituan.list rules/app/WeChat.list > rules/app/CNAPP.list.new
-      #         echo "# other" >> rules/app/CNAPP.list.new
-      #         echo "DOMAIN-SUFFIX,hcaptcha.com" >> rules/app/CNAPP.list.new
-      #         mv -f rules/app/CNAPP.list.new rules/app/CNAPP.list
-      #         rm -f rules/app/WeChat.list
-      #       else
-      #         echo "Failed to download or empty WeChat.list, exiting."
-      #       fi
-      #       rm -f rules/app/Meituan.list
-      #     else
-      #       echo "Failed to download or empty Meituan.list, exiting."
-      #     fi
-
       - name: Download USAPP rules
         run: |
           if  curl -f -s -o rules/app/TwitterAndX.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list && [[ -s rules/app/TwitterAndX.list ]]; then
@@ -208,8 +165,26 @@ jobs:
                   echo >> rules/app/PayPal.list
                   if  curl -f -s -o rules/app/USMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list && [[ -s rules/app/USMedia.list ]]; then
                     echo >> rules/app/USMedia.list
-                    cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/PayPal.list rules/app/USMedia.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
-                    mv -f rules/app/USAPP.list.new rules/app/USAPP.list
+                    if  curl -f -s -o rules/app/OpenAI.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list && [[ -s rules/app/OpenAI.list ]]; then
+                      echo >> rules/app/OpenAI.list
+                      if  curl -f -s -o rules/app/Claude.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list && [[ -s rules/app/Claude.list ]]; then
+                        echo >> rules/app/Claude.list
+                          if  curl -f -s -o rules/app/Gemini.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list && [[ -s rules/app/Gemini.list ]]; then
+                            echo >> rules/app/Gemini.list
+                            cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/PayPal.list rules/app/USMedia.list rules/app/OpenAI.list rules/app/Claude.list rules/app/Gemini.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
+                            mv -f rules/app/USAPP.list.new rules/app/USAPP.list
+                            rm -f rules/app/Gemini.list
+                          else
+                            echo "Failed to download or empty Gemini.list, exiting."
+                          fi
+                          rm -f rules/app/Claude.list
+                        else
+                          echo "Failed to download or empty Claude.list, exiting."
+                        fi
+                        rm -f rules/app/OpenAI.list
+                    else
+                      echo "Failed to download or empty OpenAI.list, exiting."
+                    fi
                     rm -f rules/app/USMedia.list
                   else
                     echo "Failed to download or empty USMedia.list, exiting."
