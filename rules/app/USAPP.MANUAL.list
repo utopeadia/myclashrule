@@ -109,7 +109,7 @@ IP-CIDR,38.60.0.0/14,no-resolve
 IP-CIDR,108.165.0.0/16,no-resolve
 IP-CIDR,148.130.0.0/14,no-resolve
 IP-CIDR,154.9.0.0/16,no-resolve
-IP-CIDR,156.229.163.0/24,no-resolve
+IP-CIDR,156.229.0.0/16,no-resolve
 IP-CIDR,162.254.85.0/24,no-resolve
 IP-CIDR,198.22.0.0/14,no-resolve
 IP-CIDR,216.44.0.0/14,no-resolve
