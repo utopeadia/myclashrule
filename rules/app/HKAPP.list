@@ -41,6 +41,7 @@ DOMAIN-SUFFIX,img.iswsh.com
 # VPS
 IP-CIDR,103.244.91.0/24,no-resolve
 IP-CIDR,141.11.0.0/16,no-resolve
+IP-CIDR,154.83.87.0/24,no-resolve
 IP-CIDR,47.238.0.0/16,no-resolve
 IP-CIDR,47.76.0.0/16,no-resolve
 IP-CIDR6,240b:4001:138:9100::/48,no-resolve
