@@ -8,4 +8,4 @@ DOMAIN-SUFFIX,jpakile0.112700.xyz
 # VPS
 IP-CIDR,38.46.0.0/14,no-resolve
 IP-CIDR,82.152.0.0/14,no-resolve
-IP-CIDR6,2a12:f8c1:50:8::/32,no-resolve
+IP-CIDR6,2a12:f8c1:50:8::/64,no-resolve
