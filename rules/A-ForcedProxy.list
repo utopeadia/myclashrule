@@ -1,16 +1,1 @@
-DOMAIN,dns.google
-DOMAIN,doh.opendns.com
-DOMAIN,dns.quad9.net
-
-IP-CIDR,8.8.8.8/32,no-resolve
-IP-CIDR,8.8.4.4/32,no-resolve
-IP-CIDR,1.1.1.1/32,no-resolve
-
-DOMAIN-KEYWORD,ghcr1production
-DOMAIN-SUFFIX,ghcr1production.blob.core.windows.net
-DOMAIN-SUFFIX,repo.anaconda.com
-DOMAIN-SUFFIX,ffqla.net
-DOMAIN-SUFFIX,help.minecraft.net
-DOMAIN-SUFFIX,dl.google.com
-# 豆包海外版CICI
-DOMAIN-SUFFIX,ciciai.com
+# 暂时好像还没有需要强制的
