@@ -41,7 +41,7 @@ IP-CIDR6,2001:4860:4860::8844/128,no-resolve
 
 IP-CIDR,119.29.29.29/32,no-resolve
 IP-CIDR,223.5.5.5/32,no-resolve
-IP-CIDR,180.76.76.76,no-resolve
+IP-CIDR,180.76.76.76/32,no-resolve
 
 # 一些影视站
 DOMAIN-SUFFIX,sbzyplay.com
