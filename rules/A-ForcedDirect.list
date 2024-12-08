@@ -27,9 +27,18 @@ DOMAIN-SUFFIX,cu42.kuxueyun.com
 
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
+DOMAIN,dns.google
+DOMAIN,doh.opendns.com
+DOMAIN,dns.quad9.net
+DOMAIN-SUFFIX,dh-global-team.net
+
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR,1.1.1.1/32,no-resolve
 
 IP-CIDR,119.29.29.29/32,no-resolve
 IP-CIDR,223.5.5.5/32,no-resolve
+IP-CIDR,180.76.76.76,no-resolve
 
 # 一些影视站
 DOMAIN-SUFFIX,sbzyplay.com
