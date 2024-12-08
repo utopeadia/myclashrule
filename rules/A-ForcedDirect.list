@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,cu42.kuxueyun.com
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
 DOMAIN,dns.google
+DOMAIN,dns.cloudflare.com
 DOMAIN,doh.opendns.com
 DOMAIN,dns.quad9.net
 DOMAIN-SUFFIX,dh-global-team.net
