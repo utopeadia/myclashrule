@@ -39,7 +39,6 @@ DOMAIN-SUFFIX,chatb.aifun.win
 DOMAIN-SUFFIX,affine.iswsh.com
 DOMAIN-SUFFIX,dnsmgr.iswsh.com
 DOMAIN-SUFFIX,img.iswsh.com
-DOMAIN-SUFFIX,fwnhub.cn
 
 # VPS
 IP-CIDR,103.244.0.0/16,no-resolve
