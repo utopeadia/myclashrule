@@ -18,6 +18,7 @@ DOMAIN-KEYWORD,embyvip
 
 # 其他
 DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,fwnhub.cn
 
 # SDWAN
 DST-PORT,9993,DIRECT
