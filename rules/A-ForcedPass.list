@@ -1,4 +1,6 @@
 # GoogleFCM
+PROCESS-NAME,com.google.android.gms
+PROCESS-NAME-REGEX,android\.gms
 DOMAIN-SUFFIX,mtalk.google.com
 DOMAIN-SUFFIX,m-talk.google.com
 DOMAIN-SUFFIX,mtalk4.google.com
