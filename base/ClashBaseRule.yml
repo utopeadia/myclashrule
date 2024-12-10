@@ -59,12 +59,6 @@ dns:
     - "+.henzanapp.com"
     - "+.pconline.com.cn"
     - "+.kuxueyun.com"
-  direct-nameserver-follow-policy: true
-  nameserver-policy:
-    'geosite:googlefcm':
-    - 8.8.8.8
-    - 8.8.4.4
-    - https://dns.google/dns-query
   default-nameserver:
     - 180.76.76.76
     - 223.5.5.5
