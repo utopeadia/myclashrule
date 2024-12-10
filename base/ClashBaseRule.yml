@@ -35,6 +35,7 @@ dns:
   enable: true
   ipv6: false
   prefer-h3: true
+  use-hosts: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
@@ -143,6 +144,17 @@ dns:
       - "+.x.com"
       - "+.xn--ngstr-lra8j.com"
       - "+.youtube.com"
+  hosts:
+    mtalk.google.com: [74.125.204.188, 172.253.117.188, 142.250.157.188]
+    alt1-mtalk.google.com: [142.251.2.188, 192.178.128.188, 142.250.141.188]
+    alt2-mtalk.google.com: [192.178.128.188, 142.251.186.188, 142.250.115.188]
+    alt3-mtalk.google.com: [108.177.104.188, 142.251.186.188, 64.233.171.188]
+    alt4-mtalk.google.com: [108.177.104.188, 142.250.152.188, 173.194.202.188]
+    alt5-mtalk.google.com: [142.250.141.188, 142.250.152.188, 172.253.113.188]
+    alt6-mtalk.google.com: [173.194.77.188, 172.253.113.188, 142.250.115.188]
+    alt7-mtalk.google.com: [173.194.219.188, 173.194.77.188, 142.250.141.188]
+    alt8-mtalk.google.com: [142.250.112.188, 173.194.219.188, 142.250.152.188]
+
   profile:
     store-selected: true
     store-fake-ip: true
