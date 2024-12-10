@@ -8,7 +8,6 @@ DOMAIN-SUFFIX,msftconnecttest.com
 PROCESS-NAME,com.google.android.gms
 PROCESS-NAME-REGEX,android\.gms
 DOMAIN-SUFFIX,mtalk.google.com
-DOMAIN-SUFFIX,m-talk.google.com
 DOMAIN-SUFFIX,mtalk4.google.com
 DOMAIN-SUFFIX,mtalk-staging.google.com
 DOMAIN-SUFFIX,mtalk-dev.google.com
