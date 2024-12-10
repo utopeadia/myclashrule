@@ -327,6 +327,7 @@ jobs:
             if  curl -f -s -o rules/app/OneDrive.2.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/OneDrive.list && [[ -s rules/app/OneDrive.2.list ]]; then
               echo >> rules/app/OneDrive.2.list
               cat rules/app/OneDrive.1.list rules/app/OneDrive.2.list > rules/app/OneDrive.list.new
+              echo >> rules/app/OneDrive.list.new
               echo "DOMAIN-SUFFIX,my.microsoftpersonalcontent.com" >> rules/app/OneDrive.list.new
               mv -f rules/app/OneDrive.list.new rules/app/OneDrive.list
               rm -f rules/app/OneDrive.2.list
