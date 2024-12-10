@@ -63,6 +63,7 @@ DOMAIN-KEYWORD,claudeusercontent
 # ChatGPT其他
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,sora.com
 # X.ai
 DOMAIN-SUFFIX,x.ai
 # LLM竞技场
