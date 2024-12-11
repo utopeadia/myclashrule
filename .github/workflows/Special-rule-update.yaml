@@ -170,7 +170,6 @@ jobs:
                               echo >> rules/app/Github.list
                               cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/PayPal.list rules/app/USMedia.list rules/app/OpenAI.list rules/app/Claude.list rules/app/Gemini.list rules/app/Github.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
                               echo >> rules/app/USAPP.list.new
-                              echo "DOMAIN-SUFFIX,challenges.cloudflare.com" >> rules/app/USAPP.list.new
                               mv -f rules/app/USAPP.list.new rules/app/USAPP.list
                               rm -f rules/app/Github.list
                             else
