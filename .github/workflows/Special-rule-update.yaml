@@ -313,7 +313,7 @@ jobs:
             echo "PROCESS-NAME-REGEX,android\.gms" >> rules/app/GoogleFCM.list.new
             echo "DOMAIN-SUFFIX,mtalk4.google.com" >> rules/app/GoogleFCM.list.new
             echo "DOMAIN-SUFFIX,mtalk-staging.google.com" >> rules/app/GoogleFCM.list.new
-            echo "DOMAIN-SUFFIX,mtalk-dev.google.com"" >> rules/app/GoogleFCM.list.new
+            echo "DOMAIN-SUFFIX,mtalk-dev.google.com" >> rules/app/GoogleFCM.list.new
             mv -f rules/app/GoogleFCM.list.new rules/app/GoogleFCM.list
           else
             echo "Failed to download or empty GoogleFCM.list, exiting."
