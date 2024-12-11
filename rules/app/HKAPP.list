@@ -31,6 +31,7 @@ DOMAIN-SUFFIX,dnsmgr.iswsh.com
 DOMAIN-SUFFIX,img.iswsh.com
 
 # VPS
+IP-CIDR,45.8.0.0/16,no-resolve
 IP-CIDR,103.244.0.0/16,no-resolve
 IP-CIDR,141.11.0.0/16,no-resolve
 IP-CIDR,154.83.0.0/16,no-resolve
