@@ -7,6 +7,10 @@ DOMAIN-SUFFIX,hkaliyun0.112700.xyz
 DOMAIN-SUFFIX,frphk.iswsh.com
 DOMAIN-SUFFIX,passwd.iswsh.com
 DOMAIN-SUFFIX,hk1.kuxueyun.com
+DOMAIN-SUFFIX,shared.oaifree.com
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,linuxdo.org
+DOMAIN-SUFFIX,deeplx.org
 
 # VPS
 IP-CIDR,45.8.0.0/16,no-resolve
