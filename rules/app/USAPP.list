@@ -587,6 +587,7 @@ DOMAIN-SUFFIX,usgc0.112700.xyz
 DOMAIN-SUFFIX,usrn0.112700.xyz
 DOMAIN-SUFFIX,usccs0.112700.xyz
 DOMAIN-SUFFIX,usakile0.112700.xyz
+DOMAIN-SUFFIX,usccsny.luoveyq.space
 DOMAIN,voice.google.com
 DOMAIN-SUFFIX,voice.google.com
 DOMAIN,voice.telephony.goog
@@ -653,6 +654,7 @@ DOMAIN-SUFFIX,pop-mail.outlook.com
 # VPS
 IP-CIDR,23.92.0.0/14,no-resolve
 IP-CIDR,38.60.0.0/14,no-resolve
+IP-CIDR,107.175.0.0/16,no-resolve
 IP-CIDR,108.165.0.0/16,no-resolve
 IP-CIDR,148.130.0.0/14,no-resolve
 IP-CIDR,154.9.0.0/16,no-resolve
