@@ -25,10 +25,8 @@ DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor.com
-DOMAIN,www.iknowu.top
-DOMAIN,iknowu.top
-DOMAIN,www.aifun.win
-DOMAIN,aifun.win
+DOMAIN-SUFFIX,akm.112700.xyz
+DOMAIN-SUFFIX,akmws.112700.xyz
 DOMAIN-SUFFIX,chat.iknowu.top
 DOMAIN-SUFFIX,api.iknowu.top
 DOMAIN-SUFFIX,chat.aifun.win
