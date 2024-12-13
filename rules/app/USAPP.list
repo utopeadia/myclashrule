@@ -559,7 +559,6 @@ DOMAIN-SUFFIX,follow.is
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,vote.gov
 DOMAIN-SUFFIX,reshot.ai
-DOMAIN-KEYWORD,huggingface
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,t-mobile.com
@@ -588,9 +587,10 @@ DOMAIN-SUFFIX,usrn0.112700.xyz
 DOMAIN-SUFFIX,usccs0.112700.xyz
 DOMAIN-SUFFIX,usakile0.112700.xyz
 DOMAIN-SUFFIX,usccsny.luoveyq.space
-DOMAIN,voice.google.com
+DOMAIN-KEYWORD,voice.google
+DOMAIN-KEYWORD,voice.telephony
 DOMAIN-SUFFIX,voice.google.com
-DOMAIN,voice.telephony.goog
+DOMAIN-SUFFIX,voice.telephony.goog
 DOMAIN-SUFFIX,zotero.org
 DOMAIN-SUFFIX,us-east-1.amazonaws.com
 DOMAIN-SUFFIX,namesilo.com
