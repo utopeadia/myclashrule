@@ -10,6 +10,8 @@ PROCESS-NAME,mihomo,REJECT
 PROCESS-NAME,mihomo-alpha,REJECT
 PROCESS-NAME,verge-mihomo,REJECT
 PROCESS-NAME,verge-mihomo-alpha,REJECT
+
+# 其他
 DOMAIN,bsccdn.net
 DOMAIN,dyp2p-ali.douyucdn.cn
 DOMAIN,dyp2p-hw.douyucdn.cn
