@@ -10,3 +10,5 @@ PROCESS-NAME,mihomo,REJECT
 PROCESS-NAME,mihomo-alpha,REJECT
 PROCESS-NAME,verge-mihomo,REJECT
 PROCESS-NAME,verge-mihomo-alpha,REJECT
+
+# 其他
