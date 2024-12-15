@@ -251,6 +251,7 @@ DOMAIN,xuo6zb5esbvrvkpf.mzstatic.cloud
 DOMAIN,y29iidl78jsy6v4zix716add1uqjmvq6.04.08.sg.k7h.lol
 DOMAIN,ygbc3ft3fnl1xee8kjapi39mjqv28uyj.04.05.hk.k7h.lol
 DOMAIN,yidong.oocnode.xyz
+DOMAIN,z.sg1.niceduck.me
 DOMAIN,z.tw1.niceduck.me
 DOMAIN,zyx7klo63ah67m4i.mzstatic.cloud
 IP-CIDR,103.161.255.207/32,no-resolve
@@ -324,6 +325,7 @@ IP-CIDR,154.83.88.34/32,no-resolve
 IP-CIDR,155.248.213.85/32,no-resolve
 IP-CIDR,158.101.195.118/32,no-resolve
 IP-CIDR,158.179.164.122/32,no-resolve
+IP-CIDR,159.138.86.100/32,no-resolve
 IP-CIDR,159.89.203.50/32,no-resolve
 IP-CIDR,16.163.128.44/32,no-resolve
 IP-CIDR,162.159.138.178/32,no-resolve
@@ -333,12 +335,12 @@ IP-CIDR,163.123.192.140/32,no-resolve
 IP-CIDR,163.123.192.186/32,no-resolve
 IP-CIDR,163.123.192.35/32,no-resolve
 IP-CIDR,165.22.57.1/32,no-resolve
-IP-CIDR,166.108.229.203/32,no-resolve
 IP-CIDR,168.138.184.187/32,no-resolve
 IP-CIDR,168.138.188.106/32,no-resolve
 IP-CIDR,175.41.210.110/32,no-resolve
 IP-CIDR,178.128.51.255/32,no-resolve
 IP-CIDR,178.128.84.251/32,no-resolve
+IP-CIDR,18.141.163.136/32,no-resolve
 IP-CIDR,18.167.72.56/32,no-resolve
 IP-CIDR,18.181.184.157/32,no-resolve
 IP-CIDR,18.181.217.240/32,no-resolve
@@ -429,7 +431,7 @@ IP-CIDR,43.207.183.109/32,no-resolve
 IP-CIDR,44.202.96.197/32,no-resolve
 IP-CIDR,44.212.1.247/32,no-resolve
 IP-CIDR,46.232.58.47/32,no-resolve
-IP-CIDR,47.243.135.205/32,no-resolve
+IP-CIDR,47.242.179.146/32,no-resolve
 IP-CIDR,52.196.188.138/32,no-resolve
 IP-CIDR,54.179.4.150/32,no-resolve
 IP-CIDR,54.199.196.227/32,no-resolve
