@@ -507,14 +507,7 @@ DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 
 # 部分服务
-DOMAIN-KEYWORD,1password
-DOMAIN-SUFFIX,colocrossing.com
-DOMAIN-SUFFIX,cloudcone.com
-DOMAIN-KEYWORD,cosmotown
-DOMAIN-SUFFIX,spaceship.com
-DOMAIN-SUFFIX,spaceship-cdn.com
-DOMAIN-SUFFIX,my.racknerd.com
-DOMAIN-SUFFIX,racknerd.com
+DOMAIN-SUFFIX,frpus.112700.xyz
 DOMAIN-SUFFIX,us1.kuxueyun.com
 DOMAIN-SUFFIX,ca.kuxueyun.com
 DOMAIN-SUFFIX,follow.is
