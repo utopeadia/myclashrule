@@ -13,6 +13,9 @@ DOMAIN-SUFFIX,filen-9.net
 DOMAIN-SUFFIX,filen-10.net
 DOMAIN-SUFFIX,fr.kuxueyun.com
 DOMAIN-SUFFIX,de.kuxueyun.com
+DOMAIN-SUFFIX,netcup.eu
+DOMAIN-SUFFIX,netcup.de
+DOMAIN-SUFFIX,netcup.com
 
 # VPS
 IP-CIDR,193.160.0.0/16,no-resolve
