@@ -13,3 +13,7 @@ DOMAIN-SUFFIX,filen-9.net
 DOMAIN-SUFFIX,filen-10.net
 DOMAIN-SUFFIX,fr.kuxueyun.com
 DOMAIN-SUFFIX,de.kuxueyun.com
+
+# VPS
+IP-CIDR,193.160.0.0/16,no-resolve
+IP-CIDR6,2602:f988:84::/48,no-resolve
