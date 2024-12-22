@@ -101,6 +101,7 @@ DOMAIN-SUFFIX,pop-mail.outlook.com
 # VPS
 IP-CIDR,23.92.0.0/14,no-resolve
 IP-CIDR,38.60.0.0/14,no-resolve
+IP-CIDR,68.168.0.0/16,no-resolve
 IP-CIDR,107.175.0.0/16,no-resolve
 IP-CIDR,108.165.0.0/16,no-resolve
 IP-CIDR,148.130.0.0/14,no-resolve
@@ -114,6 +115,7 @@ IP-CIDR6,2607:f130::/32,no-resolve
 IP-CIDR6,2607:fcd0::/32,no-resolve
 IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
 IP-CIDR6,2602:fa4f:900::/48,no-resolve
+IP-CIDR6,2602:f988:80::/48,no-resolve
 
 # US EDU
 DOMAIN-SUFFIX,umass.edu
