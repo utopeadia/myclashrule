@@ -304,7 +304,7 @@ IP-CIDR,13.212.18.244/32,no-resolve
 IP-CIDR,13.212.57.61/32,no-resolve
 IP-CIDR,13.214.179.252/32,no-resolve
 IP-CIDR,13.251.110.123/32,no-resolve
-IP-CIDR,13.35.48.137/32,no-resolve
+IP-CIDR,13.35.48.233/32,no-resolve
 IP-CIDR,13.35.68.53/32,no-resolve
 IP-CIDR,13.52.249.206/32,no-resolve
 IP-CIDR,132.226.235.134/32,no-resolve
@@ -326,6 +326,7 @@ IP-CIDR,141.147.33.180/32,no-resolve
 IP-CIDR,142.93.20.95/32,no-resolve
 IP-CIDR,142.93.84.166/32,no-resolve
 IP-CIDR,142.93.92.148/32,no-resolve
+IP-CIDR,143.204.121.180/32,no-resolve
 IP-CIDR,143.47.236.28/32,no-resolve
 IP-CIDR,144.24.206.147/32,no-resolve
 IP-CIDR,146.190.93.72/32,no-resolve
@@ -364,8 +365,7 @@ IP-CIDR,18.182.26.207/32,no-resolve
 IP-CIDR,18.183.164.166/32,no-resolve
 IP-CIDR,18.65.177.117/32,no-resolve
 IP-CIDR,18.65.179.162/32,no-resolve
-IP-CIDR,18.65.181.218/32,no-resolve
-IP-CIDR,18.65.210.144/32,no-resolve
+IP-CIDR,18.65.222.10/32,no-resolve
 IP-CIDR,183.192.116.140/32,no-resolve
 IP-CIDR,183.232.159.71/32,no-resolve
 IP-CIDR,183.232.202.184/32,no-resolve
@@ -427,7 +427,7 @@ IP-CIDR,47.129.125.68/32,no-resolve
 IP-CIDR,47.129.173.129/32,no-resolve
 IP-CIDR,47.129.193.102/32,no-resolve
 IP-CIDR,47.129.197.53/32,no-resolve
-IP-CIDR,47.243.135.205/32,no-resolve
+IP-CIDR,47.242.179.146/32,no-resolve
 IP-CIDR,52.194.183.40/32,no-resolve
 IP-CIDR,52.195.185.170/32,no-resolve
 IP-CIDR,52.195.228.62/32,no-resolve
@@ -483,10 +483,10 @@ IP-CIDR6,2409:8c20:28c1:4::4f/128,no-resolve
 IP-CIDR6,2409:8c28:2481:6:0:1:0:cf/128,no-resolve
 IP-CIDR6,2409:8c30:1000:1b00:5:2c19:f3e4:ad1c/128,no-resolve
 IP-CIDR6,2600:9000:2071:73f3:2f23:33bb:4ca7:673c/128,no-resolve
-IP-CIDR6,2600:9000:221c:5408:769b:7ebe:722b:6d15/128,no-resolve
-IP-CIDR6,2600:9000:2221:545a:768:1a57:4477:23b1/128,no-resolve
-IP-CIDR6,2600:9000:26ee:e40:332e:4f9:610d:21a4/128,no-resolve
-IP-CIDR6,2600:9000:2828:4b74:7a01:660:5b2d:242a/128,no-resolve
+IP-CIDR6,2600:9000:20c2:7ce6:53ab:5df3:1734:398a/128,no-resolve
+IP-CIDR6,2600:9000:2194:6307:5b90:5b87:4c4e:7e72/128,no-resolve
+IP-CIDR6,2600:9000:221b:34eb:148:5378:5b95:6511/128,no-resolve
+IP-CIDR6,2600:9000:2696:286a:67dd:3cb3:4c82:732f/128,no-resolve
 IP-CIDR6,2602:feda:30:ae86:20c:aff:fe2f:e8e6/128,no-resolve
 IP-CIDR6,2a0c:9a40:9203:fccd::1/128,no-resolve
 IP-CIDR6,2a0c:9a40:d089:696::1c0/128,no-resolve
