@@ -20,3 +20,4 @@ DOMAIN-SUFFIX,netcup.com
 # VPS
 IP-CIDR,193.160.0.0/16,no-resolve
 IP-CIDR6,2602:f988:84::/48,no-resolve
+IP-CIDR6,2001:41d0:a::/48,no-resolve
