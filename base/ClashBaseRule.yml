@@ -176,6 +176,7 @@ sniffer:
     - dlg.io.mi.com
     - +.apple.com
     - +.rc.sunlogin.net
+    - time.windows.com
     - courier.push.apple.com
     - rbsxbxp-mim.vivox.com
     - rbsxbxp.www.vivox.com
