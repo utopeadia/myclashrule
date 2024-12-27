@@ -68,6 +68,7 @@ DOMAIN,cname08b-xp3zfkbmz8pyhmbf.bestugali.com
 DOMAIN,cu.passip.me
 DOMAIN,d96vogj5gkm8y1wgwxdeheva4dxklg51.04.04.jp.k7h.lol
 DOMAIN,dgouboom.xn--d-ov6a30af92ap02ar8cj69dz1p.shop
+DOMAIN,dgousm.dawojiediantiantianshaoxiangzuzhouniquanjiasijue.xyz
 DOMAIN,dtjaswffgyjh.cfprefer1.xyz
 DOMAIN,east.78cf9487bdd788cd4075consulting.club
 DOMAIN,en1wp6i950fv93maij8alnl3ngjp4nsd.04.04.hk.k7h.lol
@@ -330,6 +331,7 @@ IP-CIDR,154.83.88.34/32,no-resolve
 IP-CIDR,155.248.213.85/32,no-resolve
 IP-CIDR,158.101.195.118/32,no-resolve
 IP-CIDR,158.179.164.122/32,no-resolve
+IP-CIDR,159.138.86.100/32,no-resolve
 IP-CIDR,159.223.34.43/32,no-resolve
 IP-CIDR,159.223.36.68/32,no-resolve
 IP-CIDR,159.89.131.227/32,no-resolve
@@ -344,7 +346,6 @@ IP-CIDR,163.123.192.35/32,no-resolve
 IP-CIDR,165.22.172.196/32,no-resolve
 IP-CIDR,165.22.172.226/32,no-resolve
 IP-CIDR,165.227.30.179/32,no-resolve
-IP-CIDR,166.108.229.203/32,no-resolve
 IP-CIDR,167.99.162.214/32,no-resolve
 IP-CIDR,168.138.184.187/32,no-resolve
 IP-CIDR,168.138.188.106/32,no-resolve
@@ -354,12 +355,11 @@ IP-CIDR,18.163.41.177/32,no-resolve
 IP-CIDR,18.166.74.80/32,no-resolve
 IP-CIDR,18.183.172.249/32,no-resolve
 IP-CIDR,18.183.226.104/32,no-resolve
-IP-CIDR,18.64.130.204/32,no-resolve
-IP-CIDR,18.65.172.133/32,no-resolve
+IP-CIDR,18.64.127.153/32,no-resolve
+IP-CIDR,18.65.165.246/32,no-resolve
+IP-CIDR,18.65.169.186/32,no-resolve
 IP-CIDR,18.65.177.117/32,no-resolve
-IP-CIDR,18.65.181.182/32,no-resolve
-IP-CIDR,18.65.187.111/32,no-resolve
-IP-CIDR,18.65.213.4/32,no-resolve
+IP-CIDR,18.65.184.163/32,no-resolve
 IP-CIDR,183.192.116.140/32,no-resolve
 IP-CIDR,183.232.159.171/32,no-resolve
 IP-CIDR,183.232.202.184/32,no-resolve
@@ -412,7 +412,6 @@ IP-CIDR,36.151.65.234/32,no-resolve
 IP-CIDR,36.151.65.251/32,no-resolve
 IP-CIDR,36.155.110.185/32,no-resolve
 IP-CIDR,36.228.216.19/32,no-resolve
-IP-CIDR,42.157.129.199/32,no-resolve
 IP-CIDR,42.157.129.203/32,no-resolve
 IP-CIDR,42.157.129.227/32,no-resolve
 IP-CIDR,43.206.229.44/32,no-resolve
@@ -423,7 +422,7 @@ IP-CIDR,47.100.36.14/32,no-resolve
 IP-CIDR,47.115.136.91/32,no-resolve
 IP-CIDR,47.129.234.99/32,no-resolve
 IP-CIDR,47.130.34.87/32,no-resolve
-IP-CIDR,47.242.179.146/32,no-resolve
+IP-CIDR,47.243.135.205/32,no-resolve
 IP-CIDR,52.194.192.1/32,no-resolve
 IP-CIDR,52.195.229.12/32,no-resolve
 IP-CIDR,52.196.89.118/32,no-resolve
@@ -454,6 +453,7 @@ IP-CIDR,89.168.34.45/32,no-resolve
 IP-CIDR,89.168.37.109/32,no-resolve
 IP-CIDR,89.213.156.26/32,no-resolve
 IP-CIDR,89.251.11.15/32,no-resolve
+IP-CIDR,99.84.57.107/32,no-resolve
 IP-CIDR6,2001:470:18:113::2/128,no-resolve
 IP-CIDR6,2001:470:18:123::2/128,no-resolve
 IP-CIDR6,2400:2410:bf0a:e910:7ca6:a7ff:feb6:13bd/128,no-resolve
@@ -466,7 +466,7 @@ IP-CIDR6,2401:b60:12:1a0b::1/128,no-resolve
 IP-CIDR6,2404:c140:1f00:100::23:a/128,no-resolve
 IP-CIDR6,2404:c140:1f00:12::c:7216/128,no-resolve
 IP-CIDR6,2404:c140:2100::27:5d8/128,no-resolve
-IP-CIDR6,2404:c800:911f:2d77:be24:11ff:fed8:5770/128,no-resolve
+IP-CIDR6,2404:c800:911f:2d7f:be24:11ff:fed8:5770/128,no-resolve
 IP-CIDR6,2406:4440:0:105::42:a/128,no-resolve
 IP-CIDR6,2406:8dc0:6001::1eb5/128,no-resolve
 IP-CIDR6,2406:da12:97c:4d00:ce5:d729:3b1:2790/128,no-resolve
