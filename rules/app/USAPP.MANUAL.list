@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,us1.kuxueyun.com
 DOMAIN-SUFFIX,ca.kuxueyun.com
 DOMAIN-SUFFIX,follow.is
 PROCESS-NAME,transferwise
+PROCESS-NAME-REGEX,transferwise\.android
 DOMAIN-SUFFIX,wise.com
 DOMAIN-KEYWORD,transferwise
 DOMAIN-SUFFIX,vote.gov
