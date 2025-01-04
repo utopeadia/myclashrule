@@ -37,6 +37,16 @@ IP-CIDR,180.76.76.76/32,no-resolve
 DOMAIN-SUFFIX,sbzyplay.com
 DOMAIN-SUFFIX,v6.pub
 
+# 直连流媒体
+DOMAIN-SUFFIX,dpx1.niceduck.lol
+DOMAIN-SUFFIX,dpx1v6.niceduck.lol
+DOMAIN-SUFFIX,dpx2.niceduck.lol
+DOMAIN-SUFFIX,jms1.niceduck.lol
+DOMAIN-SUFFIX,jms1v6.niceduck.lol
+DOMAIN-SUFFIX,jms2.niceduck.lol
+DOMAIN-SUFFIX,eggtartemby.itsmyduty.top
+DOMAIN-KEYWORD,embyvip
+
 # 某些可能影响其他工作的网站
 DOMAIN-SUFFIX,yxvm.com
 DOMAIN-SUFFIX,tebex.io
