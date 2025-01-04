@@ -8,16 +8,6 @@ DOMAIN-SUFFIX,siliconflow.cn
 DOMAIN-SUFFIX,worldfirst.com
 DOMAIN-SUFFIX,worldfirst.com.cn
 
-# 直连流媒体
-DOMAIN-SUFFIX,dpx1.niceduck.lol
-DOMAIN-SUFFIX,dpx1v6.niceduck.lol
-DOMAIN-SUFFIX,dpx2.niceduck.lol
-DOMAIN-SUFFIX,jms1.niceduck.lol
-DOMAIN-SUFFIX,jms1v6.niceduck.lol
-DOMAIN-SUFFIX,jms2.niceduck.lol
-DOMAIN-SUFFIX,eggtartemby.itsmyduty.top
-DOMAIN-KEYWORD,embyvip
-
 # 其他
 DOMAIN-SUFFIX,360buyimg.com
 DOMAIN-SUFFIX,fwnhub.cn
