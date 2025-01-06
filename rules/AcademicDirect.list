@@ -38,6 +38,8 @@ DOMAIN-KEYWORD,readcube
 DOMAIN-SUFFIX,scopus.com
 DOMAIN-KEYWORD,sciencedirect
 DOMAIN-SUFFIX,sciencedirect.com
+DOMAIN-SUFFIX,elsevier.com
+DOMAIN-SUFFIX,engineeringvillage.com
 #DOMAIN-KEYWORD,elsevier
 DOMAIN-KEYWORD,deepdyve
 DOMAIN-KEYWORD,els-cdn
