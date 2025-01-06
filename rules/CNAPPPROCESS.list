@@ -324,12 +324,41 @@ PROCESS-NAME,com.tencent.tmgp.sgame
 PROCESS-NAME-REGEX,com\.tencent\.tmgp\.sgame
 
 # 其他
+# VIVO蓝心小V
+PROCESS-NAME,com.vivo.ai.copilot
+PROCESS-NAME,com.vivo.ai.base.copilot
+# VIVO蓝心小V组件
+PROCESS-NAME,com.vivo.launchercopilot
+# VIVO开机引导
+PROCESS-NAME,com.vivo.setupwizard
+# VIVO电源信息
+PROCESS-NAME,com.vivo.fuelsummary
+# VIVO售后服务
+PROCESS-NAME,com.vos.as.vit
+# VIVO多任务
+PROCESS-NAME,com.vivo.smartmultiwindow
 # CCFLink
 PROCESS-NAME,com.alibaba.android.rimet.ccflink
 # VIVO互传
 PROCESS-NAME,com.vivo.easyshare
 # VIVO智慧引擎
 PROCESS-NAME,com.vivo.abe
+# VIVO输入法
+PROCESS-NAME,com.vivo.ai.ime.nex
+# VIVO免费小说
+PROCESS-NAME,com.vivo.browser.novel.widget
+# VIVO摄影
+PROCESS-NAME,com.vivo.symmetry
+# VIVO体验评价
+PROCESS-NAME,com.vivo.nps
+# VIVO移动服务
+PROCESS-NAME,com.vivo.vms
+# VIVO文档
+PROCESS-NAME,com.vivo.smartoffice
+# VIVO健康
+PROCESS-NAME,com.vivo.health
+# VIVO办公套件
+PROCESS-NAME,com.vivo.pcsuite
 # 中国联通
 PROCESS-NAME,com.sinovatech.unicom.ui
 PROCESS-NAME-REGEX,sinovatech\.unicom
