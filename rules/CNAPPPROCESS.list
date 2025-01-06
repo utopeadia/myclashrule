@@ -339,6 +339,7 @@ PROCESS-NAME,com.baidu.carlife.vivo
 PROCESS-NAME,pcsuite.exe
 PROCESS-NAME-REGEX,vivoSyncService
 PROCESS-NAME-REGEX,vivoesService
+PROCESS-NAME-REGEX,^(?=.*pcsuite)(?=.*Helper).*$
 # VIVO蓝心小V
 PROCESS-NAME,com.vivo.ai.copilot
 PROCESS-NAME,com.vivo.ai.base.copilot
