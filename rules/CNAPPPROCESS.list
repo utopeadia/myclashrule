@@ -128,6 +128,8 @@ PROCESS-NAME,com.chaozh.iReaderFree
 PROCESS-NAME-REGEX,com\.chaozh\.iReaderFree
 # 番茄免费小说
 PROCESS-NAME,com.dragon.read
+# 晋江小说
+PROCESS-NAME,com.jjwxc.reader
 
 # 新闻
 # 今日头条
@@ -148,6 +150,13 @@ PROCESS-NAME,com.ruanmei.ithome
 # 视频
 # 哔哩哔哩
 PROCESS-NAME,tv.danmaku.bili
+PROCESS-NAME,com.taobao.taobao
+PROCESS-NAME,com.bilibili.app.blue
+PROCESS-NAME,com.bilibili.app.in
+PROCESS-NAME,com.bilibili.comic
+PROCESS-NAME,com.bilibili.comic.intl
+PROCESS-NAME,tv.danmaku.bili
+PROCESS-NAME,tv.danmaku.bilibilihd
 # 抖音短视频
 PROCESS-NAME,com.ss.android.ugc.aweme
 PROCESS-NAME-REGEX,com\.ss\.android\.ugc\.aweme
@@ -388,3 +397,10 @@ PROCESS-NAME,com.xiaomi.smarthome
 PROCESS-NAME,com.ct.client
 # WPS Office
 PROCESS-NAME,cn.wps.moffice_eng
+# ......
+PROCESS-NAME,com.zhiliaoapp.musically
+PROCESS-NAME,com.xiaomi.mibrain.speech
+PROCESS-NAME,小米云服务.exe
+PROCESS-NAME,Thunder
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,com.qiyi.video
