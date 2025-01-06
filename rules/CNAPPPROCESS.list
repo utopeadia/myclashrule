@@ -340,6 +340,8 @@ PROCESS-NAME,pcsuite.exe
 PROCESS-NAME-REGEX,vivoSyncService
 PROCESS-NAME-REGEX,vivoesService
 PROCESS-NAME-REGEX,^(?=.*pcsuite)(?=.*Helper).*$
+PROCESS-NAME,com.vivo.pcsuite
+PROCESS-NAME,com.vivo.connbase
 # VIVO蓝心小V
 PROCESS-NAME,com.vivo.ai.copilot
 PROCESS-NAME,com.vivo.ai.base.copilot
@@ -375,8 +377,6 @@ PROCESS-NAME,com.vivo.vms
 PROCESS-NAME,com.vivo.smartoffice
 # VIVO健康
 PROCESS-NAME,com.vivo.health
-# VIVO办公套件
-PROCESS-NAME,com.vivo.pcsuite
 # 中国联通
 PROCESS-NAME,com.sinovatech.unicom.ui
 PROCESS-NAME-REGEX,sinovatech\.unicom
