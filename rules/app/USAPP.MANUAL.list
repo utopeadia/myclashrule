@@ -65,6 +65,13 @@ DOMAIN-SUFFIX,sora.com
 PROCESS-NAME,com.openai.chatgpt
 PROCESS-NAME-REGEX,com\.openai\.chatgpt
 PROCESS-NAME-REGEX,^(?=.*openai)(?=.*chatgpt).*$
+# Gemini其他
+PROCESS-NAME,com.google.android.apps.bard
+PROCESS-NAME-REGEX,com\.google\.android\.apps\.bard
+PROCESS-NAME-REGEX,^(?=.*google)(?=.*bard).*$
+PROCESS-NAME,com.google.android.apps.gemini
+PROCESS-NAME-REGEX,com\.google\.android\.apps\.gemini
+PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
 # X.ai
 DOMAIN-SUFFIX,x.ai
 # LLM竞技场
