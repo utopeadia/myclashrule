@@ -335,6 +335,10 @@ PROCESS-NAME-REGEX,com\.tencent\.tmgp\.sgame
 # 其他
 # 百度车载组件
 PROCESS-NAME,com.baidu.carlife.vivo
+# VIVO量子套件
+PROCESS-NAME,pcsuite.exe
+PROCESS-NAME-REGEX,vivoSyncService
+PROCESS-NAME-REGEX,vivoesService
 # VIVO蓝心小V
 PROCESS-NAME,com.vivo.ai.copilot
 PROCESS-NAME,com.vivo.ai.base.copilot
