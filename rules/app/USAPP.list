@@ -563,10 +563,16 @@ IP-CIDR,208.54.0.0/16,no-resolve
 # Claude其他
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-KEYWORD,claudeusercontent
+PROCESS-NAME,com.anthropic.claude
+PROCESS-NAME-REGEX,com\.anthropic\.claude
+PROCESS-NAME-REGEX,^(?=.*anthropic)(?=.*claude).*$
 # ChatGPT其他
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,sora.com
+PROCESS-NAME,com.openai.chatgpt
+PROCESS-NAME-REGEX,com\.openai\.chatgpt
+PROCESS-NAME-REGEX,^(?=.*openai)(?=.*chatgpt).*$
 # X.ai
 DOMAIN-SUFFIX,x.ai
 # LLM竞技场
