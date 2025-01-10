@@ -13,6 +13,9 @@ DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,dockerhub.com
 
+# QwenLLM
+DOMAIN-SUFFIX,qwenlm.ai
+
 DOMAIN-KEYWORD,51cg
 DOMAIN-SUFFIX,agilebits.com
 DOMAIN-SUFFIX,ooklaserver.net
