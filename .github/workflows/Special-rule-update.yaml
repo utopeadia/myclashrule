@@ -202,6 +202,11 @@ jobs:
             echo "Failed to download or empty TwitterAndX.list, exiting."
           fi
 
+      - name: Download SGAPP rules
+        run: |
+          cp rules/app/SGAPP.MANUAL.list rules/app/SGAPP.list.new
+          mv -f rules/app/SGAPP.list.new rules/app/SGAPP.list
+
       - name: Download UKAPP rules
         run: |
           if  curl -f -s -o rules/app/UKMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UKMedia/UKMedia.list && [[ -s rules/app/UKMedia.list ]]; then
