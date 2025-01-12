@@ -339,19 +339,18 @@ jobs:
 
       - name: Download Onedrive rules
         run: |
-          if  curl -f -s -o rules/app/OneDrive.1.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.list && [[ -s rules/app/OneDrive.1.list ]]; then
-            echo >> rules/app/OneDrive.1.list
-            if  curl -f -s -o rules/app/OneDrive.2.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/OneDrive.list && [[ -s rules/app/OneDrive.2.list ]]; then
-              echo >> rules/app/OneDrive.2.list
-              cat rules/app/OneDrive.1.list rules/app/OneDrive.2.list > rules/app/OneDrive.list.new
-              echo >> rules/app/OneDrive.list.new
-              echo "DOMAIN-SUFFIX,my.microsoftpersonalcontent.com" >> rules/app/OneDrive.list.new
-              mv -f rules/app/OneDrive.list.new rules/app/OneDrive.list
-              rm -f rules/app/OneDrive.2.list
+          if  curl -f -s -o rules/app/MicrosoftHA.1.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.list && [[ -s rules/app/MicrosoftHA.1.list ]]; then
+            echo >> rules/app/MicrosoftHA.1.list
+            if  curl -f -s -o rules/app/MicrosoftHA.2.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/OneDrive.list && [[ -s rules/app/MicrosoftHA.2.list ]]; then
+              echo >> rules/app/MicrosoftHA.2.list
+              cat rules/app/MicrosoftHA.1.list rules/app/MicrosoftHA.2.list rules/app/MicrosoftHA.MANUAL.list > rules/app/MicrosoftHA.list.new
+              echo >> rules/app/MicrosoftHA.list.new
+              mv -f rules/app/MicrosoftHA.list.new rules/app/MicrosoftHA.list
+              rm -f rules/app/MicrosoftHA.2.list
             else
             echo "Failed to download or empty ios_rule_script-onedrive.list, exiting."
             fi
-            rm -f rules/app/OneDrive.1.list
+            rm -f rules/app/MicrosoftHA.1.list
           else
             echo "Failed to download or empty ACL4SSR-onedrive.list, exiting."
           fi
