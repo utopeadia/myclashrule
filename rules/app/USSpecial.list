@@ -63,6 +63,9 @@ DOMAIN,designer.microsoft.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN,copilot-telemetry.githubusercontent.com
 DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com
+PROCESS-NAME,com.microsoft.copilot
+PROCESS-NAME-REGEX,com\.microsoft\.copilot
+PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$
 
 # NAME: Bing
 # AUTHOR: blackmatrix7
