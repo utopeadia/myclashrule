@@ -44,6 +44,8 @@ DOMAIN-SUFFIX,spoprod-a.akamaihd.net
 DOMAIN-SUFFIX,storage.live.com
 DOMAIN-SUFFIX,storage.msn.com
 #DOMAIN-SUFFIX,aria.microsoft.com
+
+# 补充
 DOMAIN-SUFFIX,my.microsoftpersonalcontent.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,live.net
@@ -62,3 +64,4 @@ DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,office365love.com
 DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net
 DOMAIN-SUFFIX,officeppe.net
+
