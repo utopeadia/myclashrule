@@ -95,6 +95,7 @@ DOMAIN,iecvlist.microsoft.com
 DOMAIN,msedge.api.cdp.microsoft.com
 
 # 其他
+DOMAIN-SUFFIX,usw.luoveyq.space
 DOMAIN-KEYWORD,1password
 DOMAIN-SUFFIX,colocrossing.com
 DOMAIN-SUFFIX,cloudcone.com
