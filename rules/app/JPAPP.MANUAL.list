@@ -9,3 +9,4 @@ DOMAIN-SUFFIX,jpakile0.112700.xyz
 IP-CIDR,45.192.248.0/22,no-resolve
 IP-CIDR,82.153.64.0/22,no-resolve
 IP-CIDR6,2a12:f8c1:50:8::/64,no-resolve
+IP-CIDR6,2a13:e2c4:fefb::/48,no-resolve
