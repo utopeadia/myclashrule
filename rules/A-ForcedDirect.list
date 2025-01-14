@@ -85,7 +85,6 @@ PROCESS-NAME,transmission
 
 # 镜像网站
 DOMAIN-SUFFIX,mirror.ghproxy.com
-DOMAIN-SUFFIX,gh.wsh.best
 DOMAIN-SUFFIX,hub.fgit.mxtrans.net
 DOMAIN-SUFFIX,github.moeyy.xyz
 DOMAIN-SUFFIX,ghproxy.net
