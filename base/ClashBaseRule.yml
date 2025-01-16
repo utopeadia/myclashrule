@@ -34,7 +34,7 @@ tun:
   auto-detect-interface: true
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   prefer-h3: true
   use-hosts: true
   enhanced-mode: fake-ip
