@@ -330,6 +330,12 @@ PROCESS-NAME-REGEX,com\.ximalaya\.ting\.android
 # 王者荣耀
 PROCESS-NAME,com.tencent.tmgp.sgame
 PROCESS-NAME-REGEX,com\.tencent\.tmgp\.sgame
+# wegame相关
+PROCESS-NAME,wegame.exe
+PROCESS-NAME-REGEX,wegame
+PROCESS-NAME,TinyDL.exe
+PROCESS-NAME-REGEX,TinyDL
+
 
 # 其他
 # 百度车载组件
@@ -410,5 +416,3 @@ PROCESS-NAME,小米云服务.exe
 PROCESS-NAME,Thunder
 PROCESS-NAME,Thunder.exe
 PROCESS-NAME,com.qiyi.video
-PROCESS-NAME,wegame.exe
-PROCESS-NAME-REGEX,wegame
