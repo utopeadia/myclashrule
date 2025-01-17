@@ -198,6 +198,7 @@ dns:
       - "+.twitter.com"
       - "+.usefathom.com"
       - "+.v2ex.com"
+      - "+.v2rayssr.com"
       - "+.windows.net"
       - "+.wootric.com"
       - "+.x.com"
