@@ -1,6 +1,5 @@
 # 常用CN应用直连列表
 # 部分系统服务
-
 # 应用商店
 # 腾讯应用宝
 PROCESS-NAME,com.tencent.android.qqdownloader
@@ -411,3 +410,5 @@ PROCESS-NAME,小米云服务.exe
 PROCESS-NAME,Thunder
 PROCESS-NAME,Thunder.exe
 PROCESS-NAME,com.qiyi.video
+PROCESS-NAME,wegame.exe
+PROCESS-NAME-REGEX,wegame
