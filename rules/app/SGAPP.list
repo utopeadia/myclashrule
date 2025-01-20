@@ -2,6 +2,8 @@
 DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,byteintl.com
 DOMAIN-SUFFIX,itobsnssdk.com
 PROCESS-NAME,Trae Helper
 PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
