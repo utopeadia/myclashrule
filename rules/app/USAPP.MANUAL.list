@@ -41,6 +41,15 @@ DOMAIN-SUFFIX,build.nvidia.com
 IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
+# Trae IDE
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,byteintl.com
+DOMAIN-SUFFIX,itobsnssdk.com
+PROCESS-NAME,Trae Helper
+PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
 # QwenLLM
 DOMAIN-SUFFIX,qwenlm.ai
 # Claude其他
