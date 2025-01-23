@@ -8,12 +8,6 @@ DOMAIN-SUFFIX,siliconflow.cn
 DOMAIN-SUFFIX,worldfirst.com
 DOMAIN-SUFFIX,worldfirst.com.cn
 
-# 其他
-DOMAIN-SUFFIX,360buyimg.com
-DOMAIN-SUFFIX,fwnhub.cn
-DOMAIN-SUFFIX,qpic.cn
-PROCESS-NAME-REGEX,sankuai.meituan
-
 # SDWAN
 DST-PORT,9993,DIRECT
 SRC-PORT,9993,DIRECT
@@ -38,4 +32,8 @@ PROCESS-NAME,eztest
 # 兜底LAN
 IP-CIDR,192.168.0.0/16,no-resolve
 
-# Proxy服务器
+# 其他
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,fwnhub.cn
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,cntx0.112700.xyz
