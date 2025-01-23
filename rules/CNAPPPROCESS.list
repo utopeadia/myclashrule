@@ -101,6 +101,7 @@ PROCESS-NAME-REGEX,com\.xunmeng\.pinduoduo
 # 美团
 PROCESS-NAME,com.sankuai.meituan
 PROCESS-NAME-REGEX,com\.sankuai\.meituan
+PROCESS-NAME-REGEX,^(?=.*sankuai)(?=.*meituan).*$
 # 苏宁易购
 PROCESS-NAME,com.suning.mobile.ebuy
 PROCESS-NAME-REGEX,com\.suning\.mobile\.ebuy
@@ -215,7 +216,7 @@ PROCESS-NAME-REGEX,com\.meitu\.meipaimv
 # 金融
 # 支付宝
 PROCESS-NAME,com.eg.android.AlipayGphone
-PROCESS-NAME-REGEX,com\.eg\.android\.AlipayGphone
+PROCESS-NAME-REGEX,AlipayGphone
 # 百度钱包
 PROCESS-NAME,com.baidu.wallet
 PROCESS-NAME-REGEX,com\.baidu\.wallet
