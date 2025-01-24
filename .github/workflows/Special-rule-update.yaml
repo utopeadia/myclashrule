@@ -356,7 +356,7 @@ jobs:
 
       - name: Download MicrosoftHA rules
         run: |
-          cp -f rules/app/MicrosoftHA.MANUAL.list > rules/app/MicrosoftHA.list.new
+          cp -f rules/app/MicrosoftHA.MANUAL.list rules/app/MicrosoftHA.list.new
           echo >> rules/app/MicrosoftHA.list.new
           mv -f rules/app/MicrosoftHA.list.new rules/app/MicrosoftHA.list
 
