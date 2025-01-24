@@ -31,7 +31,6 @@ jobs:
       - name: create_file
         if: ${{ !steps.check_file.outputs.files_exists }}
         run: |
-          mkdir -p rules/MyDirect.SERVER.update.list
           echo "#" > rules/MyDirect.SERVER.update.list
 
       - name: Add changes to the repository
