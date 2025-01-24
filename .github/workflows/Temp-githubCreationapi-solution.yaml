@@ -28,3 +28,13 @@ jobs:
         run: |
           mkdir -p rules/MyDirect.SERVER.update.list
           echo "#" > rules/MyDirect.SERVER.update.list
+
+      - name: Add changes to the repository
+        run: |
+          git add .
+          git status
+
+      - name: Commit and push changes
+        run: |
+          git commit -m "Create file ules/MyDirect.SERVER.update.list" -a
+          git push
