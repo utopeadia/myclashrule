@@ -22,16 +22,15 @@ jobs:
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
 
-      - name: check_file
-        id: check_file
-        uses: andstor/file-existence-action@v2
-        with:
-          files: rules/MyDirect.SERVER.update.list
-
-      - name: create_file
-        if: ${{ !steps.check_file.outputs.files_exists }}
+      - name: create_file_if_not_exists
         run: |
-          echo "#" > rules/MyDirect.SERVER.update.list
+          if [ ! -f rules/MyDirect.SERVER.update.list ]; then
+            mkdir -p rules
+            echo "#" > rules/MyDirect.SERVER.update.list
+            echo "File rules/MyDirect.SERVER.update.list created."
+          else
+            echo "File rules/MyDirect.SERVER.update.list already exists."
+          fi
 
       - name: Add changes to the repository
         run: |
