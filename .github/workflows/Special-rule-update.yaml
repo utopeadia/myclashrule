@@ -342,7 +342,7 @@ jobs:
             echo >> rules/app/Onedrive.1.list
             if  curl -f -s -o rules/app/Onedrive.2.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/OneDrive.list && [[ -s rules/app/Onedrive.2.list ]]; then
               echo >> rules/app/Onedrive.2.list
-              cat rules/app/Onedrive.1.list rules/app/Onedrive.2.list > rules/app/Onedrive.list.new
+              cat rules/app/Onedrive.1.list rules/app/Onedrive.2.list rules/app/Onedrive.MANUAL.list > rules/app/Onedrive.list.new
               echo >> rules/app/Onedrive.list.new
               mv -f rules/app/Onedrive.list.new rules/app/Onedrive.list
               rm -f rules/app/Onedrive.2.list
