@@ -89,11 +89,6 @@ DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,grazie.aws.intellij.net
 # KLing可灵
 DOMAIN-SUFFIX,klingai.com
-# Deepseek
-DOMAIN-SUFFIX,deepseek.com
-PROCESS-NAME,com.deepseek.chat
-PROCESS-NAME-REGEX,com\.deepseek\.chat
-PROCESS-NAME-REGEX,^(?=.*deepseek).*$
 # SiderAI
 DOMAIN-SUFFIX,sider.ai
 # MistralAI
