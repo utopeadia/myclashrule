@@ -124,23 +124,23 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   direct-nameserver:
-    - dhcp://en0
-    - dhcp://eth0
     - 180.76.76.76
     - 223.5.5.5
     - 119.29.29.29
     - system
+    - dhcp://en0
+    - dhcp://eth0
   nameserver:
-    - dhcp://en0
-    - dhcp://eth0
     - 180.76.76.76
     - 223.5.5.5
     - 119.29.29.29
     - system
+    - dhcp://en0
+    - dhcp://eth0
   fallback:
-    - https://101.101.101.101/dns-query
-    - https://dns.google/dns-query
+    - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
+    - https://208.67.222.222/dns-query
   fallback-filter:
     geoip: false
     geoip-code: CN
