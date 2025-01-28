@@ -209,6 +209,7 @@ DOMAIN,sg-relay.fxv2pro.com
 DOMAIN,sg01.525536.xyz
 DOMAIN,sh-tokyo.sdwan.nodenet.cloud
 DOMAIN,sh.aliyun.beta.inbound.ykkcloud.link
+DOMAIN,sha117.sol.xin
 DOMAIN,south.78cf9487bdd788cd4075consulting.club
 DOMAIN,sz-hk.sdwan.nodenet.cloud
 DOMAIN,tls.01.node-for-bigairport.win
@@ -293,7 +294,7 @@ IP-CIDR,111.29.57.96/32,no-resolve
 IP-CIDR,112.120.37.63/32,no-resolve
 IP-CIDR,113.56.218.30/32,no-resolve
 IP-CIDR,116.251.216.70/32,no-resolve
-IP-CIDR,117.143.20.183/32,no-resolve
+IP-CIDR,117.143.20.151/32,no-resolve
 IP-CIDR,117.172.176.63/32,no-resolve
 IP-CIDR,118.167.5.107/32,no-resolve
 IP-CIDR,119.237.241.121/32,no-resolve
@@ -315,6 +316,7 @@ IP-CIDR,129.154.237.229/32,no-resolve
 IP-CIDR,13.114.170.89/32,no-resolve
 IP-CIDR,13.114.44.22/32,no-resolve
 IP-CIDR,13.115.212.61/32,no-resolve
+IP-CIDR,13.215.194.212/32,no-resolve
 IP-CIDR,13.230.212.38/32,no-resolve
 IP-CIDR,13.231.1.159/32,no-resolve
 IP-CIDR,13.231.11.121/32,no-resolve
@@ -349,7 +351,6 @@ IP-CIDR,167.99.172.202/32,no-resolve
 IP-CIDR,168.138.184.187/32,no-resolve
 IP-CIDR,168.138.188.106/32,no-resolve
 IP-CIDR,178.128.84.251/32,no-resolve
-IP-CIDR,18.143.191.76/32,no-resolve
 IP-CIDR,18.177.138.94/32,no-resolve
 IP-CIDR,18.179.15.194/32,no-resolve
 IP-CIDR,18.179.200.2/32,no-resolve
@@ -391,10 +392,8 @@ IP-CIDR,42.157.129.203/32,no-resolve
 IP-CIDR,42.157.129.210/32,no-resolve
 IP-CIDR,42.157.129.218/32,no-resolve
 IP-CIDR,43.201.230.205/32,no-resolve
-IP-CIDR,43.206.213.134/32,no-resolve
 IP-CIDR,43.206.225.75/32,no-resolve
 IP-CIDR,43.206.253.186/32,no-resolve
-IP-CIDR,43.207.140.182/32,no-resolve
 IP-CIDR,43.207.226.10/32,no-resolve
 IP-CIDR,47.115.136.91/32,no-resolve
 IP-CIDR,47.243.135.205/32,no-resolve
@@ -404,9 +403,11 @@ IP-CIDR,52.195.181.220/32,no-resolve
 IP-CIDR,52.195.232.254/32,no-resolve
 IP-CIDR,52.197.17.92/32,no-resolve
 IP-CIDR,52.68.154.124/32,no-resolve
+IP-CIDR,54.178.29.194/32,no-resolve
 IP-CIDR,54.179.4.150/32,no-resolve
 IP-CIDR,54.238.19.100/32,no-resolve
 IP-CIDR,54.248.173.157/32,no-resolve
+IP-CIDR,54.248.46.12/32,no-resolve
 IP-CIDR,54.255.58.37/32,no-resolve
 IP-CIDR,54.95.121.78/32,no-resolve
 IP-CIDR,57.180.56.145/32,no-resolve
