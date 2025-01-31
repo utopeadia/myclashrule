@@ -734,3 +734,9 @@ PROCESS-NAME,com.google.android.gms
 PROCESS-NAME,com.google.android.gsf
 PROCESS-NAME,com.google.android.play.games
 PROCESS-NAME,BackupandSync
+
+# 邮箱
+DOMAIN-SUFFIX,smtp.gmail.com
+DOMAIN-SUFFIX,pop.gmail.com
+DOMAIN-SUFFIX,imap.gmail.com
+DOMAIN-SUFFIX,mail.google.com
