@@ -1,1 +1,5 @@
-#
+# 邮箱
+DOMAIN-SUFFIX,smtp.gmail.com
+DOMAIN-SUFFIX,pop.gmail.com
+DOMAIN-SUFFIX,imap.gmail.com
+DOMAIN-SUFFIX,mail.google.com

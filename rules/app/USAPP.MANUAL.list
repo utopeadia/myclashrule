@@ -100,13 +100,6 @@ DOMAIN-SUFFIX,codeium.com
 DOMAIN-SUFFIX,hcompany.ai
 DOMAIN-KEYWORD,hcompany
 
-
-# 邮箱
-DOMAIN-SUFFIX,smtp.gmail.com
-DOMAIN-SUFFIX,pop.gmail.com
-DOMAIN-SUFFIX,imap.gmail.com
-DOMAIN-SUFFIX,mail.google.com
-
 # VPS
 IP-CIDR,23.92.0.0/14,no-resolve
 IP-CIDR,38.60.0.0/14,no-resolve

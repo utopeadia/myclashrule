@@ -322,8 +322,11 @@ jobs:
 
       - name: Download Google rules
         run: |
-          if curl -f -s -o rules/app/Google.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list && [[ -s rules/app/Google.list.new ]]; then
+          if curl -f -s -o rules/app/Google.list.1 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list && [[ -s rules/app/Google.list.1 ]]; then
+            echo >> rules/app/Google.list.1
+            cat rules/app/Google.list.1 rules/app/Google.MANUAL.list > rules/app/Google.list.new
             mv -f rules/app/Google.list.new rules/app/Google.list
+            rm -f rules/app/Google.list.1
           else
             echo "Failed to download or empty Google.list, exiting."
           fi
