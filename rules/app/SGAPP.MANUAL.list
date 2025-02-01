@@ -1,3 +1,5 @@
+# 其他
+DOMAIN-SUFFIX,tencentcloud.com
 # Deepseek
 DOMAIN-SUFFIX,deepseek.com
 PROCESS-NAME,com.deepseek.chat
