@@ -72,6 +72,7 @@ DOMAIN,ajbki989lfxn9asifvhrjqdrcdylb7i279tf.biliapi.xyz
 DOMAIN,alt-mobile.nodenet.cloud
 DOMAIN,apernet-hkg.nodenet.cloud
 DOMAIN,apernet-v6.nodenet.cloud
+DOMAIN,b9uz75l4gi8t7tnxzt.biliapi.xyz
 DOMAIN,bfx2n9yh3czjiwsa36bm3gmressh1ao1.04.01.jp.88k.site
 DOMAIN,bk2uk6ge1csxmbx358l2s2yoq033zacf.04.01.mas.88k.site
 DOMAIN,c3.passip.me
@@ -260,8 +261,8 @@ IP-CIDR,116.251.216.70/32,no-resolve
 IP-CIDR,117.143.20.151/32,no-resolve
 IP-CIDR,117.172.176.59/32,no-resolve
 IP-CIDR,117.172.176.63/32,no-resolve
-IP-CIDR,118.167.4.145/32,no-resolve
-IP-CIDR,118.167.6.147/32,no-resolve
+IP-CIDR,118.167.3.188/32,no-resolve
+IP-CIDR,118.167.7.220/32,no-resolve
 IP-CIDR,119.167.212.123/32,no-resolve
 IP-CIDR,119.237.241.121/32,no-resolve
 IP-CIDR,119.237.241.85/32,no-resolve
@@ -324,6 +325,7 @@ IP-CIDR,158.179.164.122/32,no-resolve
 IP-CIDR,158.179.177.7/32,no-resolve
 IP-CIDR,158.179.18.251/32,no-resolve
 IP-CIDR,159.13.35.245/32,no-resolve
+IP-CIDR,159.138.86.100/32,no-resolve
 IP-CIDR,162.245.221.26/32,no-resolve
 IP-CIDR,165.1.68.155/32,no-resolve
 IP-CIDR,167.234.208.240/32,no-resolve
@@ -363,6 +365,7 @@ IP-CIDR,205.198.72.34/32,no-resolve
 IP-CIDR,213.35.108.22/32,no-resolve
 IP-CIDR,217.142.229.230/32,no-resolve
 IP-CIDR,223.109.230.44/32,no-resolve
+IP-CIDR,223.109.34.60/32,no-resolve
 IP-CIDR,23.247.139.58/32,no-resolve
 IP-CIDR,36.140.111.202/32,no-resolve
 IP-CIDR,36.140.93.32/32,no-resolve
@@ -371,13 +374,11 @@ IP-CIDR,36.151.65.124/32,no-resolve
 IP-CIDR,36.151.65.219/32,no-resolve
 IP-CIDR,36.155.110.185/32,no-resolve
 IP-CIDR,42.157.129.203/32,no-resolve
-IP-CIDR,42.157.129.210/32,no-resolve
-IP-CIDR,42.157.129.218/32,no-resolve
+IP-CIDR,42.157.129.228/32,no-resolve
+IP-CIDR,42.157.129.229/32,no-resolve
 IP-CIDR,43.201.230.205/32,no-resolve
 IP-CIDR,46.3.104.114/32,no-resolve
 IP-CIDR,47.115.136.91/32,no-resolve
-IP-CIDR,47.243.135.205/32,no-resolve
-IP-CIDR,49.0.207.237/32,no-resolve
 IP-CIDR,52.193.5.101/32,no-resolve
 IP-CIDR,54.179.4.150/32,no-resolve
 IP-CIDR,54.255.58.37/32,no-resolve
@@ -392,6 +393,7 @@ IP-CIDR,64.181.225.150/32,no-resolve
 IP-CIDR,64.181.233.90/32,no-resolve
 IP-CIDR,64.181.243.177/32,no-resolve
 IP-CIDR,64.181.255.250/32,no-resolve
+IP-CIDR,8.210.118.143/32,no-resolve
 IP-CIDR,80.96.156.235/32,no-resolve
 IP-CIDR,80.97.44.189/32,no-resolve
 IP-CIDR,82.152.164.216/32,no-resolve
