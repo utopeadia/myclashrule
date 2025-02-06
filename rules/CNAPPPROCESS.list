@@ -409,6 +409,8 @@ PROCESS-NAME,com.xiaomi.smarthome
 # 中国电信
 PROCESS-NAME,com.ct.client
 # WPS Office
+PROCESS-NAME-REGEX,cn\.wps\.moffice
+PROCESS-NAME-REGEX,^(?=.*wps)(?=.*office).*$
 PROCESS-NAME,cn.wps.moffice_eng
 # ......
 PROCESS-NAME,com.zhiliaoapp.musically
