@@ -1,5 +1,7 @@
 # 禁用部分网站QUIC
 # AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,youtube)),REJECT
+# 禁用bilibili QUIC
+AND,((NETWORK,UDP),(DST-PORT,3478),(GEOIP,CN)),REJECT
 
 # 防止本地回环
 # PROCESS-NAME,clash,REJECT
