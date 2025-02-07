@@ -1,4 +1,9 @@
 # office等高ip要求
+DOMAIN-SUFFIX,acctcdn.msauth.net
+DOMAIN-SUFFIX,account.microsoft.com
+DOMAIN-SUFFIX,csp.microsoft.com
+DOMAIN-SUFFIX,logincdn.msauth.net
+DOMAIN-SUFFIX,login.live.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,live.net
 DOMAIN-SUFFIX,livetileedge.dsx.mp.microsoft.com.edgekey.net
