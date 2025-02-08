@@ -16,6 +16,10 @@ DOMAIN-SUFFIX,de.kuxueyun.com
 DOMAIN-SUFFIX,netcup.eu
 DOMAIN-SUFFIX,netcup.de
 DOMAIN-SUFFIX,netcup.com
+# MistralAI
+DOMAIN-SUFFIX,mistral.ai
+PROCESS-NAME,ai.mistral.chat
+PROCESS-NAME-REGEX,^(?=.*ai)(?=.*mistral).*$
 
 # VPS
 IP-CIDR,193.160.0.0/16,no-resolve
