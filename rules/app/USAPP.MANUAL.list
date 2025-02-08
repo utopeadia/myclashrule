@@ -111,7 +111,6 @@ IP-CIDR,154.9.0.0/16,no-resolve
 IP-CIDR,156.229.0.0/16,no-resolve
 IP-CIDR,162.254.85.0/24,no-resolve
 IP-CIDR,173.249.210.0/24,no-resolve
-IP-CIDR,198.22.0.0/14,no-resolve
 IP-CIDR6,2001:1980:e00c::/48,no-resolve
 IP-CIDR6,2607:9000:800::/48,no-resolve
 IP-CIDR6,2607:f130::/32,no-resolve
