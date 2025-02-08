@@ -93,8 +93,6 @@ DOMAIN-SUFFIX,grazie.aws.intellij.net
 DOMAIN-SUFFIX,klingai.com
 # SiderAI
 DOMAIN-SUFFIX,sider.ai
-# MistralAI
-DOMAIN-SUFFIX,mistral.ai
 # codeium&windsurf
 DOMAIN-SUFFIX,codeiumdata.com
 DOMAIN-SUFFIX,codeium.com
