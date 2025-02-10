@@ -25,6 +25,7 @@ kjv094serbaw9z0mbbij23a7pvrpupcp.04.09.sg.88k.site
 5n6ifmvm4doy5jmdghvmglyzy4uqfc5f8hnv.biliapi.xyz
 cn-unicom.nodenet.cloud
 rm-lite-sg-02.409648.xyz
+5fc7e62d84250194.cdn.jiashule.com
 oci-sg.ipv6.nodenet.cloud
 d96vogj5gkm8y1wgwxdeheva4dxklg51.04.04.jp.88k.site
 apernet-v6.nodenet.cloud
@@ -37,7 +38,6 @@ h8uht3qo6ly3lib9bdq3b3xfox9o9yevq7f5.biliapi.xyz
 957e32be476a.78ab92.98f0fa.a458.t3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
 cname08a-xp3zfkbmz8pyhmbf.xiaowangzi777.com
 s.us3.niceduck.me
-4199962a075bdc8c.cdn.jiashule.com
 s.mo2.niceduck.me
 nktodw3gtxxtmi2m6ih38vv2rllkysstyw6f.biliapi.xyz
 g5yu6awptkjwouh6gjzvh4unp25hhzn1.04.01.fr.88k.site
@@ -188,7 +188,7 @@ ooc-jp.oocnode.xyz
 64.181.255.250
 108.181.23.249
 144.24.206.147
-49.0.207.237
+159.138.86.100
 ooc-tw.oocnode.xyz
 119.96.26.105
 205.198.65.114
@@ -214,9 +214,10 @@ jsyd.niceduck.me
 165.1.68.155
 131.186.22.238
 178.128.84.251
-2400:8901::f03c:95ff:fec1:cc80
 2400:6180:0:d2::e0d:6000
+2400:8901::f03c:95ff:fec1:cc80
 36.140.93.32
+42.157.129.218
 47.115.136.91
 111.29.57.126
 140.245.35.78
@@ -236,7 +237,6 @@ c3.passip.me
 2408:864e:c03:1c:2:0:ed6c:bc7c
 158.179.177.7
 168.138.165.109
-42.157.129.229
 168.138.188.106
 193.123.250.219
 168.138.184.187
@@ -253,8 +253,8 @@ wh1-ahmddlekrnnse6ta.bestzumo.com
 112.120.37.63
 192.9.129.206
 jsyd.cloudfisher.xyz
-120.241.118.243
 120.198.71.182
+120.241.118.243
 192.9.142.185
 103.161.255.200
 138.3.208.201
@@ -302,7 +302,7 @@ jsyd.cloudfisher.xyz
 80.97.44.189
 2a0e:1d80:24:ccd1::1
 193.123.76.84
-175.41.165.184
+18.139.115.158
 14.22.74.10
 193.123.240.119
 141.11.238.162
@@ -360,7 +360,7 @@ ooc-euro.oocnode.xyz
 146.235.213.36
 158.101.195.118
 129.159.227.221
-2404:c800:911f:2e75:be24:11ff:fed8:5770
+2404:c800:911f:2e81:be24:11ff:fed8:5770
 152.69.220.212
 146.235.208.162
 191.101.132.178
@@ -377,7 +377,7 @@ sha117.sol.xin
 89.251.11.15
 2a0f:9400:73b3::6:a
 ooc-sg.oocnode.xyz
-1.161.55.248
+1.161.44.136
 138.2.2.120
 120.241.32.43
 36.155.110.185
