@@ -69,8 +69,22 @@ jobs:
               fi
             done | sort -t, -k1,1 > rules/pcdn.list
             echo >> rules/pcdn.list
-            cat rules/MyReject.MANUAL.list rules/pcdn.list > rules/MyReject.list.new
-            mv -f rules/MyReject.list.new rules/MyReject.list
+            if curl -f -s -o rules/httpdns.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/HTTPDNS.Block.list && [[ -s rules/httpdns.txt ]]; then
+              echo >> rules/httpdns.list
+              > rules/httpdns.list.tmp
+              while read -r line; do
+                if [[ "$line" == *"IP-CIDR"* ]] && [[ "$line" != *"no-resolve"* ]]; then
+                  echo "$line,no-resolve" >> rules/httpdns.list.tmp
+                else
+                  echo "$line" >> rules/httpdns.list.tmp
+                fi
+              done < rules/httpdns.list
+              cat rules/MyReject.MANUAL.list rules/httpdns.list rules/pcdn.list > rules/MyReject.list.new
+              mv -f rules/MyReject.list.new rules/MyReject.list
+              rm -f rules/httpdns.list rules/httpdns.list.tmp
+            else
+              echo "Failed to download or empty httpdns.list, exiting."
+            fi
             rm -rf rules/pcdn.list rules/pcdn.txt
           else
             echo "Failed to download or empty pcdn.txt, exiting."
