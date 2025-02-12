@@ -62,12 +62,8 @@ DOMAIN,hk.fxv2pro.com
 DOMAIN,hk01.525536.xyz
 DOMAIN,i5bhrvpnjkx7mm58ck7xf0fl9kaivim4.04.01.ng.88k.site
 DOMAIN,ic7pimgq8zjvkpw418fc6yl2f8bvhjz1.04.02.ph.88k.site
-DOMAIN,ipv6.80-25-lyy.com
-DOMAIN,ipv6.wnwwv.cn
 DOMAIN,iy642mcu175mkibqw1dnnpb5o852ezd9.04.09.jp.88k.site
 DOMAIN,jp-relay.fxv2pro.com
-DOMAIN,js.wnwwv.cn
-DOMAIN,jsyd.cloudfisher.xyz
 DOMAIN,jsyd.niceduck.me
 DOMAIN,jsyd2.niceduck.me
 DOMAIN,jsyd3.niceduck.me
@@ -224,11 +220,9 @@ IP-CIDR,119.167.212.123/32,no-resolve
 IP-CIDR,119.237.241.121/32,no-resolve
 IP-CIDR,119.237.241.85/32,no-resolve
 IP-CIDR,119.96.26.105/32,no-resolve
-IP-CIDR,120.198.71.182/32,no-resolve
 IP-CIDR,120.232.239.97/32,no-resolve
 IP-CIDR,120.233.87.75/32,no-resolve
 IP-CIDR,120.241.118.231/32,no-resolve
-IP-CIDR,120.241.118.243/32,no-resolve
 IP-CIDR,120.241.32.43/32,no-resolve
 IP-CIDR,124.222.242.183/32,no-resolve
 IP-CIDR,129.146.95.165/32,no-resolve
@@ -332,8 +326,8 @@ IP-CIDR,36.151.65.219/32,no-resolve
 IP-CIDR,36.155.110.185/32,no-resolve
 IP-CIDR,36.228.211.87/32,no-resolve
 IP-CIDR,42.157.129.203/32,no-resolve
-IP-CIDR,42.157.129.218/32,no-resolve
 IP-CIDR,42.157.129.228/32,no-resolve
+IP-CIDR,42.157.129.232/32,no-resolve
 IP-CIDR,43.201.230.205/32,no-resolve
 IP-CIDR,46.3.104.114/32,no-resolve
 IP-CIDR,47.115.136.91/32,no-resolve
@@ -352,7 +346,6 @@ IP-CIDR,80.96.156.235/32,no-resolve
 IP-CIDR,80.97.44.189/32,no-resolve
 IP-CIDR,82.152.164.216/32,no-resolve
 IP-CIDR,89.251.11.15/32,no-resolve
-IP-CIDR6,2001:2c0:100:403:11:cafe:381:1/128,no-resolve
 IP-CIDR6,2001:470:18:123::2/128,no-resolve
 IP-CIDR6,2400:2410:bf0a:e910:7ca6:a7ff:feb6:13bd/128,no-resolve
 IP-CIDR6,2400:6180:0:d2::e0d:6000/128,no-resolve
