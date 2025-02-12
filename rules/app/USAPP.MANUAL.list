@@ -81,6 +81,8 @@ PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
 DOMAIN-SUFFIX,x.ai
 # LLM竞技场
 DOMAIN-SUFFIX,lmsys.org
+# Groq
+DOMAIN-SUFFIX,groq.com
 # poe
 DOMAIN-SUFFIX,poe.com
 # cohere
