@@ -79,7 +79,7 @@ jobs:
                   echo "$line" >> rules/httpdns.list.tmp
                 fi
               done < rules/httpdns.list
-              cat rules/MyReject.MANUAL.list rules/httpdns.list rules/pcdn.list > rules/MyReject.list.new
+              cat rules/MyReject.MANUAL.list rules/httpdns.list.tmp rules/pcdn.list > rules/MyReject.list.new
               mv -f rules/MyReject.list.new rules/MyReject.list
               rm -f rules/httpdns.list rules/httpdns.list.tmp
             else
