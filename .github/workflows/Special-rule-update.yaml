@@ -69,7 +69,7 @@ jobs:
               fi
             done | sort -t, -k1,1 > rules/pcdn.list
             echo >> rules/pcdn.list
-            if curl -f -s -o rules/httpdns.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/HTTPDNS.Block.list && [[ -s rules/httpdns.txt ]]; then
+            if curl -f -s -o rules/httpdns.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/HTTPDNS.Block.list && [[ -s rules/httpdns.list ]]; then
               echo >> rules/httpdns.list
               > rules/httpdns.list.tmp
               while read -r line; do
