@@ -610,6 +610,10 @@ DOMAIN-SUFFIX,codeium.com
 # hcompany.ai
 DOMAIN-SUFFIX,hcompany.ai
 DOMAIN-KEYWORD,hcompany
+# PearAi
+DOMAIN-SUFFIX,us.i.posthog.com
+DOMAIN-SUFFIX,pearai.b-cdn.net
+DOMAIN-SUFFIX,trypear.ai
 
 # VPS
 IP-CIDR,23.94.180.0/24,no-resolve
