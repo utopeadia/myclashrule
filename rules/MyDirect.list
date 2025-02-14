@@ -98,7 +98,6 @@ DOMAIN,h8uht3qo6ly3lib9bdq3b3xfox9o9yevq7f5.biliapi.xyz
 DOMAIN,h9q9sa3kxlldu3vrp2zq1n8k9snnftc4.04.02.jp.6l6.site
 DOMAIN,hi.niceduck.me
 DOMAIN,hk.fxv2pro.com
-DOMAIN,hk01.525536.xyz
 DOMAIN,i5bhrvpnjkx7mm58ck7xf0fl9kaivim4.04.01.ng.6l6.site
 DOMAIN,ic7pimgq8zjvkpw418fc6yl2f8bvhjz1.04.02.ph.6l6.site
 DOMAIN,ipv6.80-25-lyy.com
@@ -207,7 +206,6 @@ DOMAIN,s.us6.niceduck.me
 DOMAIN,sa5k5ghu5h87k98hnvrj0vynr37cyqwu.04.03.jp.6l6.site
 DOMAIN,sb-ipv6.nodenet.cloud
 DOMAIN,sg-relay.fxv2pro.com
-DOMAIN,sg01.525536.xyz
 DOMAIN,sh-tokyo.sdwan.nodenet.cloud
 DOMAIN,sh.aliyun.beta.inbound.ykkcloud.link
 DOMAIN,sha117.sol.xin
@@ -278,7 +276,7 @@ IP-CIDR,129.146.95.165/32,no-resolve
 IP-CIDR,129.148.39.249/32,no-resolve
 IP-CIDR,129.154.237.229/32,no-resolve
 IP-CIDR,129.159.227.221/32,no-resolve
-IP-CIDR,13.229.111.12/32,no-resolve
+IP-CIDR,13.212.8.74/32,no-resolve
 IP-CIDR,13.229.119.116/32,no-resolve
 IP-CIDR,13.231.187.202/32,no-resolve
 IP-CIDR,130.162.163.216/32,no-resolve
@@ -315,7 +313,6 @@ IP-CIDR,152.69.180.226/32,no-resolve
 IP-CIDR,152.69.220.212/32,no-resolve
 IP-CIDR,152.69.225.196/32,no-resolve
 IP-CIDR,152.70.234.101/32,no-resolve
-IP-CIDR,152.70.234.12/32,no-resolve
 IP-CIDR,152.70.99.180/32,no-resolve
 IP-CIDR,154.83.88.34/32,no-resolve
 IP-CIDR,158.101.195.118/32,no-resolve
@@ -336,7 +333,6 @@ IP-CIDR,183.94.30.208/32,no-resolve
 IP-CIDR,183.94.30.211/32,no-resolve
 IP-CIDR,183.94.30.216/32,no-resolve
 IP-CIDR,183.94.30.241/32,no-resolve
-IP-CIDR,190.92.215.100/32,no-resolve
 IP-CIDR,191.101.132.178/32,no-resolve
 IP-CIDR,192.18.133.190/32,no-resolve
 IP-CIDR,192.9.129.206/32,no-resolve
@@ -403,7 +399,6 @@ IP-CIDR,64.181.243.177/32,no-resolve
 IP-CIDR,64.181.255.250/32,no-resolve
 IP-CIDR,66.90.115.147/32,no-resolve
 IP-CIDR,66.90.115.148/32,no-resolve
-IP-CIDR,8.210.103.48/32,no-resolve
 IP-CIDR,80.96.156.235/32,no-resolve
 IP-CIDR,80.97.44.189/32,no-resolve
 IP-CIDR,82.152.164.216/32,no-resolve
