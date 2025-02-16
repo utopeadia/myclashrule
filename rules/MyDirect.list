@@ -30,16 +30,7 @@ PROCESS-NAME,Tailscale Service.exe,DIRECT
 PROCESS-NAME,eztest
 
 # 兜底LAN
-# IP-CIDR,192.168.0.0/16,no-resolve
-# 去除192.168.233.0/24
-IP-CIDR,192.168.0.0/17,no-resolve
-IP-CIDR,192.168.128.0/18,no-resolve
-IP-CIDR,192.168.192.0/19,no-resolve
-IP-CIDR,192.168.224.0/21,no-resolve
-IP-CIDR,192.168.232.0/24,no-resolve
-IP-CIDR,192.168.234.0/23,no-resolve
-IP-CIDR,192.168.236.0/22,no-resolve
-IP-CIDR,192.168.240.0/20,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
 
 # 其他
 DOMAIN-SUFFIX,360buyimg.com
