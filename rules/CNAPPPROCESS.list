@@ -307,6 +307,8 @@ PROCESS-NAME,com.tencent.qqmusic
 PROCESS-NAME-REGEX,com\.tencent\.qqmusic
 # 酷狗
 PROCESS-NAME,com.kugou.android
+PROCESS-NAME,com.kugou.android.lite
+PROCESS-NAME-REGEX,^(?=.*kugou)(?=.*android).*$
 PROCESS-NAME-REGEX,com\.kugou\.android
 # 全民K歌
 PROCESS-NAME,com.tencent.karaoke
