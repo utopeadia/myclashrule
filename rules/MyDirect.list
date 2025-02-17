@@ -105,7 +105,7 @@ DOMAIN,hk.fxv2pro.com
 DOMAIN,hk01.525536.xyz
 DOMAIN,i5bhrvpnjkx7mm58ck7xf0fl9kaivim4.04.01.ng.6l6.site
 DOMAIN,ic7pimgq8zjvkpw418fc6yl2f8bvhjz1.04.02.ph.6l6.site
-DOMAIN,ipv6.80-25-lyy.com
+DOMAIN,ipv6.hongxingdl.vip
 DOMAIN,ipv6.wnwwv.cn
 DOMAIN,iy642mcu175mkibqw1dnnpb5o852ezd9.04.09.jp.6l6.site
 DOMAIN,jp-relay.fxv2pro.com
@@ -271,7 +271,7 @@ IP-CIDR,119.237.241.121/32,no-resolve
 IP-CIDR,119.237.241.85/32,no-resolve
 IP-CIDR,119.96.26.105/32,no-resolve
 IP-CIDR,120.198.71.182/32,no-resolve
-IP-CIDR,120.232.239.97/32,no-resolve
+IP-CIDR,120.232.240.90/32,no-resolve
 IP-CIDR,120.241.118.231/32,no-resolve
 IP-CIDR,120.241.118.243/32,no-resolve
 IP-CIDR,120.241.32.43/32,no-resolve
@@ -381,12 +381,13 @@ IP-CIDR,36.151.65.139/32,no-resolve
 IP-CIDR,36.151.65.219/32,no-resolve
 IP-CIDR,36.155.110.185/32,no-resolve
 IP-CIDR,36.227.213.205/32,no-resolve
+IP-CIDR,36.228.192.89/32,no-resolve
 IP-CIDR,42.157.129.203/32,no-resolve
 IP-CIDR,42.157.129.228/32,no-resolve
 IP-CIDR,42.157.129.229/32,no-resolve
 IP-CIDR,43.201.230.205/32,no-resolve
 IP-CIDR,47.115.136.91/32,no-resolve
-IP-CIDR,47.129.1.202/32,no-resolve
+IP-CIDR,47.128.254.63/32,no-resolve
 IP-CIDR,47.129.211.55/32,no-resolve
 IP-CIDR,47.130.3.244/32,no-resolve
 IP-CIDR,49.0.207.237/32,no-resolve
@@ -403,7 +404,6 @@ IP-CIDR,58.152.47.246/32,no-resolve
 IP-CIDR,58.63.247.115/32,no-resolve
 IP-CIDR,59.111.148.138/32,no-resolve
 IP-CIDR,61.172.235.228/32,no-resolve
-IP-CIDR,61.228.71.174/32,no-resolve
 IP-CIDR,64.181.225.150/32,no-resolve
 IP-CIDR,64.181.233.90/32,no-resolve
 IP-CIDR,64.181.243.177/32,no-resolve
@@ -416,10 +416,10 @@ IP-CIDR,80.96.156.235/32,no-resolve
 IP-CIDR,80.97.44.189/32,no-resolve
 IP-CIDR,82.152.164.216/32,no-resolve
 IP-CIDR,89.251.11.15/32,no-resolve
-IP-CIDR6,2001:2c0:100:403:11:cafe:381:1/128,no-resolve
 IP-CIDR6,2001:470:18:123::2/128,no-resolve
 IP-CIDR6,2400:2410:bf0a:e910:7ca6:a7ff:feb6:13bd/128,no-resolve
 IP-CIDR6,2400:6180:0:d2::e0d:6000/128,no-resolve
+IP-CIDR6,2400:8901::f03c:95ff:fe86:66d7/128,no-resolve
 IP-CIDR6,2400:8901::f03c:95ff:fec1:cc80/128,no-resolve
 IP-CIDR6,2400:c620:28:f771::1/128,no-resolve
 IP-CIDR6,2400:e3e0:f5a9:a282:ca1c:d6b9:c1ee:273/128,no-resolve
