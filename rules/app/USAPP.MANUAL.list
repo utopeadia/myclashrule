@@ -1,4 +1,15 @@
 # 部分服务
+DOMAIN-KEYWORD,1password
+DOMAIN-SUFFIX,colocrossing.com
+DOMAIN-SUFFIX,cloudcone.com
+DOMAIN-KEYWORD,cosmotown
+DOMAIN-SUFFIX,spaceship.com
+DOMAIN-SUFFIX,spaceship-cdn.com
+DOMAIN-SUFFIX,zotero.org
+DOMAIN-SUFFIX,us-east-1.amazonaws.com
+DOMAIN-SUFFIX,namesilo.com
+DOMAIN-SUFFIX,cosmotown.com
+DOMAIN-SUFFIX,racknerd.com
 DOMAIN-SUFFIX,onlyfans.com
 DOMAIN-KEYWORD,onlyfans
 DOMAIN-SUFFIX,us1.kuxueyun.com
@@ -35,11 +46,6 @@ DOMAIN-KEYWORD,voice.google
 DOMAIN-KEYWORD,voice.telephony
 DOMAIN-SUFFIX,voice.google.com
 DOMAIN-SUFFIX,voice.telephony.goog
-DOMAIN-SUFFIX,zotero.org
-DOMAIN-SUFFIX,us-east-1.amazonaws.com
-DOMAIN-SUFFIX,namesilo.com
-DOMAIN-SUFFIX,cosmotown.com
-DOMAIN-SUFFIX,spaceship.com
 DOMAIN-SUFFIX,build.nvidia.com
 IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
