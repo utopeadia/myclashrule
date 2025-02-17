@@ -8,9 +8,9 @@ PROCESS-NAME-REGEX,^(?=.*deepseek).*$
 # VPS
 IP-CIDR,5.253.36.0/24,no-resolve
 IP-CIDR,38.181.72.0/24,no-resolve
-IP-CIDR,185.206.250.0/24,no-resolve
+IP-CIDR,46.203.98.0/24,no-resolve
 IP-CIDR,185.151.146.0/24,no-resolve
 IP-CIDR6,2a0e:97c0:7d4::/48,no-resolve
-IP-CIDR6,2a0f:7802:e2f9::/48,no-resolve
 IP-CIDR6,2404:c140:2101::/48,no-resolve
 IP-CIDR6,2407:d840:51::/48,no-resolve
+IP-CIDR6,2a0f:7802:e2f9::/48,no-resolve
