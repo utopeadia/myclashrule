@@ -5,6 +5,10 @@ DOMAIN-SUFFIX,deepseek.com
 PROCESS-NAME,com.deepseek.chat
 PROCESS-NAME-REGEX,com\.deepseek\.chat
 PROCESS-NAME-REGEX,^(?=.*deepseek).*$
+# 腾讯视频海外版
+DOMAIN-SUFFIX,iflix.com
+PROCESS-NAME,iflix.play
+PROCESS-NAME-REGEX,iflix\.play
 # VPS
 IP-CIDR,5.253.36.0/24,no-resolve
 IP-CIDR,38.181.72.0/24,no-resolve
