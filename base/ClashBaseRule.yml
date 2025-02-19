@@ -32,6 +32,11 @@ tun:
     - "tcp://any:53"
   auto-route: true
   auto-detect-interface: true
+  route-exclude-address:
+  - 192.168.191.0/24
+  - 192.168.192.0/24
+  - 10.10.10.0/24
+  - 100.64.0.0/10
 dns:
   enable: true
   ipv6: true
