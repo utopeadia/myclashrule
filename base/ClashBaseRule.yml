@@ -43,7 +43,7 @@ dns:
   prefer-h3: true
   use-hosts: true
   enhanced-mode: redir-host
-  nnameserver-policy:
+  nameserver-policy:
     'geosite:googlefcm': 
       - https://doh.pub/dns-query
       - https://dns.alidns.com/dns-query
