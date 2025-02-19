@@ -47,9 +47,15 @@ dns:
     'geosite:googlefcm': 
       - https://doh.pub/dns-query
       - https://dns.alidns.com/dns-query
-    "www.msftconnecttest.com": "119.29.29.29"
-    "dns.msftncsi.com": "119.29.29.29"
-    "www.msftncsi.com": 119.29.29.29"
+    "www.msftconnecttest.com": 
+      - 119.29.29.29
+      - 223.5.5.5
+    "dns.msftncsi.com":
+      - 119.29.29.29
+      - 223.5.5.5
+    "www.msftncsi.com":
+      - 119.29.29.29
+      - 223.5.5.5
   default-nameserver:
     - 180.76.76.76
     - 223.5.5.5
