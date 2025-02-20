@@ -593,6 +593,7 @@ PROCESS-NAME-REGEX,com\.google\.android\.apps\.gemini
 PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
 # X.ai
 DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
 # LLM竞技场
 DOMAIN-SUFFIX,lmsys.org
 # Groq
