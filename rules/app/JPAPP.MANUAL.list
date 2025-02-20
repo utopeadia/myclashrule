@@ -1,3 +1,9 @@
+# Bybit
+DOMAIN-SUFFIX,bybit.app
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
+PROCESS-NAME,com.bybit.app
+PROCESS-NAME-REGEX,com\.bybit\.app
 # 常用服务
 DOMAIN-SUFFIX,teracloud.jp
 DOMAIN-KEYWORD,teracloud
