@@ -1,3 +1,8 @@
+# Amazon Simple Storage
+DOMAIN-SUFFIX,ap-south-1.amazonaws.com
+DOMAIN-SUFFIX,ap-northeast-1.amazonaws.com
+DOMAIN-SUFFIX,ap-east-1.amazonaws.com
+DOMAIN-SUFFIX,ap-west-1.amazonaws.com
 # Other
 DOMAIN-SUFFIX,dalao.net
 DOMAIN-SUFFIX,frphk.112700.xyz
@@ -8,7 +13,6 @@ DOMAIN-SUFFIX,hkaliyun0.112700.xyz
 DOMAIN-SUFFIX,hkwap0.112700.xyz
 DOMAIN-SUFFIX,passwd.iswsh.com
 DOMAIN-SUFFIX,hk1.kuxueyun.com
-
 # VPS
 IP-CIDR,45.8.0.0/16,no-resolve
 IP-CIDR,103.244.91.0/24,no-resolve
