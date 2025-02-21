@@ -39,9 +39,3 @@ https%3A%2F%2Fraw.githubusercontent.com%2Futopeadia%2Fmyclashrule%2Fmain%2Fclash
 ```http
 https%3A%2F%2Fraw.githubusercontent.com%2Futopeadia%2Fmyclashrule%2Fmain%2Fclash-rule.ini
 ```
-
-miniconfig(用于苹果移动设备，限制网络扩展内存占用)
-
-```http
-https%3A%2F%2Fraw.githubusercontent.com%2Futopeadia%2Fmyclashrule%2Fmain%2Fclash-rule-mini.ini
-```
