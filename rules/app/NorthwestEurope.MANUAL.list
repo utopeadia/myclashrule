@@ -25,6 +25,11 @@ DOMAIN-SUFFIX,eu-north-1.amazonaws.com
 DOMAIN-SUFFIX,eu-west-1.amazonaws.com
 DOMAIN-SUFFIX,eu-west-2.amazonaws.com
 DOMAIN-SUFFIX,eu-east-1.amazonaws.com
+# Amazon Panorama API
+DOMAIN-SUFFIX,eu-north-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,eu-west-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,eu-west-2.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,eu-east-1.prod.pr.panorama.console.api.aws
 
 # VPS
 IP-CIDR,23.95.228.0/22,no-resolve

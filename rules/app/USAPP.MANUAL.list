@@ -1,4 +1,9 @@
-# 部分服务
+# Amazon Panorama API
+DOMAIN-SUFFIX,us-east-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,us-west-2.prod.pr.panorama.console.api.aws
+# 其他服务
 DOMAIN-KEYWORD,1password
 DOMAIN-SUFFIX,colocrossing.com
 DOMAIN-SUFFIX,cloudcone.com

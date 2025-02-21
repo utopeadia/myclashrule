@@ -3,6 +3,12 @@ DOMAIN-SUFFIX,ap-south-1.amazonaws.com
 DOMAIN-SUFFIX,ap-northeast-1.amazonaws.com
 DOMAIN-SUFFIX,ap-east-1.amazonaws.com
 DOMAIN-SUFFIX,ap-west-1.amazonaws.com
+# Amazon Panorama API
+DOMAIN-SUFFIX,ap-south-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,ap-northeast-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,ap-east-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,ap-west-1.prod.pr.panorama.console.api.aws
+
 # Other
 DOMAIN-SUFFIX,dalao.net
 DOMAIN-SUFFIX,frphk.112700.xyz
