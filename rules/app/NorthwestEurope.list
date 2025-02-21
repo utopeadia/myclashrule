@@ -20,6 +20,11 @@ DOMAIN-SUFFIX,netcup.com
 DOMAIN-SUFFIX,mistral.ai
 PROCESS-NAME,ai.mistral.chat
 PROCESS-NAME-REGEX,^(?=.*ai)(?=.*mistral).*$
+# Amazon Simple Storage
+DOMAIN-SUFFIX,eu-north-1.amazonaws.com
+DOMAIN-SUFFIX,eu-west-1.amazonaws.com
+DOMAIN-SUFFIX,eu-east-1.amazonaws.com
+DOMAIN-SUFFIX,eu-south-1.amazonaws.com
 
 # VPS
 IP-CIDR,23.95.228.0/22,no-resolve
