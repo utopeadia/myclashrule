@@ -1,5 +1,7 @@
 # 其他
 DOMAIN-SUFFIX,tencentcloud.com
+DOMAIN-SUFFIX,login.tailscale.com
+DOMAIN-SUFFIX,www.tailscale.com
 # Deepseek
 DOMAIN-SUFFIX,deepseek.com
 PROCESS-NAME,com.deepseek.chat
