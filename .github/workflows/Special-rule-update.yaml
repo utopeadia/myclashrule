@@ -131,6 +131,14 @@ jobs:
             echo "Failed to download or empty Copilot.list, exiting."
           fi
 
+      - name: Download Bilibili rules
+        run: |
+          if  curl -f -s -o rules/app/BiliBili.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list && [[ -s rules/app/BiliBili.list.new ]]; then
+            mv -f rules/app/BiliBili.list.new rules/app/BiliBili.list
+          else
+            echo "Failed to download or empty BiliBili.list, exiting."
+          fi
+      
       - name: Download Game rules
         run: |
           if  curl -f -s -o rules/app/Game.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list && [[ -s rules/app/Game.list.new ]]; then
