@@ -1,76 +1,4 @@
 # 常用CN应用直连列表
-# 部分系统服务
-# 应用商店
-# 腾讯应用宝
-PROCESS-NAME,com.tencent.android.qqdownloader
-PROCESS-NAME-REGEX,com\.tencent\.android\.qqdownloader
-PROCESS-NAME-REGEX,^(?=.*tencent)(?=.*qqdownloader).*$
-# 360手机助手
-PROCESS-NAME,com.qihoo.appstore
-PROCESS-NAME-REGEX,com\.qihoo\.appstore
-# 百度手机助手
-PROCESS-NAME,com.baidu.appsearch
-PROCESS-NAME-REGEX,com\.baidu\.appsearch
-# 小米应用商店
-PROCESS-NAME,com.xiaomi.market
-PROCESS-NAME-REGEX,com\.xiaomi\.market
-# 华为应用商店
-PROCESS-NAME,com.huawei.appmarket
-PROCESS-NAME-REGEX,com\.huawei\.appmarket
-# 魅族应用市场
-PROCESS-NAME,com.meizu.mstore
-PROCESS-NAME-REGEX,com\.meizu\.mstore
-# 豌豆荚
-PROCESS-NAME,com.wandoujia.phoenix2
-PROCESS-NAME-REGEX,com\.wandoujia\.phoenix2
-# 91手机助手
-PROCESS-NAME,com.dragon.android.pandaspace
-PROCESS-NAME-REGEX,com\.dragon\.android\.pandaspace
-# PP手机助手
-PROCESS-NAME,com.pp.assistant
-PROCESS-NAME-REGEX,com\.pp\.assistant
-# OPPO应用商店
-PROCESS-NAME,com.oppo.market
-PROCESS-NAME-REGEX,com\.oppo\.market
-# VIVO应用商店
-PROCESS-NAME,com.bbk.appstore
-PROCESS-NAME-REGEX,com\.bbk\.appstore
-# 搜狗应用市场
-PROCESS-NAME,com.sogou.androidtool
-PROCESS-NAME-REGEX,com\.sogou\.androidtool
-# 三星应用商店
-# PROCESS-NAME,com.sec.android.app.samsungapps
-# PROCESS-NAME-REGEX,com\.sec\.android\.app\.samsungapps
-# 联想应用商店
-PROCESS-NAME,com.lenovo.leos.appstore
-PROCESS-NAME-REGEX,com\.lenovo\.leos\.appstore
-# 中兴应用商店
-PROCESS-NAME,zte.com.market
-PROCESS-NAME-REGEX,zte\.com\.market
-# 安智应用商店
-PROCESS-NAME,com.hiapk.marketpho
-PROCESS-NAME-REGEX,com\.hiapk\.marketpho
-# 应用汇
-PROCESS-NAME,com.yingyonghui.market
-PROCESS-NAME-REGEX,com\.yingyonghui\.market
-# 机锋应用市场
-PROCESS-NAME,com.mappn.gfan
-PROCESS-NAME-REGEX,com\.mappn\.gfan
-# 安卓市场
-PROCESS-NAME,com.hiapk.marketpho
-PROCESS-NAME-REGEX,com\.hiapk\.marketpho
-# 酷派应用商店
-PROCESS-NAME,com.yulong.android.coolmart
-PROCESS-NAME-REGEX,com\.yulong\.android\.coolmart
-# 酷市场
-PROCESS-NAME,com.coolapk.market
-PROCESS-NAME-REGEX,com\.coolapk\.market
-# 金立软件商店
-PROCESS-NAME,com.gionee.aora.market
-PROCESS-NAME-REGEX,com\.gionee\.aora\.market
-# 酷安
-PROCESS-NAME,com.coolapk.market
-
 # 社交
 # QQ
 # PROCESS-NAME,com.tencent.mobileqq
@@ -343,7 +271,7 @@ PROCESS-NAME-REGEX,TinyDL
 # 其他
 # 百度车载组件
 PROCESS-NAME,com.baidu.carlife.vivo
-# VIVO量子套件
+# VIVO套件
 PROCESS-NAME,pcsuite.exe
 PROCESS-NAME-REGEX,vivoSyncService
 PROCESS-NAME-REGEX,vivoesService
@@ -352,6 +280,7 @@ PROCESS-NAME-REGEX,VivoConnService
 PROCESS-NAME-REGEX,^(?=.*pcsuite)(?=.*Helper).*$
 PROCESS-NAME,com.vivo.pcsuite
 PROCESS-NAME,com.vivo.connbase
+PROCESS-NAME,com.vivo.vhome
 # VIVO蓝心小V
 PROCESS-NAME,com.vivo.ai.copilot
 PROCESS-NAME,com.vivo.ai.base.copilot
