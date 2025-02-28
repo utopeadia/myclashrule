@@ -512,6 +512,7 @@ DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,us-west-2.prod.pr.panorama.console.api.aws
 # 其他服务
+DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,tavily.com
 DOMAIN-SUFFIX,tavily.us.auth0.com
 DOMAIN-KEYWORD,1password

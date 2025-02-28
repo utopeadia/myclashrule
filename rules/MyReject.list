@@ -72,7 +72,7 @@ DOMAIN,httpsdns.baidu.com
 DOMAIN,httpdns.baidu.com
 # BaiduBCE
 DOMAIN,httpdns.baidubce.com
-IP-CIDR,186.76.76.200/32,no-resolve
+IP-CIDR,180.76.76.200/32,no-resolve
 # Bilibili
 DOMAIN,httpdns.bilivideo.com
 # Huawei
@@ -85,10 +85,10 @@ IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
 IP-CIDR,103.224.222.208/32,no-resolve
 # Keep
 DOMAIN,httpdns.calorietech.com
-# Kuaishou
-DOMAIN,kuaishou.httpdns.pro
 # Meituan
 DOMAIN,httpdns.meituan.com
+IP-CIDR,202.90.108.13/32,no-resolve
+IP-CIDR,202.90.110.46/32,no-resolve
 # NetEase
 DOMAIN,httpdns.yunxindns.com
 DOMAIN,httpdns.n.netease.com
@@ -102,6 +102,7 @@ IP-CIDR,115.236.121.195/32,no-resolve
 # Oppo
 DOMAIN,httpdns.push.oppomobile.com
 # Tencent Cloud
+DOMAIN-SUFFIX,httpdns.pro
 IP-CIDR,119.29.29.98/32,no-resolve
 IP-CIDR,119.29.29.99/32,no-resolve
 # Volcengine
@@ -124,7 +125,7 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 IP-CIDR,182.254.116.117/32,no-resolve
 IP-CIDR,182.254.118.119/32,no-resolve
 # Zhihu
-IP-CIDR,118.89.204.198/23,no-resolve
+IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
 DOMAIN,bsccdn.net
