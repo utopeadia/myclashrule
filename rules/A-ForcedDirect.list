@@ -36,6 +36,29 @@ IP-CIDR,223.5.5.5/32,no-resolve
 IP-CIDR,180.76.76.76/32,no-resolve
 IP-CIDR,114.114.114.114/32,no-resolve
 
+# SDWAN
+DOMAIN-SUFFIX,tailscale.io
+DOMAIN-SUFFIX,tailscale.com
+DST-PORT,9993
+SRC-PORT,9993
+DST-PORT,9995
+SRC-PORT,9995
+PROCESS-NAME,zerotier
+PROCESS-NAME,zerotier-one
+PROCESS-NAME,zerotier-cli
+PROCESS-NAME,zerotier-one_x64.exe
+PROCESS-NAME,tailscale
+PROCESS-NAME,tailscaled
+PROCESS-NAME,tailscale.exe
+PROCESS-NAME,tailscaled.exe
+PROCESS-NAME,tailscale-ipn
+PROCESS-NAME,tailscale-ipn.exe
+PROCESS-NAME,Tailscale
+PROCESS-NAME,Tailscale Service
+PROCESS-NAME,Tailscale.exe
+PROCESS-NAME,Tailscale Service.exe
+PROCESS-NAME,eztest
+
 # 一些影视站
 DOMAIN-SUFFIX,sbzyplay.com
 DOMAIN-SUFFIX,v6.pub
@@ -128,22 +151,22 @@ IP-CIDR,119.29.29.0/24,no-resolve
 IP-CIDR6,2400:da00::6666/64,no-resolve
 IP-CIDR6,240c::6666/64,no-resolve
 
-PROCESS-NAME,BitComet,DIRECT
-PROCESS-NAME,NetTransport,DIRECT
-PROCESS-NAME,qbittorrent,DIRECT
-PROCESS-NAME,Thunder,DIRECT
-PROCESS-NAME,transmission-daemon,DIRECT
-PROCESS-NAME,transmission-qt,DIRECT
-PROCESS-NAME,uTorrent,DIRECT
-PROCESS-NAME,WebTorrent,DIRECT
-PROCESS-NAME,Folx,DIRECT
-PROCESS-NAME,NetTransport,DIRECT
-PROCESS-NAME,qbittorrent,DIRECT
-PROCESS-NAME,Thunder,DIRECT
-PROCESS-NAME,Transmission,DIRECT
-PROCESS-NAME,transmission,DIRECT
-PROCESS-NAME,uTorrent,DIRECT
-PROCESS-NAME,WebTorrent,DIRECT
-PROCESS-NAME,WebTorrent Helper,DIRECT
+PROCESS-NAME,BitComet
+PROCESS-NAME,NetTransport
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,Thunder
+PROCESS-NAME,transmission-daemon
+PROCESS-NAME,transmission-qt
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,Thunder
+PROCESS-NAME,Transmission
+PROCESS-NAME,transmission
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper
 PROCESS-NAME,leigod
 PROCESS-NAME,leigod.exe

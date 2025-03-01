@@ -11,24 +11,24 @@ DOMAIN-SUFFIX,worldfirst.com.cn
 # SDWAN
 DOMAIN-SUFFIX,tailscale.io
 DOMAIN-SUFFIX,tailscale.com
-DST-PORT,9993,DIRECT
-SRC-PORT,9993,DIRECT
-DST-PORT,9995,DIRECT
-SRC-PORT,9995,DIRECT
-PROCESS-NAME,zerotier,DIRECT
-PROCESS-NAME,zerotier-one,DIRECT
-PROCESS-NAME,zerotier-cli,DIRECT
-PROCESS-NAME,zerotier-one_x64.exe,DIRECT
-PROCESS-NAME,tailscale,DIRECT
-PROCESS-NAME,tailscaled,DIRECT
-PROCESS-NAME,tailscale.exe,DIRECT
-PROCESS-NAME,tailscaled.exe,DIRECT
-PROCESS-NAME,tailscale-ipn,DIRECT
-PROCESS-NAME,tailscale-ipn.exe,DIRECT
-PROCESS-NAME,Tailscale,DIRECT
-PROCESS-NAME,Tailscale Service,DIRECT
-PROCESS-NAME,Tailscale.exe,DIRECT
-PROCESS-NAME,Tailscale Service.exe,DIRECT
+DST-PORT,9993
+SRC-PORT,9993
+DST-PORT,9995
+SRC-PORT,9995
+PROCESS-NAME,zerotier
+PROCESS-NAME,zerotier-one
+PROCESS-NAME,zerotier-cli
+PROCESS-NAME,zerotier-one_x64.exe
+PROCESS-NAME,tailscale
+PROCESS-NAME,tailscaled
+PROCESS-NAME,tailscale.exe
+PROCESS-NAME,tailscaled.exe
+PROCESS-NAME,tailscale-ipn
+PROCESS-NAME,tailscale-ipn.exe
+PROCESS-NAME,Tailscale
+PROCESS-NAME,Tailscale Service
+PROCESS-NAME,Tailscale.exe
+PROCESS-NAME,Tailscale Service.exe
 PROCESS-NAME,eztest
 
 # 兜底LAN

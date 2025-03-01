@@ -8,29 +8,6 @@ DOMAIN-SUFFIX,siliconflow.cn
 DOMAIN-SUFFIX,worldfirst.com
 DOMAIN-SUFFIX,worldfirst.com.cn
 
-# SDWAN
-DOMAIN-SUFFIX,tailscale.io
-DOMAIN-SUFFIX,tailscale.com
-DST-PORT,9993,DIRECT
-SRC-PORT,9993,DIRECT
-DST-PORT,9995,DIRECT
-SRC-PORT,9995,DIRECT
-PROCESS-NAME,zerotier,DIRECT
-PROCESS-NAME,zerotier-one,DIRECT
-PROCESS-NAME,zerotier-cli,DIRECT
-PROCESS-NAME,zerotier-one_x64.exe,DIRECT
-PROCESS-NAME,tailscale,DIRECT
-PROCESS-NAME,tailscaled,DIRECT
-PROCESS-NAME,tailscale.exe,DIRECT
-PROCESS-NAME,tailscaled.exe,DIRECT
-PROCESS-NAME,tailscale-ipn,DIRECT
-PROCESS-NAME,tailscale-ipn.exe,DIRECT
-PROCESS-NAME,Tailscale,DIRECT
-PROCESS-NAME,Tailscale Service,DIRECT
-PROCESS-NAME,Tailscale.exe,DIRECT
-PROCESS-NAME,Tailscale Service.exe,DIRECT
-PROCESS-NAME,eztest
-
 # 兜底LAN
 IP-CIDR,192.168.0.0/16,no-resolve
 
