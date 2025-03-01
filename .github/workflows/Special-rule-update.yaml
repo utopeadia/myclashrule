@@ -40,7 +40,7 @@ jobs:
               fi
             done | sort -t, -k1,1 > rules/MyDirect.SERVER.list.new
             mv -f rules/MyDirect.SERVER.list.new rules/MyDirect.SERVER.list
-            # rm -rf rules/MyDirect.SERVER.update.list
+            rm -rf rules/MyDirect.SERVER.update.list
           else
             echo "MyDirect.SERVER.update.list not found, skipping..."
           fi
