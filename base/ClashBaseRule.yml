@@ -292,7 +292,6 @@ proxies:
     ip-version: ipv4-prefer
     udp: true
     udp-over-tcp: true
-
   - name: DIRECT-V6PRE
     type: direct
     ip-version: ipv6-prefer
