@@ -285,3 +285,16 @@ hosts:
   alt6-mtalk.google.com: 173.194.77.188
   alt7-mtalk.google.com: 173.194.219.188
   alt8-mtalk.google.com: 142.250.112.188
+
+proxies:
+  - name: DIRECT-V4PRE
+    type: direct
+    ip-version: ipv4-prefer
+    udp: true
+    udp-over-tcp: true
+
+  - name: DIRECT-V6PRE
+    type: direct
+    ip-version: ipv6-prefer
+    udp: true
+    udp-over-tcp: true
