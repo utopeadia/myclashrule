@@ -599,7 +599,8 @@ IP-CIDR,43.230.72.0/22,no-resolve
 IP-CIDR,43.230.124.0/22,no-resolve
 IP-CIDR,43.230.220.0/22,no-resolve
 IP-CIDR,43.230.224.0/19,no-resolve
-IP-CIDR,43.231.12.0/22,no-resolve
+IP-CIDR,43.231.12.0/24,no-resolve
+IP-CIDR,43.231.14.0/24,no-resolve
 IP-CIDR,43.231.32.0/20,no-resolve
 IP-CIDR,43.231.80.0/20,no-resolve
 IP-CIDR,43.231.96.0/20,no-resolve
