@@ -47,6 +47,9 @@ dns:
     'geosite:googlefcm': 
       - https://doh.pub/dns-query
       - https://dns.alidns.com/dns-query
+    'geosite:gfw': 
+      - https://8.8.8.8/dns-query
+      - https://1.1.1.1/dns-query
     "www.msftconnecttest.com": 
       - 119.29.29.29
       - 223.5.5.5
@@ -75,7 +78,6 @@ dns:
   fallback:
     - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
-    - https://208.67.222.222/dns-query
   fallback-filter:
     geoip: false
     geoip-code: CN
