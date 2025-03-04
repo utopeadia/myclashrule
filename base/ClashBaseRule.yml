@@ -47,9 +47,6 @@ dns:
     'geosite:googlefcm': 
       - https://doh.pub/dns-query
       - https://dns.alidns.com/dns-query
-    'geosite:gfw': 
-      - https://8.8.8.8/dns-query
-      - https://1.1.1.1/dns-query
     "www.msftconnecttest.com": 
       - 119.29.29.29
       - 223.5.5.5
