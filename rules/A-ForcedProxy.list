@@ -1,1 +1,10 @@
-# ~暂时好像还没有需要强制的~
+# DNS解析
+DOMAIN,dns.google
+DOMAIN,dns.cloudflare.com
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR,1.1.1.1/32,no-resolve
+IP-CIDR,101.101.101.101/32,no-resolve
+IP-CIDR,208.67.222.222/32,no-resolve
+IP-CIDR6,2001:4860:4860::8888/128,no-resolve
+IP-CIDR6,2001:4860:4860::8844/128,no-resolve
