@@ -42,6 +42,7 @@ dns:
   ipv6: true
   prefer-h3: true
   use-hosts: true
+  respect-rules: true
   enhanced-mode: redir-host
   nameserver-policy:
     'geosite:googlefcm': 
@@ -63,6 +64,9 @@ dns:
     - 119.29.29.29
     - 223.5.5.5
     - dhcp://en0
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback:
     - https://dns.google/dns-query
     - tls://1.1.1.1
