@@ -42,7 +42,6 @@ dns:
   ipv6: true
   prefer-h3: true
   use-hosts: true
-  respect-rules: true
   enhanced-mode: redir-host
   nameserver-policy:
     'geosite:googlefcm': 
@@ -68,8 +67,8 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback:
-    - https://dns.google/dns-query
-    - tls://1.1.1.1
+    - https://dns.google/dns-query#RULES
+    - tls://1.1.1.1#RULES
   fallback-filter:
     geoip: true
     geoip-code: CN
