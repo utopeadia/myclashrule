@@ -19,7 +19,7 @@ DOMAIN-SUFFIX,cu42.kuxueyun.com
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
 DOMAIN-SUFFIX,dh-global-team.net
-
+DOMAIN-SUFFIX,dh-dns.global-idt.net
 IP-CIDR,162.14.132.109/32,no-resolve
 IP-CIDR,36.112.139.253/32,no-resolve
 IP-CIDR,125.88.223.158/32,no-resolve
