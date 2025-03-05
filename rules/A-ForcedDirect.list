@@ -20,6 +20,11 @@ DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
 DOMAIN-SUFFIX,dh-global-team.net
 
+IP-CIDR,162.14.132.109/32,no-resolve
+IP-CIDR,36.112.139.253/32,no-resolve
+IP-CIDR,125.88.223.158/32,no-resolve
+IP-CIDR,110.185.101.40/32,no-resolve
+
 IP-CIDR,119.29.29.29/32,no-resolve
 IP-CIDR,223.5.5.5/32,no-resolve
 IP-CIDR,180.76.76.76/32,no-resolve
