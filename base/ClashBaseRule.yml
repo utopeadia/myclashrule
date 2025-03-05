@@ -45,8 +45,8 @@ dns:
   enhanced-mode: redir-host
   nameserver-policy:
     'geosite:googlefcm': 
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query#skip-cert-verify=true
+      - https://dns.alidns.com/dns-query#skip-cert-verify=true
     "www.msftconnecttest.com": 
       - 119.29.29.29
       - 223.5.5.5
@@ -67,8 +67,8 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback:
-    - https://dns.google/dns-query#RULES
-    - tls://1.1.1.1#RULES
+    - https://dns.google/dns-query#RULES&skip-cert-verify=true
+    - tls://1.1.1.1#RULES&skip-cert-verify=true
   fallback-filter:
     geoip: true
     geoip-code: CN
