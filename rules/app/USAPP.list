@@ -631,6 +631,8 @@ DOMAIN-KEYWORD,hcompany
 DOMAIN-SUFFIX,us.i.posthog.com
 DOMAIN-SUFFIX,pearai.b-cdn.net
 DOMAIN-SUFFIX,trypear.ai
+# Manus
+DOMAIN-SUFFIX,manus.im
 
 # VPS
 IP-CIDR,23.94.180.0/24,no-resolve
