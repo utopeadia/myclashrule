@@ -44,13 +44,6 @@ dns:
   use-hosts: true
   enhanced-mode: redir-host
   nameserver-policy:
-    'geosite:googlefcm': 
-      - https://doh.pub/dns-query#skip-cert-verify=true
-      - https://dns.alidns.com/dns-query#skip-cert-verify=true
-    'geosite:gfw': 
-      - tls://208.67.220.220#RULES&skip-cert-verify=true
-      - tls://1.1.1.1#RULES&skip-cert-verify=true
-      - https://dns.google/dns-query#RULES&skip-cert-verify=true
     "www.msftconnecttest.com": 
       - 119.29.29.29
       - 223.5.5.5
@@ -60,6 +53,17 @@ dns:
     "www.msftncsi.com":
       - 119.29.29.29
       - 223.5.5.5
+    'geosite:googlefcm': 
+      - https://doh.pub/dns-query#skip-cert-verify=true
+      - https://dns.alidns.com/dns-query#skip-cert-verify=true
+    'geosite:geolocation-!cn': 
+      - tls://208.67.220.220#RULES&skip-cert-verify=true
+      - tls://1.1.1.1#RULES&skip-cert-verify=true
+      - https://dns.google/dns-query#RULES&skip-cert-verify=true
+    'geosite:gfw': 
+      - tls://208.67.220.220#RULES&skip-cert-verify=true
+      - tls://1.1.1.1#RULES&skip-cert-verify=true
+      - https://dns.google/dns-query#RULES&skip-cert-verify=true
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
