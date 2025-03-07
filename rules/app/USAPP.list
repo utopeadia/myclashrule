@@ -581,6 +581,7 @@ PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
 DOMAIN-SUFFIX,qwenlm.ai
 DOMAIN-SUFFIX,qwen.ai
 DOMAIN-SUFFIX,wanxai.com
+DOMAIN-SUFFIX,wan.video
 # Claude其他
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-KEYWORD,claudeusercontent
