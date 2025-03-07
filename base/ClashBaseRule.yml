@@ -12,7 +12,7 @@ routing-mark: 11451
 mode: rule
 log-level: info
 global-client-fingerprint: chrome
-global-ua: mihomo
+global-ua: mymihomo
 unified-delay: false
 geodata-mode: true
 geo-auto-update: true
