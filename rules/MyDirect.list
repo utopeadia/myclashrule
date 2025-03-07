@@ -244,6 +244,7 @@ IP-CIDR,112.29.213.227/32,no-resolve
 IP-CIDR,112.29.250.206/32,no-resolve
 IP-CIDR,116.251.216.70/32,no-resolve
 IP-CIDR,117.143.20.183/32,no-resolve
+IP-CIDR,117.172.176.59/32,no-resolve
 IP-CIDR,117.172.176.63/32,no-resolve
 IP-CIDR,118.167.4.240/32,no-resolve
 IP-CIDR,119.36.154.74/32,no-resolve
@@ -261,7 +262,6 @@ IP-CIDR,129.159.227.221/32,no-resolve
 IP-CIDR,13.115.71.53/32,no-resolve
 IP-CIDR,13.212.254.137/32,no-resolve
 IP-CIDR,13.229.119.116/32,no-resolve
-IP-CIDR,13.229.76.44/32,no-resolve
 IP-CIDR,13.229.79.45/32,no-resolve
 IP-CIDR,130.162.163.216/32,no-resolve
 IP-CIDR,131.186.22.238/32,no-resolve
@@ -366,10 +366,10 @@ IP-CIDR,36.151.65.219/32,no-resolve
 IP-CIDR,36.155.110.185/32,no-resolve
 IP-CIDR,42.157.129.203/32,no-resolve
 IP-CIDR,42.157.129.229/32,no-resolve
-IP-CIDR,42.157.129.235/32,no-resolve
 IP-CIDR,43.201.230.205/32,no-resolve
 IP-CIDR,43.241.50.81/32,no-resolve
 IP-CIDR,46.3.104.114/32,no-resolve
+IP-CIDR,47.129.124.22/32,no-resolve
 IP-CIDR,47.129.211.55/32,no-resolve
 IP-CIDR,47.130.3.244/32,no-resolve
 IP-CIDR,47.242.179.146/32,no-resolve
@@ -417,7 +417,7 @@ IP-CIDR6,2406:8dc0:6001::1eb5/128,no-resolve
 IP-CIDR6,2406:da12:97c:4d00:ce5:d729:3b1:2790/128,no-resolve
 IP-CIDR6,2406:da14:e7d:5a00:3d70:a557:9280:a316/128,no-resolve
 IP-CIDR6,2406:da18:96d:e600:76ec:4904:6259:cf78/128,no-resolve
-IP-CIDR6,2406:da1e:deb:ffa0:ae4c:9036:3a33:9a07/128,no-resolve
+IP-CIDR6,2406:da1e:52:9600:afc6:7608:8458:b84e/128,no-resolve
 IP-CIDR6,2407:cdc0:b02a:1e::/128,no-resolve
 IP-CIDR6,2408:864e:c03:1c:2:0:b4b2:5b4/128,no-resolve
 IP-CIDR6,2408:864e:c03:1c:2:0:ed6c:bc7c/128,no-resolve
@@ -430,7 +430,6 @@ IP-CIDR6,2409:8c54:1841:2008:0:1:0:1f4/128,no-resolve
 IP-CIDR6,2602:feda:30:ae86:20c:aff:fe2f:e8e6/128,no-resolve
 IP-CIDR6,2603:c022:8013:bbbb:456f:8f3a:4dfb:7aa8/128,no-resolve
 IP-CIDR6,2603:c023:c004:4bbb:16bb:492f:fedc:2798/128,no-resolve
-IP-CIDR6,2603:c024:4500:491a:cdba:accc:add9:82ae/128,no-resolve
 IP-CIDR6,2603:c024:c011:8a7a:4b35:c6da:ecf6:3676/128,no-resolve
 IP-CIDR6,2a0c:9a40:9203:fccd::1/128,no-resolve
 IP-CIDR6,2a0c:9a40:d089:696::1c0/128,no-resolve
