@@ -1,0 +1,244 @@
+port: 7890
+socks-port: 7891
+# redir-port: 7892
+mixed-port: 7893
+# tproxy-port: 7894
+allow-lan: false
+bind-address: "*"
+ipv6: true
+external-controller: 0.0.0.0:9090
+secret: "zQ!h90n@BBp"
+routing-mark: 11451
+mode: rule
+log-level: info
+global-client-fingerprint: chrome
+global-ua: mymihomo
+unified-delay: false
+geodata-mode: true
+geo-auto-update: true
+geo-update-interval: 12
+geox-url:
+  geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat"
+  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://testingcf.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb"
+  asn: "https://testingcf.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb"
+tun:
+  enable: false
+  device: MihomoCore
+  stack: mixed
+  mtu: 9000
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-detect-interface: true
+  route-exclude-address:
+  - 192.168.191.0/24
+  - 192.168.192.0/24
+  - 10.10.10.0/24
+  - 100.64.0.0/10
+dns:
+  enable: true
+  ipv6: true
+  prefer-h3: true
+  use-hosts: true
+  enhanced-mode: redir-host
+  nameserver-policy:
+    "www.msftconnecttest.com": 
+      - 119.29.29.29
+      - 223.5.5.5
+    "dns.msftncsi.com":
+      - 119.29.29.29
+      - 223.5.5.5
+    "www.msftncsi.com":
+      - 119.29.29.29
+      - 223.5.5.5
+    'geosite:googlefcm': 
+      - https://doh.pub/dns-query#skip-cert-verify=true
+      - https://dns.alidns.com/dns-query#skip-cert-verify=true
+    'geosite:gfw': 
+      - tls://208.67.220.220#RULES&skip-cert-verify=true
+      - tls://1.1.1.1#RULES&skip-cert-verify=true
+      - https://dns.google/dns-query#RULES&skip-cert-verify=true
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - dhcp://en0
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query#skip-cert-verify=true
+    - https://dns.alidns.com/dns-query#skip-cert-verify=true
+  fallback:
+    - tls://208.67.220.220#RULES&skip-cert-verify=true
+    - tls://1.1.1.1#RULES&skip-cert-verify=true
+    - https://dns.google/dns-query#RULES&skip-cert-verify=true
+  fallback-filter:
+    geoip: false
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+    geosite:
+      - gfw
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - "geosite:cn"
+    - "*"
+    - "+.lan"
+    - connect.rom.miui.com
+    - kuxueyun.com
+    - "+.miwifi.com"
+    - "+.ntp.org"
+    - "+.u-tools.cn"
+    - "+.mediatek.com"
+    - "+.cfprefer1.xyz"
+    - "+.wetab.link"
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - localhost.work.weixin.qq.com
+    - "+.weixin.qq.com"
+    - "+.wechat.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "+.wpsmail.net"
+    - "+.henzanapp.com"
+    - "+.pconline.com.cn"
+    - "+.kuxueyun.com"
+    - "ntp.*.com"
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - cn.ntp.org.cn
+    - edu.ntp.org.cn
+    - hk.ntp.org.cn
+    - tw.ntp.org.cn
+    - us.ntp.org.cn
+    - sgp.ntp.org.cn
+    - kr.ntp.org.cn
+    - jp.ntp.org.cn
+    - de.ntp.org.cn
+    - ina.ntp.org.cn
+    - 0.openwrt.pool.ntp.org
+    - 1.openwrt.pool.ntp.org
+    - 2.openwrt.pool.ntp.org
+    - 3.openwrt.pool.ntp.org
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - s1c.time.edu.cn
+    - s2m.time.edu.cn
+    - s1b.time.edu.cn
+    - s1e.time.edu.cn
+    - s2a.time.edu.cn
+    - s2b.time.edu.cn
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+      override-destination: true
+    QUIC:
+      ports: [443, 8443]
+      override-destination: true
+  force-domain:
+    - +.v2ex.com
+    - +.google.com
+  skip-domain:
+    - Mijia Cloud
+    - dlg.io.mi.com
+    - +.apple.com
+    - +.rc.sunlogin.net
+    - time.windows.com
+    - courier.push.apple.com
+    - rbsxbxp-mim.vivox.com
+    - rbsxbxp.www.vivox.com
+    - rbsxbxp-ws.vivox.com
+    - rbspsxp.www.vivox.com
+    - rbspsxp-mim.vivox.com
+    - rbspsxp-ws.vivox.com
+    - rbswxp.www.vivox.com
+    - rbswxp-mim.vivox.com
+    - disp-rbspsp-5-1.vivox.com
+    - disp-rbsxbp-5-1.vivox.com
+    - proxy.rbsxbp.vivox.com
+    - proxy.rbspsp.vivox.com
+    - proxy.rbswp.vivox.com
+    - rbswp.vivox.com
+    - rbsxbp.vivox.com
+    - rbspsp.vivox.com
+    - rbspsp.www.vivox.com
+    - rbswp.www.vivox.com
+    - rbsxbp.www.vivox.com
+    - rbsxbxp.vivox.com
+    - rbspsxp.vivox.com
+    - rbswxp.vivox.com
+    - basic-static-server.infinitynewtab.com
+  skip-dst-address:
+    - 223.5.5.5/32
+    - 223.6.6.6/32
+    - 119.29.29.29/32
+    - 1.1.1.1/32
+    - 8.8.8.8/32
+    - 101.101.101.101/32
+    - 110.242.69.63/32
+    - 221.194.154.187/32
+    - 36.248.45.62/32
+    - 2001:4860:4860::8888/128
+    - 2001:4860:4860::8844/128
+hosts:
+  mtalk.google.com: 74.125.204.188
+  alt1-mtalk.google.com: 142.251.2.188
+  alt2-mtalk.google.com: 192.178.128.188
+  alt3-mtalk.google.com: 108.177.104.188
+  alt4-mtalk.google.com: 108.177.104.188
+  alt5-mtalk.google.com: 142.250.141.188
+  alt6-mtalk.google.com: 173.194.77.188
+  alt7-mtalk.google.com: 173.194.219.188
+  alt8-mtalk.google.com: 142.250.112.188
+
+proxies:
+  - name: DIRECT-V4PRE
+    type: direct
+    ip-version: ipv4-prefer
+    udp: true
+    udp-over-tcp: true
+  - name: DIRECT-V6PRE
+    type: direct
+    ip-version: ipv6-prefer
+    udp: true
+    udp-over-tcp: true
