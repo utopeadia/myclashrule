@@ -1,0 +1,63 @@
+name: Convert-Clash-classic-ruleset
+
+on:
+  workflow_run:
+    workflows: [Regular-rule-update, Special-rule-update]
+    types:
+      - completed
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Convert rules
+        run: |
+          set -e
+
+          INPUT_ROOT="rules"
+          OUTPUT_ROOT="clash-classic"
+          EXCLUDE_DIRS=(
+            "app/GameDLCN.MANUAL.list"
+            "MyDirect.SERVER.list"
+          )
+
+          EXCLUDE_ARGS=""
+          for dir in "${EXCLUDE_DIRS[@]}"; do
+            EXCLUDE_ARGS="$EXCLUDE_ARGS -not -path \"./$INPUT_ROOT/$dir/*\""
+          done
+
+          # 查找 .list 文件并进行转换
+          find "$INPUT_ROOT" -name "*.list" $EXCLUDE_ARGS -print0 | while IFS= read -r -d $'\0' input_file; do
+            # 获取相对路径
+            relative_path="${input_file#$INPUT_ROOT/}"
+            output_file="${relative_path%.list}.yaml"
+            output_path="$OUTPUT_ROOT/$output_file"
+
+            # 创建输出目录（如果不存在）
+            mkdir -p "$(dirname "$output_path")"
+
+            # 创建输出文件并添加 payload 头部
+            echo "payload:" > "$output_path"
+
+            while IFS= read -r line; do
+              # 检查是否为注释行
+              if [[ "$line" =~ ^\s*#.* ]]; then
+                :
+                # 注释不处理
+              else
+                echo "  - $line" >> "$output_path"
+              fi
+            done < "$input_file"
+
+            echo "Converted: $input_file -> $output_path"
+          done
+
+      - name: Commit Convert
+        run: |
+          git add "$OUTPUT_ROOT"
+          git commit -m "Convert rules to Clash Classic forma"
+          git push
