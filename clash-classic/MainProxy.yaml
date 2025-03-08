@@ -4102,6 +4102,7 @@ payload:
   - DOMAIN-SUFFIX,bookstagram.com
   - DOMAIN-SUFFIX,booloo.com
   - DOMAIN-SUFFIX,boomba.club
+  - DOMAIN-SUFFIX,boombeach.com
   - DOMAIN-SUFFIX,boomerang.com
   - DOMAIN-SUFFIX,boomtrain.com
   - DOMAIN-SUFFIX,booru.org
@@ -4199,6 +4200,7 @@ payload:
   - DOMAIN-SUFFIX,bravoporn.com
   - DOMAIN-SUFFIX,bravoteens.com
   - DOMAIN-SUFFIX,bravotube.tv
+  - DOMAIN-SUFFIX,brawlstars.com
   - DOMAIN-SUFFIX,brawlstarsgame.com
   - DOMAIN-SUFFIX,brazilpartneruniversity.com
   - DOMAIN-SUFFIX,brazzer.com
@@ -5392,6 +5394,10 @@ payload:
   - DOMAIN-SUFFIX,claravenger.com
   - DOMAIN-SUFFIX,clarendon.ac.uk
   - DOMAIN-SUFFIX,clarin.ac.uk
+  - DOMAIN-SUFFIX,clash.com
+  - DOMAIN-SUFFIX,clashmini.com
+  - DOMAIN-SUFFIX,clashofclans.com
+  - DOMAIN-SUFFIX,clashroyale.com
   - DOMAIN-SUFFIX,clasporno.org
   - DOMAIN-SUFFIX,classicnike.com
   - DOMAIN-SUFFIX,classics.ac.uk
@@ -9230,6 +9236,7 @@ payload:
   - DOMAIN-SUFFIX,gameroom.com
   - DOMAIN-SUFFIX,gamerotic.com
   - DOMAIN-SUFFIX,gamesathletes.com
+  - DOMAIN-SUFFIX,gamesfirsthelsinki.com
   - DOMAIN-SUFFIX,gamesfuckgirls.com
   - DOMAIN-SUFFIX,gamesofdesire.com
   - DOMAIN-SUFFIX,gamesstack.com
@@ -10287,6 +10294,8 @@ payload:
   - DOMAIN-SUFFIX,hayabusa.dev
   - DOMAIN-SUFFIX,hayabusa.io
   - DOMAIN-SUFFIX,hayabusa.media
+  - DOMAIN-SUFFIX,hayday.com
+  - DOMAIN-SUFFIX,haydaygame.com
   - DOMAIN-SUFFIX,hayle.ac.uk
   - DOMAIN-SUFFIX,haywardsheath.ac.uk
   - DOMAIN-SUFFIX,hbabit.com
@@ -14936,6 +14945,7 @@ payload:
   - DOMAIN-SUFFIX,mmwxl27.top
   - DOMAIN-SUFFIX,mnc.ac.uk
   - DOMAIN-SUFFIX,mndregister.ac.uk
+  - DOMAIN-SUFFIX,mo.co
   - DOMAIN-SUFFIX,moapi.site
   - DOMAIN-SUFFIX,moapi1.club
   - DOMAIN-SUFFIX,moapi1.online
@@ -19483,6 +19493,7 @@ payload:
   - DOMAIN-SUFFIX,seemilfporn.com
   - DOMAIN-SUFFIX,seemygf.com
   - DOMAIN-SUFFIX,seemyporn.com
+  - DOMAIN-SUFFIX,seeurlpcl.com
   - DOMAIN-SUFFIX,seevic-college.ac.uk
   - DOMAIN-SUFFIX,seevic.ac.uk
   - DOMAIN-SUFFIX,sefton-acl.ac.uk
@@ -20488,6 +20499,7 @@ payload:
   - DOMAIN-SUFFIX,sqlite.org
   - DOMAIN-SUFFIX,sqlserveronlinux.com
   - DOMAIN-SUFFIX,squ1.com
+  - DOMAIN-SUFFIX,squadbusters.com
   - DOMAIN-SUFFIX,squarecapital.com
   - DOMAIN-SUFFIX,squarecdn.com
   - DOMAIN-SUFFIX,squarecloudservices.com
@@ -20908,6 +20920,10 @@ payload:
   - DOMAIN-SUFFIX,supc.ac.uk
   - DOMAIN-SUFFIX,superadultgames.com
   - DOMAIN-SUFFIX,supercell.net
+  - DOMAIN-SUFFIX,supercellcreators.com
+  - DOMAIN-SUFFIX,supercellgames.com
+  - DOMAIN-SUFFIX,supercellid.com
+  - DOMAIN-SUFFIX,supercellstore.com
   - DOMAIN-SUFFIX,supercoach.com.au
   - DOMAIN-SUFFIX,supercomputingwales.ac.uk
   - DOMAIN-SUFFIX,superdarn.ac.uk
@@ -25157,6 +25173,7 @@ payload:
   - DOMAIN-SUFFIX,64wiki.com
   - DOMAIN-SUFFIX,66.ca
   - DOMAIN-SUFFIX,666kb.com
+  - DOMAIN-SUFFIX,69shuba.cx
   - DOMAIN-SUFFIX,6do.news
   - DOMAIN-SUFFIX,6do.world
   - DOMAIN-SUFFIX,6park.com
@@ -29136,6 +29153,7 @@ payload:
   - DOMAIN-SUFFIX,politicalconsultation.org
   - DOMAIN-SUFFIX,politiscales.net
   - DOMAIN-SUFFIX,poloniex.com
+  - DOMAIN-SUFFIX,polymarket.com
   - DOMAIN-SUFFIX,polymer-project.org
   - DOMAIN-SUFFIX,polymerhk.com
   - DOMAIN-SUFFIX,poolbinance.com
