@@ -2,15 +2,12 @@ payload:
   - AND,((NETWORK,UDP),(AND,((DST-PORT,443),(GEOSITE,youtube))))
   - AND,((NETWORK,UDP),(AND,((DST-PORT,443),(GEOSITE,bilibili))))
   - AND,((NETWORK,UDP),(AND,((DST-PORT,3478),(GEOSITE,bilibili))))
-  - 
   - DOMAIN-SUFFIX,dreport.meituan.net
   - DOMAIN-SUFFIX,d.meituan.net
   - IP-CIDR,202.90.110.46/32,no-resolve
   - IP-CIDR,202.90.108.13/32,no-resolve
   - IP-CIDR,202.90.110.46/32,no-resolve
   - IP-CIDR,202.90.108.13/32,no-resolve
-  - 
-  - 
   - DOMAIN,bsccdn.net
   - DOMAIN,dyp2p-ali.douyucdn.cn
   - DOMAIN,dyp2p-hw.douyucdn.cn
@@ -39,9 +36,6 @@ payload:
   - DOMAIN,szbdyd.com
   - DOMAIN,uhabo.com
   - DOMAIN,xycdn.com
-  - 
-  - 
-  - 
   - DOMAIN,httpdns.alicdn.com
   - DOMAIN,httpdns-api.aliyuncs.com
   - DOMAIN,httpdns-sc.aliyuncs.com
@@ -90,7 +84,6 @@ payload:
   - IP-CIDR,182.254.118.119/32,no-resolve
   - IP-CIDR,118.89.204.198/32,no-resolve
   - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
-  - 
   - DOMAIN,bsccdn.net
   - DOMAIN,dyp2p-ali.douyucdn.cn
   - DOMAIN,dyp2p-hw.douyucdn.cn
@@ -119,4 +112,3 @@ payload:
   - DOMAIN,szbdyd.com
   - DOMAIN,uhabo.com
   - DOMAIN,xycdn.com
-  - 

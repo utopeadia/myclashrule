@@ -21,7 +21,6 @@ payload:
   - PROCESS-NAME,Weiyun.exe
   - PROCESS-NAME,baidunetdisk.exe
   - URL-REGEX,assets\d+\.xboxlive\.(com|cn)
-  - 
   - DOMAIN,0123456789nonexistent.com
   - DOMAIN,0d.kebhana.mx
   - DOMAIN,1337.abcvg.info

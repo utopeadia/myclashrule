@@ -29,7 +29,6 @@ payload:
   - DOMAIN-SUFFIX,massive-itv.com
   - DOMAIN-KEYWORD,bbcfmt
   - DOMAIN-KEYWORD,uk-live
-  - 
   - DOMAIN-SUFFIX, epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
   - DOMAIN-SUFFIX, ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
   - DOMAIN-SUFFIX, ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org
@@ -38,7 +37,6 @@ payload:
   - IP-CIDR,88.82.0.0/19,no-resolve
   - IP-CIDR,46.68.0.0/17,no-resolve
   - IP-CIDR,87.194.0.0/16,no-resolve
-  - 
   - DOMAIN-SUFFIX,hosteroid.uk
   - DOMAIN-SUFFIX,vodafone.co.uk
   - DOMAIN-SUFFIX,giffgaff.com

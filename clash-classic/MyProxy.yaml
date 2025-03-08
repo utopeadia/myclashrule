@@ -6,7 +6,6 @@ payload:
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,docker.io
   - DOMAIN-SUFFIX,dockerhub.com
-  - 
   - DOMAIN-KEYWORD,51cg
   - DOMAIN-SUFFIX,clashverge.dev
   - DOMAIN-SUFFIX,agilebits.com

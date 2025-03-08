@@ -115,7 +115,6 @@ payload:
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,manus.im
   - DOMAIN-SUFFIX,manuscdn.com
-  - 
   - IP-CIDR,23.94.180.0/24,no-resolve
   - IP-CIDR,38.60.91.0/24,no-resolve
   - IP-CIDR,68.168.20.0/24,no-resolve
@@ -133,7 +132,6 @@ payload:
   - IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
   - IP-CIDR6,2602:fa4f:900::/48,no-resolve
   - IP-CIDR6,2602:f988:80::/48,no-resolve
-  - 
   - DOMAIN-SUFFIX,umass.edu
   - DOMAIN-SUFFIX,cvtc.edu
   - DOMAIN-SUFFIX,sunybroome.edu

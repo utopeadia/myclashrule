@@ -1,7 +1,6 @@
 payload:
   - DOMAIN-SUFFIX,assets1.xboxlive.com
   - DOMAIN-KEYWORD,xboxassets
-  - 
   - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
   - IP-CIDR,45.121.184.0/24,no-resolve
   - IP-CIDR,103.10.124.0/23,no-resolve

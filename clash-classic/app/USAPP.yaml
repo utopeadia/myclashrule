@@ -31,9 +31,7 @@ payload:
   - IP-CIDR,202.160.128.0/22,no-resolve
   - IP-CIDR,209.237.192.0/19,no-resolve
   - IP-CIDR,69.195.160.0/19,no-resolve
-  - 
   - DOMAIN,lens.l.google.com
-  - 
   - DOMAIN-SUFFIX,redd.it
   - DOMAIN-SUFFIX,reddit.com
   - DOMAIN-SUFFIX,redditmail.com
@@ -42,7 +40,6 @@ payload:
   - DOMAIN-SUFFIX,reddituploads.com
   - DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
   - DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
-  - 
   - DOMAIN-SUFFIX,account-paypal.info
   - DOMAIN-SUFFIX,account-paypal.net
   - DOMAIN-SUFFIX,account-paypal.org
@@ -290,7 +287,6 @@ payload:
   - DOMAIN-SUFFIX,xoom.us
   - DOMAIN-SUFFIX,xoomcom.com
   - DOMAIN-KEYWORD,paypal
-  - 
   - DOMAIN,espn.api.edge.bamgrid.com
   - DOMAIN,espn.hb.omtrdc.net
   - DOMAIN,espndotcom.tt.omtrdc.net
@@ -391,7 +387,6 @@ payload:
   - PROCESS-NAME,com.cbs.app
   - PROCESS-NAME,com.hulu.plus
   - PROCESS-NAME,com.showtime.standalone
-  - 
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
   - DOMAIN,gemini.google.com
@@ -428,11 +423,9 @@ payload:
   - IP-CIDR,24.199.123.28/32,no-resolve
   - IP-CIDR,64.23.132.171/32,no-resolve
   - IP-ASN,20473,no-resolve
-  - 
   - DOMAIN,cdn.usefathom.com
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
-  - 
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalimakersuite-pa.clients6.google.com
   - DOMAIN,makersuite.google.com
@@ -446,7 +439,6 @@ payload:
   - DOMAIN-KEYWORD,colab
   - DOMAIN-KEYWORD,developerprofiles
   - DOMAIN-KEYWORD,generativelanguage
-  - 
   - DOMAIN-SUFFIX,us-east-1.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
@@ -563,7 +555,6 @@ payload:
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,manus.im
   - DOMAIN-SUFFIX,manuscdn.com
-  - 
   - IP-CIDR,23.94.180.0/24,no-resolve
   - IP-CIDR,38.60.91.0/24,no-resolve
   - IP-CIDR,68.168.20.0/24,no-resolve
@@ -581,7 +572,6 @@ payload:
   - IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
   - IP-CIDR6,2602:fa4f:900::/48,no-resolve
   - IP-CIDR6,2602:f988:80::/48,no-resolve
-  - 
   - DOMAIN-SUFFIX,umass.edu
   - DOMAIN-SUFFIX,cvtc.edu
   - DOMAIN-SUFFIX,sunybroome.edu
@@ -589,4 +579,3 @@ payload:
   - DOMAIN-SUFFIX,arizona.edu
   - DOMAIN-SUFFIX,utah.edu
   - DOMAIN-SUFFIX,colostate.edu
-  - 

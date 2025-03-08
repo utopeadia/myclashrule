@@ -1,7 +1,5 @@
 payload:
-  - 
   - DOMAIN-SUFFIX,acl4.ssr
-  - 
   - DOMAIN-SUFFIX,ip6-localhost
   - DOMAIN-SUFFIX,ip6-loopback
   - DOMAIN-SUFFIX,lan
@@ -18,7 +16,6 @@ payload:
   - IP-CIDR6,fc00::/7,no-resolve
   - IP-CIDR6,fe80::/10,no-resolve
   - IP-CIDR6,fd00::/8,no-resolve
-  - 
   - DOMAIN,instant.arubanetworks.com
   - DOMAIN,setmeup.arubanetworks.com
   - DOMAIN,router.asus.com

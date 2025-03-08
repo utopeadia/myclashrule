@@ -7,7 +7,6 @@ payload:
   - DOMAIN-SUFFIX,ap-northeast-1.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,ap-east-1.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,ap-west-1.prod.pr.panorama.console.api.aws
-  - 
   - DOMAIN-SUFFIX,tampermonkey.net
   - DOMAIN-SUFFIX,dalao.net
   - DOMAIN-SUFFIX,frphk.112700.xyz

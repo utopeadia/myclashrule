@@ -16,7 +16,6 @@ payload:
   - DOMAIN-KEYWORD,skydrive
   - PROCESS-NAME,OneDrive
   - PROCESS-NAME,OneDriveUpdater
-  - 
   - PROCESS-NAME,OneDrive
   - PROCESS-NAME,OneDriveUpdater
   - USER-AGENT,OneDrive*
@@ -36,4 +35,3 @@ payload:
   - DOMAIN-SUFFIX,storage.live.com
   - DOMAIN-SUFFIX,storage.msn.com
   - DOMAIN-SUFFIX,my.microsoftpersonalcontent.com
-  - 
