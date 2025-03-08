@@ -1,0 +1,4 @@
+payload:
+  - DOMAIN-SUFFIX,software.download.prss.microsoft.com
+  - DOMAIN-SUFFIX,cdn-lfs.huggingface.co
+  - DOMAIN-SUFFIX,lfs.huggingface.co

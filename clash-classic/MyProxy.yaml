@@ -1,0 +1,30 @@
+payload:
+  - DOMAIN,d1q6f0aelx0por.cloudfront.net
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net
+  - DOMAIN,d36jcksde1wxzq.cloudfront.net
+  - DOMAIN-SUFFIX,compose-spec.io
+  - DOMAIN-SUFFIX,docker.com
+  - DOMAIN-SUFFIX,docker.io
+  - DOMAIN-SUFFIX,dockerhub.com
+  - 
+  - DOMAIN-KEYWORD,51cg
+  - DOMAIN-SUFFIX,clashverge.dev
+  - DOMAIN-SUFFIX,agilebits.com
+  - DOMAIN-SUFFIX,ooklaserver.net
+  - DOMAIN-SUFFIX,freeembyguide.eu.org
+  - DOMAIN-SUFFIX,larksuite.com
+  - DOMAIN-SUFFIX,larksuitepre.com
+  - DOMAIN-SUFFIX,larksuite.com.ttdns1.com
+  - DOMAIN-SUFFIX,larksuite.com.ttdns2.com
+  - DOMAIN-SUFFIX,larksuitecdn.com
+  - DOMAIN-SUFFIX,larksuiteimgboe.com
+  - DOMAIN-SUFFIX,larksuiteimgpre.com
+  - DOMAIN-SUFFIX,larksuiteimg.com
+  - DOMAIN-SUFFIX,larksuiteimg-boe.com
+  - DOMAIN-SUFFIX,larksuiteimg-pre.com
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-SUFFIX,ipcheck.ing
+  - DOMAIN-SUFFIX,browserscan.net
+  - DOMAIN-SUFFIX,ipleak.net
+  - DOMAIN-SUFFIX,wap.ac
+  - DOMAIN-SUFFIX,clarity.ms

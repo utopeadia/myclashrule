@@ -1,0 +1,34 @@
+payload:
+  - DOMAIN-SUFFIX,filen.io
+  - DOMAIN-SUFFIX,filen.net
+  - DOMAIN-SUFFIX,filen-1.net
+  - DOMAIN-SUFFIX,filen-2.net
+  - DOMAIN-SUFFIX,filen-3.net
+  - DOMAIN-SUFFIX,filen-4.net
+  - DOMAIN-SUFFIX,filen-5.net
+  - DOMAIN-SUFFIX,filen-6.net
+  - DOMAIN-SUFFIX,filen-7.net
+  - DOMAIN-SUFFIX,filen-8.net
+  - DOMAIN-SUFFIX,filen-9.net
+  - DOMAIN-SUFFIX,filen-10.net
+  - DOMAIN-SUFFIX,fr.kuxueyun.com
+  - DOMAIN-SUFFIX,de.kuxueyun.com
+  - DOMAIN-SUFFIX,netcup.eu
+  - DOMAIN-SUFFIX,netcup.de
+  - DOMAIN-SUFFIX,netcup.com
+  - DOMAIN-SUFFIX,mistral.ai
+  - PROCESS-NAME,ai.mistral.chat
+  - PROCESS-NAME-REGEX,^(?=.*ai)(?=.*mistral).*$
+  - DOMAIN-SUFFIX,eu-north-1.amazonaws.com
+  - DOMAIN-SUFFIX,eu-west-1.amazonaws.com
+  - DOMAIN-SUFFIX,eu-west-2.amazonaws.com
+  - DOMAIN-SUFFIX,eu-east-1.amazonaws.com
+  - DOMAIN-SUFFIX,eu-north-1.prod.pr.panorama.console.api.aws
+  - DOMAIN-SUFFIX,eu-west-1.prod.pr.panorama.console.api.aws
+  - DOMAIN-SUFFIX,eu-west-2.prod.pr.panorama.console.api.aws
+  - DOMAIN-SUFFIX,eu-east-1.prod.pr.panorama.console.api.aws
+  - 
+  - IP-CIDR,23.95.228.0/22,no-resolve
+  - IP-CIDR,193.160.0.0/16,no-resolve
+  - IP-CIDR6,2602:f988:84::/48,no-resolve
+  - IP-CIDR6,2001:41d0:a::/48,no-resolve

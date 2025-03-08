@@ -1,0 +1,13 @@
+payload:
+  - DOMAIN-SUFFIX,gstore.val.manlaxy.com
+  - DOMAIN-SUFFIX,vivo.com.cn
+  - DOMAIN-SUFFIX,siliconflow.cn
+  - DOMAIN-SUFFIX,worldfirst.com
+  - DOMAIN-SUFFIX,worldfirst.com.cn
+  - 
+  - IP-CIDR,192.168.0.0/16,no-resolve
+  - 
+  - DOMAIN-SUFFIX,360buyimg.com
+  - DOMAIN-SUFFIX,fwnhub.cn
+  - DOMAIN-SUFFIX,qpic.cn
+  - DOMAIN-SUFFIX,cntx0.112700.xyz

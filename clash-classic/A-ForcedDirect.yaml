@@ -1,0 +1,150 @@
+payload:
+  - 
+  - URL-REGEX,^https?:\/\/(www\.)?msftconnecttest\.com\/redirect
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,time.windows.com
+  - 
+  - DOMAIN-SUFFIX,kimi.ai
+  - DOMAIN-SUFFIX,digicert.com
+  - 
+  - DOMAIN-SUFFIX,dns.kizhou.cn
+  - DOMAIN-SUFFIX,cm.kuxueyun.com
+  - DOMAIN-SUFFIX,cu21.kuxueyun.com
+  - DOMAIN-SUFFIX,cu22.kuxueyun.com
+  - DOMAIN-SUFFIX,cu41.kuxueyun.com
+  - DOMAIN-SUFFIX,cu42.kuxueyun.com
+  - 
+  - DOMAIN,dns.alidns.com
+  - DOMAIN,doh.pub
+  - DOMAIN-SUFFIX,dh-global-team.net
+  - DOMAIN-SUFFIX,dh-dns.global-idt.net
+  - IP-CIDR,162.14.132.109/32,no-resolve
+  - IP-CIDR,36.112.139.253/32,no-resolve
+  - IP-CIDR,125.88.223.158/32,no-resolve
+  - IP-CIDR,110.185.101.40/32,no-resolve
+  - 
+  - IP-CIDR,119.29.29.29/32,no-resolve
+  - IP-CIDR,223.5.5.5/32,no-resolve
+  - IP-CIDR,180.76.76.76/32,no-resolve
+  - IP-CIDR,114.114.114.114/32,no-resolve
+  - 
+  - DOMAIN-SUFFIX,tailscale.io
+  - DOMAIN-SUFFIX,tailscale.com
+  - DST-PORT,9993
+  - SRC-PORT,9993
+  - DST-PORT,9995
+  - SRC-PORT,9995
+  - PROCESS-NAME,zerotier
+  - PROCESS-NAME,zerotier-one
+  - PROCESS-NAME,zerotier-cli
+  - PROCESS-NAME,zerotier-one_x64.exe
+  - PROCESS-NAME,tailscale
+  - PROCESS-NAME,tailscaled
+  - PROCESS-NAME,tailscale.exe
+  - PROCESS-NAME,tailscaled.exe
+  - PROCESS-NAME,tailscale-ipn
+  - PROCESS-NAME,tailscale-ipn.exe
+  - PROCESS-NAME,Tailscale
+  - PROCESS-NAME,Tailscale Service
+  - PROCESS-NAME,Tailscale.exe
+  - PROCESS-NAME,Tailscale Service.exe
+  - PROCESS-NAME,eztest
+  - 
+  - DOMAIN-SUFFIX,sbzyplay.com
+  - DOMAIN-SUFFIX,v6.pub
+  - 
+  - DOMAIN-SUFFIX,eggtartemby.itsmyduty.top
+  - DOMAIN-KEYWORD,embyvip
+  - DOMAIN-SUFFIX,makima.online
+  - 
+  - DOMAIN-SUFFIX,yxvm.com
+  - DOMAIN-SUFFIX,tebex.io
+  - DOMAIN-SUFFIX,leigod.com
+  - DOMAIN-SUFFIX,ddnsto.com
+  - DOMAIN-SUFFIX,yuque.com
+  - DOMAIN-KEYWORD,greencloud
+  - DOMAIN-SUFFIX,greencloudvps.com
+  - DOMAIN-SUFFIX,kodcloud.com
+  - DOMAIN-SUFFIX,qiduo.net
+  - DOMAIN-KEYWORD,qiduo
+  - DOMAIN-SUFFIX,go.synn.cc
+  - DOMAIN-SUFFIX,ldxmcloud.com
+  - DOMAIN-SUFFIX,leshivideoplayurl.com
+  - DOMAIN-SUFFIX,huishij.com
+  - DOMAIN-SUFFIX,jsjiexi.com
+  - DOMAIN-SUFFIX,subojiexi.com
+  - DOMAIN-SUFFIX,49zyplayerurl.com
+  - DOMAIN-SUFFIX,alipan.com
+  - DOMAIN-SUFFIX,lanzouc.com
+  - DOMAIN-SUFFIX,123pan.com
+  - DOMAIN-SUFFIX,cn.download.nvidia.com
+  - DOMAIN-SUFFIX,verysync.cn
+  - DOMAIN-SUFFIX,mirrors.tuna.tsinghua.edu.cn
+  - DOMAIN-SUFFIX,nsloop.com
+  - DOMAIN-SUFFIX,uulap.com
+  - DOMAIN-SUFFIX,z100.vip
+  - 
+  - DOMAIN-SUFFIX,pttime.org
+  - DOMAIN-SUFFIX,hitpt.com
+  - DOMAIN-SUFFIX,tjupt.org
+  - PROCESS-NAME,qbittorrent
+  - PROCESS-NAME,transmission
+  - 
+  - DOMAIN-SUFFIX,mirror.ghproxy.com
+  - DOMAIN-SUFFIX,hub.fgit.mxtrans.net
+  - DOMAIN-SUFFIX,github.moeyy.xyz
+  - DOMAIN-SUFFIX,ghproxy.net
+  - DOMAIN-SUFFIX,githubfast.com
+  - DOMAIN-SUFFIX,hub.incept.pw
+  - DOMAIN-SUFFIX,hub.incept.pw
+  - DOMAIN-SUFFIX,kkgithub.com
+  - DOMAIN-SUFFIX,gitclone.com
+  - 
+  - DOMAIN-SUFFIX,test-ipv6.com
+  - DOMAIN-SUFFIX,ipv6-test.ch
+  - DOMAIN-KEYWORD,ipv6-test
+  - DOMAIN-KEYWORD,ipv6test
+  - DOMAIN-KEYWORD,testipv6
+  - DOMAIN-KEYWORD,test-ipv6
+  - DOMAIN-KEYWORD,IPV6-TEST
+  - DOMAIN-KEYWORD,IPV6TEST
+  - DOMAIN-KEYWORD,TESTIPV6
+  - DOMAIN-KEYWORD,TEST-IPV6
+  - DOMAIN-KEYWORD,IPV6-test
+  - DOMAIN-KEYWORD,IPV6test
+  - DOMAIN-KEYWORD,test-IPV6
+  - DOMAIN-KEYWORD,testIPV6
+  - DOMAIN-KEYWORD,IPV6-Test
+  - DOMAIN-KEYWORD,IPV6Test
+  - DOMAIN-KEYWORD,Test-IPV6
+  - DOMAIN-KEYWORD,TestIPV6
+  - 
+  - DOMAIN-SUFFIX,lan.upc.edu.cn
+  - DOMAIN-SUFFIX,wlan.upc.edu.cn
+  - DOMAIN-SUFFIX,v.upc.edu.cn
+  - 
+  - IP-CIDR,121.251.251.0/24,no-resolve
+  - IP-CIDR,223.5.5.0/24,no-resolve
+  - IP-CIDR,119.29.29.0/24,no-resolve
+  - IP-CIDR6,2400:da00::6666/64,no-resolve
+  - IP-CIDR6,240c::6666/64,no-resolve
+  - 
+  - PROCESS-NAME,BitComet
+  - PROCESS-NAME,NetTransport
+  - PROCESS-NAME,qbittorrent
+  - PROCESS-NAME,Thunder
+  - PROCESS-NAME,transmission-daemon
+  - PROCESS-NAME,transmission-qt
+  - PROCESS-NAME,uTorrent
+  - PROCESS-NAME,WebTorrent
+  - PROCESS-NAME,Folx
+  - PROCESS-NAME,NetTransport
+  - PROCESS-NAME,qbittorrent
+  - PROCESS-NAME,Thunder
+  - PROCESS-NAME,Transmission
+  - PROCESS-NAME,transmission
+  - PROCESS-NAME,uTorrent
+  - PROCESS-NAME,WebTorrent
+  - PROCESS-NAME,WebTorrent Helper
+  - PROCESS-NAME,leigod
+  - PROCESS-NAME,leigod.exe
