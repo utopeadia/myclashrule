@@ -13,6 +13,7 @@ IP-CIDR,192.168.0.0/16,no-resolve
 
 # 其他
 DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,ati.com
 DOMAIN-SUFFIX,fwnhub.cn
 DOMAIN-SUFFIX,qpic.cn
 DOMAIN-SUFFIX,cntx0.112700.xyz
