@@ -37,10 +37,8 @@ jobs:
             output_file="${relative_path%.list}.yaml"
             output_path="$OUTPUT_ROOT/$output_file"
 
-            # 创建输出目录（如果不存在）
             mkdir -p "$(dirname "$output_path")"
 
-            # 创建输出文件并添加 payload 头部
             echo "payload:" > "$output_path"
 
             while IFS= read -r line; do
@@ -58,6 +56,6 @@ jobs:
 
       - name: Commit Convert
         run: |
-          git add "$OUTPUT_ROOT"
+          git add .
           git commit -m "Convert rules to Clash Classic forma"
           git push
