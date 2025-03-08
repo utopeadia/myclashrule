@@ -39,7 +39,6 @@ jobs:
 
           # 查找 .list 文件并进行转换
           find "$INPUT_ROOT" -name "*.list" $EXCLUDE_ARGS -print0 | while IFS= read -r -d $'\0' input_file; do
-            # 获取相对路径
             relative_path="${input_file#$INPUT_ROOT/}"
             output_file="${relative_path%.list}.yaml"
             output_path="$OUTPUT_ROOT/$output_file"
@@ -49,10 +48,9 @@ jobs:
             echo "payload:" > "$output_path"
 
             while IFS= read -r line; do
-              # 检查是否为注释行
-              if [[ "$line" =~ ^\s*#.* ]]; then
+              if [[ "$line" =~ ^\s*#.* ]] || [[ -z "$line" ]]; then
                 :
-                # 注释不处理
+                # 注释或空行不处理
               else
                 echo "  - $line" >> "$output_path"
               fi
