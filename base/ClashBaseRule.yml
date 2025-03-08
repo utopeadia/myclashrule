@@ -58,8 +58,8 @@ dns:
       - https://dns.alidns.com/dns-query#skip-cert-verify=true
     'geosite:gfw': 
       - tls://208.67.220.220#RULES&skip-cert-verify=true
-      - 1.1.1.1#RULES
-      - 8.8.4.4#RULES
+      - tls://1.1.1.1#RULES
+      - tls://8.8.4.4#RULES
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
@@ -72,8 +72,8 @@ dns:
     - https://dns.alidns.com/dns-query#skip-cert-verify=true
   fallback:
     - tls://208.67.220.220#RULES&skip-cert-verify=true
-    - 1.1.1.1#RULES
-    - 8.8.4.4#RULES
+    - tls://1.1.1.1#RULES
+    - tls://8.8.4.4#RULES
   fallback-filter:
     geoip: false
     geoip-code: CN
