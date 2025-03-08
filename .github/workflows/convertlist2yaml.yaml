@@ -56,6 +56,8 @@ jobs:
 
       - name: Commit Convert
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add .
           git commit -m "Convert rules to Clash Classic forma"
           git push
