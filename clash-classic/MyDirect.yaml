@@ -10,6 +10,7 @@ payload:
   - DOMAIN-SUFFIX,fwnhub.cn
   - DOMAIN-SUFFIX,qpic.cn
   - DOMAIN-SUFFIX,cntx0.112700.xyz
+  - DOMAIN,0ceb0c03b9dc9f3f.cdn.jiashule.com
   - DOMAIN,0edw2vu7stvjcmo2u1p9czeh638evkou.04.02.us.6l6.site
   - DOMAIN,0gxcrvnu76jc5uiggnye63g74tp7f45p.04.03.hk.6l6.site
   - DOMAIN,0owxordaxjc16ku483pozggvx8nr0nwd.04.04.us.6l6.site
@@ -43,6 +44,7 @@ payload:
   - DOMAIN,724dea933bd71dcc.cdn.jiashule.com
   - DOMAIN,7l16pb58767gy7h99qjxqapm3w7bonx5.04.02.hk.6l6.site
   - DOMAIN,84qgio2u5uj5i3ak407c8nn9rc2e98av.04.08.us.6l6.site
+  - DOMAIN,9e5c9a110a3f4fd0.cdn.jiashule.com
   - DOMAIN,aaaa-dws75rnrbtfr25hx.bestescargots.com
   - DOMAIN,ajbki989lfxn9asifvhrjqdrcdylb7i279tf.biliapi.xyz
   - DOMAIN,alt-mobile.nodenet.cloud
@@ -192,6 +194,7 @@ payload:
   - DOMAIN,sg.flyrelaytrun.com
   - DOMAIN,sg01.525536.xyz
   - DOMAIN,sh-tokyo.sdwan.nodenet.cloud
+  - DOMAIN,sha117.sol.xin
   - DOMAIN,south.78cf9487bdd788cd4075consulting.club
   - DOMAIN,sz-hk.sdwan.nodenet.cloud
   - DOMAIN,tpe-ipv6.nodenet.cloud
@@ -220,6 +223,7 @@ payload:
   - IP-CIDR,1.1.1.1/32,no-resolve
   - IP-CIDR,1.161.36.210/32,no-resolve
   - IP-CIDR,101.227.50.103/32,no-resolve
+  - IP-CIDR,103.161.255.200/32,no-resolve
   - IP-CIDR,103.169.126.67/32,no-resolve
   - IP-CIDR,103.213.4.51/32,no-resolve
   - IP-CIDR,104.18.20.69/32,no-resolve
@@ -237,6 +241,7 @@ payload:
   - IP-CIDR,112.29.213.227/32,no-resolve
   - IP-CIDR,112.29.250.206/32,no-resolve
   - IP-CIDR,116.251.216.70/32,no-resolve
+  - IP-CIDR,117.143.20.183/32,no-resolve
   - IP-CIDR,117.172.176.59/32,no-resolve
   - IP-CIDR,117.172.176.63/32,no-resolve
   - IP-CIDR,118.167.4.19/32,no-resolve
