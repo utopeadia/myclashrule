@@ -73,7 +73,6 @@ dns:
   proxy-server-nameserver:
     - https://doh.pub/dns-query#skip-cert-verify=true
     - https://dns.alidns.com/dns-query#skip-cert-verify=true
-    
 profile:
   store-selected: true
   store-fake-ip: true
