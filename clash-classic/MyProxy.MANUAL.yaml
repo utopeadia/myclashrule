@@ -20,3 +20,5 @@ payload:
   - DOMAIN-SUFFIX,ipleak.net
   - DOMAIN-SUFFIX,wap.ac
   - DOMAIN-SUFFIX,clarity.ms
+  - DOMAIN-SUFFIX,lf6-unpkg.zstaticcdn.com
+  - DOMAIN-SUFFIX,lf6-cdnjs.zstaticcdn.com
