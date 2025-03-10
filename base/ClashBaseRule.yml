@@ -44,9 +44,6 @@ dns:
   use-hosts: true
   enhanced-mode: redir-host
   nameserver-policy:
-    'rule-set:BiliBili':
-      - 119.29.29.29
-      - 223.5.5.5
     "www.msftconnecttest.com": 
       - 119.29.29.29
       - 223.5.5.5
@@ -63,15 +60,102 @@ dns:
       - tls://208.67.220.220#RULES&skip-cert-verify=true
       - tls://1.1.1.1#RULES
       - tls://8.8.4.4#RULES
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query#skip-cert-verify=true
+    - https://dns.alidns.com/dns-query#skip-cert-verify=true
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
-  proxy-server-nameserver:
-    - https://doh.pub/dns-query#skip-cert-verify=true
-    - https://dns.alidns.com/dns-query#skip-cert-verify=true
+  fallback:
+    - tls://208.67.220.220#RULES&skip-cert-verify=true
+    - tls://1.1.1.1#RULES
+    - tls://8.8.4.4#RULES
+  fallback-filter:
+    geoip: false
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+    geosite:
+      - gfw
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - "geosite:cn"
+    - "*"
+    - "+.lan"
+    - connect.rom.miui.com
+    - kuxueyun.com
+    - "+.miwifi.com"
+    - "+.ntp.org"
+    - "+.u-tools.cn"
+    - "+.mediatek.com"
+    - "+.cfprefer1.xyz"
+    - "+.wetab.link"
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - localhost.work.weixin.qq.com
+    - "+.weixin.qq.com"
+    - "+.wechat.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "+.wpsmail.net"
+    - "+.henzanapp.com"
+    - "+.pconline.com.cn"
+    - "+.kuxueyun.com"
+    - "ntp.*.com"
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - cn.ntp.org.cn
+    - edu.ntp.org.cn
+    - hk.ntp.org.cn
+    - tw.ntp.org.cn
+    - us.ntp.org.cn
+    - sgp.ntp.org.cn
+    - kr.ntp.org.cn
+    - jp.ntp.org.cn
+    - de.ntp.org.cn
+    - ina.ntp.org.cn
+    - 0.openwrt.pool.ntp.org
+    - 1.openwrt.pool.ntp.org
+    - 2.openwrt.pool.ntp.org
+    - 3.openwrt.pool.ntp.org
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - s1c.time.edu.cn
+    - s2m.time.edu.cn
+    - s1b.time.edu.cn
+    - s1e.time.edu.cn
+    - s2a.time.edu.cn
+    - s2b.time.edu.cn
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
 profile:
   store-selected: true
   store-fake-ip: true
