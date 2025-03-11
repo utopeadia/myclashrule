@@ -69,17 +69,6 @@ dns:
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
-  fallback:
-    - tls://208.67.220.220#RULES&skip-cert-verify=true
-    - tls://1.1.1.1#RULES
-    - tls://8.8.4.4#RULES
-  fallback-filter:
-    geoip: false
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-    geosite:
-      - gfw
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
