@@ -416,7 +416,7 @@ IP-CIDR6,2406:8dc0:6001::1eb5/128,no-resolve
 IP-CIDR6,2406:da12:97c:4d00:ce5:d729:3b1:2790/128,no-resolve
 IP-CIDR6,2406:da14:e7d:5a00:3d70:a557:9280:a316/128,no-resolve
 IP-CIDR6,2406:da18:96d:e600:76ec:4904:6259:cf78/128,no-resolve
-IP-CIDR6,2406:da1e:764:299b:ffde:3e3:6b76:1372/128,no-resolve
+IP-CIDR6,2406:da1e:f2b:89ce:910b:bede:dad9:f9ca/128,no-resolve
 IP-CIDR6,2407:cdc0:b02a:1e::/128,no-resolve
 IP-CIDR6,2407:cdc0:d002::1061/128,no-resolve
 IP-CIDR6,2407:d840:51:1::18/128,no-resolve
