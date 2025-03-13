@@ -49,6 +49,7 @@ payload:
   - DOMAIN,home.yxgz.club
   - DOMAIN,ipv4announce.sktorrent.eu
   - DOMAIN,ipv6.rer.lol
+  - DOMAIN,isk.richardsw.club
   - DOMAIN,ismaarino.com
   - DOMAIN,leet-tracker.moe
   - DOMAIN,lucke.fenesisu.moe
@@ -79,7 +80,6 @@ payload:
   - DOMAIN,t.jaekr.sh
   - DOMAIN,t.overflow.biz
   - DOMAIN,taciturn-shadow.spb.ru
-  - DOMAIN,threads.canofsocks.com
   - DOMAIN,tk.greedland.net
   - DOMAIN,torrentsmd.com
   - DOMAIN,tr.abir.ga
@@ -91,6 +91,7 @@ payload:
   - DOMAIN,tr4ck3r.duckdns.org
   - DOMAIN,tracker-udp.gbitt.info
   - DOMAIN,tracker.0x7c0.com
+  - DOMAIN,tracker.23794.top
   - DOMAIN,tracker.aburaya.live
   - DOMAIN,tracker.beeimg.com
   - DOMAIN,tracker.bittor.pw
@@ -98,6 +99,7 @@ payload:
   - DOMAIN,tracker.bt-hash.com
   - DOMAIN,tracker.bt4g.com
   - DOMAIN,tracker.bz
+  - DOMAIN,tracker.cangku.moe
   - DOMAIN,tracker.corpscorp.online
   - DOMAIN,tracker.cyberia.is
   - DOMAIN,tracker.darkness.services
@@ -127,7 +129,6 @@ payload:
   - DOMAIN,tracker.moeking.me
   - DOMAIN,tracker.moxing.party
   - DOMAIN,tracker.mywaifu.best
-  - DOMAIN,tracker.netmap.top
   - DOMAIN,tracker.nitrix.me
   - DOMAIN,tracker.ololosh.space
   - DOMAIN,tracker.opentrackr.org
@@ -138,7 +139,6 @@ payload:
   - DOMAIN,tracker.renfei.net
   - DOMAIN,tracker.sbsub.com
   - DOMAIN,tracker.srv00.com
-  - DOMAIN,tracker.theoks.net
   - DOMAIN,tracker.tiny-vps.com
   - DOMAIN,tracker.torrent.eu.org
   - DOMAIN,tracker.torrust-demo.com
