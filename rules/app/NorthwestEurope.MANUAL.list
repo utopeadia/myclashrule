@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,de.kuxueyun.com
 DOMAIN-SUFFIX,netcup.eu
 DOMAIN-SUFFIX,netcup.de
 DOMAIN-SUFFIX,netcup.com
+DOMAIN-SUFFIX,api-my-api-5hw5ou-b810d8-80-75-218-107.traefik.me
 # MistralAI
 DOMAIN-SUFFIX,mistral.ai
 PROCESS-NAME,ai.mistral.chat
