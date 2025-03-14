@@ -439,6 +439,23 @@ payload:
   - DOMAIN-KEYWORD,colab
   - DOMAIN-KEYWORD,developerprofiles
   - DOMAIN-KEYWORD,generativelanguage
+  - DOMAIN-SUFFIX,db.tt
+  - DOMAIN-SUFFIX,dropbox-dns.com
+  - DOMAIN-SUFFIX,dropbox.com
+  - DOMAIN-SUFFIX,dropbox.tech
+  - DOMAIN-SUFFIX,dropbox.zendesk.com
+  - DOMAIN-SUFFIX,dropboxapi.com
+  - DOMAIN-SUFFIX,dropboxbusiness.com
+  - DOMAIN-SUFFIX,dropboxcaptcha.com
+  - DOMAIN-SUFFIX,dropboxforum.com
+  - DOMAIN-SUFFIX,dropboxforums.com
+  - DOMAIN-SUFFIX,dropboxinsiders.com
+  - DOMAIN-SUFFIX,dropboxmail.com
+  - DOMAIN-SUFFIX,dropboxpartners.com
+  - DOMAIN-SUFFIX,dropboxstatic.com
+  - DOMAIN-SUFFIX,dropboxusercontent.com
+  - DOMAIN-SUFFIX,getdropbox.com
+  - DOMAIN-SUFFIX,paper-attachments.s3.amazonaws.com
   - DOMAIN-SUFFIX,us-east-1.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
@@ -458,6 +475,7 @@ payload:
   - DOMAIN-SUFFIX,githubstatus.com
   - DOMAIN-SUFFIX,githubuniverse.com
   - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,weatheroffer.com
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com
   - DOMAIN-SUFFIX,challenges.cloudflare.com
   - DOMAIN-SUFFIX,tavily.com
