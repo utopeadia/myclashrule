@@ -109,6 +109,7 @@ DOMAIN-SUFFIX,chat.aifun.win
 DOMAIN-SUFFIX,chat.iswsh.com
 DOMAIN-SUFFIX,image.iswsh.com
 DOMAIN-SUFFIX,news.112700.xyz
+DOMAIN-SUFFIX,azureedge.us
 # Amazon Simple Storage
 DOMAIN-SUFFIX,us-east-1.amazonaws.com
 DOMAIN-SUFFIX,us-east-2.amazonaws.com
