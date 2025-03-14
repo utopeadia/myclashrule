@@ -84,6 +84,8 @@ payload:
   - DOMAIN-SUFFIX,chat.iswsh.com
   - DOMAIN-SUFFIX,image.iswsh.com
   - DOMAIN-SUFFIX,news.112700.xyz
+  - DOMAIN-SUFFIX,azureedge.us
   - DOMAIN-SUFFIX,us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,us-east-2.amazonaws.com
   - DOMAIN-SUFFIX,us-west-1.amazonaws.com
+  - DOMAIN-SUFFIX,us-west-2.amazonaws.com
