@@ -173,6 +173,8 @@ payload:
   - PROCESS-NAME,com.vos.as.vit
   - PROCESS-NAME,com.vivo.smartmultiwindow
   - PROCESS-NAME,com.alibaba.android.rimet.ccflink
+  - PROCESS-NAME,com.vivo.pushservice
+  - PROCESS-NAME-REGEX,vivo\.pushservice
   - PROCESS-NAME,com.vivo.easyshare
   - PROCESS-NAME,com.vivo.abe
   - PROCESS-NAME,com.vivo.widget.healthcare
