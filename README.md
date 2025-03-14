@@ -14,6 +14,7 @@
 ## 版本内容
 * **clash-rule**版本使用白名单模式，对CN进行分流，漏网之鱼默认代理，含有~完整广告拦截及~自建落地，不含广告拦截（广告规则太大了）
 * **clash-rule-general**版本没有自建落地和一些用于特定服务的分流，其他与clash-rule相同
+* **ha**与**mobile**配置为顺序调整版，分别调整了自建与原节点相对位置和漏网之鱼的默认配置
 * **clash-rule-mini**~版本为解决苹果网络扩展50M内存限制，对代理进行分流，漏网之鱼默认直连，含有Lite版广告拦截及自建落地~ 已经弃用
 
 ## 备忘小记
@@ -39,4 +40,3 @@ https%3A%2F%2Fraw.githubusercontent.com%2Futopeadia%2Fmyclashrule%2Fmain%2Fclash
 ```http
 https%3A%2F%2Fraw.githubusercontent.com%2Futopeadia%2Fmyclashrule%2Fmain%2Fclash-rule.ini
 ```
-ha与mobile配置为顺序调整版，分别调整了自建与原节点相对位置和漏网之鱼的默认配置
