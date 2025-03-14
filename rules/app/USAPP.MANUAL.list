@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,githubuniverse.com
 DOMAIN-SUFFIX,githubusercontent.com
 
 # 其他服务
+DOMAIN-SUFFIX,weatheroffer.com
 DOMAIN-SUFFIX,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,tavily.com

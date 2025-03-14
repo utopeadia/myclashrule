@@ -171,60 +171,38 @@ jobs:
           else
             echo "Failed to download or empty GameDownload.list, exiting."
           fi
-
+      
       - name: Download USAPP rules
         run: |
-          if  curl -f -s -o rules/app/TwitterAndX.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list && [[ -s rules/app/TwitterAndX.list ]]; then
-            echo >> rules/app/TwitterAndX.list
-            if  curl -f -s -o rules/app/GoogleVoice.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleVoice/GoogleVoice.list && [[ -s rules/app/GoogleVoice.list ]]; then
-              echo >> rules/app/GoogleVoice.list
-              if  curl -f -s -o rules/app/Reddit.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.list && [[ -s rules/app/Reddit.list ]]; then
-                echo >> rules/app/Reddit.list
-                if  curl -f -s -o rules/app/PayPal.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PayPal/PayPal.list && [[ -s rules/app/PayPal.list ]]; then
-                  echo >> rules/app/PayPal.list
-                  if  curl -f -s -o rules/app/USMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list && [[ -s rules/app/USMedia.list ]]; then
-                    echo >> rules/app/USMedia.list
-                    if  curl -f -s -o rules/app/OpenAI.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list && [[ -s rules/app/OpenAI.list ]]; then
-                      echo >> rules/app/OpenAI.list
-                      if  curl -f -s -o rules/app/Claude.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list && [[ -s rules/app/Claude.list ]]; then
-                        echo >> rules/app/Claude.list
-                          if  curl -f -s -o rules/app/Gemini.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list && [[ -s rules/app/Gemini.list ]]; then
-                            echo >> rules/app/Gemini.list
-                            cat rules/app/TwitterAndX.list rules/app/GoogleVoice.list rules/app/Reddit.list rules/app/PayPal.list rules/app/USMedia.list rules/app/OpenAI.list rules/app/Claude.list rules/app/Gemini.list rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
-                            echo >> rules/app/USAPP.list.new
-                            mv -f rules/app/USAPP.list.new rules/app/USAPP.list
-                            rm -f rules/app/Gemini.list
-                          else
-                            echo "Failed to download or empty Gemini.list, exiting."
-                          fi
-                          rm -f rules/app/Claude.list
-                        else
-                          echo "Failed to download or empty Claude.list, exiting."
-                        fi
-                        rm -f rules/app/OpenAI.list
-                    else
-                      echo "Failed to download or empty OpenAI.list, exiting."
-                    fi
-                    rm -f rules/app/USMedia.list
-                  else
-                    echo "Failed to download or empty USMedia.list, exiting."
-                  fi
-                  rm -f rules/app/PayPal.list
-                else
-                  echo "Failed to download or empty PayPal.list, exiting."
-                fi
-                rm -f rules/app/Reddit.list
-              else
-                echo "Failed to download or empty Reddit.list, exiting."
-              fi
-              rm -f rules/app/GoogleVoice.list
-            else
-              echo "Failed to download or empty GoogleVoice.list, exiting."
+          files=(
+            "TwitterAndX.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list"
+            "GoogleVoice.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleVoice/GoogleVoice.list"
+            "Reddit.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.list"
+            "PayPal.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PayPal/PayPal.list"
+            "USMedia.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list"
+            "OpenAI.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list"
+            "Claude.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list"
+            "Gemini.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list"
+            "Dropbox.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dropbox/Dropbox.list"
+          )
+          downloaded_files=() 
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"
+            output_path="rules/app/${filename}"
+
+            if ! curl -f -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error::Failed to download or empty file: $filename"
+              rm -f "${downloaded_files[@]}"
+              exit 1
             fi
-            rm -f rules/app/TwitterAndX.list
-          else
-            echo "Failed to download or empty TwitterAndX.list, exiting."
-          fi
+
+            echo >> "$output_path"
+            downloaded_files+=("$output_path")
+          done
+          cat "${downloaded_files[@]}" rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
+          echo >> rules/app/USAPP.list.new
+          mv -f rules/app/USAPP.list.new rules/app/USAPP.list
+          rm -f "${downloaded_files[@]}"
 
       - name: Download SGAPP rules
         run: |
