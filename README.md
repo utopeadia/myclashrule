@@ -39,3 +39,4 @@ https%3A%2F%2Fraw.githubusercontent.com%2Futopeadia%2Fmyclashrule%2Fmain%2Fclash
 ```http
 https%3A%2F%2Fraw.githubusercontent.com%2Futopeadia%2Fmyclashrule%2Fmain%2Fclash-rule.ini
 ```
+ha与mobile配置为顺序调整版，分别调整了自建与原节点相对位置和漏网之鱼的默认配置
