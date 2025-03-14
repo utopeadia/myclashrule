@@ -296,6 +296,9 @@ PROCESS-NAME,com.vos.as.vit
 PROCESS-NAME,com.vivo.smartmultiwindow
 # CCFLink
 PROCESS-NAME,com.alibaba.android.rimet.ccflink
+# VIVO推送
+PROCESS-NAME,com.vivo.pushservice
+PROCESS-NAME-REGEX,vivo\.pushservice
 # VIVO互传
 PROCESS-NAME,com.vivo.easyshare
 # VIVO智慧引擎
