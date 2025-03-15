@@ -59,16 +59,11 @@ payload:
   - DOMAIN,de2e94956eccc155.cdn.jiashule.com
   - DOMAIN,east.78cf9487bdd788cd4075consulting.club
   - DOMAIN,em01.niceduck.me
-  - DOMAIN,fqfr1.876521.xyz
-  - DOMAIN,fqhk4.876521.xyz
-  - DOMAIN,fqhk5.876521.xyz
-  - DOMAIN,fqirl1.876521.xyz
-  - DOMAIN,fqsg3.876521.xyz
-  - DOMAIN,fquk1.876521.xyz
   - DOMAIN,h8uht3qo6ly3lib9bdq3b3xfox9o9yevq7f5.biliapi.xyz
   - DOMAIN,hi.niceduck.me
   - DOMAIN,hk.fxv2pro.com
   - DOMAIN,hk01.525536.xyz
+  - DOMAIN,i.cu.iepl.my
   - DOMAIN,iepl.fxv2pro.com
   - DOMAIN,ipv6.hongxingdl.vip
   - DOMAIN,ipv6.wnwwv.cn
@@ -281,7 +276,6 @@ payload:
   - IP-CIDR,183.94.30.211/32,no-resolve
   - IP-CIDR,183.94.30.216/32,no-resolve
   - IP-CIDR,183.94.30.241/32,no-resolve
-  - IP-CIDR,185.151.146.51/32,no-resolve
   - IP-CIDR,190.92.215.100/32,no-resolve
   - IP-CIDR,191.101.132.178/32,no-resolve
   - IP-CIDR,192.18.133.190/32,no-resolve
@@ -321,12 +315,11 @@ payload:
   - IP-CIDR,219.76.131.39/32,no-resolve
   - IP-CIDR,223.113.53.149/32,no-resolve
   - IP-CIDR,23.247.139.58/32,no-resolve
-  - IP-CIDR,23.95.231.69/32,no-resolve
   - IP-CIDR,35.78.120.6/32,no-resolve
   - IP-CIDR,36.140.111.202/32,no-resolve
   - IP-CIDR,36.140.93.32/32,no-resolve
   - IP-CIDR,36.151.194.53/32,no-resolve
-  - IP-CIDR,36.151.65.219/32,no-resolve
+  - IP-CIDR,36.151.65.124/32,no-resolve
   - IP-CIDR,36.155.110.185/32,no-resolve
   - IP-CIDR,36.227.240.124/32,no-resolve
   - IP-CIDR,36.227.251.148/32,no-resolve
@@ -350,6 +343,7 @@ payload:
   - IP-CIDR,58.19.16.228/32,no-resolve
   - IP-CIDR,58.19.16.252/32,no-resolve
   - IP-CIDR,58.254.137.120/32,no-resolve
+  - IP-CIDR,58.254.137.123/32,no-resolve
   - IP-CIDR,58.63.247.115/32,no-resolve
   - IP-CIDR,59.111.148.153/32,no-resolve
   - IP-CIDR,59.42.247.169/32,no-resolve
@@ -366,13 +360,11 @@ payload:
   - IP-CIDR,80.97.44.189/32,no-resolve
   - IP-CIDR,82.152.164.216/32,no-resolve
   - IP-CIDR,89.251.11.15/32,no-resolve
-  - IP-CIDR6,2001:41d0:a:2a7a:a:b:cffd:68f9/128,no-resolve
   - IP-CIDR6,2001:470:18:123::2/128,no-resolve
   - IP-CIDR6,2001:470:1f2c:4c::2/128,no-resolve
   - IP-CIDR6,2400:2410:bf0a:e910:58ca:3aff:fe94:1111/128,no-resolve
   - IP-CIDR6,2400:6180:0:d2::e0d:6000/128,no-resolve
   - IP-CIDR6,2400:8901::f03c:95ff:fec1:cc80/128,no-resolve
-  - IP-CIDR6,2400:8a20:112:1::20/128,no-resolve
   - IP-CIDR6,2400:c620:28:f771::1/128,no-resolve
   - IP-CIDR6,2400:e3e0:f5a9:a282:ca1c:d6b9:c1ee:273/128,no-resolve
   - IP-CIDR6,2401:5a0:1000:36::a/128,no-resolve
@@ -390,7 +382,6 @@ payload:
   - IP-CIDR6,2406:da1e:f2b:89ce:910b:bede:dad9:f9ca/128,no-resolve
   - IP-CIDR6,2407:cdc0:b02a:1e::/128,no-resolve
   - IP-CIDR6,2407:cdc0:d002::1061/128,no-resolve
-  - IP-CIDR6,2407:d840:51:1::18/128,no-resolve
   - IP-CIDR6,2408:864e:c03:1c:2:0:b4b2:5b4/128,no-resolve
   - IP-CIDR6,2408:864e:c03:1c:2:0:ed6c:bc7c/128,no-resolve
   - IP-CIDR6,2408:864e:c04:c::100a/128,no-resolve
@@ -406,7 +397,5 @@ payload:
   - IP-CIDR6,2a0e:1d80:15:8f5a::1/128,no-resolve
   - IP-CIDR6,2a0e:1d80:20:cc28::1/128,no-resolve
   - IP-CIDR6,2a0e:1d80:24:ccd1::1/128,no-resolve
-  - IP-CIDR6,2a0e:dc0:5:2264:a:b:87b3:876a/128,no-resolve
   - IP-CIDR6,2a0f:7803:fac2:6dcb::1/128,no-resolve
   - IP-CIDR6,2a0f:9400:73b3::6:a/128,no-resolve
-  - IP-CIDR6,2a12:3fc2:ab4e:1912:b42d:a45a:0:1/128,no-resolve
