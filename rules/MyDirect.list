@@ -12,6 +12,10 @@ DOMAIN-SUFFIX,worldfirst.com.cn
 IP-CIDR,192.168.0.0/16,no-resolve
 
 # 其他
+DOMAIN-SUFFIX,cup.com.cn
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,ntp.aliyun.com
+DOMAIN-SUFFIX,cn.ntp.org.cn
 DOMAIN-SUFFIX,360buyimg.com
 DOMAIN-SUFFIX,ati.com
 DOMAIN-SUFFIX,fwnhub.cn
