@@ -166,7 +166,6 @@ DOMAIN,z.sg1.niceduck.me
 DOMAIN,z.tw1.niceduck.me
 DOMAIN,zyx7klo63ah67m4i.mzstatic.cloud
 IP-CIDR,1.1.1.1/32,no-resolve
-IP-CIDR,101.227.50.103/32,no-resolve
 IP-CIDR,103.161.255.200/32,no-resolve
 IP-CIDR,103.169.126.67/32,no-resolve
 IP-CIDR,103.213.4.51/32,no-resolve
@@ -203,6 +202,7 @@ IP-CIDR,13.212.254.137/32,no-resolve
 IP-CIDR,13.214.200.26/32,no-resolve
 IP-CIDR,13.229.119.116/32,no-resolve
 IP-CIDR,13.229.79.45/32,no-resolve
+IP-CIDR,13.230.248.165/32,no-resolve
 IP-CIDR,130.162.163.216/32,no-resolve
 IP-CIDR,131.186.22.238/32,no-resolve
 IP-CIDR,132.145.239.250/32,no-resolve
@@ -317,7 +317,6 @@ IP-CIDR,43.241.50.81/32,no-resolve
 IP-CIDR,46.3.104.114/32,no-resolve
 IP-CIDR,47.128.223.6/32,no-resolve
 IP-CIDR,47.129.211.55/32,no-resolve
-IP-CIDR,47.130.3.244/32,no-resolve
 IP-CIDR,47.242.179.146/32,no-resolve
 IP-CIDR,47.243.135.205/32,no-resolve
 IP-CIDR,49.0.207.237/32,no-resolve
