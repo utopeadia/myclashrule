@@ -21,7 +21,12 @@ payload:
   - PROCESS-NAME,cn.missfresh.application
   - PROCESS-NAME-REGEX,cn\.missfresh\.application
   - PROCESS-NAME,com.smzdm.client.android
+  - PROCESS-NAME-REGEX,smzdm\.client
+  - PROCESS-NAME-REGEX,^(?=.*smzdm)(?=.*client).*$
   - PROCESS-NAME,com.alibaba.wireless
+  - PROCESS-NAME,com.cainiao.wireless
+  - PROCESS-NAME-REGEX,cainiao\.wireless
+  - PROCESS-NAME-REGEX,^(?=.*cainiao)(?=.*wireless).*$
   - PROCESS-NAME,com.qq.reader
   - PROCESS-NAME-REGEX,com\.qq\.reader
   - PROCESS-NAME,com.tencent.weread
@@ -39,14 +44,6 @@ payload:
   - PROCESS-NAME,com.sohu.newsclient
   - PROCESS-NAME-REGEX,com\.sohu\.newsclient
   - PROCESS-NAME,com.ruanmei.ithome
-  - PROCESS-NAME,tv.danmaku.bili
-  - PROCESS-NAME,com.taobao.taobao
-  - PROCESS-NAME,com.bilibili.app.blue
-  - PROCESS-NAME,com.bilibili.app.in
-  - PROCESS-NAME,com.bilibili.comic
-  - PROCESS-NAME,com.bilibili.comic.intl
-  - PROCESS-NAME,tv.danmaku.bili
-  - PROCESS-NAME,tv.danmaku.bilibilihd
   - PROCESS-NAME,com.ss.android.ugc.aweme
   - PROCESS-NAME-REGEX,com\.ss\.android\.ugc\.aweme
   - PROCESS-NAME,com.smile.gifmaker
@@ -88,11 +85,27 @@ payload:
   - PROCESS-NAME,com.wangyin.payment
   - PROCESS-NAME-REGEX,com\.wangyin\.payment
   - PROCESS-NAME,cmb.pb
+  - PROCESS-NAME-REGEX,cmb\.pb
+  - PROCESS-NAME-REGEX,^(?=.*cmb)(?=.*ccd).*$
+  - PROCESS-NAME-REGEX,cmb\.pb
+  - PROCESS-NAME-REGEX,^(?=.*cmb)(?=.*ccd).*$
+  - PROCESS-NAME,com.cmbchina.ccd.pluto.cmbActivity
+  - PROCESS-NAME-REGEX,cmbchina\.ccd
+  - PROCESS-NAME-REGEX,^(?=.*cmbchina)(?=.*ccd).*$
   - PROCESS-NAME,com.chinamworld.bocmbci
   - PROCESS-NAME,com.forms
+  - PROCESS-NAME,com.chinamworld.main
+  - PROCESS-NAME-REGEX,com\.chinamworld
+  - PROCESS-NAME-REGEX,^(?=.*com)(?=.*chinamworld).*$
   - PROCESS-NAME,com.eastmoney.android.berlin
   - PROCESS-NAME,com.iss.weihaibank
   - PROCESS-NAME,com.jd.jrapp
+  - PROCESS-NAME,com.vivo.wallet
+  - PROCESS-NAME-REGEX,vivo\.wallet
+  - PROCESS-NAME-REGEX,^(?=.*vivo)(?=.*wallet).*$
+  - PROCESS-NAME,com.unionpay.tsmservice
+  - PROCESS-NAME-REGEX,unionpay\.tsmservice
+  - PROCESS-NAME-REGEX,^(?=.*unionpay)(?=.*tsmservice).*$
   - PROCESS-NAME,com.sankuai.meituan.takeoutnew
   - PROCESS-NAME-REGEX,com\.sankuai\.meituan\.takeoutnew
   - PROCESS-NAME,me.ele
@@ -206,3 +219,51 @@ payload:
   - PROCESS-NAME,Thunder
   - PROCESS-NAME,Thunder.exe
   - PROCESS-NAME,com.qiyi.video
+  - PROCESS-NAME,com.bbk.launcher2
+  - PROCESS-NAME,com.bbk.lite.theme
+  - PROCESS-NAME,com.vivo.faceunlock
+  - PROCESS-NAME,com.vivo.base.player
+  - PROCESS-NAME,com.vivo.networkstate
+  - PROCESS-NAME,com.vivo.magazine
+  - PROCESS-NAME,com.vivo.livewallpaper.behaviorskylight
+  - PROCESS-NAME,com.vivo.devicereg
+  - PROCESS-NAME,com.vivo.familycare.local
+  - PROCESS-NAME,com.iqoo.secure
+  - PROCESS-NAME,com.vivo.base.vtouch
+  - PROCESS-NAME,com.vivo.globalsearch
+  - PROCESS-NAME,com.bbk.iqoo.logsystem
+  - PROCESS-NAME,com.vivo.video.widget
+  - PROCESS-NAME,com.vivo.SmartKey
+  - PROCESS-NAME,com.vivo.suggestion
+  - PROCESS-NAME,com.vivo.ese.widget
+  - PROCESS-NAME,com.vivo.basemanager
+  - PROCESS-NAME,com.vivo.android.wifi.mainline.common.resources.overlay
+  - PROCESS-NAME,com.bbk.facewake
+  - PROCESS-NAME,com.vivo.newsreader
+  - PROCESS-NAME,com.vivo.faceui
+  - PROCESS-NAME,com.bbk.photoframewidget
+  - PROCESS-NAME,com.vivo.alphacamera
+  - PROCESS-NAME,com.vivo.vdfs
+  - PROCESS-NAME,com.vivo.game
+  - PROCESS-NAME,com.vivo.e2ee
+  - PROCESS-NAME,com.vivo.card
+  - PROCESS-NAME,com.vivo.globalanimation
+  - PROCESS-NAME,com.vivo.screenreader
+  - PROCESS-NAME-REGEX,vivo\.screenreader
+  - PROCESS-NAME-REGEX,^(?=.*vivo)(?=.*screenreader).*$
+  - PROCESS-NAME,com.vivo.voicewakeup
+  - PROCESS-NAME-REGEX,vivo\.voicewakeup
+  - PROCESS-NAME-REGEX,^(?=.*vivo)(?=.*voicewakeup).*$
+  - PROCESS-NAME,com.vivo.aiservice
+  - PROCESS-NAME,com.vivo.aiengine
+  - PROCESS-NAME,com.android.bbkmusic
+  - PROCESS-NAME,com.vivo.gallery.sharedId
+  - PROCESS-NAME,com.vivo.space
+  - PROCESS-NAME-REGEX,vivo\.space
+  - PROCESS-NAME-REGEX,^(?=.*vivo)(?=.*space).*$
+  - PROCESS-NAME,com.vivo.safecenter
+  - PROCESS-NAME-REGEX,vivo\.safecenter
+  - PROCESS-NAME-REGEX,^(?=.*vivo)(?=.*safecenter).*$
+  - PROCESS-NAME,com.vlife.vivo.wallpaper
+  - PROCESS-NAME-REGEX,vlife\.vivo
+  - PROCESS-NAME-REGEX,^(?=.*vlife)(?=.*vivo).*$
