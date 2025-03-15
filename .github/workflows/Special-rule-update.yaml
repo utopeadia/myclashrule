@@ -50,7 +50,7 @@ jobs:
           cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list > rules/MyDirect.list.new
           mv -f rules/MyDirect.list.new rules/MyDirect.list
 
-      - name: Update MyReject.list
+      - name: Update Reject.list
         run: |
           if  curl -f -s -o rules/pcdn.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt && [[ -s rules/pcdn.txt ]]; then
             cat rules/pcdn.txt | while read line; do
@@ -79,8 +79,8 @@ jobs:
                   echo "$line" >> rules/httpdns.list.tmp
                 fi
               done < rules/httpdns.list
-              cat rules/MyReject.MANUAL.list rules/httpdns.list.tmp rules/pcdn.list > rules/MyReject.list.new
-              mv -f rules/MyReject.list.new rules/MyReject.list
+              cat rules/httpdns.list.tmp rules/pcdn.list > rules/ForcedReject.list.new
+              mv -f rules/ForcedReject.list.new rules/ForcedReject.list
               rm -f rules/httpdns.list rules/httpdns.list.tmp
             else
               echo "Failed to download or empty httpdns.list, exiting."
