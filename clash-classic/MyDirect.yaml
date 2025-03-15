@@ -187,6 +187,7 @@ payload:
   - DOMAIN,z.tw1.niceduck.me
   - DOMAIN,zyx7klo63ah67m4i.mzstatic.cloud
   - IP-CIDR,1.1.1.1/32,no-resolve
+  - IP-CIDR,101.227.50.103/32,no-resolve
   - IP-CIDR,103.161.255.200/32,no-resolve
   - IP-CIDR,103.169.126.67/32,no-resolve
   - IP-CIDR,103.213.4.51/32,no-resolve
@@ -266,6 +267,7 @@ payload:
   - IP-CIDR,159.13.35.245/32,no-resolve
   - IP-CIDR,159.138.86.100/32,no-resolve
   - IP-CIDR,162.245.221.26/32,no-resolve
+  - IP-CIDR,163.177.46.189/32,no-resolve
   - IP-CIDR,165.1.68.155/32,no-resolve
   - IP-CIDR,166.108.229.203/32,no-resolve
   - IP-CIDR,167.234.208.240/32,no-resolve
@@ -275,7 +277,6 @@ payload:
   - IP-CIDR,178.128.84.251/32,no-resolve
   - IP-CIDR,18.136.42.129/32,no-resolve
   - IP-CIDR,18.178.68.61/32,no-resolve
-  - IP-CIDR,183.240.211.13/32,no-resolve
   - IP-CIDR,183.94.30.208/32,no-resolve
   - IP-CIDR,183.94.30.211/32,no-resolve
   - IP-CIDR,183.94.30.216/32,no-resolve
