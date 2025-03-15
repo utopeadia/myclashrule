@@ -15,6 +15,8 @@ DOMAIN-SUFFIX,cu22.kuxueyun.com
 DOMAIN-SUFFIX,cu41.kuxueyun.com
 DOMAIN-SUFFIX,cu42.kuxueyun.com
 
+DOMAIN-SUFFIX,time.asia.apple.com
+
 # DNS解析
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
