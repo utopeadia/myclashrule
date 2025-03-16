@@ -5,9 +5,6 @@ payload:
   - DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
   - PROCESS-NAME,com.bybit.app
   - PROCESS-NAME-REGEX,com\.bybit\.app
-  - DOMAIN-SUFFIX,okx.com
-  - PROCESS-NAME,com.okinc.okex.gp
-  - PROCESS-NAME-REGEX,com\.okinc\.okex\.gp
   - DOMAIN-SUFFIX,binance.com
   - DOMAIN-SUFFIX,bnbstatic.com
   - PROCESS-NAME,com.binance.dev

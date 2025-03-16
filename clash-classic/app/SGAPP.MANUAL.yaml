@@ -2,6 +2,9 @@ payload:
   - DOMAIN-SUFFIX,tencentcloud.com
   - DOMAIN-SUFFIX,login.tailscale.com
   - DOMAIN-SUFFIX,www.tailscale.com
+  - DOMAIN-SUFFIX,okx.com
+  - PROCESS-NAME,com.okinc.okex.gp
+  - PROCESS-NAME-REGEX,com\.okinc\.okex\.gp
   - DOMAIN-SUFFIX,deepseek.com
   - PROCESS-NAME,com.deepseek.chat
   - PROCESS-NAME-REGEX,com\.deepseek\.chat
