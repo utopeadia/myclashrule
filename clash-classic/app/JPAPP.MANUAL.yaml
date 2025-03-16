@@ -5,6 +5,16 @@ payload:
   - DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
   - PROCESS-NAME,com.bybit.app
   - PROCESS-NAME-REGEX,com\.bybit\.app
+  - DOMAIN-SUFFIX,okx.com
+  - PROCESS-NAME,com.okinc.okex.gp
+  - PROCESS-NAME-REGEX,com\.okinc\.okex\.gp
+  - DOMAIN-SUFFIX,binance.com
+  - PROCESS-NAME,com.binance.dev
+  - PROCESS-NAME-REGEX,com\.binance\.dev
+  - DOMAIN-SUFFIX,mytokenpocket.vip
+  - DOMAIN-SUFFIX,umeng.com
+  - PROCESS-NAME,vip.mytokenpocket
+  - PROCESS-NAME-REGEX,vip\.mytokenpocket
   - DOMAIN-SUFFIX,teracloud.jp
   - DOMAIN-KEYWORD,teracloud
   - DOMAIN-KEYWORD,infini-cloud
