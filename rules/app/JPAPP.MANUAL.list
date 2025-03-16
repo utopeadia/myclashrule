@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,okx.com
 PROCESS-NAME,com.okinc.okex.gp
 PROCESS-NAME-REGEX,com\.okinc\.okex\.gp
 DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,bnbstatic.com
 PROCESS-NAME,com.binance.dev
 PROCESS-NAME-REGEX,com\.binance\.dev
 DOMAIN-SUFFIX,mytokenpocket.vip
