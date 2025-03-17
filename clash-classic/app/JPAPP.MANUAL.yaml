@@ -10,7 +10,6 @@ payload:
   - PROCESS-NAME,com.binance.dev
   - PROCESS-NAME-REGEX,com\.binance\.dev
   - DOMAIN-SUFFIX,mytokenpocket.vip
-  - DOMAIN-SUFFIX,umeng.com
   - PROCESS-NAME,vip.mytokenpocket
   - PROCESS-NAME-REGEX,vip\.mytokenpocket
   - DOMAIN-SUFFIX,teracloud.jp
