@@ -590,6 +590,7 @@ payload:
   - DOMAIN-SUFFIX,trypear.ai
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,manus.im
+  - DOMAIN-SUFFIX,manus.space
   - DOMAIN-SUFFIX,manuscdn.com
   - IP-CIDR,23.94.180.0/24,no-resolve
   - IP-CIDR,38.60.91.0/24,no-resolve
