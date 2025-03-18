@@ -51,7 +51,6 @@ payload:
   - DOMAIN,5n6ifmvm4doy5jmdghvmglyzy4uqfc5f8hnv.biliapi.xyz
   - DOMAIN,6mth1ik5ru50hi65yyjdshzkmi4fdb03.04.01.us.6l6.site
   - DOMAIN,724dea933bd71dcc.cdn.jiashule.com
-  - DOMAIN,77980.bodis.com
   - DOMAIN,7l16pb58767gy7h99qjxqapm3w7bonx5.04.02.hk.6l6.site
   - DOMAIN,84qgio2u5uj5i3ak407c8nn9rc2e98av.04.08.us.6l6.site
   - DOMAIN,9e5c9a110a3f4fd0.cdn.jiashule.com
@@ -254,6 +253,7 @@ payload:
   - IP-CIDR,116.251.216.70/32,no-resolve
   - IP-CIDR,117.172.176.63/32,no-resolve
   - IP-CIDR,118.167.1.108/32,no-resolve
+  - IP-CIDR,118.167.4.99/32,no-resolve
   - IP-CIDR,119.36.154.74/32,no-resolve
   - IP-CIDR,120.198.71.182/32,no-resolve
   - IP-CIDR,120.232.217.64/32,no-resolve
@@ -271,6 +271,8 @@ payload:
   - IP-CIDR,13.212.254.137/32,no-resolve
   - IP-CIDR,13.214.200.26/32,no-resolve
   - IP-CIDR,13.229.119.116/32,no-resolve
+  - IP-CIDR,13.229.79.45/32,no-resolve
+  - IP-CIDR,13.230.248.165/32,no-resolve
   - IP-CIDR,130.162.163.216/32,no-resolve
   - IP-CIDR,131.186.22.238/32,no-resolve
   - IP-CIDR,132.145.239.250/32,no-resolve
@@ -352,7 +354,6 @@ payload:
   - IP-CIDR,193.123.76.84/32,no-resolve
   - IP-CIDR,194.102.181.170/32,no-resolve
   - IP-CIDR,194.105.89.238/32,no-resolve
-  - IP-CIDR,199.59.243.228/32,no-resolve
   - IP-CIDR,204.10.194.78/32,no-resolve
   - IP-CIDR,204.10.194.86/32,no-resolve
   - IP-CIDR,205.198.65.183/32,no-resolve
@@ -386,6 +387,7 @@ payload:
   - IP-CIDR,47.242.179.146/32,no-resolve
   - IP-CIDR,47.243.135.205/32,no-resolve
   - IP-CIDR,49.0.207.237/32,no-resolve
+  - IP-CIDR,52.192.68.231/32,no-resolve
   - IP-CIDR,52.196.23.12/32,no-resolve
   - IP-CIDR,54.150.148.149/32,no-resolve
   - IP-CIDR,54.179.187.79/32,no-resolve
