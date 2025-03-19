@@ -210,6 +210,7 @@ DOMAIN,z.tw1.niceduck.me
 DOMAIN,zyx7klo63ah67m4i.mzstatic.cloud
 IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,1.161.38.99/32,no-resolve
+IP-CIDR,101.227.50.103/32,no-resolve
 IP-CIDR,103.161.255.200/32,no-resolve
 IP-CIDR,103.169.126.67/32,no-resolve
 IP-CIDR,103.213.4.51/32,no-resolve
@@ -410,7 +411,7 @@ IP-CIDR6,2406:8dc0:6001::1eb5/128,no-resolve
 IP-CIDR6,2406:da12:adf:9600:36e6:8b6:43ae:ff83/128,no-resolve
 IP-CIDR6,2406:da14:cfb:5500:917b:37fc:a540:773a/128,no-resolve
 IP-CIDR6,2406:da18:576:3b00:c351:506e:63fc:ef2/128,no-resolve
-IP-CIDR6,2406:da1e:f24:31a4:d58a:4994:71d9:7388/128,no-resolve
+IP-CIDR6,2406:da1e:cbe:9fb8:1adc:f514:5e17:160d/128,no-resolve
 IP-CIDR6,2407:cdc0:b02a:1e::/128,no-resolve
 IP-CIDR6,2407:cdc0:d002::1061/128,no-resolve
 IP-CIDR6,2408:864e:c03:1c:2:0:b4b2:5b4/128,no-resolve
