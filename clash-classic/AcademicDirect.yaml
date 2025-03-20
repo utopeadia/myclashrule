@@ -22,6 +22,7 @@ payload:
   - DOMAIN-SUFFIX,sciencemag.org
   - DOMAIN-SUFFIX,cabdirect.org
   - DOMAIN-SUFFIX,ieee.org
+  - DOMAIN-SUFFIX,ieee.atyponrex.com
   - DOMAIN-SUFFIX,scienceconnect.io
   - DOMAIN-SUFFIX,nature.com
   - DOMAIN-SUFFIX,science.com
