@@ -1,12 +1,5 @@
 payload:
   - DOMAIN,0ceb0c03b9dc9f3f.cdn.jiashule.com
-  - DOMAIN,0edw2vu7stvjcmo2u1p9czeh638evkou.04.02.us.6l6.site
-  - DOMAIN,0gxcrvnu76jc5uiggnye63g74tp7f45p.04.03.hk.6l6.site
-  - DOMAIN,0owxordaxjc16ku483pozggvx8nr0nwd.04.04.us.6l6.site
-  - DOMAIN,0qkb3q1sdngs58pc3mkeo07rc0zay0o7.04.02.sg.6l6.site
-  - DOMAIN,1hvhb5mqlfcqh3hwf6kfty60l9ta2yg2.04.01.hk.6l6.site
-  - DOMAIN,20kjaxca6jsc2x1nxy1yu8ni1xahyrql.04.06.hk.6l6.site
-  - DOMAIN,27csy2hiajixn8morzfi84gb8dc3ynu9.04.08.hk.6l6.site
   - DOMAIN,2afa524379f59543.cdn.jiashule.com
   - DOMAIN,2dc608afc99297fc.cdn.jiashule.com
   - DOMAIN,38nn7tb3nckccjbq.mzstatic.cloud
@@ -24,23 +17,16 @@ payload:
   - DOMAIN,3vhims5saouennhr.biliapi.xyz
   - DOMAIN,40c094b2c725e126.cdn.jiashule.com
   - DOMAIN,455kdqs6a76d8el54sbthyiw5sgaly8p8ym2.biliapi.xyz
-  - DOMAIN,49oeukzjwscy59ocf8dtnnof4w8kniml.04.01.tw.6l6.site
   - DOMAIN,4phd4zjbkp4z4cpd3us4pbdi.biliapi.xyz
-  - DOMAIN,5e445nfqavyrq5f95amnmboi62j2snha.04.02.tw.6l6.site
   - DOMAIN,5fc7e62d84250194.cdn.jiashule.com
   - DOMAIN,5n6ifmvm4doy5jmdghvmglyzy4uqfc5f8hnv.biliapi.xyz
-  - DOMAIN,6mth1ik5ru50hi65yyjdshzkmi4fdb03.04.01.us.6l6.site
   - DOMAIN,724dea933bd71dcc.cdn.jiashule.com
-  - DOMAIN,7l16pb58767gy7h99qjxqapm3w7bonx5.04.02.hk.6l6.site
-  - DOMAIN,84qgio2u5uj5i3ak407c8nn9rc2e98av.04.08.us.6l6.site
   - DOMAIN,9e5c9a110a3f4fd0.cdn.jiashule.com
   - DOMAIN,aaaa-dws75rnrbtfr25hx.bestescargots.com
   - DOMAIN,ajbki989lfxn9asifvhrjqdrcdylb7i279tf.biliapi.xyz
   - DOMAIN,alt-mobile.nodenet.cloud
   - DOMAIN,apernet-hkg.nodenet.cloud
   - DOMAIN,apernet-v6.nodenet.cloud
-  - DOMAIN,bfx2n9yh3czjiwsa36bm3gmressh1ao1.04.01.jp.6l6.site
-  - DOMAIN,bk2uk6ge1csxmbx358l2s2yoq033zacf.04.01.mas.6l6.site
   - DOMAIN,c3.passip.me
   - DOMAIN,cm.passip.me
   - DOMAIN,cn-mobile.nodenet.cloud
@@ -51,30 +37,17 @@ payload:
   - DOMAIN,cname08b-xp3zfkbmz8pyhmbf.bestugali.com
   - DOMAIN,cu.iepl.tizi888.me
   - DOMAIN,cu.passip.me
-  - DOMAIN,d96vogj5gkm8y1wgwxdeheva4dxklg51.04.04.jp.6l6.site
   - DOMAIN,de2e94956eccc155.cdn.jiashule.com
   - DOMAIN,east.78cf9487bdd788cd4075consulting.club
   - DOMAIN,em01.niceduck.me
-  - DOMAIN,en1wp6i950fv93maij8alnl3ngjp4nsd.04.04.hk.6l6.site
-  - DOMAIN,f89h25r7sdoxfe6176o7iiv881jys9ge.04.05.jp.6l6.site
-  - DOMAIN,ff8fchn0p3ezq5wd1ywdm2u9etu0dhxn.04.02.kr.6l6.site
-  - DOMAIN,fpu3w0bz2e9vwjqgb8m87krgka6gqlrs.04.06.jp.6l6.site
-  - DOMAIN,g3u2sdaxp05z881zrxgy3zoqm05whqj0.04.09.hk.6l6.site
-  - DOMAIN,g5yu6awptkjwouh6gjzvh4unp25hhzn1.04.01.fr.6l6.site
-  - DOMAIN,ga8q1widchu9ent02gwye1lagohx6mrk.04.02.uk.6l6.site
-  - DOMAIN,h3zjefhbzk645es9onczq9k2kl4co24t.04.01.de.6l6.site
   - DOMAIN,h8uht3qo6ly3lib9bdq3b3xfox9o9yevq7f5.biliapi.xyz
-  - DOMAIN,h9q9sa3kxlldu3vrp2zq1n8k9snnftc4.04.02.jp.6l6.site
   - DOMAIN,hi.niceduck.me
   - DOMAIN,hk.fxv2pro.com
   - DOMAIN,hk01.525536.xyz
   - DOMAIN,i.cu.iepl.my
-  - DOMAIN,i5bhrvpnjkx7mm58ck7xf0fl9kaivim4.04.01.ng.6l6.site
-  - DOMAIN,ic7pimgq8zjvkpw418fc6yl2f8bvhjz1.04.02.ph.6l6.site
   - DOMAIN,iepl.fxv2pro.com
   - DOMAIN,ipv6.hongxingdl.vip
   - DOMAIN,ipv6.wnwwv.cn
-  - DOMAIN,iy642mcu175mkibqw1dnnpb5o852ezd9.04.09.jp.6l6.site
   - DOMAIN,jp-relay.fxv2pro.com
   - DOMAIN,js.wnwwv.cn
   - DOMAIN,jsyd.cloudfisher.xyz
@@ -82,12 +55,9 @@ payload:
   - DOMAIN,jsyd2.niceduck.me
   - DOMAIN,jsyd3.niceduck.me
   - DOMAIN,jwtnz7iwckbqlxl3i9.biliapi.xyz
-  - DOMAIN,k07vvj28yqm9g0qk7w2x07tmbnqcs69u.04.01.tr.6l6.site
-  - DOMAIN,kjv094serbaw9z0mbbij23a7pvrpupcp.04.09.sg.6l6.site
   - DOMAIN,kr-relay.fxv2pro.com
   - DOMAIN,lm.passip.me
   - DOMAIN,metfone-ipv6.nodenet.cloud
-  - DOMAIN,mxvqrktze8sybza8c6g20dhibophr57q.04.01.ar.6l6.site
   - DOMAIN,nktodw3gtxxtmi2m6ih38vv2rllkysstyw6f.biliapi.xyz
   - DOMAIN,node-user-gz.shellnet.net
   - DOMAIN,node-user.shellnet.net
@@ -108,12 +78,8 @@ payload:
   - DOMAIN,ooc-tw.oocnode.xyz
   - DOMAIN,ooc-us.oocnode.xyz
   - DOMAIN,ozrsbbhcqdtrh5meiwhfot2qllialp48xnpk.biliapi.xyz
-  - DOMAIN,p4ql779rll04w2n0o5dcrrhf4r2ku263.04.06.sg.6l6.site
-  - DOMAIN,p9tdhxqfjby44vtbbavmmkhpgfgg6eip.04.03.us.6l6.site
   - DOMAIN,pb2draiip8t4ukrodmjhefg7ughxrvrji3cq.biliapi.xyz
   - DOMAIN,pccw-ipv6.nodenet.cloud
-  - DOMAIN,pghlpazp0cgb3q4elwpk1vq5lo2sfbab.04.01.au.6l6.site
-  - DOMAIN,phtug404kq8vti9rr9zzw417zxp5i8pc.04.07.sg.6l6.site
   - DOMAIN,pq.aws48.yydjc.top
   - DOMAIN,pq.aws49.yydjc.top
   - DOMAIN,pq.aws50.yydjc.top
@@ -128,7 +94,6 @@ payload:
   - DOMAIN,pq.hkt2.yydjc.top
   - DOMAIN,pq.hkt3.yydjc.top
   - DOMAIN,pq.hkt4.yydjc.top
-  - DOMAIN,pr36anfnxo16xn2jwxnewpzkxff9uyl8.04.07.us.6l6.site
   - DOMAIN,rm-lite-au-01.409648.xyz
   - DOMAIN,rm-lite-hk-02.409648.xyz
   - DOMAIN,rm-lite-hk-03.409648.xyz
@@ -177,7 +142,6 @@ payload:
   - DOMAIN,s.us4.niceduck.me
   - DOMAIN,s.us5.niceduck.me
   - DOMAIN,s.us6.niceduck.me
-  - DOMAIN,sa5k5ghu5h87k98hnvrj0vynr37cyqwu.04.03.jp.6l6.site
   - DOMAIN,sb-ipv6.nodenet.cloud
   - DOMAIN,sb10g.520450.xyz
   - DOMAIN,sg-relay.fxv2pro.com
@@ -187,34 +151,24 @@ payload:
   - DOMAIN,south.78cf9487bdd788cd4075consulting.club
   - DOMAIN,sz-hk.sdwan.nodenet.cloud
   - DOMAIN,tpe-ipv6.nodenet.cloud
-  - DOMAIN,tqi4rco77v0ncic1lnbnazazc48j9wmk.04.06.us.6l6.site
   - DOMAIN,tun.tizi888.me
   - DOMAIN,tw-relay.fxv2pro.com
-  - DOMAIN,u0apfhcds05etvrczx6ze5cynjm7ykh9.04.03.sg.6l6.site
-  - DOMAIN,ujg2rty2c4rr2o1oyr7xp8nrjnaucmrr.04.07.jp.6l6.site
   - DOMAIN,uk-relay.fxv2pro.com
   - DOMAIN,us-relay.fxv2pro.com
-  - DOMAIN,uwwmv6c33axt9ubqjnrcasiea5i3ycbm.04.01.sg.6l6.site
   - DOMAIN,ver-005.east.bcd15548-4f97-4d01-8a0e-76e76a183cfc.inbound.ykkcloud.link
   - DOMAIN,vocus-au.ipv6.nodenet.cloud
-  - DOMAIN,vwez3xgzuwx7uvq8irx592j6dl2842b1.04.05.sg.6l6.site
-  - DOMAIN,wetjkqqj90jizsk2rdb0epyynyazuf5y.04.07.hk.6l6.site
-  - DOMAIN,wnrcvx4y76qhhhgb4g5tte55lq2hivcw.04.08.jp.6l6.site
-  - DOMAIN,x62ff5ud2pz8tuih5l5jiqqbxbz7hk2v.04.01.ca.6l6.site
-  - DOMAIN,xdvd99ucigxhdgo2u2wsth1wsrdkb21c.04.01.it.6l6.site
-  - DOMAIN,xefmxxu5ogaji3ytapf7fzm1fwhgn43r.04.04.sg.6l6.site
   - DOMAIN,xuo6zb5esbvrvkpf.mzstatic.cloud
-  - DOMAIN,y29iidl78jsy6v4zix716add1uqjmvq6.04.08.sg.6l6.site
-  - DOMAIN,ygbc3ft3fnl1xee8kjapi39mjqv28uyj.04.05.hk.6l6.site
   - DOMAIN,z.sg1.niceduck.me
   - DOMAIN,z.tw1.niceduck.me
   - DOMAIN,zyx7klo63ah67m4i.mzstatic.cloud
   - IP-CIDR,1.1.1.1/32,no-resolve
   - IP-CIDR,1.161.38.99/32,no-resolve
+  - IP-CIDR,1.162.174.7/32,no-resolve
   - IP-CIDR,101.227.50.103/32,no-resolve
   - IP-CIDR,103.161.255.200/32,no-resolve
   - IP-CIDR,103.169.126.67/32,no-resolve
   - IP-CIDR,103.213.4.51/32,no-resolve
+  - IP-CIDR,104.18.20.20/32,no-resolve
   - IP-CIDR,104.18.20.69/32,no-resolve
   - IP-CIDR,104.18.22.235/32,no-resolve
   - IP-CIDR,106.75.24.145/32,no-resolve
@@ -222,22 +176,21 @@ payload:
   - IP-CIDR,108.181.23.241/32,no-resolve
   - IP-CIDR,108.181.23.249/32,no-resolve
   - IP-CIDR,108.181.23.255/32,no-resolve
-  - IP-CIDR,111.243.69.94/32,no-resolve
   - IP-CIDR,111.29.57.126/32,no-resolve
   - IP-CIDR,111.47.212.227/32,no-resolve
+  - IP-CIDR,112.120.48.172/32,no-resolve
   - IP-CIDR,112.120.48.184/32,no-resolve
   - IP-CIDR,112.120.48.185/32,no-resolve
   - IP-CIDR,112.29.250.206/32,no-resolve
   - IP-CIDR,116.251.216.70/32,no-resolve
   - IP-CIDR,117.172.176.63/32,no-resolve
-  - IP-CIDR,118.167.1.108/32,no-resolve
-  - IP-CIDR,118.167.4.99/32,no-resolve
+  - IP-CIDR,118.167.4.170/32,no-resolve
+  - IP-CIDR,118.167.5.12/32,no-resolve
   - IP-CIDR,119.36.154.74/32,no-resolve
   - IP-CIDR,120.198.71.182/32,no-resolve
   - IP-CIDR,120.232.217.64/32,no-resolve
   - IP-CIDR,120.233.87.67/32,no-resolve
   - IP-CIDR,120.233.87.74/32,no-resolve
-  - IP-CIDR,120.233.87.89/32,no-resolve
   - IP-CIDR,120.241.32.43/32,no-resolve
   - IP-CIDR,120.253.242.234/32,no-resolve
   - IP-CIDR,124.222.242.183/32,no-resolve
@@ -246,10 +199,11 @@ payload:
   - IP-CIDR,129.148.39.249/32,no-resolve
   - IP-CIDR,129.154.237.229/32,no-resolve
   - IP-CIDR,129.159.227.221/32,no-resolve
+  - IP-CIDR,13.113.120.8/32,no-resolve
   - IP-CIDR,13.212.254.137/32,no-resolve
   - IP-CIDR,13.229.119.116/32,no-resolve
   - IP-CIDR,13.229.79.45/32,no-resolve
-  - IP-CIDR,13.231.253.244/32,no-resolve
+  - IP-CIDR,13.251.20.150/32,no-resolve
   - IP-CIDR,130.162.163.216/32,no-resolve
   - IP-CIDR,131.186.22.238/32,no-resolve
   - IP-CIDR,132.145.239.250/32,no-resolve
@@ -300,10 +254,10 @@ payload:
   - IP-CIDR,167.234.210.122/32,no-resolve
   - IP-CIDR,168.138.165.109/32,no-resolve
   - IP-CIDR,168.138.184.187/32,no-resolve
+  - IP-CIDR,172.67.79.136/32,no-resolve
   - IP-CIDR,178.128.84.251/32,no-resolve
+  - IP-CIDR,18.139.122.96/32,no-resolve
   - IP-CIDR,18.140.236.81/32,no-resolve
-  - IP-CIDR,18.142.183.115/32,no-resolve
-  - IP-CIDR,18.178.68.61/32,no-resolve
   - IP-CIDR,183.240.211.34/32,no-resolve
   - IP-CIDR,183.94.30.208/32,no-resolve
   - IP-CIDR,183.94.30.211/32,no-resolve
@@ -341,16 +295,14 @@ payload:
   - IP-CIDR,217.142.238.89/32,no-resolve
   - IP-CIDR,219.151.180.138/32,no-resolve
   - IP-CIDR,219.76.131.228/32,no-resolve
-  - IP-CIDR,219.76.131.33/32,no-resolve
   - IP-CIDR,219.76.131.36/32,no-resolve
   - IP-CIDR,219.76.131.37/32,no-resolve
   - IP-CIDR,219.76.131.38/32,no-resolve
   - IP-CIDR,219.76.131.39/32,no-resolve
   - IP-CIDR,223.113.53.149/32,no-resolve
   - IP-CIDR,23.247.139.58/32,no-resolve
-  - IP-CIDR,3.0.69.146/32,no-resolve
-  - IP-CIDR,3.38.60.124/32,no-resolve
-  - IP-CIDR,35.78.120.6/32,no-resolve
+  - IP-CIDR,3.113.3.139/32,no-resolve
+  - IP-CIDR,35.76.185.205/32,no-resolve
   - IP-CIDR,36.140.111.202/32,no-resolve
   - IP-CIDR,36.140.93.32/32,no-resolve
   - IP-CIDR,36.151.251.23/32,no-resolve
@@ -368,7 +320,8 @@ payload:
   - IP-CIDR,49.0.207.237/32,no-resolve
   - IP-CIDR,52.192.20.69/32,no-resolve
   - IP-CIDR,52.196.23.12/32,no-resolve
-  - IP-CIDR,52.69.143.222/32,no-resolve
+  - IP-CIDR,52.77.235.17/32,no-resolve
+  - IP-CIDR,52.79.246.148/32,no-resolve
   - IP-CIDR,54.179.187.79/32,no-resolve
   - IP-CIDR,54.238.106.95/32,no-resolve
   - IP-CIDR,58.19.16.228/32,no-resolve
@@ -409,7 +362,7 @@ payload:
   - IP-CIDR6,2406:da12:adf:9600:36e6:8b6:43ae:ff83/128,no-resolve
   - IP-CIDR6,2406:da14:cfb:5500:917b:37fc:a540:773a/128,no-resolve
   - IP-CIDR6,2406:da18:576:3b00:c351:506e:63fc:ef2/128,no-resolve
-  - IP-CIDR6,2406:da1e:cbe:9fb8:1adc:f514:5e17:160d/128,no-resolve
+  - IP-CIDR6,2406:da1e:6eb:83dc:adb:7f2f:b973:5705/128,no-resolve
   - IP-CIDR6,2407:cdc0:b02a:1e::/128,no-resolve
   - IP-CIDR6,2407:cdc0:d002::1061/128,no-resolve
   - IP-CIDR6,2408:864e:c03:1c:2:0:b4b2:5b4/128,no-resolve
@@ -419,7 +372,6 @@ payload:
   - IP-CIDR6,2409:8c20:26c2:4:c000::48/128,no-resolve
   - IP-CIDR6,2409:8c30:1000:1b00:5:335d:a28d:b8ae/128,no-resolve
   - IP-CIDR6,2409:8c30:1000:1b00:5:34a3:4ad6:d4e/128,no-resolve
-  - IP-CIDR6,2409:8c54:1841:2008:0:1:0:1f4/128,no-resolve
   - IP-CIDR6,2602:feda:30:ae86:20c:aff:fe2f:e8e6/128,no-resolve
   - IP-CIDR6,2603:c022:8013:bbbb:456f:8f3a:4dfb:7aa8/128,no-resolve
   - IP-CIDR6,2603:c024:c011:8a7a:4b35:c6da:ecf6:3676/128,no-resolve
