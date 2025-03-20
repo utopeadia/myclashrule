@@ -370,7 +370,6 @@ payload:
   - IP-CIDR,52.196.23.12/32,no-resolve
   - IP-CIDR,52.69.143.222/32,no-resolve
   - IP-CIDR,54.179.187.79/32,no-resolve
-  - IP-CIDR,54.179.4.150/32,no-resolve
   - IP-CIDR,54.238.106.95/32,no-resolve
   - IP-CIDR,58.19.16.228/32,no-resolve
   - IP-CIDR,58.19.16.252/32,no-resolve
