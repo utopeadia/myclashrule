@@ -15,3 +15,5 @@ payload:
   - DOMAIN-KEYWORD,mrbase.org
   - DOMAIN-KEYWORD,voxelx.com
   - DOMAIN-KEYWORD,seerstat.imsweb.com
+  - DOMAIN-SUFFIX,ieee.atyponrex.com
+  - DOMAIN-SUFFIX,authorgateway.ieee.org
