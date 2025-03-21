@@ -10,6 +10,8 @@ DOMAIN-SUFFIX,ap-east-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,ap-west-1.prod.pr.panorama.console.api.aws
 
 # Other
+DOMAIN-SUFFIX,yamlforge.luoveyq.space
+DOMAIN-SUFFIX,conv.luoveyq.space
 DOMAIN-SUFFIX,dalao.net
 DOMAIN-SUFFIX,frphk.112700.xyz
 DOMAIN-SUFFIX,hkloc0.112700.xyz

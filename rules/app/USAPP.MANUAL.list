@@ -22,8 +22,8 @@ DOMAIN-SUFFIX,githubuniverse.com
 DOMAIN-SUFFIX,githubusercontent.com
 
 # 其他服务
-wootric.com
-contentsquare.net
+DOMAIN-SUFFIX,wootric.com
+DOMAIN-SUFFIX,contentsquare.net
 DOMAIN-SUFFIX,mktoresp.com
 DOMAIN-SUFFIX,6sc.co
 DOMAIN-SUFFIX,6sense.com
@@ -68,6 +68,8 @@ DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,s.luoveyq.space
+DOMAIN-SUFFIX,fwhwill.win
 DOMAIN-SUFFIX,frpus.112700.xyz
 DOMAIN-SUFFIX,sub.876521.xyz
 DOMAIN-SUFFIX,yf.876521.xyz
