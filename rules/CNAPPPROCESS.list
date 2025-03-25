@@ -45,6 +45,10 @@ PROCESS-NAME-REGEX,smzdm\.client
 PROCESS-NAME-REGEX,^(?=.*smzdm)(?=.*client).*$
 # 1688阿里巴巴
 PROCESS-NAME,com.alibaba.wireless
+# 转转
+PROCESS-NAME,com.wuba.zhuanzhuan
+PROCESS-NAME-REGEX,com\.wuba\.zhuanzhuan
+PROCESS-NAME-REGEX,^(?=.*wuba)(?=.*zhuanzhuan).*$
 # 菜鸟裹裹
 PROCESS-NAME,com.cainiao.wireless
 PROCESS-NAME-REGEX,cainiao\.wireless
