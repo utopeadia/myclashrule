@@ -574,6 +574,9 @@ payload:
   - PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
   - DOMAIN-SUFFIX,x.ai
   - DOMAIN-SUFFIX,grok.com
+  - PROCESS-NAME,ai.x.grok
+  - PROCESS-NAME-REGEX,ai\.x\.grok
+  - PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
   - DOMAIN-SUFFIX,lmsys.org
   - DOMAIN-SUFFIX,groq.com
   - DOMAIN-SUFFIX,poe.com
