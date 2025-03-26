@@ -127,6 +127,9 @@ PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
 # X.ai
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
+PROCESS-NAME,ai.x.grok
+PROCESS-NAME-REGEX,ai\.x\.grok
+PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
 # LLM竞技场
 DOMAIN-SUFFIX,lmsys.org
 # Groq
