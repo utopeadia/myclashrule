@@ -71,7 +71,6 @@ DOMAIN-SUFFIX,cname-kna5xzrk6jhwkbe8.bestpljeskavica.com
 DOMAIN-SUFFIX,cname-nntr5js5hss7bwef.bestpljeskavica.com
 DOMAIN-SUFFIX,cname08a-xp3zfkbmz8pyhmbf.xiaowangzi777.com
 DOMAIN-SUFFIX,cname08b-xp3zfkbmz8pyhmbf.bestugali.com
-DOMAIN-SUFFIX,cu.iepl.tizi888.me
 DOMAIN-SUFFIX,cu.passip.me
 DOMAIN-SUFFIX,d96vogj5gkm8y1wgwxdeheva4dxklg51.04.04.jp.6l6.site
 DOMAIN-SUFFIX,de2e94956eccc155.cdn.jiashule.com
@@ -366,6 +365,7 @@ IP-CIDR,35.73.106.75/32,no-resolve
 IP-CIDR,36.140.111.202/32,no-resolve
 IP-CIDR,36.140.93.32/32,no-resolve
 IP-CIDR,36.151.251.23/32,no-resolve
+IP-CIDR,36.151.65.190/32,no-resolve
 IP-CIDR,36.155.110.185/32,no-resolve
 IP-CIDR,36.228.193.151/32,no-resolve
 IP-CIDR,42.157.129.229/32,no-resolve
@@ -384,7 +384,6 @@ IP-CIDR,57.180.72.138/32,no-resolve
 IP-CIDR,58.19.16.228/32,no-resolve
 IP-CIDR,58.254.137.120/32,no-resolve
 IP-CIDR,58.254.137.123/32,no-resolve
-IP-CIDR,58.254.184.157/32,no-resolve
 IP-CIDR,58.63.247.115/32,no-resolve
 IP-CIDR,59.111.148.153/32,no-resolve
 IP-CIDR,59.42.247.169/32,no-resolve
