@@ -19916,7 +19916,6 @@ payload:
   - DOMAIN,trackinglabs.com
   - DOMAIN,trackkas.com
   - DOMAIN,tracklab.club
-  - DOMAIN,tracklog.58.com
   - DOMAIN,trackmethod.com
   - DOMAIN,trackmytarget.com
   - DOMAIN,trackmyusers.com
@@ -27988,6 +27987,7 @@ payload:
   - DOMAIN-SUFFIX,deletemer.online
   - DOMAIN-SUFFIX,deliver.ifeng.com
   - DOMAIN-SUFFIX,deliver.kuwo.cn
+  - DOMAIN-SUFFIX,deliver.ptgncdn.com
   - DOMAIN-SUFFIX,delivery-dev.thebloggernetwork.com
   - DOMAIN-SUFFIX,delivery-pc.wasu.cn
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp
@@ -34479,7 +34479,7 @@ payload:
   - DOMAIN-SUFFIX,snnd.co
   - DOMAIN-SUFFIX,snnnyy.com
   - DOMAIN-SUFFIX,snow001.com
-  - DOMAIN-SUFFIX,snowflake.qq.com
+  - DOMAIN-SUFFIX,snowplow.swm.digital
   - DOMAIN-SUFFIX,so9l.com
   - DOMAIN-SUFFIX,soagrist.net
   - DOMAIN-SUFFIX,soarfi.cn
@@ -35579,6 +35579,7 @@ payload:
   - DOMAIN-SUFFIX,trackingapi.cloudapp.net
   - DOMAIN-SUFFIX,trackingpro.pro
   - DOMAIN-SUFFIX,trackingzen.com
+  - DOMAIN-SUFFIX,tracklog.58.com
   - DOMAIN-SUFFIX,trackmackweldon.com
   - DOMAIN-SUFFIX,trackpm.shop2market.com
   - DOMAIN-SUFFIX,trackspeeder.com
