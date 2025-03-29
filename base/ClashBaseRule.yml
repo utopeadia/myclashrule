@@ -13,6 +13,7 @@ mode: rule
 log-level: info
 global-client-fingerprint: chrome
 global-ua: mymihomo
+tcp-concurrent: true
 unified-delay: false
 geodata-mode: true
 geo-auto-update: true
@@ -188,7 +189,7 @@ sniffer:
     - 36.248.45.62/32
     - 2001:4860:4860::8888/128
     - 2001:4860:4860::8844/128
-    
+
 hosts:
   mtalk.google.com: [64.233.188.188, 108.177.97.188, '2404:6800:4008:c07::bc', '2404:6800:4008:c05::bc']
   alt1-mtalk.google.com: [142.251.186.188, 142.250.141.188, '2607:f8b0:4023:c0b::bc']
