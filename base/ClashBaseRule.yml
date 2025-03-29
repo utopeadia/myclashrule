@@ -72,27 +72,13 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - "geosite:cn"
+    - 'geosite:cn'
     - '+.*'
-    - "+.lan"
+    - '+.lan'
     - '*.lan'
     - '*.local'
     - '*.localhost'
     - '*.localdomain'
-    - "+.miwifi.com"
-    - "+.ntp.org"
-    - "+.u-tools.cn"
-    - "+.mediatek.com"
-    - "+.cfprefer1.xyz"
-    - "+.wetab.link"
-    - "+.weixin.qq.com"
-    - "+.wechat.com"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
-    - "+.wpsmail.net"
-    - "+.henzanapp.com"
-    - "+.pconline.com.cn"
-    - "+.kuxueyun.com"
     - 'stun.*.*'
     - 'stun.*.*.*'
     - '+.stun.*.*'
@@ -119,15 +105,26 @@ dns:
     - '*.ntp.org.*'
     - '+.ntp.org'
     - 'time.*.apple.com'
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
     - '*.steamcontent.com'
     - '*.*.xboxlive.com'
     - 'xbox.*.*.microsoft.com'
+    - 'connect.rom.miui.com'
     - 'localhost.ptlogin2.qq.com'
     - 'localhost.work.weixin.qq.com'
     - 'localhost.sec.qq.com'
-    - 'connect.rom.miui.com'
+    - '+.weixin.qq.com'
+    - '+.wechat.com'
+    - '+.miwifi.com'
+    - '+.u-tools.cn'
+    - '+.mediatek.com'
+    - '+.cfprefer1.xyz'
+    - '+.wetab.link'
+    - '+.wpsmail.net'
+    - '+.henzanapp.com'
+    - '+.pconline.com.cn'
+    - '+.kuxueyun.com'
 profile:
   store-selected: true
   store-fake-ip: true
