@@ -174,6 +174,7 @@ IP-CIDR,68.168.20.0/24,no-resolve
 IP-CIDR,107.175.0.0/16,no-resolve
 IP-CIDR,108.165.0.0/16,no-resolve
 IP-CIDR,148.135.103.0/24,no-resolve
+IP-CIDR,148.135.184.0/24,no-resolve
 IP-CIDR,154.9.0.0/16,no-resolve
 IP-CIDR,156.229.0.0/16,no-resolve
 IP-CIDR,162.254.85.0/24,no-resolve
@@ -185,6 +186,7 @@ IP-CIDR6,2607:fcd0::/32,no-resolve
 IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
 IP-CIDR6,2602:fa4f:900::/48,no-resolve
 IP-CIDR6,2602:f988:80::/48,no-resolve
+IP-CIDR6,2602:f988:90::/48,no-resolve
 
 # US EDU
 DOMAIN-SUFFIX,umass.edu
