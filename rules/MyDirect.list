@@ -221,7 +221,6 @@ DOMAIN-SUFFIX,z.tw1.niceduck.me
 DOMAIN-SUFFIX,zyx7klo63ah67m4i.mzstatic.cloud
 IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,1.161.47.44/32,no-resolve
-IP-CIDR,101.227.50.103/32,no-resolve
 IP-CIDR,103.161.255.200/32,no-resolve
 IP-CIDR,103.169.126.67/32,no-resolve
 IP-CIDR,103.213.4.51/32,no-resolve
@@ -233,7 +232,6 @@ IP-CIDR,108.181.23.249/32,no-resolve
 IP-CIDR,108.181.23.255/32,no-resolve
 IP-CIDR,111.243.116.189/32,no-resolve
 IP-CIDR,111.29.57.126/32,no-resolve
-IP-CIDR,111.47.212.227/32,no-resolve
 IP-CIDR,112.120.48.156/32,no-resolve
 IP-CIDR,112.120.48.184/32,no-resolve
 IP-CIDR,112.120.48.185/32,no-resolve
@@ -246,7 +244,8 @@ IP-CIDR,119.36.154.74/32,no-resolve
 IP-CIDR,120.198.71.182/32,no-resolve
 IP-CIDR,120.233.87.67/32,no-resolve
 IP-CIDR,120.233.87.74/32,no-resolve
-IP-CIDR,120.233.87.89/32,no-resolve
+IP-CIDR,120.237.3.154/32,no-resolve
+IP-CIDR,120.237.3.156/32,no-resolve
 IP-CIDR,129.146.95.165/32,no-resolve
 IP-CIDR,129.148.39.249/32,no-resolve
 IP-CIDR,129.154.237.229/32,no-resolve
@@ -302,6 +301,7 @@ IP-CIDR,159.138.86.100/32,no-resolve
 IP-CIDR,162.245.221.26/32,no-resolve
 IP-CIDR,163.177.46.189/32,no-resolve
 IP-CIDR,163.177.58.116/32,no-resolve
+IP-CIDR,163.177.58.238/32,no-resolve
 IP-CIDR,165.1.68.155/32,no-resolve
 IP-CIDR,166.108.229.203/32,no-resolve
 IP-CIDR,167.234.208.240/32,no-resolve
