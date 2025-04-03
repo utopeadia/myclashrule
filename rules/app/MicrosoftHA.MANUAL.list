@@ -1,5 +1,6 @@
 # office等高ip要求
-DOMAIN-SUFFIX,acctcdn.msauth.net
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msauth.net
 DOMAIN-SUFFIX,account.microsoft.com
 DOMAIN-SUFFIX,csp.microsoft.com
 DOMAIN-SUFFIX,logincdn.msauth.net
