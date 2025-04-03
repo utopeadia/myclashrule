@@ -679,3 +679,4 @@ PROCESS-NAME,OneDriveUpdater
 
 # 补充规则
 DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$
+IP-ASN,8075,no-resolve
