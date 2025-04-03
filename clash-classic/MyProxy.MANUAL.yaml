@@ -36,3 +36,4 @@ payload:
   - DOMAIN-SUFFIX,pwnedpasswords.com
   - DOMAIN-SUFFIX,ipify.org
   - DOMAIN-SUFFIX,unraid.net
+  - DOMAIN-SUFFIX,tawk.to
