@@ -669,3 +669,4 @@ payload:
   - PROCESS-NAME,OneDrive
   - PROCESS-NAME,OneDriveUpdater
   - DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$
+  - IP-ASN,8075,no-resolve
