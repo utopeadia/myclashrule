@@ -120,6 +120,8 @@ payload:
   - PROCESS-NAME,ai.x.grok
   - PROCESS-NAME-REGEX,ai\.x\.grok
   - PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,lmsys.org
   - DOMAIN-SUFFIX,groq.com
   - DOMAIN-SUFFIX,poe.com
