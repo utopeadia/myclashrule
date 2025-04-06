@@ -1252,6 +1252,9 @@ DOMAIN-SUFFIX,itobsnssdk.com
 DOMAIN-SUFFIX,marscode.com
 PROCESS-NAME,Trae Helper
 PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
+# FacebookMetaAI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,llama.com
 # QwenLLM
 DOMAIN-SUFFIX,qwenlm.ai
 DOMAIN-SUFFIX,qwen.ai
