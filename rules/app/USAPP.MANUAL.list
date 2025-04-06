@@ -130,6 +130,9 @@ DOMAIN-SUFFIX,grok.com
 PROCESS-NAME,ai.x.grok
 PROCESS-NAME-REGEX,ai\.x\.grok
 PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
+# FacebookMetaAI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,llama.com
 # LLM竞技场
 DOMAIN-SUFFIX,lmsys.org
 # Groq
