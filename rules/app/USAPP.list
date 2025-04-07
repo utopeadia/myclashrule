@@ -1,293 +1,91 @@
-
-# AUTHOR: blackmatrix7
-# Amazon Panorama API
-# ChatGPT其他
-# Claude其他
-# DOMAIN-KEYWORD: 1
-# DOMAIN-KEYWORD: 2
-# DOMAIN-KEYWORD: 3
-# DOMAIN-SUFFIX: 17
-# DOMAIN-SUFFIX: 2
-# DOMAIN-SUFFIX: 24
-# DOMAIN-SUFFIX: 246
-# DOMAIN-SUFFIX: 25
-# DOMAIN-SUFFIX: 544
-# DOMAIN-SUFFIX: 7
-# DOMAIN-SUFFIX: 8
-# DOMAIN-SUFFIX: 93
-# DOMAIN: 1
-# DOMAIN: 3
-# DOMAIN: 4
-# DOMAIN: 8
-# FacebookMetaAI
-# Gemini其他
-# Github
-# Groq
-# IP-ASN: 1
-# IP-CIDR: 2
-# IP-CIDR: 23
-# IP-CIDR: 6
-# JetBrains AI 
-# KLing可灵
-# LLM竞技场
-# Manus
-# NAME: Claude
-# NAME: Dropbox
-# NAME: Facebook
-# NAME: Gemini
-# NAME: GoogleVoice
-# NAME: OpenAI
-# NAME: PayPal
-# NAME: Reddit
 # NAME: Twitter
-# NAME: USMedia
-# PROCESS-NAME: 3
-# PearAi
-# QwenLLM
+# AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# SiderAI
-# TOTAL: 1
-# TOTAL: 100
-# TOTAL: 13
-# TOTAL: 17
-# TOTAL: 247
-# TOTAL: 3
-# TOTAL: 32
-# TOTAL: 36
-# TOTAL: 570
-# TOTAL: 8
-# Trae IDE
 # UPDATED: 2024-07-03 16:16:10
-# UPDATED: 2024-07-03 16:16:11
-# UPDATED: 2024-07-03 16:16:51
-# UPDATED: 2024-07-03 16:16:55
-# UPDATED: 2024-07-03 16:16:59
-# UPDATED: 2024-07-03 16:18:28
-# UPDATED: 2024-07-03 16:18:30
-# US EDU
-# VPS
-# X.ai
-# codeium&windsurf
-# cohere
-# coze
-# hcompany.ai
-# perplexity
-# poe
-# 其他服务
-# 内容：内容：AI平台-国外
-# 数量：39条
-DOMAIN,ai.google.dev
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,api.githubcopilot.com
-DOMAIN,api.groq.com
-DOMAIN,api.together.xyz
-DOMAIN,bard.google.com
-DOMAIN,browser-intake-datadoghq.com
-DOMAIN,cdn.usefathom.com
-DOMAIN,chat.openai.com.cdn.cloudflare.net
-DOMAIN,console.groq.com
-DOMAIN,copilot-proxy.githubusercontent.com
-DOMAIN,espn.api.edge.bamgrid.com
-DOMAIN,espn.hb.omtrdc.net
-DOMAIN,espndotcom.tt.omtrdc.net
-DOMAIN,gemini.google.com
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,lens.l.google.com
-DOMAIN,link.theplatform.com
-DOMAIN,makersuite.google.com
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-DOMAIN,openaicomproductionae4b.blob.core.windows.net
-DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,static.cloudflareinsights.com
-DOMAIN,sydney.bing.com
-DOMAIN-KEYWORD,1password
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,claude
-DOMAIN-KEYWORD,claudeusercontent
-DOMAIN-KEYWORD,cohere
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,cosmotown
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,facebook
-DOMAIN-KEYWORD,fbcdn
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN-KEYWORD,hcompany
-DOMAIN-KEYWORD,onlyfans
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,paypal
-DOMAIN-KEYWORD,transferwise
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 25
+# IP-CIDR: 6
+# TOTAL: 32
+DOMAIN-SUFFIX,ads-twitter.com
+DOMAIN-SUFFIX,cms-twdigitalassets.com
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,tellapart.com
+DOMAIN-SUFFIX,tweetdeck.com
+DOMAIN-SUFFIX,twimg.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twimg.org
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,twitter.biz
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twitter.jp
+DOMAIN-SUFFIX,twittercommunity.com
+DOMAIN-SUFFIX,twitterflightschool.com
+DOMAIN-SUFFIX,twitterinc.com
+DOMAIN-SUFFIX,twitteroauth.com
+DOMAIN-SUFFIX,twitterstat.us
+DOMAIN-SUFFIX,twtrdns.net
+DOMAIN-SUFFIX,twttr.com
+DOMAIN-SUFFIX,twttr.net
+DOMAIN-SUFFIX,twvid.com
+DOMAIN-SUFFIX,vine.co
+DOMAIN-SUFFIX,x.com
 DOMAIN-KEYWORD,twitter
-DOMAIN-KEYWORD,voice.google
-DOMAIN-KEYWORD,voice.telephony
-DOMAIN-SUFFIX,112263.com
-DOMAIN-SUFFIX,6sc.co
-DOMAIN-SUFFIX,6sense.com
+IP-CIDR,192.133.76.0/22,no-resolve
+IP-CIDR,199.59.148.0/22,no-resolve
+IP-CIDR,199.96.56.0/21,no-resolve
+IP-CIDR,202.160.128.0/22,no-resolve
+IP-CIDR,209.237.192.0/19,no-resolve
+IP-CIDR,69.195.160.0/19,no-resolve
+
+# NAME: Facebook
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:16:11
+# DOMAIN-KEYWORD: 2
+# DOMAIN-SUFFIX: 544
+# IP-ASN: 1
+# IP-CIDR: 23
+# TOTAL: 570
 DOMAIN-SUFFIX,aboutfacebook.com
 DOMAIN-SUFFIX,accessfacebookfromschool.com
-DOMAIN-SUFFIX,account-paypal.info
-DOMAIN-SUFFIX,account-paypal.net
-DOMAIN-SUFFIX,account-paypal.org
 DOMAIN-SUFFIX,accountkit.com
-DOMAIN-SUFFIX,accountpaypal.com
-DOMAIN-SUFFIX,accountpaypal.net
-DOMAIN-SUFFIX,accountpaypal.org
 DOMAIN-SUFFIX,acebooik.com
 DOMAIN-SUFFIX,acebook.com
 DOMAIN-SUFFIX,achat-followers-instagram.com
 DOMAIN-SUFFIX,acheter-followers-instagram.com
 DOMAIN-SUFFIX,acheterdesfollowersinstagram.com
 DOMAIN-SUFFIX,acheterfollowersinstagram.com
-DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,advancediddetection.com
-DOMAIN-SUFFIX,ai.azure.com
-DOMAIN-SUFFIX,ai.com
-DOMAIN-SUFFIX,algolia.net
-DOMAIN-SUFFIX,amlg.io
-DOMAIN-SUFFIX,anfutong.cn
-DOMAIN-SUFFIX,anfutong.com
-DOMAIN-SUFFIX,anfutong.com.cn
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,arizona.edu
 DOMAIN-SUFFIX,askfacebook.net
 DOMAIN-SUFFIX,askfacebook.org
-DOMAIN-SUFFIX,assetshuluimcom-a.akamaihd.net
 DOMAIN-SUFFIX,atdmt2.com
 DOMAIN-SUFFIX,atlasdmt.com
 DOMAIN-SUFFIX,atlasonepoint.com
 DOMAIN-SUFFIX,atscaleconference.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,beibao.cn
-DOMAIN-SUFFIX,beibao.com
-DOMAIN-SUFFIX,beibao.com.cn
-DOMAIN-SUFFIX,bill-safe.com
-DOMAIN-SUFFIX,billmelater.com
-DOMAIN-SUFFIX,billmelater.info
-DOMAIN-SUFFIX,billmelater.net
 DOMAIN-SUFFIX,binoculus.com
-DOMAIN-SUFFIX,bml.info
 DOMAIN-SUFFIX,bookstagram.com
 DOMAIN-SUFFIX,botorch.org
-DOMAIN-SUFFIX,braintreegateway.com
-DOMAIN-SUFFIX,braintreegateway.tv
-DOMAIN-SUFFIX,braintreepayments.com
-DOMAIN-SUFFIX,braintreepayments.info
-DOMAIN-SUFFIX,braintreepayments.org
-DOMAIN-SUFFIX,braintreepayments.tv
-DOMAIN-SUFFIX,braintreepaymentsolutions.com
-DOMAIN-SUFFIX,braintreeps.com
-DOMAIN-SUFFIX,briantreepayments.net
-DOMAIN-SUFFIX,briantreepayments.tv
-DOMAIN-SUFFIX,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,buck.build
 DOMAIN-SUFFIX,buckbuild.com
-DOMAIN-SUFFIX,build.nvidia.com
-DOMAIN-SUFFIX,buyfast-paysmart.net
 DOMAIN-SUFFIX,buyingfacebooklikes.com
 DOMAIN-SUFFIX,buyoculus.com
-DOMAIN-SUFFIX,bytedapm.com
-DOMAIN-SUFFIX,byteintl.com
-DOMAIN-SUFFIX,byteintlapi.com
-DOMAIN-SUFFIX,byteoversea.com
-DOMAIN-SUFFIX,bytetos.com
-DOMAIN-SUFFIX,ca.kuxueyun.com
-DOMAIN-SUFFIX,callhulu.com
-DOMAIN-SUFFIX,card.io
 DOMAIN-SUFFIX,careersatfb.com
 DOMAIN-SUFFIX,carstagram.com
-DOMAIN-SUFFIX,cash2.com
-DOMAIN-SUFFIX,cashify.com
-DOMAIN-SUFFIX,cashify.net
-DOMAIN-SUFFIX,cbs.com
-DOMAIN-SUFFIX,cbsaavideo.com
-DOMAIN-SUFFIX,cbscorporation.com
-DOMAIN-SUFFIX,cbsi.com
-DOMAIN-SUFFIX,cbsi.live.ott.irdeto.com
-DOMAIN-SUFFIX,cbsi.video
-DOMAIN-SUFFIX,cbsiam.com
-DOMAIN-SUFFIX,cbsig.net
-DOMAIN-SUFFIX,cbsimg.net
-DOMAIN-SUFFIX,cbsinteractive.com
-DOMAIN-SUFFIX,cbsistatic.com
-DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,cbsnews.com
-DOMAIN-SUFFIX,cbsplaylistserver.aws.syncbak.com
-DOMAIN-SUFFIX,cbspressexpress.com
-DOMAIN-SUFFIX,cbsradio.com
-DOMAIN-SUFFIX,cbsservice.aws.syncbak.com
-DOMAIN-SUFFIX,cbssports.com
-DOMAIN-SUFFIX,cbsstatic.com
-DOMAIN-SUFFIX,cbsstore.com
-DOMAIN-SUFFIX,cbssvideo.com
-DOMAIN-SUFFIX,cbstelevisioncity.com
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,celebgramme.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,chat.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,chickstagram.com
 DOMAIN-SUFFIX,china-facebook.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,click-url.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,cloudcone.com
-DOMAIN-SUFFIX,cms-twdigitalassets.com
-DOMAIN-SUFFIX,codeium.com
-DOMAIN-SUFFIX,codeiumdata.com
-DOMAIN-SUFFIX,colocrossing.com
-DOMAIN-SUFFIX,colostate.edu
 DOMAIN-SUFFIX,como-hackearfacebook.com
 DOMAIN-SUFFIX,componentkit.org
-DOMAIN-SUFFIX,contentsquare.net
-DOMAIN-SUFFIX,copilot.cloud.microsoft
-DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,cosmotown.com
-DOMAIN-SUFFIX,coze.com
 DOMAIN-SUFFIX,crowdtangle.com
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,cvtc.edu
-DOMAIN-SUFFIX,cws-hulu.conviva.com
 DOMAIN-SUFFIX,dacebook.com
-DOMAIN-SUFFIX,db.tt
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,devtools-paypal.com
-DOMAIN-SUFFIX,diygod.dev
 DOMAIN-SUFFIX,dlfacebook.com
 DOMAIN-SUFFIX,dotfacebook.com
 DOMAIN-SUFFIX,dotfacebook.net
 DOMAIN-SUFFIX,draftjs.org
-DOMAIN-SUFFIX,dropbox-dns.com
-DOMAIN-SUFFIX,dropbox.com
-DOMAIN-SUFFIX,dropbox.tech
-DOMAIN-SUFFIX,dropbox.zendesk.com
-DOMAIN-SUFFIX,dropboxapi.com
-DOMAIN-SUFFIX,dropboxbusiness.com
-DOMAIN-SUFFIX,dropboxcaptcha.com
-DOMAIN-SUFFIX,dropboxforum.com
-DOMAIN-SUFFIX,dropboxforums.com
-DOMAIN-SUFFIX,dropboxinsiders.com
-DOMAIN-SUFFIX,dropboxmail.com
-DOMAIN-SUFFIX,dropboxpartners.com
-DOMAIN-SUFFIX,dropboxstatic.com
-DOMAIN-SUFFIX,dropboxusercontent.com
-DOMAIN-SUFFIX,dtci.co
-DOMAIN-SUFFIX,dtci.technology
-DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
-DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-DOMAIN-SUFFIX,espn.co.uk
-DOMAIN-SUFFIX,espn.com
-DOMAIN-SUFFIX,espn.net
-DOMAIN-SUFFIX,espncdn.com
-DOMAIN-SUFFIX,espnqa.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,experiencebillmelater.com
 DOMAIN-SUFFIX,expresswifi.com
 DOMAIN-SUFFIX,f8.com
 DOMAIN-SUFFIX,faacebok.com
@@ -584,7 +382,6 @@ DOMAIN-SUFFIX,feacboo.com
 DOMAIN-SUFFIX,feacbook.com
 DOMAIN-SUFFIX,feacbooke.com
 DOMAIN-SUFFIX,feacebook.com
-DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,fecbbok.com
 DOMAIN-SUFFIX,fecbooc.com
 DOMAIN-SUFFIX,fecbook.com
@@ -599,14 +396,11 @@ DOMAIN-SUFFIX,fesebook.com
 DOMAIN-SUFFIX,ffacebook.com
 DOMAIN-SUFFIX,fgacebook.com
 DOMAIN-SUFFIX,ficeboock.com
-DOMAIN-SUFFIX,filipino-music.net
-DOMAIN-SUFFIX,findyourlimits.com
 DOMAIN-SUFFIX,flow.dev
 DOMAIN-SUFFIX,flow.org
 DOMAIN-SUFFIX,flowtype.org
 DOMAIN-SUFFIX,fmcebook.com
 DOMAIN-SUFFIX,fnacebook.com
-DOMAIN-SUFFIX,follow.is
 DOMAIN-SUFFIX,fosebook.com
 DOMAIN-SUFFIX,fpacebook.com
 DOMAIN-SUFFIX,fqcebook.com
@@ -619,7 +413,6 @@ DOMAIN-SUFFIX,freefacebook.com
 DOMAIN-SUFFIX,freefacebook.net
 DOMAIN-SUFFIX,freefacebookads.net
 DOMAIN-SUFFIX,freefblikes.com
-DOMAIN-SUFFIX,freehulu.com
 DOMAIN-SUFFIX,freindfeed.com
 DOMAIN-SUFFIX,frescolib.org
 DOMAIN-SUFFIX,friendbook.info
@@ -628,98 +421,27 @@ DOMAIN-SUFFIX,friendfeed-api.com
 DOMAIN-SUFFIX,friendfeed-media.com
 DOMAIN-SUFFIX,friendfeed.com
 DOMAIN-SUFFIX,friendfeedmedia.com
-DOMAIN-SUFFIX,frpus.112700.xyz
 DOMAIN-SUFFIX,fsacebok.com
 DOMAIN-SUFFIX,fscebook.com
-DOMAIN-SUFFIX,fundpaypal.com
 DOMAIN-SUFFIX,fundraisingwithfacebook.com
 DOMAIN-SUFFIX,funnyfacebook.org
 DOMAIN-SUFFIX,futureofbusinesssurvey.org
-DOMAIN-SUFFIX,fwhwill.win
 DOMAIN-SUFFIX,gacebook.com
 DOMAIN-SUFFIX,gameroom.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,getbraintree.com
-DOMAIN-SUFFIX,getdropbox.com
 DOMAIN-SUFFIX,gfacecbook.com
-DOMAIN-SUFFIX,github.blog
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.community
-DOMAIN-SUFFIX,github.dev
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,github1s.com
-DOMAIN-SUFFIX,githubapp.com
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,githubhackathon.com
-DOMAIN-SUFFIX,githubnext.com
-DOMAIN-SUFFIX,githubpreview.dev
-DOMAIN-SUFFIX,githubstatus.com
-DOMAIN-SUFFIX,githubuniverse.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,gmoney.org
-DOMAIN-SUFFIX,grazie.ai
-DOMAIN-SUFFIX,grazie.aws.intellij.net
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,groups.com
 DOMAIN-SUFFIX,hackerfacebook.com
 DOMAIN-SUFFIX,hackfacebook.com
 DOMAIN-SUFFIX,hackfacebookid.com
 DOMAIN-SUFFIX,hacklang.org
-DOMAIN-SUFFIX,hcompany.ai
-DOMAIN-SUFFIX,heapanalytics.com
-DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,hhvm.com
 DOMAIN-SUFFIX,hifacebook.info
-DOMAIN-SUFFIX,hooloo.tv
-DOMAIN-SUFFIX,hoolu.com
-DOMAIN-SUFFIX,hoolu.tv
-DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,howtohackfacebook-account.com
 DOMAIN-SUFFIX,hsfacebook.com
 DOMAIN-SUFFIX,httpfacebook.com
 DOMAIN-SUFFIX,httpsfacebook.com
 DOMAIN-SUFFIX,httpwwwfacebook.com
-DOMAIN-SUFFIX,hu1u.com
-DOMAIN-SUFFIX,huggingface.co
-DOMAIN-SUFFIX,huloo.cc
-DOMAIN-SUFFIX,huloo.tv
-DOMAIN-SUFFIX,hulu.com
-DOMAIN-SUFFIX,hulu.hb.omtrdc.net
-DOMAIN-SUFFIX,hulu.playback.edge.bamgrid.com
-DOMAIN-SUFFIX,hulu.sc.omtrdc.net
-DOMAIN-SUFFIX,hulu.tv
-DOMAIN-SUFFIX,hulu.us
-DOMAIN-SUFFIX,huluaction.com
-DOMAIN-SUFFIX,huluad.com
-DOMAIN-SUFFIX,huluapp.com
-DOMAIN-SUFFIX,huluasks.com
-DOMAIN-SUFFIX,hulucall.com
-DOMAIN-SUFFIX,hulufree.com
-DOMAIN-SUFFIX,hulugans.com
-DOMAIN-SUFFIX,hulugermany.com
-DOMAIN-SUFFIX,hulugo.com
-DOMAIN-SUFFIX,huluim.com
-DOMAIN-SUFFIX,huluinstantmessenger.com
-DOMAIN-SUFFIX,huluitaly.com
-DOMAIN-SUFFIX,hulunet.com
-DOMAIN-SUFFIX,hulunetwork.com
-DOMAIN-SUFFIX,huluplus.com
-DOMAIN-SUFFIX,hulupremium.com
-DOMAIN-SUFFIX,hulupurchase.com
-DOMAIN-SUFFIX,huluqa.com
-DOMAIN-SUFFIX,hulurussia.com
-DOMAIN-SUFFIX,huluspain.com
-DOMAIN-SUFFIX,hulusports.com
-DOMAIN-SUFFIX,hulustream.com
-DOMAIN-SUFFIX,huluteam.com
-DOMAIN-SUFFIX,hulutv.com
-DOMAIN-SUFFIX,huluusa.com
-DOMAIN-SUFFIX,i-o-u.info
 DOMAIN-SUFFIX,i.org
-DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,ig.me
 DOMAIN-SUFFIX,igcdn.com
 DOMAIN-SUFFIX,igsonar.com
@@ -776,62 +498,30 @@ DOMAIN-SUFFIX,instastyle.tv
 DOMAIN-SUFFIX,instgram.com
 DOMAIN-SUFFIX,intagram.com
 DOMAIN-SUFFIX,intagrm.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,internet.org
 DOMAIN-SUFFIX,intgram.com
 DOMAIN-SUFFIX,ip6.static.sl-reverse.com
-DOMAIN-SUFFIX,itobsnssdk.com
-DOMAIN-SUFFIX,joinmaidez.com
 DOMAIN-SUFFIX,kingstagram.com
 DOMAIN-SUFFIX,klik.me
-DOMAIN-SUFFIX,klingai.com
-DOMAIN-SUFFIX,krakenjs.com
-DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,liverail.com
 DOMAIN-SUFFIX,liverail.tv
-DOMAIN-SUFFIX,llama.com
-DOMAIN-SUFFIX,llmsresearch.com
-DOMAIN-SUFFIX,lmsys.org
 DOMAIN-SUFFIX,lnstagram-help.com
-DOMAIN-SUFFIX,loanbuilder.com
 DOMAIN-SUFFIX,login-account.net
-DOMAIN-SUFFIX,login-paypal.com
-DOMAIN-SUFFIX,login-paypal.info
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,makeitopen.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,manus.im
-DOMAIN-SUFFIX,manus.space
-DOMAIN-SUFFIX,manuscdn.com
 DOMAIN-SUFFIX,markzuckerberg.com
-DOMAIN-SUFFIX,marscode.com
 DOMAIN-SUFFIX,mcrouter.net
 DOMAIN-SUFFIX,mcrouter.org
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,messengerdevelopers.com
-DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,midentsolutions.com
-DOMAIN-SUFFIX,mistral.ai
-DOMAIN-SUFFIX,mktoresp.com
 DOMAIN-SUFFIX,mobilefacebook.com
 DOMAIN-SUFFIX,moneywithfacebook.com
-DOMAIN-SUFFIX,mtvnservices.com
-DOMAIN-SUFFIX,mushymush.tv
 DOMAIN-SUFFIX,myfbfans.com
-DOMAIN-SUFFIX,myhulu.com
-DOMAIN-SUFFIX,mywaytopay.info
-DOMAIN-SUFFIX,mywaytopay.net
-DOMAIN-SUFFIX,namesilo.com
-DOMAIN-SUFFIX,nau.edu
 DOMAIN-SUFFIX,nbabot.net
 DOMAIN-SUFFIX,newsfeed.com
 DOMAIN-SUFFIX,nextstop.com
-DOMAIN-SUFFIX,nezha.112700.xyz
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,ocul.us
 DOMAIN-SUFFIX,oculus-china.com
 DOMAIN-SUFFIX,oculus.com
@@ -851,26 +541,166 @@ DOMAIN-SUFFIX,oninstagram.com
 DOMAIN-SUFFIX,online-deals.net
 DOMAIN-SUFFIX,online-instagram.com
 DOMAIN-SUFFIX,onlineinstagram.com
-DOMAIN-SUFFIX,onlyfans.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,opencreate.org
 DOMAIN-SUFFIX,opengraphprotocol.com
 DOMAIN-SUFFIX,opengraphprotocol.org
-DOMAIN-SUFFIX,originalhulu.com
+DOMAIN-SUFFIX,parse.com
+DOMAIN-SUFFIX,powersunitedvr.com
+DOMAIN-SUFFIX,pyrobot.org
+DOMAIN-SUFFIX,reachtheworldonfacebook.com
+DOMAIN-SUFFIX,react.com
+DOMAIN-SUFFIX,reactjs.com
+DOMAIN-SUFFIX,reactjs.org
+DOMAIN-SUFFIX,recoiljs.org
+DOMAIN-SUFFIX,redkix.com
+DOMAIN-SUFFIX,rocksdb.com
+DOMAIN-SUFFIX,rocksdb.net
+DOMAIN-SUFFIX,rocksdb.org
+DOMAIN-SUFFIX,shopfacebook.com
+DOMAIN-SUFFIX,sportsfacebook.com
+DOMAIN-SUFFIX,sportstream.com
+DOMAIN-SUFFIX,supportfacebook.com
+DOMAIN-SUFFIX,terragraph.com
+DOMAIN-SUFFIX,thefacebook.com
+DOMAIN-SUFFIX,thefacebook.net
+DOMAIN-SUFFIX,thefind.com
+DOMAIN-SUFFIX,theinstagramhack.com
+DOMAIN-SUFFIX,toplayerserver.com
+DOMAIN-SUFFIX,viewpointsfromfacebook.com
+DOMAIN-SUFFIX,wa.me
+DOMAIN-SUFFIX,web-instagram.net
+DOMAIN-SUFFIX,whatsapp-plus.info
+DOMAIN-SUFFIX,whatsapp-plus.me
+DOMAIN-SUFFIX,whatsapp-plus.net
+DOMAIN-SUFFIX,whatsapp.biz
+DOMAIN-SUFFIX,whatsapp.cc
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.info
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,whatsapp.org
+DOMAIN-SUFFIX,whatsapp.tv
+DOMAIN-SUFFIX,whatsappbrand.com
+DOMAIN-SUFFIX,whyfacebook.com
+DOMAIN-SUFFIX,workplace.com
+DOMAIN-SUFFIX,workplaceusecases.com
+DOMAIN-SUFFIX,worldhack.com
+DOMAIN-SUFFIX,www-facebook.com
+DOMAIN-SUFFIX,wwwfacebok.com
+DOMAIN-SUFFIX,wwwfacebook.com
+DOMAIN-SUFFIX,wwwinstagram.com
+DOMAIN-SUFFIX,wwwmfacebook.com
+DOMAIN-SUFFIX,yogalayout.com
+DOMAIN-SUFFIX,zuckerberg.com
+DOMAIN-SUFFIX,zuckerberg.net
+DOMAIN-KEYWORD,facebook
+DOMAIN-KEYWORD,fbcdn
+IP-CIDR,108.168.176.192/26,no-resolve
+IP-CIDR,108.168.177.0/27,no-resolve
+IP-CIDR,108.168.180.96/27,no-resolve
+IP-CIDR,108.168.254.65/32,no-resolve
+IP-CIDR,108.168.255.224/32,no-resolve
+IP-CIDR,108.168.255.227/32,no-resolve
+IP-CIDR,108.177.8.0/21,no-resolve
+IP-CIDR,119.235.224.0/24,no-resolve
+IP-CIDR,119.235.232.0/24,no-resolve
+IP-CIDR,119.235.236.0/23,no-resolve
+IP-CIDR,129.134.0.0/17,no-resolve
+IP-CIDR,157.240.0.0/17,no-resolve
+IP-CIDR,169.45.248.118/32,no-resolve
+IP-CIDR,173.252.64.0/18,no-resolve
+IP-CIDR,3.123.36.126/32,no-resolve
+IP-CIDR,31.13.64.0/18,no-resolve
+IP-CIDR,35.157.215.84/32,no-resolve
+IP-CIDR,35.157.217.255/32,no-resolve
+IP-CIDR,52.58.209.134/32,no-resolve
+IP-CIDR,54.162.243.80/32,no-resolve
+IP-CIDR,54.173.34.141/32,no-resolve
+IP-CIDR,54.235.23.242/32,no-resolve
+IP-CIDR,54.93.124.31/32,no-resolve
+IP-ASN,32934,no-resolve
+
+# NAME: GoogleVoice
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:16:59
+# DOMAIN: 1
+# TOTAL: 1
+DOMAIN,lens.l.google.com
+
+# NAME: Reddit
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:16:55
+# DOMAIN-SUFFIX: 8
+# TOTAL: 8
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redditmail.com
+DOMAIN-SUFFIX,redditmedia.com
+DOMAIN-SUFFIX,redditstatic.com
+DOMAIN-SUFFIX,reddituploads.com
+DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
+DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
+
+# NAME: PayPal
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:16:11
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 246
+# TOTAL: 247
+DOMAIN-SUFFIX,account-paypal.info
+DOMAIN-SUFFIX,account-paypal.net
+DOMAIN-SUFFIX,account-paypal.org
+DOMAIN-SUFFIX,accountpaypal.com
+DOMAIN-SUFFIX,accountpaypal.net
+DOMAIN-SUFFIX,accountpaypal.org
+DOMAIN-SUFFIX,anfutong.cn
+DOMAIN-SUFFIX,anfutong.com
+DOMAIN-SUFFIX,anfutong.com.cn
+DOMAIN-SUFFIX,beibao.cn
+DOMAIN-SUFFIX,beibao.com
+DOMAIN-SUFFIX,beibao.com.cn
+DOMAIN-SUFFIX,bill-safe.com
+DOMAIN-SUFFIX,billmelater.com
+DOMAIN-SUFFIX,billmelater.info
+DOMAIN-SUFFIX,billmelater.net
+DOMAIN-SUFFIX,bml.info
+DOMAIN-SUFFIX,braintreegateway.com
+DOMAIN-SUFFIX,braintreegateway.tv
+DOMAIN-SUFFIX,braintreepayments.com
+DOMAIN-SUFFIX,braintreepayments.info
+DOMAIN-SUFFIX,braintreepayments.org
+DOMAIN-SUFFIX,braintreepayments.tv
+DOMAIN-SUFFIX,braintreepaymentsolutions.com
+DOMAIN-SUFFIX,braintreeps.com
+DOMAIN-SUFFIX,briantreepayments.net
+DOMAIN-SUFFIX,briantreepayments.tv
+DOMAIN-SUFFIX,buyfast-paysmart.net
+DOMAIN-SUFFIX,card.io
+DOMAIN-SUFFIX,cash2.com
+DOMAIN-SUFFIX,cashify.com
+DOMAIN-SUFFIX,cashify.net
+DOMAIN-SUFFIX,devtools-paypal.com
+DOMAIN-SUFFIX,experiencebillmelater.com
+DOMAIN-SUFFIX,filipino-music.net
+DOMAIN-SUFFIX,fundpaypal.com
+DOMAIN-SUFFIX,getbraintree.com
+DOMAIN-SUFFIX,gmoney.org
+DOMAIN-SUFFIX,i-o-u.info
+DOMAIN-SUFFIX,krakenjs.com
+DOMAIN-SUFFIX,loanbuilder.com
+DOMAIN-SUFFIX,login-paypal.com
+DOMAIN-SUFFIX,login-paypal.info
+DOMAIN-SUFFIX,mywaytopay.info
+DOMAIN-SUFFIX,mywaytopay.net
 DOMAIN-SUFFIX,pa9pal.com
 DOMAIN-SUFFIX,paaypal.com
 DOMAIN-SUFFIX,paily.net
 DOMAIN-SUFFIX,paily.org
 DOMAIN-SUFFIX,paipal.com
-DOMAIN-SUFFIX,paper-attachments.s3.amazonaws.com
-DOMAIN-SUFFIX,paramount.com
-DOMAIN-SUFFIX,paramountplus.com
-DOMAIN-SUFFIX,parse.com
 DOMAIN-SUFFIX,pavpal.com
 DOMAIN-SUFFIX,paydiant.com
-DOMAIN-SUFFIX,payhulu.com
 DOMAIN-SUFFIX,paylike.com
 DOMAIN-SUFFIX,paypa1.com
 DOMAIN-SUFFIX,paypa1.org
@@ -1027,176 +857,37 @@ DOMAIN-SUFFIX,paypaly.com
 DOMAIN-SUFFIX,payppal.com
 DOMAIN-SUFFIX,payypal.com
 DOMAIN-SUFFIX,pdncommunity.com
-DOMAIN-SUFFIX,pearai.b-cdn.net
-DOMAIN-SUFFIX,periscope.tv
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,pluto.tv
-DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,powersunitedvr.com
 DOMAIN-SUFFIX,pp-soc.com
 DOMAIN-SUFFIX,ppaypal.com
-DOMAIN-SUFFIX,pplusstatic.com
 DOMAIN-SUFFIX,pppds.com
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,prod.hjholdings.tv
-DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,pypl.com
 DOMAIN-SUFFIX,pypl.info
 DOMAIN-SUFFIX,pypl.net
 DOMAIN-SUFFIX,pypl.tv
-DOMAIN-SUFFIX,pyrobot.org
-DOMAIN-SUFFIX,qualtrics.com
-DOMAIN-SUFFIX,qwen.ai
-DOMAIN-SUFFIX,qwenlm.ai
-DOMAIN-SUFFIX,racknerd.com
-DOMAIN-SUFFIX,reachtheworldonfacebook.com
-DOMAIN-SUFFIX,react.com
-DOMAIN-SUFFIX,reactjs.com
-DOMAIN-SUFFIX,reactjs.org
-DOMAIN-SUFFIX,recoiljs.org
-DOMAIN-SUFFIX,redd.it
-DOMAIN-SUFFIX,reddit.com
-DOMAIN-SUFFIX,redditmail.com
-DOMAIN-SUFFIX,redditmedia.com
-DOMAIN-SUFFIX,redditstatic.com
-DOMAIN-SUFFIX,reddituploads.com
-DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
-DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
-DOMAIN-SUFFIX,redkix.com
-DOMAIN-SUFFIX,registerhulu.com
-DOMAIN-SUFFIX,reshot.ai
-DOMAIN-SUFFIX,rocksdb.com
-DOMAIN-SUFFIX,rocksdb.net
-DOMAIN-SUFFIX,rocksdb.org
 DOMAIN-SUFFIX,s-xoom.com
-DOMAIN-SUFFIX,s.luoveyq.space
 DOMAIN-SUFFIX,secure-paypal.info
 DOMAIN-SUFFIX,securepaypal.info
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,shopfacebook.com
-DOMAIN-SUFFIX,showtime.com
-DOMAIN-SUFFIX,sider.ai
 DOMAIN-SUFFIX,simility.com
-DOMAIN-SUFFIX,sora.com
-DOMAIN-SUFFIX,spaceship-cdn.com
-DOMAIN-SUFFIX,spaceship.com
-DOMAIN-SUFFIX,sportsfacebook.com
-DOMAIN-SUFFIX,sportstream.com
-DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
-DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,sslpaypal.org
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,sub.876521.xyz
-DOMAIN-SUFFIX,sunybroome.edu
-DOMAIN-SUFFIX,supportfacebook.com
 DOMAIN-SUFFIX,swiftbank.info
 DOMAIN-SUFFIX,swiftbank.us
 DOMAIN-SUFFIX,swiftcapital.com
 DOMAIN-SUFFIX,swiftfinancial.com
 DOMAIN-SUFFIX,swiftfinancial.info
 DOMAIN-SUFFIX,swiftfinancial.net
-DOMAIN-SUFFIX,t-mobile.com
-DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,tavily.com
-DOMAIN-SUFFIX,tavily.us.auth0.com
-DOMAIN-SUFFIX,tellapart.com
-DOMAIN-SUFFIX,terragraph.com
-DOMAIN-SUFFIX,thefacebook.com
-DOMAIN-SUFFIX,thefacebook.net
-DOMAIN-SUFFIX,thefind.com
-DOMAIN-SUFFIX,thehulubraintrust.com
-DOMAIN-SUFFIX,theinstagramhack.com
 DOMAIN-SUFFIX,thepaypalshop.com
 DOMAIN-SUFFIX,theshoppingexpresslane.net
-DOMAIN-SUFFIX,toplayerserver.com
-DOMAIN-SUFFIX,trae.ai
-DOMAIN-SUFFIX,trypear.ai
-DOMAIN-SUFFIX,turn.livekit.cloud
-DOMAIN-SUFFIX,tweetdeck.com
-DOMAIN-SUFFIX,twimg.co
-DOMAIN-SUFFIX,twimg.com
-DOMAIN-SUFFIX,twimg.org
-DOMAIN-SUFFIX,twitpic.com
-DOMAIN-SUFFIX,twitter.biz
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,twitter.jp
-DOMAIN-SUFFIX,twittercommunity.com
-DOMAIN-SUFFIX,twitterflightschool.com
-DOMAIN-SUFFIX,twitterinc.com
-DOMAIN-SUFFIX,twitteroauth.com
-DOMAIN-SUFFIX,twitterstat.us
-DOMAIN-SUFFIX,twtrdns.net
-DOMAIN-SUFFIX,twttr.com
-DOMAIN-SUFFIX,twttr.net
-DOMAIN-SUFFIX,twvid.com
-DOMAIN-SUFFIX,ultramobile.com
-DOMAIN-SUFFIX,umass.edu
-DOMAIN-SUFFIX,us-east-1.amazonaws.com
-DOMAIN-SUFFIX,us-east-1.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,us-west-2.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,us.i.posthog.com
-DOMAIN-SUFFIX,us1.kuxueyun.com
-DOMAIN-SUFFIX,usakile0.112700.xyz
-DOMAIN-SUFFIX,usccs0.112700.xyz
-DOMAIN-SUFFIX,usccsny.luoveyq.space
-DOMAIN-SUFFIX,usgc0.112700.xyz
-DOMAIN-SUFFIX,ushe0.112700.xyz
-DOMAIN-SUFFIX,usrn0.112700.xyz
-DOMAIN-SUFFIX,utah.edu
 DOMAIN-SUFFIX,venmo-touch.com
 DOMAIN-SUFFIX,venmo.com
 DOMAIN-SUFFIX,venmo.info
 DOMAIN-SUFFIX,venmo.net
 DOMAIN-SUFFIX,venmo.org
 DOMAIN-SUFFIX,venmo.s3.amazonaws.com
-DOMAIN-SUFFIX,viacbs.com
-DOMAIN-SUFFIX,viacom.com
-DOMAIN-SUFFIX,viacomcbs.com
-DOMAIN-SUFFIX,viacomcbspressexpress.com
-DOMAIN-SUFFIX,viewpointsfromfacebook.com
-DOMAIN-SUFFIX,vine.co
-DOMAIN-SUFFIX,voice.google.com
-DOMAIN-SUFFIX,voice.telephony.goog
-DOMAIN-SUFFIX,vote.gov
-DOMAIN-SUFFIX,wa.me
-DOMAIN-SUFFIX,wan.video
-DOMAIN-SUFFIX,wanxai.com
-DOMAIN-SUFFIX,watchespn.com
-DOMAIN-SUFFIX,weatheroffer.com
-DOMAIN-SUFFIX,web-instagram.net
 DOMAIN-SUFFIX,webmoneyinfo.com
-DOMAIN-SUFFIX,whatsapp-plus.info
-DOMAIN-SUFFIX,whatsapp-plus.me
-DOMAIN-SUFFIX,whatsapp-plus.net
-DOMAIN-SUFFIX,whatsapp.biz
-DOMAIN-SUFFIX,whatsapp.cc
-DOMAIN-SUFFIX,whatsapp.com
-DOMAIN-SUFFIX,whatsapp.info
-DOMAIN-SUFFIX,whatsapp.net
-DOMAIN-SUFFIX,whatsapp.org
-DOMAIN-SUFFIX,whatsapp.tv
-DOMAIN-SUFFIX,whatsappbrand.com
-DOMAIN-SUFFIX,whyfacebook.com
 DOMAIN-SUFFIX,wiremoneytoirelandwithxoomeasierandcheaper.com
-DOMAIN-SUFFIX,wise.com
-DOMAIN-SUFFIX,wootric.com
-DOMAIN-SUFFIX,workplace.com
-DOMAIN-SUFFIX,workplaceusecases.com
-DOMAIN-SUFFIX,worldhack.com
-DOMAIN-SUFFIX,www-facebook.com
 DOMAIN-SUFFIX,www-paypal.info
 DOMAIN-SUFFIX,www-paypal.us
-DOMAIN-SUFFIX,wwwfacebok.com
-DOMAIN-SUFFIX,wwwfacebook.com
-DOMAIN-SUFFIX,wwwhuluplus.com
-DOMAIN-SUFFIX,wwwinstagram.com
-DOMAIN-SUFFIX,wwwmfacebook.com
 DOMAIN-SUFFIX,wwwxoom.com
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,xn--bnq297cix3a.cn
 DOMAIN-SUFFIX,xoom-experience.com
 DOMAIN-SUFFIX,xoom.com
@@ -1204,88 +895,461 @@ DOMAIN-SUFFIX,xoom.io
 DOMAIN-SUFFIX,xoom.net.cn
 DOMAIN-SUFFIX,xoom.us
 DOMAIN-SUFFIX,xoomcom.com
-DOMAIN-SUFFIX,yf.876521.xyz
-DOMAIN-SUFFIX,yogalayout.com
-DOMAIN-SUFFIX,zotero.org
-DOMAIN-SUFFIX,zuckerberg.com
-DOMAIN-SUFFIX,zuckerberg.net
+DOMAIN-KEYWORD,paypal
+
+# NAME: USMedia
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:18:30
+# DOMAIN: 4
+# DOMAIN-SUFFIX: 93
+# PROCESS-NAME: 3
+# TOTAL: 100
+DOMAIN,espn.api.edge.bamgrid.com
+DOMAIN,espn.hb.omtrdc.net
+DOMAIN,espndotcom.tt.omtrdc.net
+DOMAIN,link.theplatform.com
+DOMAIN-SUFFIX,112263.com
+DOMAIN-SUFFIX,amlg.io
+DOMAIN-SUFFIX,assetshuluimcom-a.akamaihd.net
+DOMAIN-SUFFIX,callhulu.com
+DOMAIN-SUFFIX,cbs.com
+DOMAIN-SUFFIX,cbsaavideo.com
+DOMAIN-SUFFIX,cbscorporation.com
+DOMAIN-SUFFIX,cbsi.com
+DOMAIN-SUFFIX,cbsi.live.ott.irdeto.com
+DOMAIN-SUFFIX,cbsi.video
+DOMAIN-SUFFIX,cbsiam.com
+DOMAIN-SUFFIX,cbsig.net
+DOMAIN-SUFFIX,cbsimg.net
+DOMAIN-SUFFIX,cbsinteractive.com
+DOMAIN-SUFFIX,cbsistatic.com
+DOMAIN-SUFFIX,cbsivideo.com
+DOMAIN-SUFFIX,cbsnews.com
+DOMAIN-SUFFIX,cbsplaylistserver.aws.syncbak.com
+DOMAIN-SUFFIX,cbspressexpress.com
+DOMAIN-SUFFIX,cbsradio.com
+DOMAIN-SUFFIX,cbsservice.aws.syncbak.com
+DOMAIN-SUFFIX,cbssports.com
+DOMAIN-SUFFIX,cbsstatic.com
+DOMAIN-SUFFIX,cbsstore.com
+DOMAIN-SUFFIX,cbssvideo.com
+DOMAIN-SUFFIX,cbstelevisioncity.com
+DOMAIN-SUFFIX,cws-hulu.conviva.com
+DOMAIN-SUFFIX,dtci.co
+DOMAIN-SUFFIX,dtci.technology
+DOMAIN-SUFFIX,espn.co.uk
+DOMAIN-SUFFIX,espn.com
+DOMAIN-SUFFIX,espn.net
+DOMAIN-SUFFIX,espncdn.com
+DOMAIN-SUFFIX,espnqa.com
+DOMAIN-SUFFIX,findyourlimits.com
+DOMAIN-SUFFIX,freehulu.com
+DOMAIN-SUFFIX,hooloo.tv
+DOMAIN-SUFFIX,hoolu.com
+DOMAIN-SUFFIX,hoolu.tv
+DOMAIN-SUFFIX,hu1u.com
+DOMAIN-SUFFIX,huloo.cc
+DOMAIN-SUFFIX,huloo.tv
+DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,hulu.hb.omtrdc.net
+DOMAIN-SUFFIX,hulu.playback.edge.bamgrid.com
+DOMAIN-SUFFIX,hulu.sc.omtrdc.net
+DOMAIN-SUFFIX,hulu.tv
+DOMAIN-SUFFIX,hulu.us
+DOMAIN-SUFFIX,huluaction.com
+DOMAIN-SUFFIX,huluad.com
+DOMAIN-SUFFIX,huluapp.com
+DOMAIN-SUFFIX,huluasks.com
+DOMAIN-SUFFIX,hulucall.com
+DOMAIN-SUFFIX,hulufree.com
+DOMAIN-SUFFIX,hulugans.com
+DOMAIN-SUFFIX,hulugermany.com
+DOMAIN-SUFFIX,hulugo.com
+DOMAIN-SUFFIX,huluim.com
+DOMAIN-SUFFIX,huluinstantmessenger.com
+DOMAIN-SUFFIX,huluitaly.com
+DOMAIN-SUFFIX,hulunet.com
+DOMAIN-SUFFIX,hulunetwork.com
+DOMAIN-SUFFIX,huluplus.com
+DOMAIN-SUFFIX,hulupremium.com
+DOMAIN-SUFFIX,hulupurchase.com
+DOMAIN-SUFFIX,huluqa.com
+DOMAIN-SUFFIX,hulurussia.com
+DOMAIN-SUFFIX,huluspain.com
+DOMAIN-SUFFIX,hulusports.com
+DOMAIN-SUFFIX,hulustream.com
+DOMAIN-SUFFIX,huluteam.com
+DOMAIN-SUFFIX,hulutv.com
+DOMAIN-SUFFIX,huluusa.com
+DOMAIN-SUFFIX,joinmaidez.com
+DOMAIN-SUFFIX,mtvnservices.com
+DOMAIN-SUFFIX,mushymush.tv
+DOMAIN-SUFFIX,myhulu.com
+DOMAIN-SUFFIX,originalhulu.com
+DOMAIN-SUFFIX,paramount.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,payhulu.com
+DOMAIN-SUFFIX,pluto.tv
+DOMAIN-SUFFIX,pplusstatic.com
+DOMAIN-SUFFIX,prod.hjholdings.tv
+DOMAIN-SUFFIX,registerhulu.com
+DOMAIN-SUFFIX,showtime.com
+DOMAIN-SUFFIX,thehulubraintrust.com
+DOMAIN-SUFFIX,viacbs.com
+DOMAIN-SUFFIX,viacom.com
+DOMAIN-SUFFIX,viacomcbs.com
+DOMAIN-SUFFIX,viacomcbspressexpress.com
+DOMAIN-SUFFIX,watchespn.com
+DOMAIN-SUFFIX,wwwhuluplus.com
+PROCESS-NAME,com.cbs.app
+PROCESS-NAME,com.hulu.plus
+PROCESS-NAME,com.showtime.standalone
+
+# NAME: OpenAI
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:18:28
+# DOMAIN: 8
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 24
+# IP-ASN: 1
+# IP-CIDR: 2
+# TOTAL: 36
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,gemini.google.com
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,static.cloudflareinsights.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-KEYWORD,openai
+IP-CIDR,24.199.123.28/32,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,20473,no-resolve
-IP-ASN,32934,no-resolve
+
+# NAME: Claude
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:18:28
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 2
+# TOTAL: 3
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# NAME: Gemini
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:18:30
+# DOMAIN: 3
+# DOMAIN-KEYWORD: 3
+# DOMAIN-SUFFIX: 7
+# TOTAL: 13
+DOMAIN,ai.google.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,generativelanguage
+
+# 内容：内容：AI平台-国外
+# 数量：39条
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+DOMAIN-KEYWORD,openai
+DOMAIN,ai.google.dev
+DOMAIN,api.githubcopilot.com
+DOMAIN,api.groq.com
+DOMAIN,api.together.xyz
+DOMAIN,bard.google.com
+DOMAIN,console.groq.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,gemini.google.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,sydney.bing.com
+DOMAIN-SUFFIX,ai.azure.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,copilot.cloud.microsoft
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,mistral.ai
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,sora.com
+# NAME: Dropbox
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:16:51
+# DOMAIN-SUFFIX: 17
+# TOTAL: 17
+DOMAIN-SUFFIX,db.tt
+DOMAIN-SUFFIX,dropbox-dns.com
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropbox.tech
+DOMAIN-SUFFIX,dropbox.zendesk.com
+DOMAIN-SUFFIX,dropboxapi.com
+DOMAIN-SUFFIX,dropboxbusiness.com
+DOMAIN-SUFFIX,dropboxcaptcha.com
+DOMAIN-SUFFIX,dropboxforum.com
+DOMAIN-SUFFIX,dropboxforums.com
+DOMAIN-SUFFIX,dropboxinsiders.com
+DOMAIN-SUFFIX,dropboxmail.com
+DOMAIN-SUFFIX,dropboxpartners.com
+DOMAIN-SUFFIX,dropboxstatic.com
+DOMAIN-SUFFIX,dropboxusercontent.com
+DOMAIN-SUFFIX,getdropbox.com
+DOMAIN-SUFFIX,paper-attachments.s3.amazonaws.com
+
+# Amazon Panorama API
+DOMAIN-SUFFIX,us-east-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,us-west-2.prod.pr.panorama.console.api.aws
+
+# Github
+DOMAIN-SUFFIX,github.blog
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.community
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,github1s.com
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubnext.com
+DOMAIN-SUFFIX,githubpreview.dev
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubuniverse.com
+DOMAIN-SUFFIX,githubusercontent.com
+
+# 其他服务
+DOMAIN-SUFFIX,wootric.com
+DOMAIN-SUFFIX,contentsquare.net
+DOMAIN-SUFFIX,mktoresp.com
+DOMAIN-SUFFIX,6sc.co
+DOMAIN-SUFFIX,6sense.com
+DOMAIN-SUFFIX,heapanalytics.com
+DOMAIN-SUFFIX,qualtrics.com
+DOMAIN-SUFFIX,weatheroffer.com
+DOMAIN-SUFFIX,browser-intake-datadoghq.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,tavily.com
+DOMAIN-SUFFIX,tavily.us.auth0.com
+DOMAIN-KEYWORD,1password
+DOMAIN-SUFFIX,colocrossing.com
+DOMAIN-SUFFIX,cloudcone.com
+DOMAIN-KEYWORD,cosmotown
+DOMAIN-SUFFIX,spaceship.com
+DOMAIN-SUFFIX,spaceship-cdn.com
+DOMAIN-SUFFIX,zotero.org
+DOMAIN-SUFFIX,us-east-1.amazonaws.com
+DOMAIN-SUFFIX,namesilo.com
+DOMAIN-SUFFIX,cosmotown.com
+DOMAIN-SUFFIX,racknerd.com
+DOMAIN-SUFFIX,onlyfans.com
+DOMAIN-KEYWORD,onlyfans
+DOMAIN-SUFFIX,us1.kuxueyun.com
+DOMAIN-SUFFIX,ca.kuxueyun.com
+DOMAIN-SUFFIX,follow.is
+DOMAIN-SUFFIX,diygod.dev
+PROCESS-NAME,transferwise
+PROCESS-NAME-REGEX,transferwise
+DOMAIN-SUFFIX,wise.com
+DOMAIN-KEYWORD,transferwise
+DOMAIN-SUFFIX,vote.gov
+DOMAIN-SUFFIX,reshot.ai
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.space
+DOMAIN-SUFFIX,t-mobile.com
+DOMAIN-SUFFIX,ultramobile.com
+DOMAIN-SUFFIX,llmsresearch.com
+DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,s.luoveyq.space
+DOMAIN-SUFFIX,fwhwill.win
+DOMAIN-SUFFIX,frpus.112700.xyz
+DOMAIN-SUFFIX,sub.876521.xyz
+DOMAIN-SUFFIX,yf.876521.xyz
+DOMAIN-SUFFIX,ushe0.112700.xyz
+DOMAIN-SUFFIX,usgc0.112700.xyz
+DOMAIN-SUFFIX,usrn0.112700.xyz
+DOMAIN-SUFFIX,usccs0.112700.xyz
+DOMAIN-SUFFIX,usakile0.112700.xyz
+DOMAIN-SUFFIX,nezha.112700.xyz
+DOMAIN-SUFFIX,usccsny.luoveyq.space
+DOMAIN-KEYWORD,voice.google
+DOMAIN-KEYWORD,voice.telephony
+DOMAIN-SUFFIX,voice.google.com
+DOMAIN-SUFFIX,voice.telephony.goog
+DOMAIN-SUFFIX,build.nvidia.com
+IP-CIDR,66.94.0.0/19,no-resolve
+IP-CIDR,206.29.177.36/32,no-resolve
+IP-CIDR,208.54.0.0/16,no-resolve
+# Trae IDE
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,byteintl.com
+DOMAIN-SUFFIX,byteintlapi.com
+DOMAIN-SUFFIX,itobsnssdk.com
+DOMAIN-SUFFIX,marscode.com
+PROCESS-NAME,Trae Helper
+PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
+# FacebookMetaAI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,llama.com
+# QwenLLM
+DOMAIN-SUFFIX,qwenlm.ai
+DOMAIN-SUFFIX,qwen.ai
+DOMAIN-SUFFIX,wanxai.com
+DOMAIN-SUFFIX,wan.video
+# Claude其他
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-KEYWORD,claudeusercontent
+PROCESS-NAME,com.anthropic.claude
+PROCESS-NAME-REGEX,com\.anthropic\.claude
+PROCESS-NAME-REGEX,^(?=.*anthropic)(?=.*claude).*$
+# ChatGPT其他
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,sora.com
+PROCESS-NAME,com.openai.chatgpt
+PROCESS-NAME-REGEX,com\.openai\.chatgpt
+PROCESS-NAME-REGEX,^(?=.*openai)(?=.*chatgpt).*$
+# Gemini其他
+PROCESS-NAME,com.google.android.apps.bard
+PROCESS-NAME-REGEX,com\.google\.android\.apps\.bard
+PROCESS-NAME-REGEX,^(?=.*google)(?=.*bard).*$
+PROCESS-NAME,com.google.android.apps.gemini
+PROCESS-NAME-REGEX,com\.google\.android\.apps\.gemini
+PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
+# X.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+PROCESS-NAME,ai.x.grok
+PROCESS-NAME-REGEX,ai\.x\.grok
+PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
+# LLM竞技场
+DOMAIN-SUFFIX,lmsys.org
+# Groq
+DOMAIN-SUFFIX,groq.com
+# poe
+DOMAIN-SUFFIX,poe.com
+PROCESS-NAME,com.poe.android
+# cohere
+DOMAIN-KEYWORD,cohere
+# coze
+DOMAIN-SUFFIX,coze.com
+# JetBrains AI 
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+# KLing可灵
+DOMAIN-SUFFIX,klingai.com
+# SiderAI
+DOMAIN-SUFFIX,sider.ai
+# codeium&windsurf
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN-SUFFIX,codeium.com
+# hcompany.ai
+DOMAIN-SUFFIX,hcompany.ai
+DOMAIN-KEYWORD,hcompany
+# PearAi
+DOMAIN-SUFFIX,us.i.posthog.com
+DOMAIN-SUFFIX,pearai.b-cdn.net
+DOMAIN-SUFFIX,trypear.ai
+# perplexity
+DOMAIN-SUFFIX,perplexity.ai
+PROCESS-NAME,ai.perplexity.app.android
+PROCESS-NAME-REGEX,^(?=.*ai)(?=.*perplexity).*$
+# Manus
+DOMAIN-SUFFIX,manus.im
+DOMAIN-SUFFIX,manus.space
+DOMAIN-SUFFIX,manuscdn.com
+
+# VPS
+IP-CIDR,23.94.180.0/24,no-resolve
+IP-CIDR,38.60.91.0/24,no-resolve
+IP-CIDR,68.168.20.0/24,no-resolve
 IP-CIDR,107.175.0.0/16,no-resolve
 IP-CIDR,108.165.0.0/16,no-resolve
-IP-CIDR,108.168.176.192/26,no-resolve
-IP-CIDR,108.168.177.0/27,no-resolve
-IP-CIDR,108.168.180.96/27,no-resolve
-IP-CIDR,108.168.254.65/32,no-resolve
-IP-CIDR,108.168.255.224/32,no-resolve
-IP-CIDR,108.168.255.227/32,no-resolve
-IP-CIDR,108.177.8.0/21,no-resolve
-IP-CIDR,119.235.224.0/24,no-resolve
-IP-CIDR,119.235.232.0/24,no-resolve
-IP-CIDR,119.235.236.0/23,no-resolve
-IP-CIDR,129.134.0.0/17,no-resolve
 IP-CIDR,148.135.103.0/24,no-resolve
 IP-CIDR,148.135.184.0/24,no-resolve
 IP-CIDR,154.9.0.0/16,no-resolve
 IP-CIDR,156.229.0.0/16,no-resolve
-IP-CIDR,157.240.0.0/17,no-resolve
 IP-CIDR,162.254.85.0/24,no-resolve
-IP-CIDR,169.45.248.118/32,no-resolve
 IP-CIDR,173.249.210.0/24,no-resolve
-IP-CIDR,173.252.64.0/18,no-resolve
-IP-CIDR,192.133.76.0/22,no-resolve
-IP-CIDR,199.59.148.0/22,no-resolve
-IP-CIDR,199.96.56.0/21,no-resolve
-IP-CIDR,202.160.128.0/22,no-resolve
-IP-CIDR,206.29.177.36/32,no-resolve
-IP-CIDR,208.54.0.0/16,no-resolve
-IP-CIDR,209.237.192.0/19,no-resolve
-IP-CIDR,23.94.180.0/24,no-resolve
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,3.123.36.126/32,no-resolve
-IP-CIDR,31.13.64.0/18,no-resolve
-IP-CIDR,35.157.215.84/32,no-resolve
-IP-CIDR,35.157.217.255/32,no-resolve
-IP-CIDR,38.60.91.0/24,no-resolve
-IP-CIDR,52.58.209.134/32,no-resolve
-IP-CIDR,54.162.243.80/32,no-resolve
-IP-CIDR,54.173.34.141/32,no-resolve
-IP-CIDR,54.235.23.242/32,no-resolve
-IP-CIDR,54.93.124.31/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
-IP-CIDR,66.94.0.0/19,no-resolve
-IP-CIDR,68.168.20.0/24,no-resolve
-IP-CIDR,69.195.160.0/19,no-resolve
 IP-CIDR6,2001:1980:e00c::/48,no-resolve
-IP-CIDR6,2602:f988:80::/48,no-resolve
-IP-CIDR6,2602:f988:90::/48,no-resolve
-IP-CIDR6,2602:fa4f:900::/48,no-resolve
 IP-CIDR6,2607:9000:800::/48,no-resolve
 IP-CIDR6,2607:f130::/32,no-resolve
 IP-CIDR6,2607:fcd0::/32,no-resolve
 IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
-PROCESS-NAME,Trae Helper
-PROCESS-NAME,ai.perplexity.app.android
-PROCESS-NAME,ai.x.grok
-PROCESS-NAME,com.anthropic.claude
-PROCESS-NAME,com.cbs.app
-PROCESS-NAME,com.google.android.apps.bard
-PROCESS-NAME,com.google.android.apps.gemini
-PROCESS-NAME,com.hulu.plus
-PROCESS-NAME,com.openai.chatgpt
-PROCESS-NAME,com.poe.android
-PROCESS-NAME,com.showtime.standalone
-PROCESS-NAME,transferwise
-PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
-PROCESS-NAME-REGEX,^(?=.*ai)(?=.*perplexity).*$
-PROCESS-NAME-REGEX,^(?=.*anthropic)(?=.*claude).*$
-PROCESS-NAME-REGEX,^(?=.*google)(?=.*bard).*$
-PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
-PROCESS-NAME-REGEX,^(?=.*openai)(?=.*chatgpt).*$
-PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
-PROCESS-NAME-REGEX,ai\.x\.grok
-PROCESS-NAME-REGEX,com\.anthropic\.claude
-PROCESS-NAME-REGEX,com\.google\.android\.apps\.bard
-PROCESS-NAME-REGEX,com\.google\.android\.apps\.gemini
-PROCESS-NAME-REGEX,com\.openai\.chatgpt
-PROCESS-NAME-REGEX,transferwise
+IP-CIDR6,2602:fa4f:900::/48,no-resolve
+IP-CIDR6,2602:f988:80::/48,no-resolve
+IP-CIDR6,2602:f988:90::/48,no-resolve
+
+# US EDU
+DOMAIN-SUFFIX,umass.edu
+DOMAIN-SUFFIX,cvtc.edu
+DOMAIN-SUFFIX,sunybroome.edu
+DOMAIN-SUFFIX,nau.edu
+DOMAIN-SUFFIX,arizona.edu
+DOMAIN-SUFFIX,utah.edu
+DOMAIN-SUFFIX,colostate.edu
+
