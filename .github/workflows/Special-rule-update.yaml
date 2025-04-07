@@ -103,33 +103,53 @@ jobs:
 
       - name: Download USSpecial rules
         run: |
-          if  curl -f -s -o rules/app/Copilot.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list && [[ -s rules/app/Copilot.list ]]; then
-            echo "DOMAIN,designer.microsoft.com" >> rules/app/Copilot.list
-            echo "DOMAIN-SUFFIX,githubcopilot.com" >> rules/app/Copilot.list
-            echo "DOMAIN,copilot-telemetry.githubusercontent.com" >> rules/app/Copilot.list
-            echo "DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com" >> rules/app/Copilot.list
-            echo "PROCESS-NAME,com.microsoft.copilot" >> rules/app/Copilot.list
-            echo "PROCESS-NAME-REGEX,com\.microsoft\.copilot" >> rules/app/Copilot.list
-            echo "PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$" >> rules/app/Copilot.list
-            echo >> rules/app/Copilot.list
-            if  curl -f -s -o rules/app/Bing.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list && [[ -s rules/app/Bing.list ]]; then
-              echo >> rules/app/Bing.list
-              if  curl -f -s -o rules/app/Edge.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/MicrosoftEdge.list && [[ -s rules/app/Edge.list ]]; then
-                echo >> rules/app/Edge.list
-                cat rules/app/Copilot.list rules/app/Bing.list rules/app/Edge.list rules/app/USSpecial.MANUAL.list > rules/app/USSpecial.list.new
-                mv -f rules/app/USSpecial.list.new rules/app/USSpecial.list
-                rm -f rules/app/Edge.list
-              else
-                echo "Failed to download or empty Edge.list, exiting."
-              fi
-              rm -f rules/app/Bing.list
-            else
-              echo "Failed to download or empty Bing.list, exiting."
+          files=(
+            "Copilot.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+            "Bing.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list"
+            "Edge.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/MicrosoftEdge.list"
+          )
+          downloaded_files=()
+          download_dir="rules/app"
+          echo "Downloading USSpecial components..."
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"
+            output_path="${download_dir}/${filename}.tmp" # Download to temp files first
+            echo "Downloading $filename from $url..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error::Failed to download or empty file: $filename from $url"
+              # Clean up already downloaded temp files
+              for f in "${downloaded_files[@]}"; do rm -f "$f"; done
+              exit 1
             fi
-            rm -f rules/app/Copilot.list
+            echo >> "$output_path" # Add trailing newline
+            downloaded_files+=("$output_path")
+          done
+
+          # Add specific rules to Copilot list *after* download
+          COPILOT_TMP="${download_dir}/Copilot.list.tmp"
+          if [[ -f "$COPILOT_TMP" ]]; then
+             echo "# Manual additions for Copilot" >> "$COPILOT_TMP"
+             echo "DOMAIN,designer.microsoft.com" >> "$COPILOT_TMP"
+             echo "DOMAIN-SUFFIX,githubcopilot.com" >> "$COPILOT_TMP"
+             echo "DOMAIN,copilot-telemetry.githubusercontent.com" >> "$COPILOT_TMP"
+             echo "DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com" >> "$COPILOT_TMP"
+             echo "PROCESS-NAME,com.microsoft.copilot" >> "$COPILOT_TMP"
+             echo "PROCESS-NAME-REGEX,com\.microsoft\.copilot" >> "$COPILOT_TMP"
+             echo "PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$" >> "$COPILOT_TMP"
+             echo >> "$COPILOT_TMP" # Extra newline after additions
           else
-            echo "Failed to download or empty Copilot.list, exiting."
+             echo "::error::Downloaded Copilot temp file not found at $COPILOT_TMP"
+             for f in "${downloaded_files[@]}"; do rm -f "$f"; done
+             exit 1
           fi
+
+          cat "${downloaded_files[@]}" "${download_dir}/USSpecial.MANUAL.list" > "${download_dir}/USSpecial.list.new"
+          sort -u "${download_dir}/USSpecial.list.new" -o "${download_dir}/USSpecial.list.new" # Sort final list
+          mv -f "${download_dir}/USSpecial.list.new" "${download_dir}/USSpecial.list"
+          echo "Generated USSpecial.list"
+
+          echo "Cleaning up temporary files..."
+          for f in "${downloaded_files[@]}"; do rm -f "$f"; done
 
       - name: Download Bilibili rules
         run: |
@@ -138,7 +158,7 @@ jobs:
           else
             echo "Failed to download or empty BiliBili.list, exiting."
           fi
-      
+
       - name: Download Game rules
         run: |
           if  curl -f -s -o rules/app/Game.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list && [[ -s rules/app/Game.list.new ]]; then
@@ -171,7 +191,7 @@ jobs:
           else
             echo "Failed to download or empty GameDownload.list, exiting."
           fi
-      
+
       - name: Download USAPP rules
         run: |
           files=(
