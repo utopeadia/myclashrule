@@ -146,47 +146,80 @@ jobs:
           fi
 
           echo "Cleaning up temporary USSpecial files..."
-          rm -f "${downloaded_files[@]}" # Clean up all attempted temp files
+          rm -f "${downloaded_files[@]}" 
 
       - name: Download Bilibili rules
         run: |
-          if  curl -f -s -o rules/app/BiliBili.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list && [[ -s rules/app/BiliBili.list.new ]]; then
-            mv -f rules/app/BiliBili.list.new rules/app/BiliBili.list
+          BILIBILI_LIST_NEW="rules/app/BiliBili.list.new"
+          echo "Downloading Bilibili list..."
+          if curl -f -s -o "$BILIBILI_LIST_NEW" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list && [[ -s "$BILIBILI_LIST_NEW" ]]; then
+            mv -f "$BILIBILI_LIST_NEW" rules/app/BiliBili.list
+            echo "Downloaded BiliBili.list"
           else
-            echo "Failed to download or empty BiliBili.list, exiting."
+            echo "::error::Failed to download or empty BiliBili.list. File not updated."
+            rm -f "$BILIBILI_LIST_NEW" # Clean up potential empty file
           fi
 
       - name: Download Game rules
         run: |
-          if  curl -f -s -o rules/app/Game.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list && [[ -s rules/app/Game.list.new ]]; then
-            mv -f rules/app/Game.list.new rules/app/Game.list
+          GAME_LIST_NEW="rules/app/Game.list.new"
+          echo "Downloading Game list..."
+          if curl -f -s -o "$GAME_LIST_NEW" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list && [[ -s "$GAME_LIST_NEW" ]]; then
+            mv -f "$GAME_LIST_NEW" rules/app/Game.list
+            echo "Downloaded Game.list"
           else
-            echo "Failed to download or empty Game.list, exiting."
+            echo "::error::Failed to download or empty Game.list. File not updated."
+            rm -f "$GAME_LIST_NEW"
           fi
 
       - name: Download GameDLCN rules
         run: |
-          if  curl -f -s -o rules/app/SteamCN.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list && [[ -s rules/app/SteamCN.list ]]; then
-            if curl -f -s -o rules/app/GameDownloadCN.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.list && [[ -s rules/app/GameDownloadCN.list ]]; then
-              echo >> rules/app/SteamCN.list
-              echo >> rules/app/GameDownloadCN.list
-              cat rules/app/SteamCN.list rules/app/GameDownloadCN.list rules/app/GameDLCN.MANUAL.list > rules/app/GameDLCN.list.new
-              mv -f rules/app/GameDLCN.list.new rules/app/GameDLCN.list
-              rm -f rules/app/GameDownloadCN.list
+          files=(
+            "SteamCN.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list"
+            "GameDownloadCN.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.list"
+          )
+          downloaded_files=()
+          successful_downloads=()
+          download_dir="rules/app"
+          echo "Downloading GameDLCN components..."
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"
+            output_path="${download_dir}/${filename}.tmp"
+            downloaded_files+=("$output_path")
+            echo "Downloading $filename from $url..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error::Failed to download or empty file: $filename from $url. Skipping this file."
             else
-              echo "Failed to download or empty GameDownloadCN.list, exiting."
+              echo "Successfully downloaded $filename."
+              echo >> "$output_path"
+              successful_downloads+=("$output_path")
             fi
-            rm -f rules/app/SteamCN.list
+          done
+
+          if [ ${#successful_downloads[@]} -gt 0 ]; then
+             echo "Combining successfully downloaded GameDLCN rules..."
+             cat "${successful_downloads[@]}" "${download_dir}/GameDLCN.MANUAL.list" > "${download_dir}/GameDLCN.list.new"
+             sort -u "${download_dir}/GameDLCN.list.new" -o "${download_dir}/GameDLCN.list.new"
+             mv -f "${download_dir}/GameDLCN.list.new" "${download_dir}/GameDLCN.list"
+             echo "Generated GameDLCN.list with available rules."
           else
-            echo "Failed to download or empty SteamCN.list, exiting."
+             echo "::warning::All GameDLCN component downloads failed. GameDLCN.list not updated."
+             # Optionally: cp "${download_dir}/GameDLCN.MANUAL.list" "${download_dir}/GameDLCN.list"
           fi
+
+          echo "Cleaning up temporary GameDLCN files..."
+          rm -f "${downloaded_files[@]}"
 
       - name: Download GameDL rules
         run: |
-          if  curl -f -s -o rules/app/GameDL.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownload/GameDownload.list && [[ -s rules/app/GameDL.list.new ]]; then
-            mv -f rules/app/GameDL.list.new rules/app/GameDL.list
+          GAMEDL_LIST_NEW="rules/app/GameDL.list.new"
+          echo "Downloading GameDL list..."
+          if curl -f -s -o "$GAMEDL_LIST_NEW" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownload/GameDownload.list && [[ -s "$GAMEDL_LIST_NEW" ]]; then
+            mv -f "$GAMEDL_LIST_NEW" rules/app/GameDL.list
+            echo "Downloaded GameDL.list"
           else
-            echo "Failed to download or empty GameDownload.list, exiting."
+            echo "::error::Failed to download or empty GameDownload.list. File not updated."
+            rm -f "$GAMEDL_LIST_NEW"
           fi
 
       - name: Download USAPP rules
@@ -204,23 +237,39 @@ jobs:
             "AIACL4SSR.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
             "Dropbox.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dropbox/Dropbox.list"
           )
-          downloaded_files=() 
+          downloaded_files=() # Track all attempted temp files for cleanup
+          successful_downloads=() # Track only successful ones for cat
+          download_dir="rules/app"
+          echo "Downloading USAPP components..."
           for entry in "${files[@]}"; do
             IFS='|' read -r filename url <<< "$entry"
-            output_path="rules/app/${filename}"
-
-            if ! curl -f -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
-              echo "::error::Failed to download or empty file: $filename"
-              rm -f "${downloaded_files[@]}"
-              exit 1
+            output_path="${download_dir}/${filename}.tmp"
+            downloaded_files+=("$output_path") # Add to list for cleanup later
+            echo "Downloading $filename from $url..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error::Failed to download or empty file: $filename from $url. Skipping this file."
+              # Do not add to successful_downloads
+            else
+              echo "Successfully downloaded $filename."
+              echo >> "$output_path" # Add trailing newline only on success
+              successful_downloads+=("$output_path") # Add path of successful download
             fi
-
-            echo >> "$output_path"
-            downloaded_files+=("$output_path")
           done
-          cat "${downloaded_files[@]}" rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
-          echo >> rules/app/USAPP.list.new
-          mv -f rules/app/USAPP.list.new rules/app/USAPP.list
+
+          if [ ${#successful_downloads[@]} -gt 0 ]; then
+             echo "Combining successfully downloaded USAPP rules..."
+             cat "${successful_downloads[@]}" "${download_dir}/USAPP.MANUAL.list" > "${download_dir}/USAPP.list.new"
+             echo >> "${download_dir}/USAPP.list.new" # Ensure trailing newline
+             sort -u "${download_dir}/USAPP.list.new" -o "${download_dir}/USAPP.list.new"
+             mv -f "${download_dir}/USAPP.list.new" "${download_dir}/USAPP.list"
+             echo "Generated USAPP.list with available rules."
+          else
+             echo "::warning::All USAPP component downloads failed. USAPP.list not generated from downloads."
+             # Optionally, copy manual list if all downloads fail?
+             echo "Copying USAPP.MANUAL.list to USAPP.list as fallback."
+             cp "${download_dir}/USAPP.MANUAL.list" "${download_dir}/USAPP.list"
+          fi
+          echo "Cleaning up temporary USAPP files..."
           rm -f "${downloaded_files[@]}"
 
       - name: Download SGAPP rules
@@ -230,13 +279,21 @@ jobs:
 
       - name: Download UKAPP rules
         run: |
-          if  curl -f -s -o rules/app/UKMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UKMedia/UKMedia.list && [[ -s rules/app/UKMedia.list ]]; then
-            echo >> rules/app/UKMedia.list
-            cat rules/app/UKMedia.list rules/app/UKAPP.MANUAL.list > rules/app/UKAPP.list.new
-            mv -f rules/app/UKAPP.list.new rules/app/UKAPP.list
-            rm -f rules/app/UKMedia.list
+          UKMEDIA_LIST_TMP="rules/app/UKMedia.list.tmp"
+          UKAPP_LIST_NEW="rules/app/UKAPP.list.new"
+          echo "Downloading UKMedia list..."
+          if curl -f -s -o "$UKMEDIA_LIST_TMP" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UKMedia/UKMedia.list && [[ -s "$UKMEDIA_LIST_TMP" ]]; then
+            echo "UKMedia list downloaded successfully."
+            echo >> "$UKMEDIA_LIST_TMP"
+            cat "$UKMEDIA_LIST_TMP" rules/app/UKAPP.MANUAL.list > "$UKAPP_LIST_NEW"
+            sort -u "$UKAPP_LIST_NEW" -o "$UKAPP_LIST_NEW"
+            mv -f "$UKAPP_LIST_NEW" rules/app/UKAPP.list
+            echo "Generated UKAPP.list"
+            rm -f "$UKMEDIA_LIST_TMP"
           else
-            echo "Failed to download or empty UKMedia.list, exiting."
+            echo "::error::Failed to download or empty UKMedia.list. UKAPP.list will be generated from MANUAL only."
+            rm -f "$UKMEDIA_LIST_TMP"
+            cp rules/app/UKAPP.MANUAL.list rules/app/UKAPP.list # Fallback to manual
           fi
 
       - name: Download NorthwestEuropeAPP rules
@@ -249,28 +306,6 @@ jobs:
           cp rules/app/JPAPP.MANUAL.list rules/app/JPAPP.list.new
           mv -f rules/app/JPAPP.list.new rules/app/JPAPP.list
 
-      # - name: Download HKAPP rules
-      #   run: |
-      #     if curl -f -s -o rules/app/HKV4.txt https://ispip.clang.cn/hk_cidr.txt && [[ -s rules/app/HKV4.txt ]]; then
-      #       sed -i '/^[0-9.]\+\/[0-9]\+$/!d' rules/app/HKV4.txt
-      #       sed -i 's/^/IP-CIDR,/' rules/app/HKV4.txt
-      #       sed -i 's/$/,no-resolve/' rules/app/HKV4.txt
-      #       echo >> rules/app/HKV4.txt
-      #       if curl -f -s -o rules/app/HKV6.txt https://ispip.clang.cn/hk_ipv6.txt && [[ -s rules/app/HKV6.txt ]]; then
-      #         sed -i '/^[0-9a-f:]\+\/[0-9]\+$/!d' rules/app/HKV6.txt
-      #         sed -i 's/^/IP-CIDR6,/' rules/app/HKV6.txt
-      #         sed -i 's/$/,no-resolve/' rules/app/HKV6.txt
-      #         echo >> rules/app/HKV6.txt
-      #         cat rules/app/HKV4.txt rules/app/HKV6.txt rules/app/HKAPP.MANUAL.list > rules/app/HKAPP.list.new
-      #         mv -f rules/app/HKAPP.list.new rules/app/HKAPP.list
-      #         rm -f rules/app/HKV4.txt rules/app/HKV6.txt
-      #       else
-      #         echo "Failed to download or empty hk_ipv6.txt, exiting."
-      #       fi
-      #     else
-      #       echo "Failed to download or empty hk_cidr.txt, exiting."
-      #     fi
-
       - name: Download HKAPP rules
         run: |
           cp -f rules/app/HKAPP.MANUAL.list rules/app/HKAPP.MANUAL.list.new
@@ -278,15 +313,25 @@ jobs:
 
       - name: Download eBay rules
         run: |
-          if  curl -f -s -o rules/app/eBay.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.list && [[ -s rules/app/eBay.list.new ]]; then
-            echo "DOMAIN-KEYWORD,ebay" >> rules/app/eBay.list.new
-            echo "DOMAIN-KEYWORD,e-bay" >> rules/app/eBay.list.new
-            echo "DOMAIN-SUFFIX,perfdrive.com" >> rules/app/eBay.list.new
-            echo "DOMAIN-SUFFIX,forter.com" >> rules/app/eBay.list.new
-            echo "DOMAIN-KEYWORD,forter" >> rules/app/eBay.list.new
-            mv -f rules/app/eBay.list.new rules/app/eBay.list
+          EBAY_LIST_NEW="rules/app/eBay.list.new"
+          EBAY_LIST_FINAL="rules/app/eBay.list"
+          echo "Downloading eBay list..."
+          if curl -f -s -o "$EBAY_LIST_NEW" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.list && [[ -s "$EBAY_LIST_NEW" ]]; then
+            echo "eBay list downloaded successfully. Adding manual rules..."
+            # (Add manual rules logic remains the same)
+            echo "# Manual additions for eBay" >> "$EBAY_LIST_NEW"
+            echo "DOMAIN-KEYWORD,ebay" >> "$EBAY_LIST_NEW"
+            echo "DOMAIN-KEYWORD,e-bay" >> "$EBAY_LIST_NEW"
+            echo "DOMAIN-SUFFIX,perfdrive.com" >> "$EBAY_LIST_NEW"
+            echo "DOMAIN-SUFFIX,forter.com" >> "$EBAY_LIST_NEW"
+            echo "DOMAIN-KEYWORD,forter" >> "$EBAY_LIST_NEW"
+            echo >> "$EBAY_LIST_NEW"
+            sort -u "$EBAY_LIST_NEW" -o "$EBAY_LIST_NEW"
+            mv -f "$EBAY_LIST_NEW" "$EBAY_LIST_FINAL"
+            echo "Generated eBay.list"
           else
-            echo "Failed to download or empty eBay.list, exiting."
+            echo "::error::Failed to download or empty eBay.list. File not updated."
+            rm -f "$EBAY_LIST_NEW"
           fi
 
       - name: Download Telegram rules
@@ -317,63 +362,108 @@ jobs:
             echo "Failed to download or empty telegramcidr.txt, exiting."
           fi
 
-      - name: Download AppleandIcloud rules
+      - name: Download Apple rules
         run: |
-          if curl -f -s -o rules/app/Apple.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list && [[ -s rules/app/Apple.list.new ]]; then
-            mv -f rules/app/Apple.list.new rules/app/Apple.list
+          APPLE_LIST_NEW="rules/app/Apple.list.new"
+          echo "Downloading Apple list..."
+          if curl -f -s -o "$APPLE_LIST_NEW" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list && [[ -s "$APPLE_LIST_NEW" ]]; then
+            mv -f "$APPLE_LIST_NEW" rules/app/Apple.list
+            echo "Downloaded Apple.list"
           else
-            echo "Failed to download or empty Apple.list, exiting."
+            echo "::error::Failed to download or empty Apple.list. File not updated."
+            rm -f "$APPLE_LIST_NEW"
           fi
 
       - name: Download GoogleFCM rules
         run: |
-          if curl -f -s -o rules/app/GoogleFCM.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.list && [[ -s rules/app/GoogleFCM.list.new ]]; then
-            echo "# Other" >> rules/app/GoogleFCM.list.new
-            echo "PROCESS-NAME,com.google.android.gms" >> rules/app/GoogleFCM.list.new
-            echo "PROCESS-NAME-REGEX,android\.gms" >> rules/app/GoogleFCM.list.new
-            echo "DOMAIN-SUFFIX,mtalk4.google.com" >> rules/app/GoogleFCM.list.new
-            echo "DOMAIN-SUFFIX,mtalk-staging.google.com" >> rules/app/GoogleFCM.list.new
-            echo "DOMAIN-SUFFIX,mtalk-dev.google.com" >> rules/app/GoogleFCM.list.new
-            mv -f rules/app/GoogleFCM.list.new rules/app/GoogleFCM.list
+          GCM_LIST_NEW="rules/app/GoogleFCM.list.new"
+          GCM_LIST_FINAL="rules/app/GoogleFCM.list"
+          echo "Downloading GoogleFCM list..."
+          if curl -f -s -o "$GCM_LIST_NEW" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.list && [[ -s "$GCM_LIST_NEW" ]]; then
+            echo "GoogleFCM list downloaded successfully. Adding manual rules..."
+            # (Manual additions logic remains the same)
+            echo "# Manual additions for GoogleFCM" >> "$GCM_LIST_NEW"
+            echo "PROCESS-NAME,com.google.android.gms" >> "$GCM_LIST_NEW"
+            echo "PROCESS-NAME-REGEX,android\.gms" >> "$GCM_LIST_NEW"
+            echo "DOMAIN-SUFFIX,mtalk.google.com" >> "$GCM_LIST_NEW"
+            echo "DOMAIN-SUFFIX,mtalk4.google.com" >> "$GCM_LIST_NEW"
+            echo "DOMAIN-SUFFIX,mtalk-staging.google.com" >> "$GCM_LIST_NEW"
+            echo "DOMAIN-SUFFIX,mtalk-dev.google.com" >> "$GCM_LIST_NEW"
+            echo >> "$GCM_LIST_NEW"
+            sort -u "$GCM_LIST_NEW" -o "$GCM_LIST_NEW"
+            mv -f "$GCM_LIST_NEW" "$GCM_LIST_FINAL"
+            echo "Generated GoogleFCM.list"
           else
-            echo "Failed to download or empty GoogleFCM.list, exiting."
+            echo "::error::Failed to download or empty GoogleFCM.list. File not updated."
+            rm -f "$GCM_LIST_NEW"
           fi
 
       - name: Download Google rules
         run: |
-          if curl -f -s -o rules/app/Google.list.1 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list && [[ -s rules/app/Google.list.1 ]]; then
-            echo >> rules/app/Google.list.1
-            cat rules/app/Google.list.1 rules/app/Google.MANUAL.list > rules/app/Google.list.new
-            mv -f rules/app/Google.list.new rules/app/Google.list
-            rm -f rules/app/Google.list.1
+          GOOGLE_LIST_TMP="rules/app/Google.list.tmp"
+          GOOGLE_LIST_NEW="rules/app/Google.list.new"
+          echo "Downloading Google list component..."
+          if curl -f -s -o "$GOOGLE_LIST_TMP" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list && [[ -s "$GOOGLE_LIST_TMP" ]]; then
+            echo "Google list component downloaded successfully."
+            echo >> "$GOOGLE_LIST_TMP"
+            cat "$GOOGLE_LIST_TMP" rules/app/Google.MANUAL.list > "$GOOGLE_LIST_NEW"
+            sort -u "$GOOGLE_LIST_NEW" -o "$GOOGLE_LIST_NEW"
+            mv -f "$GOOGLE_LIST_NEW" rules/app/Google.list
+            echo "Generated Google.list"
+            rm -f "$GOOGLE_LIST_TMP"
           else
-            echo "Failed to download or empty Google.list, exiting."
+            echo "::error::Failed to download Google list component. Google.list generated from MANUAL only."
+            rm -f "$GOOGLE_LIST_TMP"
+            cp rules/app/Google.MANUAL.list rules/app/Google.list # Fallback to manual
           fi
 
       - name: Download Youtube rules
         run: |
-          if curl -f -s -o rules/app/Youtube.list.new https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list && [[ -s rules/app/Youtube.list.new ]]; then
-            mv -f rules/app/Youtube.list.new rules/app/Youtube.list
+          YOUTUBE_LIST_NEW="rules/app/Youtube.list.new"
+          echo "Downloading Youtube list..."
+          if curl -f -s -o "$YOUTUBE_LIST_NEW" https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list && [[ -s "$YOUTUBE_LIST_NEW" ]]; then
+            mv -f "$YOUTUBE_LIST_NEW" rules/app/Youtube.list
+            echo "Downloaded Youtube.list"
           else
-            echo "Failed to download or empty Youtube.list, exiting."
+            echo "::error::Failed to download or empty Youtube.list. File not updated."
+            rm -f "$YOUTUBE_LIST_NEW"
           fi
 
       - name: Download Onedrive rules
         run: |
-          if  curl -f -s -o rules/app/Onedrive.1.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.list && [[ -s rules/app/Onedrive.1.list ]]; then
-            echo >> rules/app/Onedrive.1.list
-            if  curl -f -s -o rules/app/Onedrive.2.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/OneDrive.list && [[ -s rules/app/Onedrive.2.list ]]; then
-              echo >> rules/app/Onedrive.2.list
-              cat rules/app/Onedrive.1.list rules/app/Onedrive.2.list rules/app/Onedrive.MANUAL.list > rules/app/Onedrive.list.new
-              echo >> rules/app/Onedrive.list.new
-              mv -f rules/app/Onedrive.list.new rules/app/Onedrive.list
-              rm -f rules/app/Onedrive.2.list
+          files=(
+            "Onedrive.blackmatrix7.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.list"
+            "Onedrive.ACL4SSR.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/OneDrive.list"
+          )
+          downloaded_files=()
+          successful_downloads=()
+          download_dir="rules/app"
+          echo "Downloading Onedrive components..."
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"
+            output_path="${download_dir}/${filename}.tmp"
+            downloaded_files+=("$output_path")
+            echo "Downloading $filename from $url..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error::Failed to download or empty file: $filename from $url. Skipping this file."
             else
-            echo "Failed to download or empty ios_rule_script-onedrive.list, exiting."
+              echo "Successfully downloaded $filename."
+              echo >> "$output_path"
+              successful_downloads+=("$output_path")
             fi
-            rm -f rules/app/Onedrive.1.list
+          done
+
+          if [ ${#successful_downloads[@]} -gt 0 ]; then
+             echo "Combining successfully downloaded Onedrive rules..."
+             cat "${successful_downloads[@]}" "${download_dir}/Onedrive.MANUAL.list" > "${download_dir}/Onedrive.list.new"
+             echo >> "${download_dir}/Onedrive.list.new"
+             sort -u "${download_dir}/Onedrive.list.new" -o "${download_dir}/Onedrive.list.new"
+             mv -f "${download_dir}/Onedrive.list.new" "${download_dir}/Onedrive.list"
+             echo "Generated Onedrive.list with available rules."
           else
-            echo "Failed to download or empty ACL4SSR-onedrive.list, exiting."
+             echo "::warning::All Onedrive component downloads failed. Onedrive.list not generated from downloads."
+             echo "Copying Onedrive.MANUAL.list to Onedrive.list as fallback."
+             cp "${download_dir}/Onedrive.MANUAL.list" "${download_dir}/Onedrive.list"
           fi
 
       - name: Download MicrosoftHA rules
