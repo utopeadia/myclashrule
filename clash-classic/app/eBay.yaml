@@ -1,7 +1,4 @@
 payload:
-  - DOMAIN-KEYWORD,e-bay
-  - DOMAIN-KEYWORD,ebay
-  - DOMAIN-KEYWORD,forter
   - DOMAIN-SUFFIX,about.co.kr
   - DOMAIN-SUFFIX,auction.co.kr
   - DOMAIN-SUFFIX,e-bay.it
@@ -44,7 +41,10 @@ payload:
   - DOMAIN-SUFFIX,ebayrtm.com
   - DOMAIN-SUFFIX,ebaystatic.com
   - DOMAIN-SUFFIX,esmplus.com
-  - DOMAIN-SUFFIX,forter.com
   - DOMAIN-SUFFIX,g9.co.kr
   - DOMAIN-SUFFIX,gmarket.co.kr
+  - DOMAIN-KEYWORD,ebay
+  - DOMAIN-KEYWORD,e-bay
   - DOMAIN-SUFFIX,perfdrive.com
+  - DOMAIN-SUFFIX,forter.com
+  - DOMAIN-KEYWORD,forter

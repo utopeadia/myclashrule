@@ -8,10 +8,6 @@ payload:
   - DOMAIN,alt7-mtalk.google.com
   - DOMAIN,alt8-mtalk.google.com
   - DOMAIN,mtalk.google.com
-  - DOMAIN-SUFFIX,mtalk-dev.google.com
-  - DOMAIN-SUFFIX,mtalk-staging.google.com
-  - DOMAIN-SUFFIX,mtalk.google.com
-  - DOMAIN-SUFFIX,mtalk4.google.com
   - IP-CIDR,108.177.125.188/32,no-resolve
   - IP-CIDR,142.250.10.188/32,no-resolve
   - IP-CIDR,142.250.31.188/32,no-resolve
@@ -40,3 +36,6 @@ payload:
   - IP-CIDR,74.125.28.188/32,no-resolve
   - PROCESS-NAME,com.google.android.gms
   - PROCESS-NAME-REGEX,android\.gms
+  - DOMAIN-SUFFIX,mtalk4.google.com
+  - DOMAIN-SUFFIX,mtalk-staging.google.com
+  - DOMAIN-SUFFIX,mtalk-dev.google.com
