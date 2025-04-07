@@ -110,47 +110,46 @@ jobs:
             "Edge.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/MicrosoftEdge.list"
           )
           downloaded_files=()
+          successful_downloads=() # Track only successful ones for cat
           download_dir="rules/app"
-          echo "Downloading USSpecial components..."
           for entry in "${files[@]}"; do
             IFS='|' read -r filename url <<< "$entry"
-            output_path="${download_dir}/${filename}.tmp" # Download to temp files first
+            output_path="${download_dir}/${filename}.tmp"
+            downloaded_files+=("$output_path") # Add to list for cleanup later
             echo "Downloading $filename from $url..."
             if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
-              echo "::error::Failed to download or empty file: $filename from $url"
-              # Clean up already downloaded temp files
-              for f in "${downloaded_files[@]}"; do rm -f "$f"; done
-              exit 1
+              echo "::error::Failed to download or empty file: $filename from $url. Skipping this file."
+              # Do not add to successful_downloads
+            else
+              echo "Successfully downloaded $filename."
+              echo >> "$output_path" # Add trailing newline only on success
+              if [[ "$filename" == "Copilot.list" ]]; then
+                 echo "# Manual additions for Copilot" >> "$output_path"
+                 echo "DOMAIN,designer.microsoft.com" >> "$output_path"
+                 echo "DOMAIN-SUFFIX,githubcopilot.com" >> "$output_path"
+                 echo "DOMAIN,copilot-telemetry.githubusercontent.com" >> "$output_path"
+                 echo "DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com" >> "$output_path"
+                 echo "PROCESS-NAME,com.microsoft.copilot" >> "$output_path"
+                 echo "PROCESS-NAME-REGEX,com\.microsoft\.copilot" >> "$output_path"
+                 echo "PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$" >> "$output_path"
+                 echo >> "$output_path"
+              fi
+              successful_downloads+=("$output_path") # Add path of successful download
             fi
-            echo >> "$output_path" # Add trailing newline
-            downloaded_files+=("$output_path")
           done
 
-          # Add specific rules to Copilot list *after* download
-          COPILOT_TMP="${download_dir}/Copilot.list.tmp"
-          if [[ -f "$COPILOT_TMP" ]]; then
-             echo "# Manual additions for Copilot" >> "$COPILOT_TMP"
-             echo "DOMAIN,designer.microsoft.com" >> "$COPILOT_TMP"
-             echo "DOMAIN-SUFFIX,githubcopilot.com" >> "$COPILOT_TMP"
-             echo "DOMAIN,copilot-telemetry.githubusercontent.com" >> "$COPILOT_TMP"
-             echo "DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com" >> "$COPILOT_TMP"
-             echo "PROCESS-NAME,com.microsoft.copilot" >> "$COPILOT_TMP"
-             echo "PROCESS-NAME-REGEX,com\.microsoft\.copilot" >> "$COPILOT_TMP"
-             echo "PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$" >> "$COPILOT_TMP"
-             echo >> "$COPILOT_TMP" # Extra newline after additions
+          if [ ${#successful_downloads[@]} -gt 0 ]; then
+            echo "Combining successfully downloaded USSpecial rules..."
+            cat "${successful_downloads[@]}" "${download_dir}/USSpecial.MANUAL.list" > "${download_dir}/USSpecial.list.new"
+            sort -u "${download_dir}/USSpecial.list.new" -o "${download_dir}/USSpecial.list.new"
+            mv -f "${download_dir}/USSpecial.list.new" "${download_dir}/USSpecial.list"
+            echo "Generated USSpecial.list with available rules."
           else
-             echo "::error::Downloaded Copilot temp file not found at $COPILOT_TMP"
-             for f in "${downloaded_files[@]}"; do rm -f "$f"; done
-             exit 1
+            echo "::warning::All USSpecial component downloads failed. USSpecial.list not updated."
           fi
 
-          cat "${downloaded_files[@]}" "${download_dir}/USSpecial.MANUAL.list" > "${download_dir}/USSpecial.list.new"
-          sort -u "${download_dir}/USSpecial.list.new" -o "${download_dir}/USSpecial.list.new" # Sort final list
-          mv -f "${download_dir}/USSpecial.list.new" "${download_dir}/USSpecial.list"
-          echo "Generated USSpecial.list"
-
-          echo "Cleaning up temporary files..."
-          for f in "${downloaded_files[@]}"; do rm -f "$f"; done
+          echo "Cleaning up temporary USSpecial files..."
+          rm -f "${downloaded_files[@]}" # Clean up all attempted temp files
 
       - name: Download Bilibili rules
         run: |
