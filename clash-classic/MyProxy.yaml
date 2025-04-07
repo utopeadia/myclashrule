@@ -493,6 +493,7 @@ payload:
   - DOMAIN-SUFFIX,lf6-unpkg.zstaticcdn.com
   - DOMAIN-SUFFIX,liverail.com
   - DOMAIN-SUFFIX,liverail.tv
+  - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,lnstagram-help.com
   - DOMAIN-SUFFIX,login-account.net
   - DOMAIN-SUFFIX,m.me
@@ -502,6 +503,7 @@ payload:
   - DOMAIN-SUFFIX,mcrouter.org
   - DOMAIN-SUFFIX,messenger.com
   - DOMAIN-SUFFIX,messengerdevelopers.com
+  - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,meta.com
   - DOMAIN-SUFFIX,midentsolutions.com
   - DOMAIN-SUFFIX,mobilefacebook.com

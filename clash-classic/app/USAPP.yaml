@@ -590,8 +590,6 @@ payload:
   - DOMAIN-SUFFIX,marscode.com
   - PROCESS-NAME,Trae Helper
   - PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
-  - DOMAIN-SUFFIX,meta.ai
-  - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,qwenlm.ai
   - DOMAIN-SUFFIX,qwen.ai
   - DOMAIN-SUFFIX,wanxai.com
