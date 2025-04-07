@@ -1,17 +1,31 @@
-# NAME: UKMedia
+
 # AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:18:29
-# DOMAIN: 6
+# CMLinkUK EE
 # DOMAIN-KEYWORD: 2
 # DOMAIN-SUFFIX: 22
+# DOMAIN: 6
+# Giffgaff
+# NAME: UKMedia
+# REPO: https://github.com/blackmatrix7/ios_rule_script
 # TOTAL: 30
+# UPDATED: 2024-07-03 16:18:29
+# WifiCalling
+# other
+# 沃达丰
 DOMAIN,itvpnp.live.ott.irdeto.com
 DOMAIN,itvpnp.stage.ott.irdeto.com
 DOMAIN,itvpnpmobile-a.akamaihd.net
 DOMAIN,vod-dash-ww-live.akamaized.net
 DOMAIN,vod-thumb-ww-live.akamaized.net
 DOMAIN,vs-cmaf-pushb-ww-live.akamaized.net
+DOMAIN-KEYWORD,bbcfmt
+DOMAIN-KEYWORD,uk-live
+DOMAIN-KEYWORD,vodafoneuk
+DOMAIN-SUFFIX, entsrv-uk.vodafone.com
+DOMAIN-SUFFIX, epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX, vuk-gto.prod.ondemandconnectivity.com
 DOMAIN-SUFFIX,bb-static.com
 DOMAIN-SUFFIX,bbc
 DOMAIN-SUFFIX,bbc-reporting-api.app
@@ -31,31 +45,16 @@ DOMAIN-SUFFIX,britbox.co.uk
 DOMAIN-SUFFIX,britbox.com
 DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,channel4.com
+DOMAIN-SUFFIX,giffgaff.com
+DOMAIN-SUFFIX,hosteroid.uk
 DOMAIN-SUFFIX,itv.com
 DOMAIN-SUFFIX,itvstatic.com
 DOMAIN-SUFFIX,massive-itv.com
-DOMAIN-KEYWORD,bbcfmt
-DOMAIN-KEYWORD,uk-live
-
-# WifiCalling
-# 沃达丰
-DOMAIN-SUFFIX, epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
-DOMAIN-SUFFIX, ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
-DOMAIN-SUFFIX, ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org
-DOMAIN-SUFFIX, entsrv-uk.vodafone.com
-DOMAIN-SUFFIX, vuk-gto.prod.ondemandconnectivity.com
-IP-CIDR,88.82.0.0/19,no-resolve
-# CMLinkUK EE
-IP-CIDR,46.68.0.0/17,no-resolve
-# Giffgaff
-IP-CIDR,87.194.0.0/16,no-resolve
-
-# other
-DOMAIN-SUFFIX,hosteroid.uk
-DOMAIN-SUFFIX,vodafone.co.uk
-DOMAIN-SUFFIX,giffgaff.com
-DOMAIN-KEYWORD,vodafoneuk
 DOMAIN-SUFFIX,media-uk1.digital.nuance.com
+DOMAIN-SUFFIX,vodafone.co.uk
 DOMAIN-SUFFIX,vodafoneuk.demdex.net
-DOMAIN-SUFFIX,vodafoneuk.tt.omtrdc.ne
 DOMAIN-SUFFIX,vodafoneuk.digital.nuance.com
+DOMAIN-SUFFIX,vodafoneuk.tt.omtrdc.ne
+IP-CIDR,46.68.0.0/17,no-resolve
+IP-CIDR,87.194.0.0/16,no-resolve
+IP-CIDR,88.82.0.0/19,no-resolve
