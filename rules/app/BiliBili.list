@@ -1,12 +1,13 @@
-# NAME: BiliBili
+
 # AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:16:17
-# DOMAIN: 53
 # DOMAIN-SUFFIX: 62
+# DOMAIN: 53
 # IP-CIDR: 8
+# NAME: BiliBili
 # PROCESS-NAME: 6
+# REPO: https://github.com/blackmatrix7/ios_rule_script
 # TOTAL: 129
+# UPDATED: 2024-07-03 16:16:17
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com
