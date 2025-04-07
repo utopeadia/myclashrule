@@ -106,7 +106,6 @@ jobs:
           files=(
             "Copilot.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
             "Bing.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list"
-            "ababa.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/ababa.list"
             "Edge.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/MicrosoftEdge.list"
           )
           downloaded_files=()
@@ -119,7 +118,6 @@ jobs:
             echo "Downloading $filename from $url..."
             if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
               echo "::error::Failed to download or empty file: $filename from $url. Skipping this file."
-              # Do not add to successful_downloads
             else
               echo "Successfully downloaded $filename."
               echo >> "$output_path" # Add trailing newline only on success
@@ -134,12 +132,11 @@ jobs:
                  echo "PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$" >> "$output_path"
                  echo >> "$output_path"
               fi
-              successful_downloads+=("$output_path") # Add path of successful download
+              successful_downloads+=("$output_path")
             fi
           done
 
           if [ ${#successful_downloads[@]} -gt 0 ]; then
-            echo "Combining successfully downloaded USSpecial rules..."
             cat "${successful_downloads[@]}" "${download_dir}/USSpecial.MANUAL.list" > "${download_dir}/USSpecial.list.new"
             sort -u "${download_dir}/USSpecial.list.new" -o "${download_dir}/USSpecial.list.new"
             mv -f "${download_dir}/USSpecial.list.new" "${download_dir}/USSpecial.list"
