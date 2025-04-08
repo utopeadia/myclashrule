@@ -26,6 +26,7 @@ payload:
   - IP-CIDR6,2620:0:ccc::2/128,no-resolve
   - IP-CIDR6,2620:0:ccd::2/128,no-resolve
   - DOMAIN-SUFFIX,api.nn.ci
+  - DOMAIN-SUFFIX,21img.com
   - DOMAIN-SUFFIX,tampermonkey.net
   - DOMAIN-SUFFIX,hk.luoveyq.space
   - DOMAIN-SUFFIX,shared.oaifree.com
