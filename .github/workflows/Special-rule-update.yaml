@@ -1,11 +1,11 @@
 name: Special-rule-update
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   schedule:
-  - cron: "20 */6 * * *"
+    - cron: "20 */6 * * *"
 
 jobs:
   Update-Special-rule:
@@ -13,663 +13,662 @@ jobs:
     permissions:
       contents: write
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up Git
-      run: |
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Actions"
+      - name: Set up Git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
 
-    - name: Update MyDirect.SERVER.list
-      run: |
-        if [ -f rules/MyDirect.SERVER.update.list ]; then
-          cat rules/MyDirect.SERVER.update.list | while read line; do
-            line=$(echo "$line" | tr -d '\r' | xargs)
-            if [ -n "$line" ]; then
-              if [[ "$line" == \#* ]]; then
-                continue
+      - name: Update MyDirect.SERVER.list
+        run: |
+          if [ -f rules/MyDirect.SERVER.update.list ]; then
+            cat rules/MyDirect.SERVER.update.list | while read line; do
+              line=$(echo "$line" | tr -d '\r' | xargs)
+              if [ -n "$line" ]; then
+                if [[ "$line" == \#* ]]; then
+                  continue
+                fi
+                if [[ "$line" =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; then
+                  echo "IP-CIDR,$line/32,no-resolve" 
+                elif [[ "$line" =~ ^[a-zA-Z0-9.-]+$ ]]; then
+                  echo "DOMAIN-SUFFIX,$line"
+                else 
+                  echo "IP-CIDR6,$line/128,no-resolve" 
+                fi
               fi
-              if [[ "$line" =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; then
-                echo "IP-CIDR,$line/32,no-resolve" 
-              elif [[ "$line" =~ ^[a-zA-Z0-9.-]+$ ]]; then
-                echo "DOMAIN-SUFFIX,$line"
-              else 
-                echo "IP-CIDR6,$line/128,no-resolve" 
+            done | sort -t, -k1,1 > rules/MyDirect.SERVER.list.new
+            mv -f rules/MyDirect.SERVER.list.new rules/MyDirect.SERVER.list
+            rm -rf rules/MyDirect.SERVER.update.list
+          else
+            echo "MyDirect.SERVER.update.list not found, skipping..."
+          fi
+
+      - name: Get MyDirect rules
+        run: |
+          cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list > rules/MyDirect.list.new
+          mv -f rules/MyDirect.list.new rules/MyDirect.list
+
+      - name: Update Reject.list
+        run: |
+          if  curl -f -s -o rules/pcdn.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt && [[ -s rules/pcdn.txt ]]; then
+            cat rules/pcdn.txt | while read line; do
+              line=$(echo "$line" | tr -d '\r' | xargs)
+              if [ -n "$line" ]; then
+                if [[ "$line" == \#* ]]; then
+                  continue
+                fi
+                if [[ "$line" =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; then
+                  echo "IP-CIDR,$line/32,no-resolve" 
+                elif [[ "$line" =~ ^[a-zA-Z0-9.-]+$ ]]; then
+                  echo "DOMAIN,$line"
+                else 
+                  echo "IP-CIDR6,$line/128,no-resolve" 
+                fi
               fi
+            done | sort -t, -k1,1 > rules/pcdn.list
+            echo >> rules/pcdn.list
+            if curl -f -s -o rules/httpdns.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/HTTPDNS.Block.list && [[ -s rules/httpdns.list ]]; then
+              echo >> rules/httpdns.list
+              > rules/httpdns.list.tmp
+              while read -r line; do
+                if [[ "$line" == *"IP-CIDR"* ]] && [[ "$line" != *"no-resolve"* ]]; then
+                  echo "$line,no-resolve" >> rules/httpdns.list.tmp
+                else
+                  echo "$line" >> rules/httpdns.list.tmp
+                fi
+              done < rules/httpdns.list
+              cat rules/httpdns.list.tmp rules/pcdn.list > rules/ForcedReject.list.new
+              mv -f rules/ForcedReject.list.new rules/ForcedReject.list
+              rm -f rules/httpdns.list rules/httpdns.list.tmp
+            else
+              echo "Failed to download or empty httpdns.list, exiting."
             fi
-          done | sort -t, -k1,1 > rules/MyDirect.SERVER.list.new
-          mv -f rules/MyDirect.SERVER.list.new rules/MyDirect.SERVER.list
-          rm -rf rules/MyDirect.SERVER.update.list
-        else
-          echo "MyDirect.SERVER.update.list not found, skipping..."
-        fi
+            rm -rf rules/pcdn.list rules/pcdn.txt
+          else
+            echo "Failed to download or empty pcdn.txt, exiting."
+          fi
 
-    - name: Get MyDirect rules
-      run: |
-        cat rules/MyDirect.MANUAL.list rules/MyDirect.SERVER.list > rules/MyDirect.list.new
-        mv -f rules/MyDirect.list.new rules/MyDirect.list
+      - name: Download MyProxy rules
+        run: |
+          files=(
+            "Docker.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.list"
+            "FacebookAndMeta.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.list"
+          )
+          target_list="rules/MyProxy.list"
+          manual_list="rules/MyProxy.MANUAL.list"
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
 
-    - name: Update Reject.list
-      run: |
-        if  curl -f -s -o rules/pcdn.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt && [[ -s rules/pcdn.txt ]]; then
-          cat rules/pcdn.txt | while read line; do
-            line=$(echo "$line" | tr -d '\r' | xargs)
-            if [ -n "$line" ]; then
-              if [[ "$line" == \#* ]]; then
-                continue
-              fi
-              if [[ "$line" =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; then
-                echo "IP-CIDR,$line/32,no-resolve" 
-              elif [[ "$line" =~ ^[a-zA-Z0-9.-]+$ ]]; then
-                echo "DOMAIN,$line"
-              else 
-                echo "IP-CIDR6,$line/128,no-resolve" 
-              fi
+          echo "Attempting update for $target_list"
+          # Create download dir if it doesn't exist
+          mkdir -p "$download_dir"
+
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"
+            # Use a unique temp name based on target list and original filename
+            output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"
+            temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error:: Failed download or empty file: $filename from $url for target $target_list"
+              all_success=false
+              # Don't break, attempt all downloads for better reporting, but mark failure
+            else
+              echo "Successfully downloaded $filename"
+              echo >> "$output_path" # Add trailing newline
             fi
-          done | sort -t, -k1,1 > rules/pcdn.list
-          echo >> rules/pcdn.list
-          if curl -f -s -o rules/httpdns.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/HTTPDNS.Block.list && [[ -s rules/httpdns.list ]]; then
-            echo >> rules/httpdns.list
-            > rules/httpdns.list.tmp
-            while read -r line; do
-              if [[ "$line" == *"IP-CIDR"* ]] && [[ "$line" != *"no-resolve"* ]]; then
-                echo "$line,no-resolve" >> rules/httpdns.list.tmp
-              else
-                echo "$line" >> rules/httpdns.list.tmp
-              fi
-            done < rules/httpdns.list
-            cat rules/httpdns.list.tmp rules/pcdn.list > rules/ForcedReject.list.new
-            mv -f rules/ForcedReject.list.new rules/ForcedReject.list
-            rm -f rules/httpdns.list rules/httpdns.list.tmp
+          done
+
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."
+            combined_new="${target_list}.new"
+            # Prepare files to concatenate
+            files_to_cat=()
+            for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then
+                files_to_cat+=("$manual_list")
+                echo "Including manual list: $manual_list"
+            else
+                echo "Manual list $manual_list not found or empty, skipping."
+            fi
+
+            # Concatenate, sort, and move
+            cat "${files_to_cat[@]}" > "$combined_new"
+            echo >> "$combined_new" # Ensure trailing newline
+            sort -u "$combined_new" -o "$combined_new"
+            mv -f "$combined_new" "$target_list"
+            echo "Successfully updated $target_list"
           else
-            echo "Failed to download or empty httpdns.list, exiting."
-          fi
-          rm -rf rules/pcdn.list rules/pcdn.txt
-        else
-          echo "Failed to download or empty pcdn.txt, exiting."
-        fi
-
-
-    - name: Download MyProxy rules
-      run: |
-        files=(
-          "Docker.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.list"
-          "FacebookAndMeta.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.list"
-        )
-        target_list="rules/MyProxy.list"
-        manual_list="rules/MyProxy.MANUAL.list"
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-
-        echo "Attempting update for $target_list"
-        # Create download dir if it doesn't exist
-        mkdir -p "$download_dir"
-
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"
-          # Use a unique temp name based on target list and original filename
-          output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"
-          temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
-            echo "::error:: Failed download or empty file: $filename from $url for target $target_list"
-            all_success=false
-            # Don't break, attempt all downloads for better reporting, but mark failure
-          else
-            echo "Successfully downloaded $filename"
-            echo >> "$output_path" # Add trailing newline
-          fi
-        done
-
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."
-          combined_new="${target_list}.new"
-          # Prepare files to concatenate
-          files_to_cat=()
-          for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then
-              files_to_cat+=("$manual_list")
-              echo "Including manual list: $manual_list"
-          else
-              echo "Manual list $manual_list not found or empty, skipping."
+            echo "::warning:: $target_list was not updated due to one or more download failures."
           fi
 
-          # Concatenate, sort, and move
-          cat "${files_to_cat[@]}" > "$combined_new"
-          echo >> "$combined_new" # Ensure trailing newline
-          sort -u "$combined_new" -o "$combined_new"
-          mv -f "$combined_new" "$target_list"
-          echo "Successfully updated $target_list"
-        else
-          echo "::warning:: $target_list was not updated due to one or more download failures."
-        fi
+          echo "Cleaning up temporary files for $target_list..."
+          rm -f "${temp_files[@]}"
 
-        echo "Cleaning up temporary files for $target_list..."
-        rm -f "${temp_files[@]}"
+      - name: Download USSpecial rules
+        run: |
+          files=(
+            "Copilot.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+          )
+          target_list="rules/app/USSpecial.list"
+          manual_list="rules/app/USSpecial.MANUAL.list"
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          copilot_temp_path="" # Store path to modify later
 
-    - name: Download USSpecial rules
-      run: |
-        files=(
-          "Copilot.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
-        )
-        target_list="rules/app/USSpecial.list"
-        manual_list="rules/app/USSpecial.MANUAL.list"
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        copilot_temp_path="" # Store path to modify later
+          echo "Attempting update for $target_list"
+          mkdir -p "$download_dir"
 
-        echo "Attempting update for $target_list"
-        mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"
+            output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"
+            temp_files+=("$output_path")
+            if [[ "$filename" == "Copilot.list" ]]; then copilot_temp_path="$output_path"; fi # Track Copilot temp file
 
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"
-          output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"
-          temp_files+=("$output_path")
-          if [[ "$filename" == "Copilot.list" ]]; then copilot_temp_path="$output_path"; fi # Track Copilot temp file
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error:: Failed download or empty file: $filename from $url for target $target_list"
+              all_success=false
+            else
+              echo "Successfully downloaded $filename"
+              echo >> "$output_path"
+            fi
+          done
 
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
-            echo "::error:: Failed download or empty file: $filename from $url for target $target_list"
-            all_success=false
+          if $all_success; then
+            # Add specific rules to Copilot list *after* successful download
+            if [[ -n "$copilot_temp_path" && -f "$copilot_temp_path" ]]; then
+                echo "Adding manual rules to Copilot temp file..."
+                echo "# Manual additions for Copilot" >> "$copilot_temp_path"
+                echo "DOMAIN,designer.microsoft.com" >> "$copilot_temp_path"
+                echo "DOMAIN-SUFFIX,githubcopilot.com" >> "$copilot_temp_path"
+                echo "DOMAIN,copilot-telemetry.githubusercontent.com" >> "$copilot_temp_path"
+                echo "DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com" >> "$copilot_temp_path"
+                echo "PROCESS-NAME,com.microsoft.copilot" >> "$copilot_temp_path"
+                echo "PROCESS-NAME-REGEX,com\.microsoft\.copilot" >> "$copilot_temp_path"
+                echo "PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$" >> "$copilot_temp_path"
+                echo >> "$copilot_temp_path"
+            else
+                echo "::warning:: Copilot temp file not found or empty, cannot add specific rules."
+                # Decide if this should be treated as a failure for the whole step
+                # all_success=false # Uncomment if Copilot additions are mandatory
+            fi
+          fi
+
+          # Proceed only if still successful after potential Copilot modification check
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."
+            combined_new="${target_list}.new"
+            files_to_cat=()
+            for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then
+                files_to_cat+=("$manual_list")
+                echo "Including manual list: $manual_list"
+            fi
+
+            cat "${files_to_cat[@]}" > "$combined_new"
+            echo >> "$combined_new"
+            sort -u "$combined_new" -o "$combined_new"
+            mv -f "$combined_new" "$target_list"
+            echo "Successfully updated $target_list"
           else
-            echo "Successfully downloaded $filename"
+            echo "::warning:: $target_list was not updated due to one or more download/processing failures."
+          fi
+
+          echo "Cleaning up temporary files for $target_list..."
+          rm -f "${temp_files[@]}"
+
+      - name: Download Bilibili rules
+        run: |
+          files=(
+            "BiliBili.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list"
+          )
+          target_list="rules/app/BiliBili.list"
+          manual_list="" # No manual list
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+
+      - name: Download Game rules
+        run: |
+          files=(
+            "Game.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+          )
+          target_list="rules/app/Game.list"
+          manual_list=""
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+
+      - name: Download GameDLCN rules (SteamCN, GameDownloadCN)
+        run: |
+          files=(
+            "SteamCN.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list"
+            "GameDownloadCN.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.list"
+          )
+          target_list="rules/app/GameDLCN.list"
+          manual_list="rules/app/GameDLCN.MANUAL.list"
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+
+      - name: Download GameDL rules
+        run: |
+          files=(
+            "GameDL.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownload/GameDownload.list"
+          )
+          target_list="rules/app/GameDL.list"
+          manual_list=""
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+
+      - name: Download USAPP rules
+        run: |
+          files=(
+            "TwitterAndX.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list"
+            "GoogleVoice.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleVoice/GoogleVoice.list"
+            "Reddit.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.list"
+            "PayPal.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PayPal/PayPal.list"
+            "USMedia.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list"
+            "OpenAI.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list"
+            "Claude.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list"
+            "Gemini.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list"
+            "AIACL4SSR.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+            "Dropbox.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dropbox/Dropbox.list"
+          )
+          downloaded_files=() 
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"
+            output_path="rules/app/${filename}"
+
+            if ! curl -f -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error::Failed to download or empty file: $filename"
+              rm -f "${downloaded_files[@]}"
+              exit 1
+            fi
+
             echo >> "$output_path"
-          fi
-        done
+            downloaded_files+=("$output_path")
+          done
+          cat "${downloaded_files[@]}" rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
+          echo >> rules/app/USAPP.list.new
+          mv -f rules/app/USAPP.list.new rules/app/USAPP.list
+          rm -f "${downloaded_files[@]}"
 
-        if $all_success; then
-          # Add specific rules to Copilot list *after* successful download
-          if [[ -n "$copilot_temp_path" && -f "$copilot_temp_path" ]]; then
-              echo "Adding manual rules to Copilot temp file..."
-              echo "# Manual additions for Copilot" >> "$copilot_temp_path"
-              echo "DOMAIN,designer.microsoft.com" >> "$copilot_temp_path"
-              echo "DOMAIN-SUFFIX,githubcopilot.com" >> "$copilot_temp_path"
-              echo "DOMAIN,copilot-telemetry.githubusercontent.com" >> "$copilot_temp_path"
-              echo "DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com" >> "$copilot_temp_path"
-              echo "PROCESS-NAME,com.microsoft.copilot" >> "$copilot_temp_path"
-              echo "PROCESS-NAME-REGEX,com\.microsoft\.copilot" >> "$copilot_temp_path"
-              echo "PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$" >> "$copilot_temp_path"
-              echo >> "$copilot_temp_path"
+      - name: Download TWAPP rules
+        run: |
+          files=(
+            "Bahamut.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Bahamut/Bahamut.list"
+          )
+          target_list="rules/app/TWAPP.list"
+          manual_list="rules/app/TWAPP.MANUAL.list"
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+
+      - name: Download SGAPP rules
+        run: |
+          cp rules/app/SGAPP.MANUAL.list rules/app/SGAPP.list.new
+          mv -f rules/app/SGAPP.list.new rules/app/SGAPP.list
+
+      - name: Download UKAPP rules
+        run: |
+          if  curl -f -s -o rules/app/UKMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UKMedia/UKMedia.list && [[ -s rules/app/UKMedia.list ]]; then
+            echo >> rules/app/UKMedia.list
+            cat rules/app/UKMedia.list rules/app/UKAPP.MANUAL.list > rules/app/UKAPP.list.new
+            mv -f rules/app/UKAPP.list.new rules/app/UKAPP.list
+            rm -f rules/app/UKMedia.list
           else
-              echo "::warning:: Copilot temp file not found or empty, cannot add specific rules."
-              # Decide if this should be treated as a failure for the whole step
-              # all_success=false # Uncomment if Copilot additions are mandatory
-          fi
-        fi
-
-        # Proceed only if still successful after potential Copilot modification check
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."
-          combined_new="${target_list}.new"
-          files_to_cat=()
-          for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then
-              files_to_cat+=("$manual_list")
-              echo "Including manual list: $manual_list"
+            echo "Failed to download or empty UKMedia.list, exiting."
           fi
 
-          cat "${files_to_cat[@]}" > "$combined_new"
-          echo >> "$combined_new"
-          sort -u "$combined_new" -o "$combined_new"
-          mv -f "$combined_new" "$target_list"
-          echo "Successfully updated $target_list"
-        else
-          echo "::warning:: $target_list was not updated due to one or more download/processing failures."
-        fi
+      - name: Download NorthwestEuropeAPP rules
+        run: |
+          cp rules/app/NorthwestEurope.MANUAL.list rules/app/NorthwestEurope.list.new
+          mv -f rules/app/NorthwestEurope.list.new rules/app/NorthwestEurope.list
 
-        echo "Cleaning up temporary files for $target_list..."
-        rm -f "${temp_files[@]}"
+      - name: Download JPAPP rules
+        run: |
+          cp rules/app/JPAPP.MANUAL.list rules/app/JPAPP.list.new
+          mv -f rules/app/JPAPP.list.new rules/app/JPAPP.list
 
-    - name: Download Bilibili rules
-      run: |
-        files=(
-          "BiliBili.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list"
-        )
-        target_list="rules/app/BiliBili.list"
-        manual_list="" # No manual list
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+      # - name: Download HKAPP rules
+      #   run: |
+      #     if curl -f -s -o rules/app/HKV4.txt https://ispip.clang.cn/hk_cidr.txt && [[ -s rules/app/HKV4.txt ]]; then
+      #       sed -i '/^[0-9.]\+\/[0-9]\+$/!d' rules/app/HKV4.txt
+      #       sed -i 's/^/IP-CIDR,/' rules/app/HKV4.txt
+      #       sed -i 's/$/,no-resolve/' rules/app/HKV4.txt
+      #       echo >> rules/app/HKV4.txt
+      #       if curl -f -s -o rules/app/HKV6.txt https://ispip.clang.cn/hk_ipv6.txt && [[ -s rules/app/HKV6.txt ]]; then
+      #         sed -i '/^[0-9a-f:]\+\/[0-9]\+$/!d' rules/app/HKV6.txt
+      #         sed -i 's/^/IP-CIDR6,/' rules/app/HKV6.txt
+      #         sed -i 's/$/,no-resolve/' rules/app/HKV6.txt
+      #         echo >> rules/app/HKV6.txt
+      #         cat rules/app/HKV4.txt rules/app/HKV6.txt rules/app/HKAPP.MANUAL.list > rules/app/HKAPP.list.new
+      #         mv -f rules/app/HKAPP.list.new rules/app/HKAPP.list
+      #         rm -f rules/app/HKV4.txt rules/app/HKV6.txt
+      #       else
+      #         echo "Failed to download or empty hk_ipv6.txt, exiting."
+      #       fi
+      #     else
+      #       echo "Failed to download or empty hk_cidr.txt, exiting."
+      #     fi
 
-    - name: Download Game rules
-      run: |
-        files=(
-          "Game.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
-        )
-        target_list="rules/app/Game.list"
-        manual_list=""
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+      - name: Download HKAPP rules
+        run: |
+          cp -f rules/app/HKAPP.MANUAL.list rules/app/HKAPP.MANUAL.list.new
+          mv -f rules/app/HKAPP.MANUAL.list.new rules/app/HKAPP.list
 
-    - name: Download GameDLCN rules (SteamCN, GameDownloadCN)
-      run: |
-        files=(
-          "SteamCN.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list"
-          "GameDownloadCN.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.list"
-        )
-        target_list="rules/app/GameDLCN.list"
-        manual_list="rules/app/GameDLCN.MANUAL.list"
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+      - name: Download eBay rules
+        run: |
+          files=(
+            "eBay.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.list"
+          )
+          target_list="rules/app/eBay.list"
+          manual_list="" # No separate manual file, additions are hardcoded
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          ebay_temp_path=""
 
-    - name: Download GameDL rules
-      run: |
-        files=(
-          "GameDL.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownload/GameDownload.list"
-        )
-        target_list="rules/app/GameDL.list"
-        manual_list=""
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            if [[ "$filename" == "eBay.list" ]]; then ebay_temp_path="$output_path"; fi
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
 
-    - name: Download USAPP rules
-      run: |
-        files=(
-          "TwitterAndX.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list"
-          "GoogleVoice.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleVoice/GoogleVoice.list"
-          "Reddit.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.list"
-          "PayPal.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PayPal/PayPal.list"
-          "USMedia.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/USMedia/USMedia.list"
-          "OpenAI.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list"
-          "Claude.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list"
-          "Gemini.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list"
-          "AIACL4SSR.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
-          "Dropbox.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dropbox/Dropbox.list"
-        )
-        downloaded_files=() 
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"
-          output_path="rules/app/${filename}"
-
-          if ! curl -f -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
-            echo "::error::Failed to download or empty file: $filename"
-            rm -f "${downloaded_files[@]}"
-            exit 1
+          if $all_success; then
+              # Add specific rules AFTER download
+              if [[ -n "$ebay_temp_path" && -f "$ebay_temp_path" ]]; then
+                echo "Adding specific rules to eBay temp file..."
+                echo "# Manual additions for eBay" >> "$ebay_temp_path"
+                echo "DOMAIN-KEYWORD,ebay" >> "$ebay_temp_path"
+                echo "DOMAIN-KEYWORD,e-bay" >> "$ebay_temp_path"
+                echo "DOMAIN-SUFFIX,perfdrive.com" >> "$ebay_temp_path"
+                echo "DOMAIN-SUFFIX,forter.com" >> "$ebay_temp_path"
+                echo "DOMAIN-KEYWORD,forter" >> "$ebay_temp_path"
+                echo >> "$ebay_temp_path"
+              else
+                echo "::warning:: eBay temp file not found or empty, cannot add specific rules."
+                # all_success=false # Decide if this is critical
+              fi
           fi
 
-          echo >> "$output_path"
-          downloaded_files+=("$output_path")
-        done
-        cat "${downloaded_files[@]}" rules/app/USAPP.MANUAL.list > rules/app/USAPP.list.new
-        echo >> rules/app/USAPP.list.new
-        mv -f rules/app/USAPP.list.new rules/app/USAPP.list
-        rm -f "${downloaded_files[@]}"
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            # No separate manual list for eBay defined in this pattern
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download/processing failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
-    - name: Download TWAPP rules
-      run: |
-        files=(
-          "Bahamut.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Bahamut/Bahamut.list"
-        )
-        target_list="rules/app/TWAPP.list"
-        manual_list="rules/app/TWAPP.MANUAL.list"
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
-
-    - name: Download SGAPP rules
-      run: |
-        cp rules/app/SGAPP.MANUAL.list rules/app/SGAPP.list.new
-        mv -f rules/app/SGAPP.list.new rules/app/SGAPP.list
-
-    - name: Download UKAPP rules
-      run: |
-        if  curl -f -s -o rules/app/UKMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UKMedia/UKMedia.list && [[ -s rules/app/UKMedia.list ]]; then
-          echo >> rules/app/UKMedia.list
-          cat rules/app/UKMedia.list rules/app/UKAPP.MANUAL.list > rules/app/UKAPP.list.new
-          mv -f rules/app/UKAPP.list.new rules/app/UKAPP.list
-          rm -f rules/app/UKMedia.list
-        else
-          echo "Failed to download or empty UKMedia.list, exiting."
-        fi
-
-    - name: Download NorthwestEuropeAPP rules
-      run: |
-        cp rules/app/NorthwestEurope.MANUAL.list rules/app/NorthwestEurope.list.new
-        mv -f rules/app/NorthwestEurope.list.new rules/app/NorthwestEurope.list
-
-    - name: Download JPAPP rules
-      run: |
-        cp rules/app/JPAPP.MANUAL.list rules/app/JPAPP.list.new
-        mv -f rules/app/JPAPP.list.new rules/app/JPAPP.list
-
-    # - name: Download HKAPP rules
-    #   run: |
-    #     if curl -f -s -o rules/app/HKV4.txt https://ispip.clang.cn/hk_cidr.txt && [[ -s rules/app/HKV4.txt ]]; then
-    #       sed -i '/^[0-9.]\+\/[0-9]\+$/!d' rules/app/HKV4.txt
-    #       sed -i 's/^/IP-CIDR,/' rules/app/HKV4.txt
-    #       sed -i 's/$/,no-resolve/' rules/app/HKV4.txt
-    #       echo >> rules/app/HKV4.txt
-    #       if curl -f -s -o rules/app/HKV6.txt https://ispip.clang.cn/hk_ipv6.txt && [[ -s rules/app/HKV6.txt ]]; then
-    #         sed -i '/^[0-9a-f:]\+\/[0-9]\+$/!d' rules/app/HKV6.txt
-    #         sed -i 's/^/IP-CIDR6,/' rules/app/HKV6.txt
-    #         sed -i 's/$/,no-resolve/' rules/app/HKV6.txt
-    #         echo >> rules/app/HKV6.txt
-    #         cat rules/app/HKV4.txt rules/app/HKV6.txt rules/app/HKAPP.MANUAL.list > rules/app/HKAPP.list.new
-    #         mv -f rules/app/HKAPP.list.new rules/app/HKAPP.list
-    #         rm -f rules/app/HKV4.txt rules/app/HKV6.txt
-    #       else
-    #         echo "Failed to download or empty hk_ipv6.txt, exiting."
-    #       fi
-    #     else
-    #       echo "Failed to download or empty hk_cidr.txt, exiting."
-    #     fi
-
-    - name: Download HKAPP rules
-      run: |
-        cp -f rules/app/HKAPP.MANUAL.list rules/app/HKAPP.MANUAL.list.new
-        mv -f rules/app/HKAPP.MANUAL.list.new rules/app/HKAPP.list
-
-    - name: Download eBay rules
-      run: |
-        files=(
-          "eBay.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.list"
-        )
-        target_list="rules/app/eBay.list"
-        manual_list="" # No separate manual file, additions are hardcoded
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        ebay_temp_path=""
-
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          if [[ "$filename" == "eBay.list" ]]; then ebay_temp_path="$output_path"; fi
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-
-        if $all_success; then
-            # Add specific rules AFTER download
-            if [[ -n "$ebay_temp_path" && -f "$ebay_temp_path" ]]; then
-              echo "Adding specific rules to eBay temp file..."
-              echo "# Manual additions for eBay" >> "$ebay_temp_path"
-              echo "DOMAIN-KEYWORD,ebay" >> "$ebay_temp_path"
-              echo "DOMAIN-KEYWORD,e-bay" >> "$ebay_temp_path"
-              echo "DOMAIN-SUFFIX,perfdrive.com" >> "$ebay_temp_path"
-              echo "DOMAIN-SUFFIX,forter.com" >> "$ebay_temp_path"
-              echo "DOMAIN-KEYWORD,forter" >> "$ebay_temp_path"
-              echo >> "$ebay_temp_path"
+      - name: Download Telegram rules
+        run: |
+          if  curl -f -s -o rules/app/telegramcidr.txt https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt && [[ -s rules/app/telegramcidr.txt ]]; then
+            echo "" > rules/app/telegramcidr.list.new
+            while IFS= read -r line; 
+            do
+              ip=$(echo $line | sed "s/  - '//" | sed "s/'//" | sed 's/-//g' | sed "s/'//g"| sed "s/ //g")
+              if [[ $ip =~ .*:.* ]]
+              then
+                echo "IP-CIDR6,$ip,no-resolve" >> rules/app/telegramcidr.list.new
+              else
+                echo "IP-CIDR,$ip,no-resolve" >> rules/app/telegramcidr.list.new
+              fi
+            done < <(tail -n +2 rules/app/telegramcidr.txt)
+            mv -f rules/app/telegramcidr.list.new rules/app/telegramcidr.list
+            sed -i '/^$/d' rules/app/telegramcidr.list
+            rm -f rules/app/telegramcidr.list.new rules/app/telegramcidr.txt
+            if  curl -f -s -o rules/app/telegramdomain.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list && [[ -s rules/app/telegramdomain.list ]]; then
+              cat rules/app/telegramcidr.list rules/app/telegramdomain.list > rules/app/telegram.list.new
+              mv -f rules/app/telegram.list.new rules/app/telegram.list
+              rm -f rules/app/telegramcidr.list rules/app/telegramdomain.list
             else
-              echo "::warning:: eBay temp file not found or empty, cannot add specific rules."
-              # all_success=false # Decide if this is critical
+              echo "Failed to download or empty telegramdomain.list, exiting."
             fi
-        fi
-
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          # No separate manual list for eBay defined in this pattern
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download/processing failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
-
-    - name: Download Telegram rules
-      run: |
-        if  curl -f -s -o rules/app/telegramcidr.txt https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt && [[ -s rules/app/telegramcidr.txt ]]; then
-          echo "" > rules/app/telegramcidr.list.new
-          while IFS= read -r line; 
-          do
-            ip=$(echo $line | sed "s/  - '//" | sed "s/'//" | sed 's/-//g' | sed "s/'//g"| sed "s/ //g")
-            if [[ $ip =~ .*:.* ]]
-            then
-              echo "IP-CIDR6,$ip,no-resolve" >> rules/app/telegramcidr.list.new
-            else
-              echo "IP-CIDR,$ip,no-resolve" >> rules/app/telegramcidr.list.new
-            fi
-          done < <(tail -n +2 rules/app/telegramcidr.txt)
-          mv -f rules/app/telegramcidr.list.new rules/app/telegramcidr.list
-          sed -i '/^$/d' rules/app/telegramcidr.list
-          rm -f rules/app/telegramcidr.list.new rules/app/telegramcidr.txt
-          if  curl -f -s -o rules/app/telegramdomain.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list && [[ -s rules/app/telegramdomain.list ]]; then
-            cat rules/app/telegramcidr.list rules/app/telegramdomain.list > rules/app/telegram.list.new
-            mv -f rules/app/telegram.list.new rules/app/telegram.list
-            rm -f rules/app/telegramcidr.list rules/app/telegramdomain.list
           else
-            echo "Failed to download or empty telegramdomain.list, exiting."
+            echo "Failed to download or empty telegramcidr.txt, exiting."
           fi
-        else
-          echo "Failed to download or empty telegramcidr.txt, exiting."
-        fi
 
-    - name: Download Apple rules
-      run: |
-        files=(
-          "Apple.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list"
-        )
-        target_list="rules/app/Apple.list"
-        manual_list=""
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+      - name: Download Apple rules
+        run: |
+          files=(
+            "Apple.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list"
+          )
+          target_list="rules/app/Apple.list"
+          manual_list=""
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
-    - name: Download GoogleFCM rules
-      run: |
-        files=(
-          "GoogleFCM.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.list"
-        )
-        target_list="rules/app/GoogleFCM.list"
-        manual_list="" # Additions are hardcoded
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        gcm_temp_path=""
+      - name: Download GoogleFCM rules
+        run: |
+          files=(
+            "GoogleFCM.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.list"
+          )
+          target_list="rules/app/GoogleFCM.list"
+          manual_list="" # Additions are hardcoded
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          gcm_temp_path=""
 
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-            if [[ "$filename" == "GoogleFCM.list" ]]; then gcm_temp_path="$output_path"; fi
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+              if [[ "$filename" == "GoogleFCM.list" ]]; then gcm_temp_path="$output_path"; fi
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
 
-        if $all_success; then
-            if [[ -n "$gcm_temp_path" && -f "$gcm_temp_path" ]]; then
-              echo "Adding specific rules to GoogleFCM temp file..."
-              echo "# Manual additions for GoogleFCM" >> "$gcm_temp_path"
-              echo "PROCESS-NAME,com.google.android.gms" >> "$gcm_temp_path"
-              echo "PROCESS-NAME-REGEX,android\.gms" >> "$gcm_temp_path"
-              echo "DOMAIN-SUFFIX,mtalk.google.com" >> "$gcm_temp_path"
-              echo "DOMAIN-SUFFIX,mtalk4.google.com" >> "$gcm_temp_path"
-              echo "DOMAIN-SUFFIX,mtalk-staging.google.com" >> "$gcm_temp_path"
-              echo "DOMAIN-SUFFIX,mtalk-dev.google.com" >> "$gcm_temp_path"
-              echo >> "$gcm_temp_path"
-            else
-              echo "::warning:: GoogleFCM temp file not found or empty, cannot add specific rules."
-              # all_success=false # Decide if critical
-            fi
-        fi
+          if $all_success; then
+              if [[ -n "$gcm_temp_path" && -f "$gcm_temp_path" ]]; then
+                echo "Adding specific rules to GoogleFCM temp file..."
+                echo "# Manual additions for GoogleFCM" >> "$gcm_temp_path"
+                echo "PROCESS-NAME,com.google.android.gms" >> "$gcm_temp_path"
+                echo "PROCESS-NAME-REGEX,android\.gms" >> "$gcm_temp_path"
+                echo "DOMAIN-SUFFIX,mtalk.google.com" >> "$gcm_temp_path"
+                echo "DOMAIN-SUFFIX,mtalk4.google.com" >> "$gcm_temp_path"
+                echo "DOMAIN-SUFFIX,mtalk-staging.google.com" >> "$gcm_temp_path"
+                echo "DOMAIN-SUFFIX,mtalk-dev.google.com" >> "$gcm_temp_path"
+                echo >> "$gcm_temp_path"
+              else
+                echo "::warning:: GoogleFCM temp file not found or empty, cannot add specific rules."
+                # all_success=false # Decide if critical
+              fi
+          fi
 
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download/processing failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download/processing failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
-    - name: Download Google rules
-      run: |
-        files=(
-          "Google.list.1|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list"
-        )
-        target_list="rules/app/Google.list"
-        manual_list="rules/app/Google.MANUAL.list"
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+      - name: Download Google rules
+        run: |
+          files=(
+            "Google.list.1|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list"
+          )
+          target_list="rules/app/Google.list"
+          manual_list="rules/app/Google.MANUAL.list"
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
-    - name: Download Youtube rules
-      run: |
-        files=(
-          "Youtube.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list"
-        )
-        target_list="rules/app/Youtube.list"
-        manual_list=""
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+      - name: Download Youtube rules
+        run: |
+          files=(
+            "Youtube.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list"
+          )
+          target_list="rules/app/Youtube.list"
+          manual_list=""
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
-    - name: Download Onedrive rules
-      run: |
-        files=(
-          "Onedrive.blackmatrix7.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.list"
-          "Onedrive.ACL4SSR.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/OneDrive.list"
-        )
-        target_list="rules/app/Onedrive.list"
-        manual_list="rules/app/Onedrive.MANUAL.list"
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+      - name: Download Onedrive rules
+        run: |
+          files=(
+            "Onedrive.blackmatrix7.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.list"
+            "Onedrive.ACL4SSR.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/OneDrive.list"
+          )
+          target_list="rules/app/Onedrive.list"
+          manual_list="rules/app/Onedrive.MANUAL.list"
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
-    - name: Download MicrosoftHA rules
-      run: |
-        cp -f rules/app/MicrosoftHA.MANUAL.list rules/app/MicrosoftHA.list.new
-        echo >> rules/app/MicrosoftHA.list.new
-        mv -f rules/app/MicrosoftHA.list.new rules/app/MicrosoftHA.list
+      - name: Download MicrosoftHA rules
+        run: |
+          cp -f rules/app/MicrosoftHA.MANUAL.list rules/app/MicrosoftHA.list.new
+          echo >> rules/app/MicrosoftHA.list.new
+          mv -f rules/app/MicrosoftHA.list.new rules/app/MicrosoftHA.list
 
-    - name: Download Microsoft rules
-      run: |
-        files=(
-          "MicrosoftBase.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list"
-          "Bing.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list"
-          "Edge.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/MicrosoftEdge.list"
-        )
-        target_list="rules/app/Microsoft.list"
-        manual_list="rules/app/Microsoft.MANUAL.list"
-        download_dir="rules/app"
-        temp_files=()
-        all_success=true
-        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
-        for entry in "${files[@]}"; do
-          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
-          echo "Downloading $filename from $url to $output_path..."
-          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
-        done
-        if $all_success; then
-          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
-        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
-        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+      - name: Download Microsoft rules
+        run: |
+          files=(
+            "MicrosoftBase.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list"
+            "Bing.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list"
+            "Edge.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/MicrosoftEdge.list"
+          )
+          target_list="rules/app/Microsoft.list"
+          manual_list="rules/app/Microsoft.MANUAL.list"
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
-    - name: Add changes to the repository
-      run: |
-        git add .
-        git status
+      - name: Add changes to the repository
+        run: |
+          git add .
+          git status
 
-    - name: Commit and push changes
-      run: |
-        git commit -m "Special-rule-update" -a
-        git push
+      - name: Commit and push changes
+        run: |
+          git commit -m "Special-rule-update" -a
+          git push
