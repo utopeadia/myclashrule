@@ -1,0 +1,16 @@
+
+# AUTHOR: blackmatrix7
+# DOMAIN-SUFFIX: 6
+# DOMAIN: 1
+# NAME: Bahamut
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 7
+# UPDATED: 2024-07-03 16:16:12
+# 暂无
+DOMAIN,bahamut.akamaized.net
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,viblast.com
