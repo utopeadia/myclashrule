@@ -1,49 +1,59 @@
-
-# AUTHOR: blackmatrix7
-# DOMAIN-SUFFIX: 1
-# DOMAIN-SUFFIX: 5
-# DOMAIN: 12
-# DOMAIN: 15
-# NAME: GameDownloadCN
 # NAME: SteamCN
+# AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# Steam补充
-# TOTAL: 16
-# TOTAL: 17
-# UPDATED: 2024-01-08 16:02:50
 # UPDATED: 2024-07-03 16:14:50
-#Xbox补充
-DOMAIN,assets1.xboxlive.cn
-DOMAIN,assets2.xboxlive.cn
-DOMAIN,cdn-ali.content.steamchina.com
-DOMAIN,cdn-qc.content.steamchina.com
-DOMAIN,cdn-ws.content.steamchina.com
+# DOMAIN: 12
+# DOMAIN-SUFFIX: 5
+# TOTAL: 17
 DOMAIN,csgo.wmsj.cn
-DOMAIN,dl.delivery.mp.microsoft.com
 DOMAIN,dl.steam.clngaa.com
 DOMAIN,dl.steam.ksyna.com
 DOMAIN,dota2.wmsj.cn
-DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
 DOMAIN,st.dl.bscstorage.net
 DOMAIN,st.dl.eccdnx.com
 DOMAIN,st.dl.pinyuncloud.com
 DOMAIN,steampipe.steamcontent.tnkjmec.com
 DOMAIN,steampowered.com.8686c.com
 DOMAIN,steamstatic.com.8686c.com
-DOMAIN,tlu.dl.delivery.mp.microsoft.com
-DOMAIN,trts.baishancdnx.cn
-DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
 DOMAIN,wmsjsteam.com
 DOMAIN,xz.pphimalayanrt.com
-DOMAIN-KEYWORD,xboxassets
-DOMAIN-SUFFIX,assets1.xboxlive.com
 DOMAIN-SUFFIX,cm.steampowered.com
-DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
-DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamchina.com
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,steamusercontent.com
+
+# NAME: GameDownloadCN
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-01-08 16:02:50
+# DOMAIN: 15
+# DOMAIN-SUFFIX: 1
+# TOTAL: 16
+DOMAIN,assets1.xboxlive.cn
+DOMAIN,assets2.xboxlive.cn
+DOMAIN,cdn-ali.content.steamchina.com
+DOMAIN,cdn-qc.content.steamchina.com
+DOMAIN,cdn-ws.content.steamchina.com
+DOMAIN,dl.delivery.mp.microsoft.com
+DOMAIN,dl.steam.clngaa.com
+DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
+DOMAIN,st.dl.bscstorage.net
+DOMAIN,st.dl.eccdnx.com
+DOMAIN,steampipe.steamcontent.tnkjmec.com
+DOMAIN,tlu.dl.delivery.mp.microsoft.com
+DOMAIN,trts.baishancdnx.cn
+DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
+DOMAIN,xz.pphimalayanrt.com
+DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
+
+#Xbox补充
+DOMAIN-SUFFIX,assets1.xboxlive.com
+DOMAIN-KEYWORD,xboxassets
+
+# Steam补充
+DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+IP-CIDR,45.121.184.0/24,no-resolve
 IP-CIDR,103.10.124.0/23,no-resolve
 IP-CIDR,103.28.54.0/24,no-resolve
 IP-CIDR,146.66.152.0/24,no-resolve
@@ -67,4 +77,4 @@ IP-CIDR,205.185.194.0/24,no-resolve
 IP-CIDR,205.196.6.0/24,no-resolve
 IP-CIDR,208.64.200.0/22,no-resolve
 IP-CIDR,208.78.164.0/22,no-resolve
-IP-CIDR,45.121.184.0/24,no-resolve
+

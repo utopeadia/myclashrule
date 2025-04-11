@@ -1,11 +1,10 @@
-
-# AUTHOR: blackmatrix7
-# DOMAIN-SUFFIX: 3
-# DOMAIN: 36
 # NAME: GameDownload
+# AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# TOTAL: 39
 # UPDATED: 2024-07-03 16:17:44
+# DOMAIN: 36
+# DOMAIN-SUFFIX: 3
+# TOTAL: 39
 DOMAIN,assets1.xboxlive.com
 DOMAIN,assets2.xboxlive.com
 DOMAIN,blizzard.gcdn.cloudn.co.kr
@@ -45,3 +44,5 @@ DOMAIN,xvcf2.xboxlive.com
 DOMAIN-SUFFIX,cdn.ubi.com
 DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,steamcontent.com
+
+
