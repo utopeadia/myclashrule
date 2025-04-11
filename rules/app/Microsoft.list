@@ -1,10 +1,12 @@
 
 # AUTHOR: blackmatrix7
 # DOMAIN-KEYWORD: 4
+# DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$
 # DOMAIN-SUFFIX: 662
 # DOMAIN-SUFFIX: 9
 # DOMAIN: 1
 # DOMAIN: 4
+# IP-ASN,8075,no-resolve
 # NAME: Bing
 # NAME: Microsoft
 # NAME: MicrosoftEdge
@@ -16,6 +18,7 @@
 # UPDATED: 2024-07-03 16:14:51
 # UPDATED: 2024-07-03 16:17:44
 # UPDATED: 2024-07-03 16:18:28
+# 补充规则
 DOMAIN,edge.activity.windows.com
 DOMAIN,edge.microsoft.com
 DOMAIN,iecvlist.microsoft.com
