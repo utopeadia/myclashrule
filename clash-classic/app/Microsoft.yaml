@@ -1,15 +1,5 @@
 payload:
-  - DOMAIN,edge.activity.windows.com
-  - DOMAIN,edge.microsoft.com
-  - DOMAIN,iecvlist.microsoft.com
-  - DOMAIN,msedge.api.cdp.microsoft.com
   - DOMAIN,vsmarketplacebadge.apphb.com
-  - DOMAIN-KEYWORD,1drv
-  - DOMAIN-KEYWORD,microsoft
-  - DOMAIN-KEYWORD,onedrive
-  - DOMAIN-KEYWORD,skydrive
-  - DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$
-  - DOMAIN-SUFFIX,1drv.com
   - DOMAIN-SUFFIX,1drv.ms
   - DOMAIN-SUFFIX,21vbc.com
   - DOMAIN-SUFFIX,21vbluecloud.com
@@ -252,7 +242,6 @@ payload:
   - DOMAIN-SUFFIX,live.com.au
   - DOMAIN-SUFFIX,live.eu
   - DOMAIN-SUFFIX,live.net
-  - DOMAIN-SUFFIX,livefilestore.com
   - DOMAIN-SUFFIX,livetileedge.dsx.mp.microsoft.com.edgekey.net
   - DOMAIN-SUFFIX,livingyourambition.com
   - DOMAIN-SUFFIX,localytics.com
@@ -507,7 +496,6 @@ payload:
   - DOMAIN-SUFFIX,onecollector.cloudapp.aria
   - DOMAIN-SUFFIX,onedrive.co
   - DOMAIN-SUFFIX,onedrive.co.uk
-  - DOMAIN-SUFFIX,onedrive.com
   - DOMAIN-SUFFIX,onedrive.eu
   - DOMAIN-SUFFIX,onedrive.net
   - DOMAIN-SUFFIX,onedrive.org
@@ -563,8 +551,6 @@ payload:
   - DOMAIN-SUFFIX,sfbassets.net
   - DOMAIN-SUFFIX,sfx.ms
   - DOMAIN-SUFFIX,sharepoint.cn
-  - DOMAIN-SUFFIX,sharepoint.com
-  - DOMAIN-SUFFIX,sharepointonline.com
   - DOMAIN-SUFFIX,signalr.net
   - DOMAIN-SUFFIX,skype
   - DOMAIN-SUFFIX,skype.com
@@ -572,7 +558,6 @@ payload:
   - DOMAIN-SUFFIX,skypeassets.com
   - DOMAIN-SUFFIX,skypeassets.net
   - DOMAIN-SUFFIX,skypeforbusiness.com
-  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net
   - DOMAIN-SUFFIX,sprinklesapp.com
   - DOMAIN-SUFFIX,sqlserveronlinux.com
   - DOMAIN-SUFFIX,staffhub.ms
@@ -671,5 +656,29 @@ payload:
   - DOMAIN-SUFFIX,xbx.lv
   - DOMAIN-SUFFIX,yammer.com
   - DOMAIN-SUFFIX,yammerusercontent.com
+  - DOMAIN-SUFFIX,1drv.com
+  - DOMAIN-SUFFIX,livefilestore.com
+  - DOMAIN-SUFFIX,onedrive.com
+  - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,sharepointonline.com
+  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net
+  - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-KEYWORD,1drv
+  - DOMAIN-KEYWORD,onedrive
+  - DOMAIN-KEYWORD,skydrive
   - PROCESS-NAME,OneDrive
   - PROCESS-NAME,OneDriveUpdater
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,bing.com.cn
+  - DOMAIN-SUFFIX,bing.net
+  - DOMAIN-SUFFIX,bingads.com
+  - DOMAIN-SUFFIX,bingagencyawards.com
+  - DOMAIN-SUFFIX,bingapistatistics.com
+  - DOMAIN-SUFFIX,bingsandbox.com
+  - DOMAIN-SUFFIX,bingvisualsearch.com
+  - DOMAIN-SUFFIX,bingworld.com
+  - DOMAIN,edge.activity.windows.com
+  - DOMAIN,edge.microsoft.com
+  - DOMAIN,iecvlist.microsoft.com
+  - DOMAIN,msedge.api.cdp.microsoft.com
+  - DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$

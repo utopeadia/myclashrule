@@ -1,35 +1,41 @@
 payload:
-  - DOMAIN,assets1.xboxlive.cn
-  - DOMAIN,assets2.xboxlive.cn
-  - DOMAIN,cdn-ali.content.steamchina.com
-  - DOMAIN,cdn-qc.content.steamchina.com
-  - DOMAIN,cdn-ws.content.steamchina.com
   - DOMAIN,csgo.wmsj.cn
-  - DOMAIN,dl.delivery.mp.microsoft.com
   - DOMAIN,dl.steam.clngaa.com
   - DOMAIN,dl.steam.ksyna.com
   - DOMAIN,dota2.wmsj.cn
-  - DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
   - DOMAIN,st.dl.bscstorage.net
   - DOMAIN,st.dl.eccdnx.com
   - DOMAIN,st.dl.pinyuncloud.com
   - DOMAIN,steampipe.steamcontent.tnkjmec.com
   - DOMAIN,steampowered.com.8686c.com
   - DOMAIN,steamstatic.com.8686c.com
-  - DOMAIN,tlu.dl.delivery.mp.microsoft.com
-  - DOMAIN,trts.baishancdnx.cn
-  - DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
   - DOMAIN,wmsjsteam.com
   - DOMAIN,xz.pphimalayanrt.com
-  - DOMAIN-KEYWORD,xboxassets
-  - DOMAIN-SUFFIX,assets1.xboxlive.com
   - DOMAIN-SUFFIX,cm.steampowered.com
-  - DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
-  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
   - DOMAIN-SUFFIX,steamchina.com
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN-SUFFIX,steamusercontent.com
+  - DOMAIN,assets1.xboxlive.cn
+  - DOMAIN,assets2.xboxlive.cn
+  - DOMAIN,cdn-ali.content.steamchina.com
+  - DOMAIN,cdn-qc.content.steamchina.com
+  - DOMAIN,cdn-ws.content.steamchina.com
+  - DOMAIN,dl.delivery.mp.microsoft.com
+  - DOMAIN,dl.steam.clngaa.com
+  - DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
+  - DOMAIN,st.dl.bscstorage.net
+  - DOMAIN,st.dl.eccdnx.com
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com
+  - DOMAIN,tlu.dl.delivery.mp.microsoft.com
+  - DOMAIN,trts.baishancdnx.cn
+  - DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
+  - DOMAIN,xz.pphimalayanrt.com
+  - DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
+  - DOMAIN-SUFFIX,assets1.xboxlive.com
+  - DOMAIN-KEYWORD,xboxassets
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+  - IP-CIDR,45.121.184.0/24,no-resolve
   - IP-CIDR,103.10.124.0/23,no-resolve
   - IP-CIDR,103.28.54.0/24,no-resolve
   - IP-CIDR,146.66.152.0/24,no-resolve
@@ -53,4 +59,3 @@ payload:
   - IP-CIDR,205.196.6.0/24,no-resolve
   - IP-CIDR,208.64.200.0/22,no-resolve
   - IP-CIDR,208.78.164.0/22,no-resolve
-  - IP-CIDR,45.121.184.0/24,no-resolve
