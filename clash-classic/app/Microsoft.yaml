@@ -4,7 +4,6 @@ payload:
   - DOMAIN-KEYWORD,microsoft
   - DOMAIN-KEYWORD,onedrive
   - DOMAIN-KEYWORD,skydrive
-  - DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$
   - DOMAIN-SUFFIX,1drv.com
   - DOMAIN-SUFFIX,1drv.ms
   - DOMAIN-SUFFIX,21vbc.com

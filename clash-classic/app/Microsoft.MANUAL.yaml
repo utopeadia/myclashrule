@@ -1,2 +1,1 @@
 payload:
-  - DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$
