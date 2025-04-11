@@ -1,9 +1,14 @@
-# NAME: eBay
+
 # AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:16:57
 # DOMAIN-SUFFIX: 44
+# Manual additions for eBay
+# NAME: eBay
+# REPO: https://github.com/blackmatrix7/ios_rule_script
 # TOTAL: 44
+# UPDATED: 2024-07-03 16:16:57
+DOMAIN-KEYWORD,e-bay
+DOMAIN-KEYWORD,ebay
+DOMAIN-KEYWORD,forter
 DOMAIN-SUFFIX,about.co.kr
 DOMAIN-SUFFIX,auction.co.kr
 DOMAIN-SUFFIX,e-bay.it
@@ -46,14 +51,7 @@ DOMAIN-SUFFIX,ebayprivacycenter.com
 DOMAIN-SUFFIX,ebayrtm.com
 DOMAIN-SUFFIX,ebaystatic.com
 DOMAIN-SUFFIX,esmplus.com
+DOMAIN-SUFFIX,forter.com
 DOMAIN-SUFFIX,g9.co.kr
 DOMAIN-SUFFIX,gmarket.co.kr
-
-# Manual additions for eBay
-DOMAIN-KEYWORD,ebay
-DOMAIN-KEYWORD,e-bay
 DOMAIN-SUFFIX,perfdrive.com
-DOMAIN-SUFFIX,forter.com
-DOMAIN-KEYWORD,forter
-
-
