@@ -152,6 +152,7 @@ jobs:
     - name: Download USSpecial rules
       run: |
         files=(
+          "Copilot.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
         )
         target_list="rules/app/USSpecial.list"
         manual_list="rules/app/USSpecial.MANUAL.list"
@@ -642,7 +643,6 @@ jobs:
       run: |
         files=(
           "MicrosoftBase.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list"
-          "Copilot.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
           "Bing.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list"
           "Edge.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MicrosoftEdge/MicrosoftEdge.list"
         )
