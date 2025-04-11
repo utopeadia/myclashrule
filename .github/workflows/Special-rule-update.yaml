@@ -242,7 +242,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -265,7 +265,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -289,7 +289,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -312,7 +312,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -368,7 +368,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -465,7 +465,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           # No separate manual list for eBay defined in this pattern
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download/processing failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -516,7 +516,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -559,7 +559,7 @@ jobs:
 
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download/processing failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -582,7 +582,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -605,7 +605,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -629,7 +629,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
@@ -660,7 +660,7 @@ jobs:
         if $all_success; then
           echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
           if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
-          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
