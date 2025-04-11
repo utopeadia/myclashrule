@@ -1,6 +1,7 @@
 
 # AUTHOR: blackmatrix7
 # DOMAIN-KEYWORD: 4
+# DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$
 # DOMAIN-SUFFIX: 662
 # DOMAIN: 1
 # IP-ASN,8075,no-resolve
@@ -15,7 +16,6 @@ DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,microsoft
 DOMAIN-KEYWORD,onedrive
 DOMAIN-KEYWORD,skydrive
-DOMAIN-REGEX,^(?=.*msn-com)(?=.*akamaized).*$
 DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,1drv.ms
 DOMAIN-SUFFIX,21vbc.com
