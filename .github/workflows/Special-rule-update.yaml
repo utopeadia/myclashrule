@@ -351,6 +351,29 @@ jobs:
         mv -f rules/app/USAPP.list.new rules/app/USAPP.list
         rm -f "${downloaded_files[@]}"
 
+    - name: Download TWAPP rules
+      run: |
+        files=(
+          "Bahamut.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Bahamut/Bahamut.list"
+        )
+        target_list="rules/app/TWAPP.list"
+        manual_list="rules/app/TWAPP.MANUAL.list"
+        download_dir="rules/app"
+        temp_files=()
+        all_success=true
+        echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+        for entry in "${files[@]}"; do
+          IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+          echo "Downloading $filename from $url to $output_path..."
+          if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+        done
+        if $all_success; then
+          echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+          if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+          cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; sort -u "$combined_new" -o "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+        else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+        echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+
     - name: Download SGAPP rules
       run: |
         cp rules/app/SGAPP.MANUAL.list rules/app/SGAPP.list.new
