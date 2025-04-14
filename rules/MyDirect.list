@@ -95,6 +95,8 @@ DOMAIN-SUFFIX,h9q9sa3kxlldu3vrp2zq1n8k9snnftc4.04.02.jp.6l6.site
 DOMAIN-SUFFIX,hi.niceduck.me
 DOMAIN-SUFFIX,hk.fxv2pro.com
 DOMAIN-SUFFIX,hk01.525536.xyz
+DOMAIN-SUFFIX,i.cu.iepl.my
+DOMAIN-SUFFIX,i.cu.iepl.mye
 DOMAIN-SUFFIX,i5bhrvpnjkx7mm58ck7xf0fl9kaivim4.04.01.ng.6l6.site
 DOMAIN-SUFFIX,ic7pimgq8zjvkpw418fc6yl2f8bvhjz1.04.02.ph.6l6.site
 DOMAIN-SUFFIX,iepl.fxv2pro.com
@@ -379,11 +381,11 @@ IP-CIDR,219.76.131.205/32,no-resolve
 IP-CIDR,219.76.131.228/32,no-resolve
 IP-CIDR,219.76.131.38/32,no-resolve
 IP-CIDR,221.221.99.217/32,no-resolve
-IP-CIDR,223.111.240.83/32,no-resolve
 IP-CIDR,3.115.82.155/32,no-resolve
 IP-CIDR,36.151.194.65/32,no-resolve
 IP-CIDR,36.151.65.220/32,no-resolve
 IP-CIDR,36.151.65.38/32,no-resolve
+IP-CIDR,36.151.65.74/32,no-resolve
 IP-CIDR,36.227.194.136/32,no-resolve
 IP-CIDR,36.228.216.33/32,no-resolve
 IP-CIDR,43.207.202.139/32,no-resolve
@@ -401,6 +403,7 @@ IP-CIDR,54.250.169.116/32,no-resolve
 IP-CIDR,54.255.137.135/32,no-resolve
 IP-CIDR,58.19.16.228/32,no-resolve
 IP-CIDR,58.254.137.120/32,no-resolve
+IP-CIDR,58.254.137.123/32,no-resolve
 IP-CIDR,58.63.247.168/32,no-resolve
 IP-CIDR,59.42.247.169/32,no-resolve
 IP-CIDR,64.181.225.150/32,no-resolve
