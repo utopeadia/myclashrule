@@ -49,7 +49,7 @@ payload:
   - DOMAIN-SUFFIX,cnamepc-auto.cname7k7k.xyz
   - DOMAIN-SUFFIX,cnamepc-cm.cname7k7k.xyz
   - DOMAIN-SUFFIX,cnamepc-cu.cname7k7k.xyz
-  - DOMAIN-SUFFIX,cu21.kuxueyun.com
+  - DOMAIN-SUFFIX,cu22.kuxueyun.com
   - DOMAIN-SUFFIX,d96vogj5gkm8y1wgwxdeheva4dxklg51.04.04.jp.6l6.site
   - DOMAIN-SUFFIX,de2e94956eccc155.cdn.jiashule.com
   - DOMAIN-SUFFIX,east.78cf9487bdd788cd4075consulting.club
@@ -87,6 +87,7 @@ payload:
   - DOMAIN-SUFFIX,k07vvj28yqm9g0qk7w2x07tmbnqcs69u.04.01.tr.6l6.site
   - DOMAIN-SUFFIX,kjv094serbaw9z0mbbij23a7pvrpupcp.04.09.sg.6l6.site
   - DOMAIN-SUFFIX,kr-relay.fxv2pro.com
+  - DOMAIN-SUFFIX,kxbj9929.112700.xyz
   - DOMAIN-SUFFIX,mxvqrktze8sybza8c6g20dhibophr57q.04.01.ar.6l6.site
   - DOMAIN-SUFFIX,nktodw3gtxxtmi2m6ih38vv2rllkysstyw6f.biliapi.xyz
   - DOMAIN-SUFFIX,node-user-gz.shellnet.net
@@ -239,8 +240,10 @@ payload:
   - IP-CIDR,120.198.71.182/32,no-resolve
   - IP-CIDR,120.233.87.67/32,no-resolve
   - IP-CIDR,120.233.87.74/32,no-resolve
+  - IP-CIDR,120.237.3.154/32,no-resolve
   - IP-CIDR,120.237.3.156/32,no-resolve
   - IP-CIDR,121.227.107.71/32,no-resolve
+  - IP-CIDR,123.113.39.26/32,no-resolve
   - IP-CIDR,124.225.75.209/32,no-resolve
   - IP-CIDR,129.146.95.165/32,no-resolve
   - IP-CIDR,129.148.39.249/32,no-resolve
@@ -352,8 +355,6 @@ payload:
   - IP-CIDR,219.76.131.205/32,no-resolve
   - IP-CIDR,219.76.131.228/32,no-resolve
   - IP-CIDR,219.76.131.38/32,no-resolve
-  - IP-CIDR,221.221.99.217/32,no-resolve
-  - IP-CIDR,223.85.58.109/32,no-resolve
   - IP-CIDR,3.115.82.155/32,no-resolve
   - IP-CIDR,3.34.223.154/32,no-resolve
   - IP-CIDR,36.151.194.65/32,no-resolve
