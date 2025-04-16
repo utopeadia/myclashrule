@@ -65,6 +65,7 @@ DOMAIN,designer.microsoft.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN,copilot-telemetry.githubusercontent.com
 DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com
+PROCESS-NAME-REGEX,Copilot\.exe
 PROCESS-NAME,com.microsoft.copilot
 PROCESS-NAME-REGEX,com\.microsoft\.copilot
 PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$
