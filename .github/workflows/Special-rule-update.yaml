@@ -188,6 +188,8 @@ jobs:
                 echo "DOMAIN-SUFFIX,githubcopilot.com" >> "$copilot_temp_path"
                 echo "DOMAIN,copilot-telemetry.githubusercontent.com" >> "$copilot_temp_path"
                 echo "DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com" >> "$copilot_temp_path"
+                echo "PROCESS-NAME-REGEX,Copilot\.exe" >> "$copilot_temp_path"
+                echo "PROCESS-NAME-REGEX,\bCopilot\b" >> "$copilot_temp_path"
                 echo "PROCESS-NAME,com.microsoft.copilot" >> "$copilot_temp_path"
                 echo "PROCESS-NAME-REGEX,com\.microsoft\.copilot" >> "$copilot_temp_path"
                 echo "PROCESS-NAME-REGEX,^(?=.*microsoft)(?=.*copilot).*$" >> "$copilot_temp_path"
