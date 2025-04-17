@@ -26,6 +26,8 @@ payload:
   - IP-CIDR,223.5.5.5/32,no-resolve
   - IP-CIDR,180.76.76.76/32,no-resolve
   - IP-CIDR,114.114.114.114/32,no-resolve
+  - IP-CIDR6,2400:da00::6666/64,no-resolve
+  - IP-CIDR6,240c::6666/64,no-resolve
   - DOMAIN-SUFFIX,tailscale.io
   - DOMAIN-SUFFIX,tailscale.com
   - DST-PORT,9993
@@ -110,10 +112,6 @@ payload:
   - DOMAIN-KEYWORD,IPV6Test
   - DOMAIN-KEYWORD,Test-IPV6
   - DOMAIN-KEYWORD,TestIPV6
-  - IP-CIDR,223.5.5.0/24,no-resolve
-  - IP-CIDR,119.29.29.0/24,no-resolve
-  - IP-CIDR6,2400:da00::6666/64,no-resolve
-  - IP-CIDR6,240c::6666/64,no-resolve
   - PROCESS-NAME,BitComet
   - PROCESS-NAME,NetTransport
   - PROCESS-NAME,qbittorrent
