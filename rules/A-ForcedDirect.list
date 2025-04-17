@@ -5,6 +5,9 @@ URL-REGEX,^https?:\/\/(www\.)?msftconnecttest\.com\/redirect
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,time.windows.com
 
+DOMAIN,dns.msftncsi.com
+DOMAIN,www.msftncsi.com
+
 DOMAIN-SUFFIX,kimi.ai
 DOMAIN-SUFFIX,digicert.com
 
