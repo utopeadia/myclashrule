@@ -48,15 +48,6 @@ dns:
   use-hosts: true
   enhanced-mode: redir-host
   nameserver-policy:
-    "www.msftconnecttest.com": 
-      - 119.29.29.29
-      - 223.5.5.5
-    "dns.msftncsi.com":
-      - 119.29.29.29
-      - 223.5.5.5
-    "www.msftncsi.com":
-      - 119.29.29.29
-      - 223.5.5.5
     'geosite:googlefcm': 
       - https://doh.pub/dns-query#skip-cert-verify=true
       - https://dns.alidns.com/dns-query#skip-cert-verify=true
