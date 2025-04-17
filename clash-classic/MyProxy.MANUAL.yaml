@@ -40,3 +40,5 @@ payload:
   - DOMAIN-SUFFIX,tawk.to
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,llama.com
+  - IP-CIDR,49.232.25.145/32,no-resolve
+  - DOMAIN-SUFFIX,longtengxiaoshuo.org,no-resolve

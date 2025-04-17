@@ -496,6 +496,7 @@ payload:
   - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,lnstagram-help.com
   - DOMAIN-SUFFIX,login-account.net
+  - DOMAIN-SUFFIX,longtengxiaoshuo.org,no-resolve
   - DOMAIN-SUFFIX,m.me
   - DOMAIN-SUFFIX,makeitopen.com
   - DOMAIN-SUFFIX,markzuckerberg.com
@@ -612,6 +613,7 @@ payload:
   - IP-CIDR,31.13.64.0/18,no-resolve
   - IP-CIDR,35.157.215.84/32,no-resolve
   - IP-CIDR,35.157.217.255/32,no-resolve
+  - IP-CIDR,49.232.25.145/32,no-resolve
   - IP-CIDR,52.58.209.134/32,no-resolve
   - IP-CIDR,54.162.243.80/32,no-resolve
   - IP-CIDR,54.173.34.141/32,no-resolve
