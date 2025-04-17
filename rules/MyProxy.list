@@ -14,6 +14,7 @@
 # TOTAL: 7
 # UPDATED: 2024-07-03 16:16:11
 # UPDATED: 2024-07-03 16:16:51
+# read
 DOMAIN,d1q6f0aelx0por.cloudfront.net
 DOMAIN,d2wy8f7a9ursnm.cloudfront.net
 DOMAIN,d36jcksde1wxzq.cloudfront.net
@@ -511,6 +512,7 @@ DOMAIN-SUFFIX,liverail.tv
 DOMAIN-SUFFIX,llama.com
 DOMAIN-SUFFIX,lnstagram-help.com
 DOMAIN-SUFFIX,login-account.net
+DOMAIN-SUFFIX,longtengxiaoshuo.org,no-resolve
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,makeitopen.com
 DOMAIN-SUFFIX,markzuckerberg.com
@@ -627,6 +629,7 @@ IP-CIDR,3.123.36.126/32,no-resolve
 IP-CIDR,31.13.64.0/18,no-resolve
 IP-CIDR,35.157.215.84/32,no-resolve
 IP-CIDR,35.157.217.255/32,no-resolve
+IP-CIDR,49.232.25.145/32,no-resolve
 IP-CIDR,52.58.209.134/32,no-resolve
 IP-CIDR,54.162.243.80/32,no-resolve
 IP-CIDR,54.173.34.141/32,no-resolve
