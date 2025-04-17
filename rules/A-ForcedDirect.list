@@ -21,7 +21,7 @@ DOMAIN-SUFFIX,yahnnat.112700.xyz
 
 DOMAIN-SUFFIX,time.asia.apple.com
 
-# DNS解析
+# 公共DNS直连
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
 DOMAIN-SUFFIX,dh-global-team.net
@@ -30,11 +30,12 @@ IP-CIDR,162.14.132.109/32,no-resolve
 IP-CIDR,36.112.139.253/32,no-resolve
 IP-CIDR,125.88.223.158/32,no-resolve
 IP-CIDR,110.185.101.40/32,no-resolve
-
 IP-CIDR,119.29.29.29/32,no-resolve
 IP-CIDR,223.5.5.5/32,no-resolve
 IP-CIDR,180.76.76.76/32,no-resolve
 IP-CIDR,114.114.114.114/32,no-resolve
+IP-CIDR6,2400:da00::6666/64,no-resolve
+IP-CIDR6,240c::6666/64,no-resolve
 
 # SDWAN
 DOMAIN-SUFFIX,tailscale.io
@@ -139,12 +140,6 @@ DOMAIN-KEYWORD,IPV6-Test
 DOMAIN-KEYWORD,IPV6Test
 DOMAIN-KEYWORD,Test-IPV6
 DOMAIN-KEYWORD,TestIPV6
-
-# 公共DNS直连
-IP-CIDR,223.5.5.0/24,no-resolve
-IP-CIDR,119.29.29.0/24,no-resolve
-IP-CIDR6,2400:da00::6666/64,no-resolve
-IP-CIDR6,240c::6666/64,no-resolve
 
 PROCESS-NAME,BitComet
 PROCESS-NAME,NetTransport
