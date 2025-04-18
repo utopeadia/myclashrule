@@ -129,6 +129,7 @@ payload:
   - DOMAIN-SUFFIX,pq.hkt3.yydjc.top
   - DOMAIN-SUFFIX,pq.hkt4.yydjc.top
   - DOMAIN-SUFFIX,qqa813.198139.xyz
+  - DOMAIN-SUFFIX,qqb12.198139.xyz
   - DOMAIN-SUFFIX,rm-eco-sg-01.409648.xyz
   - DOMAIN-SUFFIX,rm-lite-au-01.409648.xyz
   - DOMAIN-SUFFIX,rm-lite-hk-02.409648.xyz
@@ -235,9 +236,11 @@ payload:
   - IP-CIDR,116.251.216.70/32,no-resolve
   - IP-CIDR,118.167.5.64/32,no-resolve
   - IP-CIDR,118.167.6.96/32,no-resolve
+  - IP-CIDR,119.167.163.26/32,no-resolve
   - IP-CIDR,120.198.71.182/32,no-resolve
   - IP-CIDR,120.233.87.67/32,no-resolve
   - IP-CIDR,120.233.87.74/32,no-resolve
+  - IP-CIDR,120.237.3.154/32,no-resolve
   - IP-CIDR,120.237.3.156/32,no-resolve
   - IP-CIDR,121.227.107.71/32,no-resolve
   - IP-CIDR,123.113.39.26/32,no-resolve
@@ -360,7 +363,6 @@ payload:
   - IP-CIDR,36.151.194.65/32,no-resolve
   - IP-CIDR,36.151.65.220/32,no-resolve
   - IP-CIDR,36.151.65.38/32,no-resolve
-  - IP-CIDR,36.151.65.74/32,no-resolve
   - IP-CIDR,43.207.202.139/32,no-resolve
   - IP-CIDR,43.241.50.81/32,no-resolve
   - IP-CIDR,46.3.104.114/32,no-resolve
