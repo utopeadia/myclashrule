@@ -75,6 +75,7 @@ payload:
   - DOMAIN-SUFFIX,chat.aifun.win
   - DOMAIN-SUFFIX,chat.iswsh.com
   - DOMAIN-SUFFIX,image.iswsh.com
+  - DOMAIN-SUFFIX,wallos.iswsh.com
   - DOMAIN-SUFFIX,news.112700.xyz
   - DOMAIN-SUFFIX,azureedge.us
   - DOMAIN-SUFFIX,us-east-1.amazonaws.com
