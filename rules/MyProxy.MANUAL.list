@@ -37,9 +37,14 @@ DOMAIN-SUFFIX,pwnedpasswords.com
 DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,unraid.net
 DOMAIN-SUFFIX,tawk.to
+
+# afusekt
+DOMAIN-SUFFIX,attemptd.work
+
 # FacebookMetaAI
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,llama.com
+
 # read
 IP-CIDR,49.232.25.145/32,no-resolve
 DOMAIN-SUFFIX,longtengxiaoshuo.org
