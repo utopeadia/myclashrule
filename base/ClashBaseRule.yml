@@ -148,6 +148,7 @@ sniffer:
     - +.rc.sunlogin.net
     - time.windows.com
     - courier.push.apple.com
+    - +.jd.com
     - rbsxbxp-mim.vivox.com
     - rbsxbxp.www.vivox.com
     - rbsxbxp-ws.vivox.com
