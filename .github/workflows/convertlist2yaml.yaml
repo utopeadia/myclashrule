@@ -31,6 +31,10 @@ jobs:
             "app/GameDLCN.MANUAL.list"
             "MyDirect.SERVER.list"
           )
+          EXCLUDE_PREFIXES=(
+            "USER-AGENT,"
+            "URL-REGEX,"
+          )
 
           EXCLUDE_ARGS=""
           for dir in "${EXCLUDE_DIRS[@]}"; do
@@ -48,11 +52,28 @@ jobs:
             echo "payload:" > "$output_path"
 
             while IFS= read -r line; do
+              # 移除行首行尾的空白字符
+              line=$(echo "$line" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+
+              # 检查是否是注释或空行
               if [[ "$line" =~ ^\s*#.* ]] || [[ -z "$line" ]]; then
-                :
-                # 注释或空行不处理
-              else
+                : # 跳过注释或空行
+                continue # 继续下一行处理
+              fi
+
+              # 检查是否以需要排除的前缀开头
+              exclude_line=false
+              for prefix in "${EXCLUDE_PREFIXES[@]}"; do
+                if [[ "$line" == "$prefix"* ]]; then
+                  exclude_line=true
+                  break
+                fi
+              done
+
+              if ! $exclude_line; then
                 echo "  - $line" >> "$output_path"
+              else
+                echo "Excluded line starting with prefix: $line"
               fi
             done < "$input_file"
 
