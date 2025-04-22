@@ -91,11 +91,6 @@ jobs:
 
       - name: Commit Convert
         run: |
-          if git diff --quiet --exit-code "$OUTPUT_ROOT"; then
-            echo "No changes detected in $OUTPUT_ROOT, skipping commit."
-          else
-            echo "Changes detected, committing..."
-            git add "$OUTPUT_ROOT"
-            git commit -m "Convert rules to Clash Classic"
-            git push
-          fi
+          git add "$OUTPUT_ROOT"
+          git commit -m "Convert rules to Clash Classic"
+          git push
