@@ -1,13 +1,10 @@
 name: Convert-Clash-classic-ruleset
-
 on:
   workflow_run:
     workflows: [Regular-rule-update, Special-rule-update]
     types:
       - completed
-
 jobs:
-
   convert:
     runs-on: ubuntu-latest
     permissions:
@@ -15,73 +12,90 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
       - name: Set up Git
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-
       - name: Convert rules
         run: |
           set -e
-
           INPUT_ROOT="rules"
           OUTPUT_ROOT="clash-classic"
-          EXCLUDE_DIRS=(
+          # --- 排除文件列表 (相对于 INPUT_ROOT) ---
+          EXCLUDE_FILES=(
             "app/GameDLCN.MANUAL.list"
             "MyDirect.SERVER.list"
           )
+          # --- 排除行前缀 ---
           EXCLUDE_PREFIXES=(
             "USER-AGENT,"
             "URL-REGEX,"
           )
 
-          EXCLUDE_ARGS=""
-          for dir in "${EXCLUDE_DIRS[@]}"; do
-            EXCLUDE_ARGS="$EXCLUDE_ARGS -not -path \"./$INPUT_ROOT/$dir/*\""
+          echo "Starting rule conversion..."
+          declare -A exclude_map
+          for excluded_file_rel in "${EXCLUDE_FILES[@]}"; do
+            exclude_map["$INPUT_ROOT/$excluded_file_rel"]=1
           done
 
-          # 查找 .list 文件并进行转换
-          find "$INPUT_ROOT" -name "*.list" $EXCLUDE_ARGS -print0 | while IFS= read -r -d $'\0' input_file; do
+          exclude_regex=""
+          if [ ${#EXCLUDE_PREFIXES[@]} -gt 0 ]; then
+            # 构建形如 ^(PREFIX1|PREFIX2|...) 的正则表达式
+            exclude_regex="^("
+            first=true
+            for prefix in "${EXCLUDE_PREFIXES[@]}"; do
+              # 对正则表达式特殊字符进行转义
+              escaped_prefix=$(sed 's/[][()\.^$?*+|]/\\&/g' <<< "$prefix")
+              if $first; then
+                exclude_regex+="$escaped_prefix"
+                first=false
+              else
+                exclude_regex+="|$escaped_prefix"
+              fi
+            done
+            exclude_regex+=")"
+          fi
+          echo "Exclude regex: $exclude_regex" # Debug output
+
+          find "$INPUT_ROOT" -type f -name "*.list" -print0 | while IFS= read -r -d $'\0' input_file; do
+
+            if [[ -v exclude_map["$input_file"] ]]; then
+              echo "Skipping excluded file: $input_file"
+              continue
+            fi
+
             relative_path="${input_file#$INPUT_ROOT/}"
             output_file="${relative_path%.list}.yaml"
             output_path="$OUTPUT_ROOT/$output_file"
 
             mkdir -p "$(dirname "$output_path")"
 
-            echo "payload:" > "$output_path"
-
-            while IFS= read -r line; do
-              # 移除行首行尾的空白字符
-              line=$(echo "$line" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-
-              # 检查是否是注释或空行
-              if [[ "$line" =~ ^\s*#.* ]] || [[ -z "$line" ]]; then
-                : # 跳过注释或空行
-                continue # 继续下一行处理
-              fi
-
-              # 检查是否以需要排除的前缀开头
-              exclude_line=false
-              for prefix in "${EXCLUDE_PREFIXES[@]}"; do
-                if [[ "$line" == "$prefix"* ]]; then
-                  exclude_line=true
-                  break
-                fi
-              done
-
-              if ! $exclude_line; then
-                echo "  - $line" >> "$output_path"
-              else
-                echo "Excluded line starting with prefix: $line"
-              fi
-            done < "$input_file"
+            {
+              echo "payload:"
+              awk -v pattern="$exclude_regex" '
+              {
+                gsub(/^[[:space:]]+|[[:space:]]+$/, "", $0)
+              }
+              NF == 0 || /^\s*#/ { next }
+              pattern != "" && $0 ~ pattern {
+                next
+              }
+              { print "  - " $0 }
+              ' "$input_file"
+            } > "$output_path"
 
             echo "Converted: $input_file -> $output_path"
           done
 
+          echo "Conversion finished."
+
       - name: Commit Convert
         run: |
-          git add .
-          git commit -m "Convert rules to Clash Classic"
-          git push
+          if git diff --quiet --exit-code "$OUTPUT_ROOT"; then
+            echo "No changes detected in $OUTPUT_ROOT, skipping commit."
+          else
+            echo "Changes detected, committing..."
+            git add "$OUTPUT_ROOT"
+            git commit -m "Convert rules to Clash Classic"
+            git push
+          fi
