@@ -91,6 +91,6 @@ jobs:
 
       - name: Commit Convert
         run: |
-          git add "$OUTPUT_ROOT"
+          git add .
           git commit -m "Convert rules to Clash Classic"
           git push
