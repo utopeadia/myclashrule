@@ -157,17 +157,17 @@ jobs:
           fi
       - name: Download Download rules
         run: |
-          if curl -f -s -o rules/ACLDownload.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list && [[ -s rules/ACLDownload.list ]]; then
+          if curl -f -s -o rules/IRSDownload.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.list && [[ -s rules/IRSDownload.list ]]; then
             if curl -f -s -o rules/PrivateTracker.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrivateTracker/PrivateTracker.list && [[ -s rules/PrivateTracker.list ]]; then
-              echo >> rules/ACLDownload.list
-              cat rules/ACLDownload.list rules/PrivateTracker.list > rules/Download.list.new
+              echo >> rules/IRSDownload.list
+              cat rules/IRSDownload.list rules/PrivateTracker.list > rules/Download.list.new
               mv -f rules/Download.list.new rules/Download.list
-              rm -f rules/ACLDownload.list rules/PrivateTracker.list
+              rm -f rules/IRSDownload.list rules/PrivateTracker.list
             else
               echo "Failed to download or empty Download.list, exiting."
             fi
           else
-            echo "Failed to download or empty ACLDownload.list, exiting."
+            echo "Failed to download or empty IRSDownload.list, exiting."
           fi
 
       - name: Add changes to the repository
