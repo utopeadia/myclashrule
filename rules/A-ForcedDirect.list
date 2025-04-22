@@ -1,7 +1,6 @@
 # 这个列表会强制直连且在本规则中具有最高优先级
 
 # WIN重定向网页
-URL-REGEX,^https?:\/\/(www\.)?msftconnecttest\.com\/redirect
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,time.windows.com
 
