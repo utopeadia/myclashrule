@@ -1,5 +1,4 @@
 payload:
-  - URL-REGEX,^https?:\/\/(www\.)?msftconnecttest\.com\/redirect
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,time.windows.com
   - DOMAIN,dns.msftncsi.com
