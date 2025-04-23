@@ -24,10 +24,14 @@ geox-url:
   mmdb: "https://cdn.jsdmirror.com/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb"
   asn: "https://cdn.jsdmirror.com/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb"
 tun:
-  enable: false
-  device: utun
+  enable: true
   stack: gvisor
+  device: utun0
   mtu: 1500
+  strict-route: true
+  gso: true
+  gso-max-size: 65536
+  udp-timeout: 300
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
