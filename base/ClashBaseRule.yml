@@ -25,9 +25,9 @@ geox-url:
   asn: "https://cdn.jsdmirror.com/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb"
 tun:
   enable: false
-  device: MihomoCore
-  stack: mixed
-  mtu: 9000
+  device: utun
+  stack: gvisor
+  mtu: 1500
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
