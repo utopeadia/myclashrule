@@ -5068,7 +5068,6 @@ payload:
   - DOMAIN-SUFFIX,chatsex.xxx
   - DOMAIN-SUFFIX,chatter.com
   - DOMAIN-SUFFIX,chatterbate.io
-  - DOMAIN-SUFFIX,chaturbate.com
   - DOMAIN-SUFFIX,chatwhores.com
   - DOMAIN-SUFFIX,chatwhores.net
   - DOMAIN-SUFFIX,chatwhores.org
@@ -25921,6 +25920,7 @@ payload:
   - DOMAIN-SUFFIX,chapm25.com
   - DOMAIN-SUFFIX,character.ai
   - DOMAIN-SUFFIX,chatnook.com
+  - DOMAIN-SUFFIX,chaturbate.com
   - DOMAIN-SUFFIX,checkgfw.com
   - DOMAIN-SUFFIX,chengmingmag.com
   - DOMAIN-SUFFIX,chenguangcheng.com
