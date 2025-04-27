@@ -15,6 +15,9 @@ global-client-fingerprint: chrome
 global-ua: mymihomo
 tcp-concurrent: true
 unified-delay: false
+keep-alive-interval: 15
+keep-alive-idle: 180
+disable-keep-alive: false
 geodata-mode: true
 geo-auto-update: true
 geo-update-interval: 12
@@ -106,6 +109,7 @@ dns:
     - '+.pconline.com.cn'
     - '+.pingan.com.cn'
     - '+.pool.ntp.org'
+    - '+.push.apple.com'
     - '+.qq.com'
     - '+.sandai.net'
     - '+.services.googleapis.cn'
