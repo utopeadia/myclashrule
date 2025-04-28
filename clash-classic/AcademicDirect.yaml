@@ -72,6 +72,7 @@ payload:
   - DOMAIN-SUFFIX,onepetro.org
   - DOMAIN-KEYWORD,onepetro_org
   - DOMAIN-SUFFIX,siam.org
+  - DOMAIN-SUFFIX,eurekaselect.com
   - DOMAIN-SUFFIX,webofknowledge.com
   - DOMAIN-SUFFIX,editorialmanager.com
   - DOMAIN-SUFFIX,mc.manuscriptcentral.com
