@@ -67,7 +67,6 @@ payload:
   - DOMAIN,open.acgtracker.com
   - DOMAIN,open.demonii.com
   - DOMAIN,open.dstud.io
-  - DOMAIN,open.free-tracker.ga
   - DOMAIN,open.stealth.si
   - DOMAIN,open.trackerlist.xyz
   - DOMAIN,opentor.org
@@ -89,6 +88,7 @@ payload:
   - DOMAIN,taciturn-shadow.spb.ru
   - DOMAIN,thouvenin.cloud
   - DOMAIN,tk.greedland.net
+  - DOMAIN,torrent.hificode.in
   - DOMAIN,torrent.i.ng
   - DOMAIN,torrentsmd.com
   - DOMAIN,tr.abiir.top
@@ -104,6 +104,7 @@ payload:
   - DOMAIN,tracker.beeimg.com
   - DOMAIN,tracker.bittor.pw
   - DOMAIN,tracker.bjut.jp
+  - DOMAIN,tracker.breizh.pm
   - DOMAIN,tracker.bt-hash.com
   - DOMAIN,tracker.bt4g.com
   - DOMAIN,tracker.bz
@@ -111,11 +112,11 @@ payload:
   - DOMAIN,tracker.cyberia.is
   - DOMAIN,tracker.darkness.services
   - DOMAIN,tracker.ddunlimited.net
+  - DOMAIN,tracker.deadorbit.nl
   - DOMAIN,tracker.dler.com
   - DOMAIN,tracker.dler.org
   - DOMAIN,tracker.dmcomic.org
   - DOMAIN,tracker.ducks.party
-  - DOMAIN,tracker.dump.cl
   - DOMAIN,tracker.expli.top
   - DOMAIN,tracker.filemail.com
   - DOMAIN,tracker.fnix.net
@@ -124,7 +125,6 @@ payload:
   - DOMAIN,tracker.ghostchu-services.top
   - DOMAIN,tracker.gigantino.net
   - DOMAIN,tracker.gmi.gd
-  - DOMAIN,tracker.iperson.xyz
   - DOMAIN,tracker.ipv6tracker.org
   - DOMAIN,tracker.ipv6tracker.ru
   - DOMAIN,tracker.itscraftsoftware.my.id
@@ -135,12 +135,11 @@ payload:
   - DOMAIN,tracker.leechshield.link
   - DOMAIN,tracker.lilithraws.org
   - DOMAIN,tracker.lintk.me
-  - DOMAIN,tracker.linvk.com
-  - DOMAIN,tracker.lyretain.site
   - DOMAIN,tracker.moeblog.cn
   - DOMAIN,tracker.moxing.party
   - DOMAIN,tracker.mywaifu.best
   - DOMAIN,tracker.netmap.top
+  - DOMAIN,tracker.ololosh.space
   - DOMAIN,tracker.opentrackr.org
   - DOMAIN,tracker.openwebtorrent.com
   - DOMAIN,tracker.privateseedbox.xyz
@@ -149,7 +148,6 @@ payload:
   - DOMAIN,tracker.sbsub.com
   - DOMAIN,tracker.skyts.net
   - DOMAIN,tracker.srv00.com
-  - DOMAIN,tracker.theoks.net
   - DOMAIN,tracker.therarbg.to
   - DOMAIN,tracker.tiny-vps.com
   - DOMAIN,tracker.torrent.eu.org
@@ -165,7 +163,6 @@ payload:
   - DOMAIN,tracker.zhuqiy.top
   - DOMAIN,tracker1.520.jp
   - DOMAIN,tracker1.itzmx.com
-  - DOMAIN,tracker1.myporn.club
   - DOMAIN,tracker2.dler.org
   - DOMAIN,tracker2.itzmx.com
   - DOMAIN,tracker3.itzmx.com
@@ -173,7 +170,6 @@ payload:
   - DOMAIN,tracker810.xyz
   - DOMAIN,ttk2.nbaonlineservice.com
   - DOMAIN,udp.tracker.projectk.org
-  - DOMAIN,utracker.ghostchu-services.top
   - DOMAIN,wepzone.net
   - DOMAIN,www.all4nothin.net
   - DOMAIN,www.genesis-sp.org
