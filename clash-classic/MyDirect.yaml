@@ -139,6 +139,9 @@ payload:
   - DOMAIN-SUFFIX,pq.aws56.yydjc.top
   - DOMAIN-SUFFIX,pq.aws57.yydjc.top
   - DOMAIN-SUFFIX,pq.aws58.yydjc.top
+  - DOMAIN-SUFFIX,pq.aws59.yydjc.top
+  - DOMAIN-SUFFIX,pq.aws60.yydjc.top
+  - DOMAIN-SUFFIX,pq.aws61.yydjc.top
   - DOMAIN-SUFFIX,pq.hinet.tw1.yydjc.top
   - DOMAIN-SUFFIX,pq.hinet.tw2.yydjc.top
   - DOMAIN-SUFFIX,pq.hinet.tw3.yydjc.top
@@ -258,6 +261,8 @@ payload:
   - IP-CIDR,129.159.227.221/32,no-resolve
   - IP-CIDR,13.112.146.99/32,no-resolve
   - IP-CIDR,13.114.100.212/32,no-resolve
+  - IP-CIDR,13.213.30.64/32,no-resolve
+  - IP-CIDR,13.213.72.138/32,no-resolve
   - IP-CIDR,13.229.248.208/32,no-resolve
   - IP-CIDR,13.229.79.45/32,no-resolve
   - IP-CIDR,13.229.82.53/32,no-resolve
@@ -323,7 +328,6 @@ payload:
   - IP-CIDR,18.182.63.161/32,no-resolve
   - IP-CIDR,18.183.143.50/32,no-resolve
   - IP-CIDR,18.183.171.100/32,no-resolve
-  - IP-CIDR,183.233.12.35/32,no-resolve
   - IP-CIDR,183.240.211.34/32,no-resolve
   - IP-CIDR,192.18.133.190/32,no-resolve
   - IP-CIDR,192.9.129.206/32,no-resolve
@@ -357,14 +361,15 @@ payload:
   - IP-CIDR,217.142.230.50/32,no-resolve
   - IP-CIDR,217.142.233.165/32,no-resolve
   - IP-CIDR,217.142.235.92/32,no-resolve
+  - IP-CIDR,218.204.238.59/32,no-resolve
   - IP-CIDR,219.76.131.195/32,no-resolve
   - IP-CIDR,219.76.131.198/32,no-resolve
   - IP-CIDR,219.76.131.205/32,no-resolve
+  - IP-CIDR,3.112.214.42/32,no-resolve
   - IP-CIDR,3.115.82.155/32,no-resolve
   - IP-CIDR,3.39.109.35/32,no-resolve
   - IP-CIDR,35.75.102.238/32,no-resolve
   - IP-CIDR,36.151.195.29/32,no-resolve
-  - IP-CIDR,36.151.65.74/32,no-resolve
   - IP-CIDR,43.207.202.139/32,no-resolve
   - IP-CIDR,43.241.50.81/32,no-resolve
   - IP-CIDR,46.3.104.114/32,no-resolve
