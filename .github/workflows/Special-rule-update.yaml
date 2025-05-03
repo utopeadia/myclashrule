@@ -663,6 +663,29 @@ jobs:
           else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
           echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
+      - name: Download WeChat rules
+        run: |
+          files=(
+            "WeChat.list|https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list"
+          )
+          target_list="rules/app/WeChat.list"
+          manual_list=""
+          download_dir="rules/app"
+          temp_files=()
+          all_success=true
+          echo "Attempting update for $target_list"; mkdir -p "$download_dir"
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"; output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"; temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then echo "::error:: Failed download or empty file: $filename from $url for target $target_list"; all_success=false; else echo "Successfully downloaded $filename"; echo >> "$output_path"; fi
+          done
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."; combined_new="${target_list}.new"; files_to_cat=(); for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then files_to_cat+=("$manual_list"); echo "Including manual list: $manual_list"; fi
+            cat "${files_to_cat[@]}" > "$combined_new"; echo >> "$combined_new"; mv -f "$combined_new" "$target_list"; echo "Successfully updated $target_list"
+          else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
+          echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
+
       - name: Add changes to the repository
         run: |
           git add .
