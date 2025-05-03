@@ -42,6 +42,8 @@ IP-CIDR6,2400:da00::6666/64,no-resolve
 IP-CIDR6,240c::6666/64,no-resolve
 IP-CIDR6,2402:4e00::/64,no-resolve
 IP-CIDR6,2402:4e00:1::/64,no-resolve
+IP-CIDR6,2400:3200:baba::1/128,no-resolve
+IP-CIDR6,2400:3200::1/128,no-resolve
 
 # SDWAN
 DOMAIN-SUFFIX,tailscale.io
