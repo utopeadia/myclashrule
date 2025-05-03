@@ -5,6 +5,7 @@ payload:
   - DOMAIN-SUFFIX,worldfirst.com
   - DOMAIN-SUFFIX,worldfirst.com.cn
   - IP-CIDR,192.168.0.0/16,no-resolve
+  - DOMAIN-SUFFIX,10099.com
   - DOMAIN-SUFFIX,cup.com.cn
   - DOMAIN-SUFFIX,pool.ntp.org
   - DOMAIN-SUFFIX,ntp.aliyun.com
