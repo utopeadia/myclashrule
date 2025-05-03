@@ -55,24 +55,24 @@ dns:
   enhanced-mode: redir-host
   nameserver-policy:
     'geosite:googlefcm': 
-      - https://doh.pub/dns-query#DIRECT&skip-cert-verify=true
-      - https://223.5.5.5/dns-query#DIRECT&skip-cert-verify=true
+      - https://doh.pub/dns-query#skip-cert-verify=true
+      - https://223.5.5.5/dns-query#skip-cert-verify=true
     'geosite:gfw': 
       - tls://208.67.220.220#RULES&skip-cert-verify=true
       - tls://1.1.1.1#RULES&skip-cert-verify=true
       - tls://8.8.4.4#RULES&skip-cert-verify=true
     '+.tencent.com':
-      - https://doh.pub/dns-query#DIRECT&skip-cert-verify=true
-      - https://223.5.5.5/dns-query#DIRECT&skip-cert-verify=true
+      - https://doh.pub/dns-query#skip-cert-verify=true
+      - https://223.5.5.5/dns-query#skip-cert-verify=true
     '+.qq.com':
-      - https://doh.pub/dns-query#DIRECT&skip-cert-verify=true
-      - https://223.5.5.5/dns-query#DIRECT&skip-cert-verify=true
+      - https://doh.pub/dns-query#skip-cert-verify=true
+      - https://223.5.5.5/dns-query#skip-cert-verify=true
     '+.weixin.com':
-      - https://doh.pub/dns-query#DIRECT&skip-cert-verify=true
-      - https://223.5.5.5/dns-query#DIRECT&skip-cert-verify=true
+      - https://doh.pub/dns-query#skip-cert-verify=true
+      - https://223.5.5.5/dns-query#skip-cert-verify=true
   proxy-server-nameserver:
-    - https://doh.pub/dns-query#DIRECT&skip-cert-verify=true
-    - https://223.5.5.5/dns-query#DIRECT&skip-cert-verify=true
+    - https://doh.pub/dns-query#skip-cert-verify=true
+    - https://223.5.5.5/dns-query#skip-cert-verify=true
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
