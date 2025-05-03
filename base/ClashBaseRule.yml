@@ -270,7 +270,6 @@ sniffer:
     - basic-static-server.infinitynewtab.com
     - hp3.mail.netease.com
     - +.mail.netease.com
-    - *.mail.netease.com
   skip-dst-address:
     - 223.5.5.5/32
     - 223.6.6.6/32
