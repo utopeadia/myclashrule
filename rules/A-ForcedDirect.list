@@ -26,6 +26,7 @@ DOMAIN-SUFFIX,time.asia.apple.com
 # 公共DNS直连
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
+DOMAIN,dot.pub
 DOMAIN-SUFFIX,dh-global-team.net
 DOMAIN-SUFFIX,dh-dns.global-idt.net
 IP-CIDR,162.14.132.109/32,no-resolve
@@ -34,10 +35,13 @@ IP-CIDR,125.88.223.158/32,no-resolve
 IP-CIDR,110.185.101.40/32,no-resolve
 IP-CIDR,119.29.29.29/32,no-resolve
 IP-CIDR,223.5.5.5/32,no-resolve
+IP-CIDR,223.6.6.6/32,no-resolve
 IP-CIDR,180.76.76.76/32,no-resolve
 IP-CIDR,114.114.114.114/32,no-resolve
 IP-CIDR6,2400:da00::6666/64,no-resolve
 IP-CIDR6,240c::6666/64,no-resolve
+IP-CIDR6,2402:4e00::/64,no-resolve
+IP-CIDR6,2402:4e00:1::/64,no-resolve
 
 # SDWAN
 DOMAIN-SUFFIX,tailscale.io
