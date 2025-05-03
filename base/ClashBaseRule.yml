@@ -217,6 +217,7 @@ dns:
     - 'xbox.*.*.microsoft.com'
     - 'xbox.*.microsoft.com'
     - 'xnotify.xboxlive.com'
+    - WORKGROUP
 profile:
   store-selected: true
   store-fake-ip: true
