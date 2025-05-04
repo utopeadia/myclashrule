@@ -27,6 +27,7 @@ DOMAIN-SUFFIX,api.xhofe.top
 DOMAIN-SUFFIX,gslb.livehwc3.cn
 DOMAIN-SUFFIX,neixin.cn
 DOMAIN-SUFFIX,open.kuaishouzt.com
+DOMAIN-REGEX,^pass[a-z0-9-]+\.876521\.xyz
 DOMAIN-SUFFIX,0ceb0c03b9dc9f3f.cdn.jiashule.com
 DOMAIN-SUFFIX,0edw2vu7stvjcmo2u1p9czeh638evkou.04.02.us.6l6.site
 DOMAIN-SUFFIX,0gxcrvnu76jc5uiggnye63g74tp7f45p.04.03.hk.6l6.site
