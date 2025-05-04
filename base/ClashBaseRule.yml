@@ -55,7 +55,7 @@ dns:
   enhanced-mode: redir-host
   nameserver-policy:
     'geosite:googlefcm': 
-      - https://1.12.12.12/dns-query#RULES
+      - https://doh.pub/dns-query#RULES
       - https://223.5.5.5/dns-query#RULES
     'geosite:gfw': 
       - tls://208.67.220.220#RULES
@@ -66,21 +66,23 @@ dns:
       - tls://1.1.1.1#RULES
       - tls://8.8.4.4#RULES
     '+.tencent.com':
-      - https://1.12.12.12/dns-query#RULES
+      - https://doh.pub/dns-query#RULES
       - https://223.5.5.5/dns-query#RULES
     '+.qq.com':
-      - https://1.12.12.12/dns-query#RULES
+      - https://doh.pub/dns-query#RULES
       - https://223.5.5.5/dns-query#RULES
     '+.weixin.com':
-      - https://1.12.12.12/dns-query#RULES
+      - https://doh.pub/dns-query#RULES
       - https://223.5.5.5/dns-query#RULES
   proxy-server-nameserver:
-    - https://1.12.12.12/dns-query#RULES
+    - https://doh.pub/dns-query#RULES
     - https://223.5.5.5/dns-query#RULES
   default-nameserver:
+    - 180.184.1.1
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
+    - 180.184.1.1
     - 119.29.29.29
     - 223.5.5.5
   fake-ip-range: 198.18.0.1/16
