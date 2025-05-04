@@ -50,8 +50,11 @@ tun:
 dns:
   enable: true
   ipv6: true
+  cache-algorithm: arc
   prefer-h3: false
   use-hosts: true
+  use-system-hosts: true
+  respect-rules: true
   enhanced-mode: redir-host
   nameserver-policy:
     'geosite:googlefcm': 
