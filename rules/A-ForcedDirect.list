@@ -27,6 +27,9 @@ DOMAIN-SUFFIX,time.asia.apple.com
 DOMAIN,dns.alidns.com
 DOMAIN,doh.pub
 DOMAIN,dot.pub
+DOMAIN,doh-pure.onedns.net
+DOMAIN,doh.360.cn
+DOMAIN,dot.360.cn
 DOMAIN-SUFFIX,dh-global-team.net
 DOMAIN-SUFFIX,dh-dns.global-idt.net
 IP-CIDR,162.14.132.109/32,no-resolve
@@ -38,14 +41,31 @@ IP-CIDR,223.5.5.5/32,no-resolve
 IP-CIDR,223.6.6.6/32,no-resolve
 IP-CIDR,180.76.76.76/32,no-resolve
 IP-CIDR,114.114.114.114/32,no-resolve
+IP-CIDR,114.114.115.115/32,no-resolve
+IP-CIDR,114.114.114.119/32,no-resolve
+IP-CIDR,114.114.115.119/32,no-resolve
+IP-CIDR,114.114.114.110/32,no-resolve
+IP-CIDR,114.114.115.110/32,no-resolve
 IP-CIDR,1.12.12.12/32,no-resolve
 IP-CIDR,120.53.53.53/32,no-resolve
+IP-CIDR,117.50.10.10/32,no-resolve
+IP-CIDR,52.80.52.52/32,no-resolve
+IP-CIDR,1.2.4.8/32,no-resolve
+IP-CIDR,210.2.4.8/32,no-resolve
+IP-CIDR,101.226.4.6/32,no-resolve
+IP-CIDR,218.30.118.6/32,no-resolve
+IP-CIDR,123.125.81.6/32,no-resolve
+IP-CIDR,140.207.198.6/32,no-resolve
+IP-CIDR,180.184.1.1/32,no-resolve
+IP-CIDR,180.184.2.2/32,no-resolve
 IP-CIDR6,2400:da00::6666/64,no-resolve
 IP-CIDR6,240c::6666/64,no-resolve
 IP-CIDR6,2402:4e00::/64,no-resolve
 IP-CIDR6,2402:4e00:1::/64,no-resolve
 IP-CIDR6,2400:3200:baba::1/128,no-resolve
 IP-CIDR6,2400:3200::1/128,no-resolve
+IP-CIDR6,2404:c2c0:85d8:901::8/128,no-resolve
+IP-CIDR6,2400:7fc0:849e:200::8/128,no-resolve
 
 # SDWAN
 DOMAIN-SUFFIX,tailscale.io
