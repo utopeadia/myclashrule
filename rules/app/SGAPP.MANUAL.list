@@ -1,7 +1,16 @@
+# Amazon Simple Storage
+DOMAIN-SUFFIX,ap-south-1.amazonaws.com
+DOMAIN-SUFFIX,ap-northeast-1.amazonaws.com
+DOMAIN-SUFFIX,ap-east-1.amazonaws.com
+DOMAIN-SUFFIX,ap-west-1.amazonaws.com
+# Amazon Panorama API
+DOMAIN-SUFFIX,ap-south-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,ap-northeast-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,ap-east-1.prod.pr.panorama.console.api.aws
+DOMAIN-SUFFIX,ap-west-1.prod.pr.panorama.console.api.aws
+
 # 其他
 DOMAIN-SUFFIX,tencentcloud.com
-DOMAIN-SUFFIX,login.tailscale.com
-DOMAIN-SUFFIX,www.tailscale.com
 DOMAIN-SUFFIX,okx.com
 PROCESS-NAME,com.okinc.okex.gp
 PROCESS-NAME-REGEX,com\.okinc\.okex\.gp
