@@ -68,7 +68,14 @@ DOMAIN-SUFFIX,s3.iswsh.com
 DOMAIN-SUFFIX,s3api.iswsh.com
 DOMAIN-SUFFIX,dnsmgr.iswsh.com
 DOMAIN-SUFFIX,img.iswsh.com
+DOMAIN-SUFFIX,alist.iswsh.com
+DOMAIN-SUFFIX,fastgpt.iswsh.com
+DOMAIN-SUFFIX,file.iswsh.com
+DOMAIN-SUFFIX,gitea.iswsh.com
+DOMAIN-SUFFIX,share.iswsh.com
 DOMAIN-SUFFIX,img.wush.cc
+DOMAIN-SUFFIX,chatb.aijust.org
+DOMAIN-SUFFIX,chatb.aifun.win
 
 # afusekt
 DOMAIN-SUFFIX,attemptd.work
