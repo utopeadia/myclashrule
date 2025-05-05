@@ -26,6 +26,7 @@ payload:
   - DOMAIN-SUFFIX,advancediddetection.com
   - DOMAIN-SUFFIX,agilebits.com
   - DOMAIN-SUFFIX,akile.io
+  - DOMAIN-SUFFIX,alist.iswsh.com
   - DOMAIN-SUFFIX,api.nn.ci
   - DOMAIN-SUFFIX,askfacebook.net
   - DOMAIN-SUFFIX,askfacebook.org
@@ -49,6 +50,8 @@ payload:
   - DOMAIN-SUFFIX,carstagram.com
   - DOMAIN-SUFFIX,cdninstagram.com
   - DOMAIN-SUFFIX,celebgramme.com
+  - DOMAIN-SUFFIX,chatb.aifun.win
+  - DOMAIN-SUFFIX,chatb.aijust.org
   - DOMAIN-SUFFIX,chickstagram.com
   - DOMAIN-SUFFIX,china-facebook.com
   - DOMAIN-SUFFIX,clarity.ms
@@ -324,6 +327,7 @@ payload:
   - DOMAIN-SUFFIX,fasebokk.com
   - DOMAIN-SUFFIX,fasebook.com
   - DOMAIN-SUFFIX,faseboox.com
+  - DOMAIN-SUFFIX,fastgpt.iswsh.com
   - DOMAIN-SUFFIX,fasttext.cc
   - DOMAIN-SUFFIX,favebook.com
   - DOMAIN-SUFFIX,faycbok.com
@@ -383,6 +387,7 @@ payload:
   - DOMAIN-SUFFIX,ffacebook.com
   - DOMAIN-SUFFIX,fgacebook.com
   - DOMAIN-SUFFIX,ficeboock.com
+  - DOMAIN-SUFFIX,file.iswsh.com
   - DOMAIN-SUFFIX,flow.dev
   - DOMAIN-SUFFIX,flow.org
   - DOMAIN-SUFFIX,flowtype.org
@@ -418,6 +423,7 @@ payload:
   - DOMAIN-SUFFIX,gameroom.com
   - DOMAIN-SUFFIX,gaozehk.com
   - DOMAIN-SUFFIX,gfacecbook.com
+  - DOMAIN-SUFFIX,gitea.iswsh.com
   - DOMAIN-SUFFIX,gorse.io
   - DOMAIN-SUFFIX,groups.com
   - DOMAIN-SUFFIX,hackerfacebook.com
@@ -595,6 +601,7 @@ payload:
   - DOMAIN-SUFFIX,s3.iswsh.com
   - DOMAIN-SUFFIX,s3api.iswsh.com
   - DOMAIN-SUFFIX,sda1.dev
+  - DOMAIN-SUFFIX,share.iswsh.com
   - DOMAIN-SUFFIX,shared.oaifree.com
   - DOMAIN-SUFFIX,shopfacebook.com
   - DOMAIN-SUFFIX,sportsfacebook.com

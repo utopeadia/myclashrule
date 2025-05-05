@@ -69,7 +69,14 @@ payload:
   - DOMAIN-SUFFIX,s3api.iswsh.com
   - DOMAIN-SUFFIX,dnsmgr.iswsh.com
   - DOMAIN-SUFFIX,img.iswsh.com
+  - DOMAIN-SUFFIX,alist.iswsh.com
+  - DOMAIN-SUFFIX,fastgpt.iswsh.com
+  - DOMAIN-SUFFIX,file.iswsh.com
+  - DOMAIN-SUFFIX,gitea.iswsh.com
+  - DOMAIN-SUFFIX,share.iswsh.com
   - DOMAIN-SUFFIX,img.wush.cc
+  - DOMAIN-SUFFIX,chatb.aijust.org
+  - DOMAIN-SUFFIX,chatb.aifun.win
   - DOMAIN-SUFFIX,attemptd.work
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,llama.com
