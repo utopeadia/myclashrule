@@ -23,6 +23,12 @@ DOMAIN-KEYWORD,51cg
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,fbcdn
 DOMAIN-SUFFIX,18mh.net
+DOMAIN-SUFFIX,20img.com
+DOMAIN-SUFFIX,21img.com
+DOMAIN-SUFFIX,22img.com
+DOMAIN-SUFFIX,23img.com
+DOMAIN-SUFFIX,24img.com
+DOMAIN-SUFFIX,25img.com
 DOMAIN-SUFFIX,2img.org
 DOMAIN-SUFFIX,69shu.xyz
 DOMAIN-SUFFIX,aboutfacebook.com
@@ -36,6 +42,8 @@ DOMAIN-SUFFIX,acheterdesfollowersinstagram.com
 DOMAIN-SUFFIX,acheterfollowersinstagram.com
 DOMAIN-SUFFIX,advancediddetection.com
 DOMAIN-SUFFIX,agilebits.com
+DOMAIN-SUFFIX,akile.io
+DOMAIN-SUFFIX,api.nn.ci
 DOMAIN-SUFFIX,askfacebook.net
 DOMAIN-SUFFIX,askfacebook.org
 DOMAIN-SUFFIX,atdmt2.com
@@ -61,6 +69,7 @@ DOMAIN-SUFFIX,celebgramme.com
 DOMAIN-SUFFIX,chickstagram.com
 DOMAIN-SUFFIX,china-facebook.com
 DOMAIN-SUFFIX,clarity.ms
+DOMAIN-SUFFIX,clashmi.app
 DOMAIN-SUFFIX,clashverge.dev
 DOMAIN-SUFFIX,click-url.com
 DOMAIN-SUFFIX,como-hackearfacebook.com
@@ -69,7 +78,9 @@ DOMAIN-SUFFIX,compose-spec.io
 DOMAIN-SUFFIX,crowdtangle.com
 DOMAIN-SUFFIX,dacebook.com
 DOMAIN-SUFFIX,darkreader.org
+DOMAIN-SUFFIX,deeplx.org
 DOMAIN-SUFFIX,dlfacebook.com
+DOMAIN-SUFFIX,dnsmgr.iswsh.com
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,dockerhub.com
@@ -430,6 +441,7 @@ DOMAIN-SUFFIX,hackfacebookid.com
 DOMAIN-SUFFIX,hacklang.org
 DOMAIN-SUFFIX,hhvm.com
 DOMAIN-SUFFIX,hifacebook.info
+DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,howtohackfacebook-account.com
 DOMAIN-SUFFIX,hsfacebook.com
 DOMAIN-SUFFIX,httpfacebook.com
@@ -442,6 +454,8 @@ DOMAIN-SUFFIX,ig.me
 DOMAIN-SUFFIX,igcdn.com
 DOMAIN-SUFFIX,igsonar.com
 DOMAIN-SUFFIX,igtv.com
+DOMAIN-SUFFIX,img.iswsh.com
+DOMAIN-SUFFIX,img.wush.cc
 DOMAIN-SUFFIX,imstagram.com
 DOMAIN-SUFFIX,imtagram.com
 DOMAIN-SUFFIX,instaadder.com
@@ -504,6 +518,7 @@ DOMAIN-SUFFIX,kingstagram.com
 DOMAIN-SUFFIX,klik.me
 DOMAIN-SUFFIX,kmh004.com
 DOMAIN-SUFFIX,kt.bqg123a.top
+DOMAIN-SUFFIX,kuxueyun.com
 DOMAIN-SUFFIX,larksuite.com
 DOMAIN-SUFFIX,larksuite.com.ttdns1.com
 DOMAIN-SUFFIX,larksuite.com.ttdns2.com
@@ -521,6 +536,7 @@ DOMAIN-SUFFIX,liverail.tv
 DOMAIN-SUFFIX,llama.com
 DOMAIN-SUFFIX,lnstagram-help.com
 DOMAIN-SUFFIX,login-account.net
+DOMAIN-SUFFIX,login.tailscale.com
 DOMAIN-SUFFIX,longtengxiaoshuo.org
 DOMAIN-SUFFIX,m.dybz123.com
 DOMAIN-SUFFIX,m.me
@@ -531,6 +547,7 @@ DOMAIN-SUFFIX,markzuckerberg.com
 DOMAIN-SUFFIX,mcmssc.la
 DOMAIN-SUFFIX,mcrouter.net
 DOMAIN-SUFFIX,mcrouter.org
+DOMAIN-SUFFIX,memos.iswsh.com
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,messengerdevelopers.com
 DOMAIN-SUFFIX,meta.ai
@@ -540,9 +557,13 @@ DOMAIN-SUFFIX,mobilefacebook.com
 DOMAIN-SUFFIX,moneywithfacebook.com
 DOMAIN-SUFFIX,music.liuzhijin.cn
 DOMAIN-SUFFIX,myfbfans.com
+DOMAIN-SUFFIX,naixi.net
+DOMAIN-SUFFIX,nathost.com
 DOMAIN-SUFFIX,nbabot.net
 DOMAIN-SUFFIX,newsfeed.com
 DOMAIN-SUFFIX,nextstop.com
+DOMAIN-SUFFIX,nodeloc.com
+DOMAIN-SUFFIX,nodeseek.com
 DOMAIN-SUFFIX,novel.seseclub.com
 DOMAIN-SUFFIX,ntdm9.com
 DOMAIN-SUFFIX,ocul.us
@@ -569,6 +590,8 @@ DOMAIN-SUFFIX,opencreate.org
 DOMAIN-SUFFIX,opengraphprotocol.com
 DOMAIN-SUFFIX,opengraphprotocol.org
 DOMAIN-SUFFIX,parse.com
+DOMAIN-SUFFIX,passwd.iswsh.com
+DOMAIN-SUFFIX,photo.iswsh.com
 DOMAIN-SUFFIX,powenwu15.com
 DOMAIN-SUFFIX,powersunitedvr.com
 DOMAIN-SUFFIX,pwnedpasswords.com
@@ -584,7 +607,10 @@ DOMAIN-SUFFIX,redkix.com
 DOMAIN-SUFFIX,rocksdb.com
 DOMAIN-SUFFIX,rocksdb.net
 DOMAIN-SUFFIX,rocksdb.org
+DOMAIN-SUFFIX,s3.iswsh.com
+DOMAIN-SUFFIX,s3api.iswsh.com
 DOMAIN-SUFFIX,sda1.dev
+DOMAIN-SUFFIX,shared.oaifree.com
 DOMAIN-SUFFIX,shopfacebook.com
 DOMAIN-SUFFIX,sportsfacebook.com
 DOMAIN-SUFFIX,sportstream.com
@@ -599,6 +625,7 @@ DOMAIN-SUFFIX,toplayerserver.com
 DOMAIN-SUFFIX,ubuntu.com
 DOMAIN-SUFFIX,unraid.net
 DOMAIN-SUFFIX,urlimage.cc
+DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,viewpointsfromfacebook.com
 DOMAIN-SUFFIX,voidtools.com
 DOMAIN-SUFFIX,vvxs.xyz
@@ -622,11 +649,13 @@ DOMAIN-SUFFIX,workplace.com
 DOMAIN-SUFFIX,workplaceusecases.com
 DOMAIN-SUFFIX,worldhack.com
 DOMAIN-SUFFIX,www-facebook.com
+DOMAIN-SUFFIX,www.tailscale.com
 DOMAIN-SUFFIX,wwwfacebok.com
 DOMAIN-SUFFIX,wwwfacebook.com
 DOMAIN-SUFFIX,wwwinstagram.com
 DOMAIN-SUFFIX,wwwmfacebook.com
 DOMAIN-SUFFIX,x360xs.com
+DOMAIN-SUFFIX,xaoxuu.com
 DOMAIN-SUFFIX,xbiquge.laa
 DOMAIN-SUFFIX,yaoluxs.com
 DOMAIN-SUFFIX,yogalayout.com
