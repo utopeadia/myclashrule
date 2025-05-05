@@ -53,6 +53,7 @@ DOMAIN-SUFFIX,lf6-unpkg.zstaticcdn.com
 DOMAIN-SUFFIX,lf6-cdnjs.zstaticcdn.com
 DOMAIN-SUFFIX,darkreader.org
 DOMAIN-SUFFIX,gorse.io
+DOMAIN-SUFFIX,dalao.net
 DOMAIN-SUFFIX,dockerstatic.com
 DOMAIN-SUFFIX,voidtools.com
 DOMAIN-SUFFIX,pwnedpasswords.com
@@ -61,6 +62,7 @@ DOMAIN-SUFFIX,unraid.net
 DOMAIN-SUFFIX,tawk.to
 DOMAIN-SUFFIX,passwd.iswsh.com
 DOMAIN-SUFFIX,memos.iswsh.com
+DOMAIN-SUFFIX,cloud.iswsh.com
 DOMAIN-SUFFIX,photo.iswsh.com
 DOMAIN-SUFFIX,s3.iswsh.com
 DOMAIN-SUFFIX,s3api.iswsh.com
