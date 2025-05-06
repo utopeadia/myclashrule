@@ -4,7 +4,6 @@ payload:
   - DOMAIN-SUFFIX,login.tailscale.com
   - DOMAIN-SUFFIX,www.tailscale.com
   - DOMAIN-SUFFIX,v2ex.com
-  - DOMAIN-SUFFIX,nodeseek.com
   - DOMAIN-SUFFIX,hostloc.com
   - DOMAIN-SUFFIX,xaoxuu.com
   - DOMAIN-SUFFIX,kuxueyun.com

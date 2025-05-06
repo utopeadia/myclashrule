@@ -1,6 +1,7 @@
 payload:
   - DOMAIN-SUFFIX,tampermonkey.net
   - DOMAIN-SUFFIX,hk.luoveyq.space
+  - DOMAIN-SUFFIX,nodeseek.com
   - DOMAIN-SUFFIX,linux.do
   - DOMAIN-SUFFIX,linuxdo.org
   - DOMAIN-SUFFIX,ldstatic.com
