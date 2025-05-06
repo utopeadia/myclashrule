@@ -30,6 +30,10 @@ DOMAIN-SUFFIX,eu-north-1.amazonaws.com
 DOMAIN-SUFFIX,eu-west-1.amazonaws.com
 DOMAIN-SUFFIX,eu-west-2.amazonaws.com
 DOMAIN-SUFFIX,eu-east-1.amazonaws.com
+DOMAIN-SUFFIX,s3-eu-north-1.amazonaws.com
+DOMAIN-SUFFIX,s3-eu-west-1.amazonaws.com
+DOMAIN-SUFFIX,s3-eu-west-2.amazonaws.com
+DOMAIN-SUFFIX,s3-eu-east-1.amazonaws.com
 # Amazon Panorama API
 DOMAIN-SUFFIX,eu-north-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,eu-west-1.prod.pr.panorama.console.api.aws
