@@ -23,3 +23,7 @@ DOMAIN-SUFFIX,us-east-1.amazonaws.com
 DOMAIN-SUFFIX,us-east-2.amazonaws.com
 DOMAIN-SUFFIX,us-west-1.amazonaws.com
 DOMAIN-SUFFIX,us-west-2.amazonaws.com
+DOMAIN-SUFFIX,s3-us-east-1.amazonaws.com
+DOMAIN-SUFFIX,s3-us-east-2.amazonaws.com
+DOMAIN-SUFFIX,s3-us-west-1.amazonaws.com
+DOMAIN-SUFFIX,s3-us-west-2.amazonaws.com
