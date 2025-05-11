@@ -50,7 +50,7 @@ tun:
 dns:
   enable: true
   ipv6: true
-  cache-algorithm: arc
+  cache-algorithm: lru
   prefer-h3: false
   use-hosts: true
   use-system-hosts: true
