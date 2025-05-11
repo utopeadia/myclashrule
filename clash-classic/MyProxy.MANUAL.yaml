@@ -66,6 +66,8 @@ payload:
   - DOMAIN-SUFFIX,memos.iswsh.com
   - DOMAIN-SUFFIX,cloud.iswsh.com
   - DOMAIN-SUFFIX,photo.iswsh.com
+  - DOMAIN-SUFFIX,nasdav.iswsh.com
+  - DOMAIN-SUFFIX,wiki.iswsh.com
   - DOMAIN-SUFFIX,s3.iswsh.com
   - DOMAIN-SUFFIX,s3api.iswsh.com
   - DOMAIN-SUFFIX,dnsmgr.iswsh.com
