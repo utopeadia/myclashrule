@@ -592,6 +592,8 @@ payload:
   - DOMAIN-SUFFIX,qingqiu.host
   - DOMAIN-SUFFIX,qpic.w
   - DOMAIN-SUFFIX,qpic.ws
+  - DOMAIN-SUFFIX,qwen.ai
+  - DOMAIN-SUFFIX,qwenlm.ai
   - DOMAIN-SUFFIX,reachtheworldonfacebook.com
   - DOMAIN-SUFFIX,react.com
   - DOMAIN-SUFFIX,reactjs.com
@@ -625,6 +627,8 @@ payload:
   - DOMAIN-SUFFIX,voidtools.com
   - DOMAIN-SUFFIX,vvxs.xyz
   - DOMAIN-SUFFIX,wa.me
+  - DOMAIN-SUFFIX,wan.video
+  - DOMAIN-SUFFIX,wanxai.com
   - DOMAIN-SUFFIX,wap.ac
   - DOMAIN-SUFFIX,wap.ciweimao.com
   - DOMAIN-SUFFIX,web-instagram.net
@@ -682,3 +686,6 @@ payload:
   - IP-CIDR,54.173.34.141/32,no-resolve
   - IP-CIDR,54.235.23.242/32,no-resolve
   - IP-CIDR,54.93.124.31/32,no-resolve
+  - PROCESS-NAME,ai.qwenlm.chat.android
+  - PROCESS-NAME-REGEX,^(?=.*ai)(?=.*qwenlm).*$
+  - PROCESS-NAME-REGEX,ai\.qwenlm\.chat\.android
