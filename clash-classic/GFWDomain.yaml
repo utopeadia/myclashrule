@@ -3839,6 +3839,10 @@ payload:
   - DOMAIN-SUFFIX,nightswatch.top
   - DOMAIN-SUFFIX,nih.gov
   - DOMAIN-SUFFIX,nike.com
+  - DOMAIN-SUFFIX,nikke-en.com
+  - DOMAIN-SUFFIX,nikke-jp.com
+  - DOMAIN-SUFFIX,nikke-kr.com
+  - DOMAIN-SUFFIX,nikke.hotcool.tw
   - DOMAIN-SUFFIX,nikkei.com
   - DOMAIN-SUFFIX,nikonpc.com
   - DOMAIN-SUFFIX,nimg.jp
