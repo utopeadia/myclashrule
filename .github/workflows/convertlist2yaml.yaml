@@ -1,7 +1,7 @@
 name: Convert-Clash-classic-ruleset
 on:
   workflow_run:
-    workflows: [Regular-rule-update, Special-rule-update]
+    workflows: [rule-update]
     types:
       - completed
 jobs:
