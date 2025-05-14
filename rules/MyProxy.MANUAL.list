@@ -7,6 +7,7 @@ PROCESS-NAME,ai.qwenlm.chat.android
 PROCESS-NAME-REGEX,ai\.qwenlm\.chat\.android
 PROCESS-NAME-REGEX,^(?=.*ai)(?=.*qwenlm).*$
 
+DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,akile.io
 DOMAIN-SUFFIX,qingqiu.host
 DOMAIN-SUFFIX,nezha.tech
