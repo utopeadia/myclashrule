@@ -843,5 +843,5 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git commit -m "Special-rule-update" -a
+          git commit -m "Rule-Update" -a
           git push
