@@ -1,4 +1,4 @@
-name: rule-update
+name: Rule-Update
 on:
   push:
     branches: ["main"]
