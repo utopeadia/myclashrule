@@ -44,7 +44,6 @@ payload:
   - DOMAIN,bt.rer.lol
   - DOMAIN,bt1.xxxxbt.cc
   - DOMAIN,buny.uk
-  - DOMAIN,chihaya.de
   - DOMAIN,concen.org
   - DOMAIN,d40969.acod.regrucolo.ru
   - DOMAIN,discord.heihachi.pw
@@ -55,13 +54,11 @@ payload:
   - DOMAIN,finbytes.org
   - DOMAIN,highteahop.top
   - DOMAIN,home.yxgz.club
+  - DOMAIN,ipv4.rer.lol
   - DOMAIN,ipv4announce.sktorrent.eu
   - DOMAIN,ipv6.rer.lol
-  - DOMAIN,isk.richardsw.club
-  - DOMAIN,leet-tracker.moe
   - DOMAIN,lucke.fenesisu.moe
   - DOMAIN,martin-gebhardt.eu
-  - DOMAIN,ns-1.x-fins.com
   - DOMAIN,ns3109441.mypdns.org
   - DOMAIN,nyaa.tracker.wf
   - DOMAIN,open.demonii.com
@@ -87,6 +84,7 @@ payload:
   - DOMAIN,taciturn-shadow.spb.ru
   - DOMAIN,thouvenin.cloud
   - DOMAIN,tk.greedland.net
+  - DOMAIN,torrent.hificode.in
   - DOMAIN,torrent.i.ng
   - DOMAIN,torrentsmd.com
   - DOMAIN,tr.abiir.top
@@ -126,7 +124,6 @@ payload:
   - DOMAIN,tracker.iperson.xyz
   - DOMAIN,tracker.ipv6tracker.org
   - DOMAIN,tracker.ipv6tracker.ru
-  - DOMAIN,tracker.itscraftsoftware.my.id
   - DOMAIN,tracker.jdx3.org
   - DOMAIN,tracker.kmzs123.cn
   - DOMAIN,tracker.kmzs123.top
@@ -138,7 +135,6 @@ payload:
   - DOMAIN,tracker.moxing.party
   - DOMAIN,tracker.mywaifu.best
   - DOMAIN,tracker.netmap.top
-  - DOMAIN,tracker.ololosh.space
   - DOMAIN,tracker.opentrackr.org
   - DOMAIN,tracker.openwebtorrent.com
   - DOMAIN,tracker.privateseedbox.xyz
@@ -162,7 +158,7 @@ payload:
   - DOMAIN,tracker.yume-hatsuyuki.moe
   - DOMAIN,tracker.zhuqiy.top
   - DOMAIN,tracker1.520.jp
-  - DOMAIN,tracker1.myporn.club
+  - DOMAIN,tracker1.itzmx.com
   - DOMAIN,tracker2.dler.org
   - DOMAIN,tracker2.itzmx.com
   - DOMAIN,tracker3.itzmx.com
