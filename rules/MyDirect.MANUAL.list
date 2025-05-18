@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,worldfirst.com.cn
 IP-CIDR,192.168.0.0/16,no-resolve
 
 # 其他
+DOMAIN-SUFFIX,lala.gg
 DOMAIN-SUFFIX,10099.com
 DOMAIN-SUFFIX,cup.com.cn
 DOMAIN-SUFFIX,pool.ntp.org
