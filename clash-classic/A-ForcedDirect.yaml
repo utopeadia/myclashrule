@@ -6,11 +6,14 @@ payload:
   - DOMAIN-SUFFIX,kimi.ai
   - DOMAIN-SUFFIX,digicert.com
   - DOMAIN-SUFFIX,dns.kizhou.cn
-  - DOMAIN-SUFFIX,cm.kuxueyun.com
+  - DOMAIN-SUFFIX,cdn.kuxueyun.com
   - DOMAIN-SUFFIX,cu21.kuxueyun.com
   - DOMAIN-SUFFIX,cu22.kuxueyun.com
   - DOMAIN-SUFFIX,cu41.kuxueyun.com
   - DOMAIN-SUFFIX,cu42.kuxueyun.com
+  - DOMAIN-SUFFIX,cm.kuxueyun.com
+  - DOMAIN-SUFFIX,fastm.kxy.ovh
+  - DOMAIN-SUFFIX,fastu.kxy.ovh
   - DOMAIN-SUFFIX,kxbjnat.112700.xyz
   - DOMAIN-SUFFIX,kxbj9929.112700.xyz
   - DOMAIN-SUFFIX,yahnnat.112700.xyz
