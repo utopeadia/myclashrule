@@ -8,7 +8,6 @@ bind-address: "*"
 ipv6: true
 external-controller: 0.0.0.0:9090
 secret: "zQ!h90n@BBp"
-routing-mark: 11451
 mode: rule
 log-level: info
 global-client-fingerprint: chrome
@@ -18,13 +17,15 @@ unified-delay: false
 keep-alive-interval: 15
 keep-alive-idle: 180
 geodata-mode: true
+geodata-loader: memconservative
 geo-auto-update: true
 geo-update-interval: 12
-geox-url:
-  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb"
-  asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
+geosite-matcher: succinct
+geox-url: # Geo 数据库配置，用于地理位置和 ASN 匹配
+  geoip: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat" # GeoIP 数据库
+  geosite: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat" # GeoSite 数据库
+  mmdb: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.metadb" # GeoIP mmdb 数据库
+  asn: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb" # ASN 数据库
 tun:
   enable: true
   stack: gvisor
@@ -292,6 +293,12 @@ sniffer:
     - 36.248.45.62/32
     - 2001:4860:4860::8888/128
     - 2001:4860:4860::8844/128
+
+# 实验性功能配置
+experimental:
+  quic-go-disable-gso: true # 禁用 QUIC 协议中的 GSO (Generic Segmentation Offload) 功能
+  quic-go-disable-ecn: true #禁用ECN
+  dialer-ip4p-convert: false # 启用IP4P地址转换
 
 hosts:
   mtalk.google.com: [64.233.188.188, 108.177.97.188, '2404:6800:4008:c07::bc', '2404:6800:4008:c05::bc']
