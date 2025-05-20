@@ -739,8 +739,21 @@ DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 
+# Gemini其他
+PROCESS-NAME,com.google.android.apps.bard
+PROCESS-NAME-REGEX,com\.google\.android\.apps\.bard
+PROCESS-NAME-REGEX,^(?=.*google)(?=.*bard).*$
+PROCESS-NAME,com.google.android.apps.gemini
+PROCESS-NAME-REGEX,com\.google\.android\.apps\.gemini
+PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
+
+# NotebookLM
+PROCESS-NAME,com.google.android.apps.labs.language.tailwind
+PROCESS-NAME-REGEX,^(?=.*google)(?=.*language)(?=.*tailwind).*$
+
 # 邮箱
 DOMAIN-SUFFIX,smtp.gmail.com
 DOMAIN-SUFFIX,pop.gmail.com
 DOMAIN-SUFFIX,imap.gmail.com
 DOMAIN-SUFFIX,mail.google.com
+
