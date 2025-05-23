@@ -7,6 +7,23 @@ PROCESS-NAME,ai.qwenlm.chat.android
 PROCESS-NAME-REGEX,ai\.qwenlm\.chat\.android
 PROCESS-NAME-REGEX,^(?=.*ai)(?=.*qwenlm).*$
 
+# Github
+DOMAIN-SUFFIX,github.blog
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.community
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,github1s.com
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubnext.com
+DOMAIN-SUFFIX,githubpreview.dev
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubuniverse.com
+DOMAIN-SUFFIX,githubusercontent.com
+
 DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,akile.io
 DOMAIN-SUFFIX,qingqiu.host
