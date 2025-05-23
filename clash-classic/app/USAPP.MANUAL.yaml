@@ -3,6 +3,12 @@ payload:
   - DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,us-west-2.prod.pr.panorama.console.api.aws
+  - DOMAIN-SUFFIX,flowith.net
+  - DOMAIN-SUFFIX,flowith.featurebase.app
+  - DOMAIN-SUFFIX,edge.flo.ing
+  - DOMAIN-SUFFIX,us-assets.i.posthog.com
+  - DOMAIN-SUFFIX,us.i.posthog.com
+  - DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
   - DOMAIN-SUFFIX,hostbrr.com
   - DOMAIN-SUFFIX,wootric.com
   - DOMAIN-SUFFIX,unraid.net
