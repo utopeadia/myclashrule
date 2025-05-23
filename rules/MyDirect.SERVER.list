@@ -354,6 +354,7 @@ IP-CIDR,3.112.235.148/32,no-resolve
 IP-CIDR,3.112.45.118/32,no-resolve
 IP-CIDR,3.115.82.155/32,no-resolve
 IP-CIDR,36.151.195.29/32,no-resolve
+IP-CIDR,36.151.65.71/32,no-resolve
 IP-CIDR,36.227.253.215/32,no-resolve
 IP-CIDR,36.228.194.98/32,no-resolve
 IP-CIDR,43.206.9.255/32,no-resolve
