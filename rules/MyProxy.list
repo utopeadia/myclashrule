@@ -5,6 +5,7 @@
 # DOMAIN-SUFFIX: 544
 # DOMAIN: 3
 # FacebookMetaAI
+# Github
 # IP-ASN: 1
 # IP-CIDR: 23
 # NAME: Docker
@@ -442,6 +443,21 @@ DOMAIN-SUFFIX,gameroom.com
 DOMAIN-SUFFIX,gaozehk.com
 DOMAIN-SUFFIX,gfacecbook.com
 DOMAIN-SUFFIX,gitea.iswsh.com
+DOMAIN-SUFFIX,github.blog
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.community
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,github1s.com
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubnext.com
+DOMAIN-SUFFIX,githubpreview.dev
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubuniverse.com
+DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gorse.io
 DOMAIN-SUFFIX,groups.com
 DOMAIN-SUFFIX,hackerfacebook.com
