@@ -13,6 +13,7 @@ payload:
   - DOMAIN-SUFFIX,24img.com
   - DOMAIN-SUFFIX,25img.com
   - DOMAIN-SUFFIX,2img.org
+  - DOMAIN-SUFFIX,66img.cc
   - DOMAIN-SUFFIX,69shu.xyz
   - DOMAIN-SUFFIX,aboutfacebook.com
   - DOMAIN-SUFFIX,accessfacebookfromschool.com
@@ -48,6 +49,7 @@ payload:
   - DOMAIN-SUFFIX,buyoculus.com
   - DOMAIN-SUFFIX,careersatfb.com
   - DOMAIN-SUFFIX,carstagram.com
+  - DOMAIN-SUFFIX,cdn.ainvest.com
   - DOMAIN-SUFFIX,cdninstagram.com
   - DOMAIN-SUFFIX,celebgramme.com
   - DOMAIN-SUFFIX,chatb.aifun.win
@@ -461,6 +463,7 @@ payload:
   - DOMAIN-SUFFIX,igcdn.com
   - DOMAIN-SUFFIX,igsonar.com
   - DOMAIN-SUFFIX,igtv.com
+  - DOMAIN-SUFFIX,imagehaha.com
   - DOMAIN-SUFFIX,img.iswsh.com
   - DOMAIN-SUFFIX,img.wush.cc
   - DOMAIN-SUFFIX,imstagram.com
@@ -521,6 +524,7 @@ payload:
   - DOMAIN-SUFFIX,ipcheck.ing
   - DOMAIN-SUFFIX,ipify.org
   - DOMAIN-SUFFIX,ipleak.net
+  - DOMAIN-SUFFIX,jpg.dog
   - DOMAIN-SUFFIX,kingstagram.com
   - DOMAIN-SUFFIX,klik.me
   - DOMAIN-SUFFIX,kmh004.com
