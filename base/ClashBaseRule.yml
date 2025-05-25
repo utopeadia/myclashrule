@@ -30,7 +30,9 @@ tun:
   enable: true
   stack: gvisor
   device: utun0
-  mtu: 1500
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
   strict-route: true
   gso: true
   gso-max-size: 65536
@@ -38,8 +40,6 @@ tun:
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
-  auto-route: true
-  auto-detect-interface: true
   route-exclude-address:
   - 192.168.191.0/24
   - 192.168.192.0/24
