@@ -66,10 +66,6 @@ dns:
       - https://doh.opendns.com/dns-query#RULES&skip-cert-verify=true
       - https://1.1.1.1/dns-query#RULES&skip-cert-verify=true
       - https://8.8.8.8/dns-query#RULES&skip-cert-verify=true
-    'geosite:geolocation-!cn': 
-      - https://doh.opendns.com/dns-query#RULES&skip-cert-verify=true
-      - https://1.1.1.1/dns-query#RULES&skip-cert-verify=true
-      - https://8.8.8.8/dns-query#RULES&skip-cert-verify=true
   proxy-server-nameserver:
     - https://doh.pub/dns-query#skip-cert-verify=true
     - https://223.5.5.5/dns-query#skip-cert-verify=true
