@@ -21,6 +21,7 @@ payload:
   - DOMAIN-SUFFIX,githubstatus.com
   - DOMAIN-SUFFIX,githubuniverse.com
   - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,dropmefile.com
   - DOMAIN-SUFFIX,nodequality.com
   - DOMAIN-SUFFIX,akile.io
   - DOMAIN-SUFFIX,gitkraken.com
