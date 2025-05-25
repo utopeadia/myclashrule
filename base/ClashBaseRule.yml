@@ -51,12 +51,13 @@ tun:
 dns:
   enable: true
   ipv6: true
-  cache-algorithm: lru
-  prefer-h3: false
+  cache-algorithm: arc
+  prefer-h3: true
   use-hosts: true
   use-system-hosts: true
   respect-rules: false
-  enhanced-mode: redir-host
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
   nameserver-policy:
     'geosite:googlefcm': 
       - https://doh.pub/dns-query#skip-cert-verify=true
