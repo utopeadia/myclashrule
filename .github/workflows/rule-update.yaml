@@ -90,6 +90,65 @@ jobs:
             echo "Failed to download or empty pcdn.txt, exiting."
           fi
 
+      - name: Download BanADPrivacy rules
+        run: |
+          files=(
+            "BanProgramAD.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
+            "BanAD.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
+            "BanEasyPrivacy.list|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
+          )
+          target_list="rules/BanADPrivacy.list"
+          manual_list="rules/BanADPrivacy.MANUAL.list"
+          download_dir="rules"
+          temp_files=()
+          all_success=true
+
+          echo "Attempting update for $target_list"
+          # Create download dir if it doesn't exist
+          mkdir -p "$download_dir"
+
+          for entry in "${files[@]}"; do
+            IFS='|' read -r filename url <<< "$entry"
+            # Use a unique temp name based on target list and original filename
+            output_path="${download_dir}/$(basename ${target_list}).${filename}.tmp"
+            temp_files+=("$output_path")
+            echo "Downloading $filename from $url to $output_path..."
+            if ! curl -f -L -s -o "$output_path" "$url" || [[ ! -s "$output_path" ]]; then
+              echo "::error:: Failed download or empty file: $filename from $url for target $target_list"
+              all_success=false
+              # Don't break, attempt all downloads for better reporting, but mark failure
+            else
+              echo "Successfully downloaded $filename"
+              echo >> "$output_path" # Add trailing newline
+            fi
+          done
+
+          if $all_success; then
+            echo "All downloads successful for $target_list. Combining..."
+            combined_new="${target_list}.new"
+            # Prepare files to concatenate
+            files_to_cat=()
+            for f in "${temp_files[@]}"; do files_to_cat+=("$f"); done
+            if [[ -f "$manual_list" && -s "$manual_list" ]]; then
+                files_to_cat+=("$manual_list")
+                echo "Including manual list: $manual_list"
+            else
+                echo "Manual list $manual_list not found or empty, skipping."
+            fi
+
+            # Concatenate, sort, and move
+            cat "${files_to_cat[@]}" > "$combined_new"
+            echo >> "$combined_new" # Ensure trailing newline
+            sort -u "$combined_new" -o "$combined_new"
+            mv -f "$combined_new" "$target_list"
+            echo "Successfully updated $target_list"
+          else
+            echo "::warning:: $target_list was not updated due to one or more download failures."
+          fi
+
+          echo "Cleaning up temporary files for $target_list..."
+          rm -f "${temp_files[@]}"
+
       - name: Download MyProxy rules
         run: |
           files=(
@@ -737,28 +796,6 @@ jobs:
             mv -f rules/UnBan.list.new rules/UnBan.list
           else
             echo "Failed to download or empty UnBan.list, exiting."
-          fi
-
-      - name: Download ADDReject rules
-        run: |
-          if curl -f -s -o rules/Advertising.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.list && [[ -s rules/Advertising.list ]]; then
-            echo >> rules/Advertising.list
-            cat rules/Advertising.list > rules/ADDReject.list.new
-            mv -f rules/ADDReject.list.new rules/ADDReject.list
-            rm -f rules/Advertising.list
-          else
-            echo "Failed to download or empty Advertising.list, exiting."
-          fi
-          
-      - name: Download ADDRejectLite rules
-        run: |
-          if curl -f -s -o rules/AdvertisingLite.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.list && [[ -s rules/AdvertisingLite.list ]]; then
-            echo >> rules/AdvertisingLite.list
-            cat rules/AdvertisingLite.list > rules/ADDRejectLite.list.new
-            mv -f rules/ADDRejectLite.list.new rules/ADDRejectLite.list
-            rm -f rules/AdvertisingLite.list
-          else
-            echo "Failed to download or empty AdvertisingLite.list, exiting."
           fi
 
       - name: Download TldNoCN rules
