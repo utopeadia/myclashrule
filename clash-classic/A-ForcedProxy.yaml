@@ -15,7 +15,6 @@ payload:
   - IP-CIDR6,2606:4700:4700::1001/128,no-resolve
   - DOMAIN-SUFFIX,opendns.com
   - DOMAIN,dns.umbrella.com
-  - DOMAIN,sandbox.opendns.com
   - IP-CIDR,208.67.220.220/32,no-resolve
   - IP-CIDR,208.67.222.222/32,no-resolve
   - IP-CIDR,208.67.220.123/32,no-resolve
