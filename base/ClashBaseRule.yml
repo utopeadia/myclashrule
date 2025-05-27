@@ -37,6 +37,7 @@ tun:
   gso: true
   gso-max-size: 65536
   udp-timeout: 300
+  endpoint-independent-nat: true
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
