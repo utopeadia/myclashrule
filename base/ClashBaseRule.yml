@@ -27,7 +27,7 @@ geox-url: # Geo 数据库配置，用于地理位置和 ASN 匹配
   mmdb: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.metadb" # GeoIP mmdb 数据库
   asn: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb" # ASN 数据库
 tun:
-  enable: false
+  enable: true
   stack: gvisor
   device: utun0
   auto-route: true
