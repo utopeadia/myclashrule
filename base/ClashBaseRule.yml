@@ -78,9 +78,7 @@ dns:
     - 180.184.1.1
     - 119.29.29.29
     - 223.5.5.5
-  fake-ip-range: 
-    - 198.18.0.1/16
-    - fdfe:dcbe:9876::1/126
+  fake-ip-range: 198.18.0.1/16, fdfe:dcbe:9876::1/126
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - 'stun.*.*'
