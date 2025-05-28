@@ -24,6 +24,39 @@ DOMAIN-SUFFIX,githubstatus.com
 DOMAIN-SUFFIX,githubuniverse.com
 DOMAIN-SUFFIX,githubusercontent.com
 
+# afusekt
+DOMAIN-SUFFIX,attemptd.work
+
+# FacebookMetaAI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,llama.com
+
+# read
+IP-CIDR,49.232.25.145/32,no-resolve
+DOMAIN-SUFFIX,longtengxiaoshuo.org
+DOMAIN-SUFFIX,kmh004.com
+DOMAIN-SUFFIX,kt.bqg123a.top
+DOMAIN-SUFFIX,m.dybz123.com
+DOMAIN-SUFFIX,m.ndlib.cn
+DOMAIN-SUFFIX,m.ndlib.com
+DOMAIN-SUFFIX,music.liuzhijin.cn
+DOMAIN-SUFFIX,novel.seseclub.com
+DOMAIN-SUFFIX,wap.ciweimao.com
+DOMAIN-SUFFIX,gaozehk.com
+DOMAIN-SUFFIX,hulihanman.com
+DOMAIN-SUFFIX,idoujiang.com
+DOMAIN-SUFFIX,mcmssc.la
+DOMAIN-SUFFIX,ntdm9.com
+DOMAIN-SUFFIX,powenwu15.com
+DOMAIN-SUFFIX,vvxs.xyz
+DOMAIN-SUFFIX,xbiquge.laa
+DOMAIN-SUFFIX,yaoluxs.com
+DOMAIN-SUFFIX,x360xs.com
+DOMAIN-SUFFIX,69shu.xyz
+DOMAIN-SUFFIX,18mh.net
+DOMAIN-SUFFIX,shucdn.com
+
+# Other
 DOMAIN-SUFFIX,dropmefile.com
 DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,akile.io
@@ -119,36 +152,4 @@ DOMAIN-SUFFIX,7pzzv.us
 DOMAIN-SUFFIX,unavatar.webp.se
 DOMAIN-SUFFIX,kk.51688.cc
 DOMAIN-SUFFIX,rkddn.com
-
-
-# afusekt
-DOMAIN-SUFFIX,attemptd.work
-
-# FacebookMetaAI
-DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,llama.com
-
-# read
-IP-CIDR,49.232.25.145/32,no-resolve
-DOMAIN-SUFFIX,longtengxiaoshuo.org
-DOMAIN-SUFFIX,kmh004.com
-DOMAIN-SUFFIX,kt.bqg123a.top
-DOMAIN-SUFFIX,m.dybz123.com
-DOMAIN-SUFFIX,m.ndlib.cn
-DOMAIN-SUFFIX,m.ndlib.com
-DOMAIN-SUFFIX,music.liuzhijin.cn
-DOMAIN-SUFFIX,novel.seseclub.com
-DOMAIN-SUFFIX,wap.ciweimao.com
-DOMAIN-SUFFIX,gaozehk.com
-DOMAIN-SUFFIX,hulihanman.com
-DOMAIN-SUFFIX,idoujiang.com
-DOMAIN-SUFFIX,mcmssc.la
-DOMAIN-SUFFIX,ntdm9.com
-DOMAIN-SUFFIX,powenwu15.com
-DOMAIN-SUFFIX,vvxs.xyz
-DOMAIN-SUFFIX,xbiquge.laa
-DOMAIN-SUFFIX,yaoluxs.com
-DOMAIN-SUFFIX,x360xs.com
-DOMAIN-SUFFIX,69shu.xyz
-DOMAIN-SUFFIX,18mh.net
-DOMAIN-SUFFIX,shucdn.com
+DOMAIN-SUFFIX,cawdz.com
