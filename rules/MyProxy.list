@@ -10,6 +10,7 @@
 # IP-CIDR: 23
 # NAME: Docker
 # NAME: Facebook
+# Other
 # QwenLLM
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # TOTAL: 570
@@ -69,6 +70,7 @@ DOMAIN-SUFFIX,buyingfacebooklikes.com
 DOMAIN-SUFFIX,buyoculus.com
 DOMAIN-SUFFIX,careersatfb.com
 DOMAIN-SUFFIX,carstagram.com
+DOMAIN-SUFFIX,cawdz.com
 DOMAIN-SUFFIX,cdn.ainvest.com
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,celebgramme.com
