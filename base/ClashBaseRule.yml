@@ -74,10 +74,12 @@ dns:
     - 180.184.1.1
     - 119.29.29.29
     - 223.6.6.6
+    - 123.125.81.6
   nameserver:
     - 180.184.1.1
     - 119.29.29.29
     - 223.6.6.6
+    - 123.125.81.6
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
