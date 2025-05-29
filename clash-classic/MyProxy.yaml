@@ -677,6 +677,7 @@ payload:
   - DOMAIN-SUFFIX,wiki.iswsh.com
   - DOMAIN-SUFFIX,workplace.com
   - DOMAIN-SUFFIX,workplaceusecases.com
+  - DOMAIN-SUFFIX,workspace.org
   - DOMAIN-SUFFIX,worldhack.com
   - DOMAIN-SUFFIX,www-facebook.com
   - DOMAIN-SUFFIX,www.tailscale.com
