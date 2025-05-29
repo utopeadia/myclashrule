@@ -565,6 +565,12 @@ DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
 
 # 其他服务
 DOMAIN-SUFFIX,namecrane.com
+DOMAIN-SUFFIX,colocrossing.com
+DOMAIN-SUFFIX,cloudcone.com
+DOMAIN-SUFFIX,racknerd.com
+DOMAIN-KEYWORD,cosmotown
+DOMAIN-SUFFIX,spaceship.com
+DOMAIN-SUFFIX,spaceship-cdn.com
 DOMAIN-SUFFIX,hostbrr.com
 DOMAIN-SUFFIX,wootric.com
 DOMAIN-SUFFIX,unraid.net
@@ -580,9 +586,6 @@ DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,tavily.com
 DOMAIN-SUFFIX,tavily.us.auth0.com
 DOMAIN-KEYWORD,1password
-DOMAIN-KEYWORD,cosmotown
-DOMAIN-SUFFIX,spaceship.com
-DOMAIN-SUFFIX,spaceship-cdn.com
 DOMAIN-SUFFIX,zotero.org
 DOMAIN-SUFFIX,us-east-1.amazonaws.com
 DOMAIN-SUFFIX,namesilo.com
