@@ -492,6 +492,7 @@ payload:
   - DOMAIN-SUFFIX,us-assets.i.posthog.com
   - DOMAIN-SUFFIX,us.i.posthog.com
   - DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
+  - DOMAIN-SUFFIX,namecrane.com
   - DOMAIN-SUFFIX,hostbrr.com
   - DOMAIN-SUFFIX,wootric.com
   - DOMAIN-SUFFIX,unraid.net
