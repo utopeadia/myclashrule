@@ -49,6 +49,8 @@ tun:
   - 10.0.0.0/24
   - 10.14.14.0/24
   - 10.14.12.0/24
+  exclude-interface:
+    - feth*
 dns:
   enable: true
   ipv6: true
