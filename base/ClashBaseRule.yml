@@ -41,8 +41,6 @@ tun:
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
-  exclude-interface:
-    - feth+
   route-exclude-address:
     - 192.168.191.0/24
     - 192.168.192.0/24
