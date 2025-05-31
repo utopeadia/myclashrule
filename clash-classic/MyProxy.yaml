@@ -558,6 +558,9 @@ payload:
   - DOMAIN-SUFFIX,m.me
   - DOMAIN-SUFFIX,m.ndlib.cn
   - DOMAIN-SUFFIX,m.ndlib.com
+  - DOMAIN-SUFFIX,mail.112700.xyz
+  - DOMAIN-SUFFIX,mail.intquest.com
+  - DOMAIN-SUFFIX,mail.iswsh.com
   - DOMAIN-SUFFIX,makeitopen.com
   - DOMAIN-SUFFIX,markzuckerberg.com
   - DOMAIN-SUFFIX,mcmssc.la
