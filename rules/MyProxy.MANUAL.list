@@ -57,7 +57,6 @@ DOMAIN-SUFFIX,18mh.net
 DOMAIN-SUFFIX,shucdn.com
 
 # Other
-DOMAIN-SUFFIX,workspace.org
 DOMAIN-SUFFIX,dropmefile.com
 DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,akile.io
@@ -131,6 +130,10 @@ DOMAIN-SUFFIX,share.iswsh.com
 DOMAIN-SUFFIX,img.wush.cc
 DOMAIN-SUFFIX,chatb.aijust.org
 DOMAIN-SUFFIX,chatb.aifun.win
+DOMAIN-SUFFIX,workspace.org
+DOMAIN-SUFFIX,mail.112700.xyz
+DOMAIN-SUFFIX,mail.intquest.com
+DOMAIN-SUFFIX,mail.iswsh.com
 DOMAIN-SUFFIX,imagehaha.com
 DOMAIN-SUFFIX,66img.cc
 DOMAIN-SUFFIX,cdn.ainvest.com
