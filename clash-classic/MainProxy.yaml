@@ -3215,6 +3215,7 @@ payload:
   - DOMAIN-SUFFIX,bestxxxsites.com
   - DOMAIN-SUFFIX,besuty99.com
   - DOMAIN-SUFFIX,besztbuy.com
+  - DOMAIN-SUFFIX,betfair.com
   - DOMAIN-SUFFIX,beth.games
   - DOMAIN-SUFFIX,bethesda.net
   - DOMAIN-SUFFIX,bethesdagamestudios.com
@@ -24605,7 +24606,6 @@ payload:
   - DOMAIN-SUFFIX,yandex.az
   - DOMAIN-SUFFIX,yandex.by
   - DOMAIN-SUFFIX,yandex.co.il
-  - DOMAIN-SUFFIX,yandex.com
   - DOMAIN-SUFFIX,yandex.com.am
   - DOMAIN-SUFFIX,yandex.com.ge
   - DOMAIN-SUFFIX,yandex.com.tr
@@ -25734,7 +25734,6 @@ payload:
   - DOMAIN-SUFFIX,bestvpnusa.com
   - DOMAIN-SUFFIX,bet365.com
   - DOMAIN-SUFFIX,betaclouds.net
-  - DOMAIN-SUFFIX,betfair.com
   - DOMAIN-SUFFIX,betternet.co
   - DOMAIN-SUFFIX,bettervpn.com
   - DOMAIN-SUFFIX,bettween.com
@@ -31439,6 +31438,7 @@ payload:
   - DOMAIN-SUFFIX,yam.com
   - DOMAIN-SUFFIX,yam.org.tw
   - DOMAIN-SUFFIX,yande.re
+  - DOMAIN-SUFFIX,yandex.com
   - DOMAIN-SUFFIX,yandex.net
   - DOMAIN-SUFFIX,yandex.ru
   - DOMAIN-SUFFIX,yanghengjun.com
