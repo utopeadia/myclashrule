@@ -2138,6 +2138,7 @@ payload:
   - DOMAIN-SUFFIX,asminternational.org
   - DOMAIN-SUFFIX,asmrbuluo.com
   - DOMAIN-SUFFIX,asn-online.org
+  - DOMAIN-SUFFIX,asobostudio.com
   - DOMAIN-SUFFIX,asp-cc.com
   - DOMAIN-SUFFIX,asp.net
   - DOMAIN-SUFFIX,aspbjournals.org
@@ -8733,6 +8734,7 @@ payload:
   - DOMAIN-SUFFIX,fli8.xyz
   - DOMAIN-SUFFIX,flic.kr
   - DOMAIN-SUFFIX,flickr.net
+  - DOMAIN-SUFFIX,flightsimulator.com
   - DOMAIN-SUFFIX,flipfap.com
   - DOMAIN-SUFFIX,flipnotestudio.com
   - DOMAIN-SUFFIX,flipshare.com
@@ -8816,6 +8818,7 @@ payload:
   - DOMAIN-SUFFIX,fortune.ac.uk
   - DOMAIN-SUFFIX,fortunecentre.ac.uk
   - DOMAIN-SUFFIX,fortuneinsight.com
+  - DOMAIN-SUFFIX,forza.net
   - DOMAIN-SUFFIX,forzamotorsport.net
   - DOMAIN-SUFFIX,forzaracingchampionship.com
   - DOMAIN-SUFFIX,forzarc.com
