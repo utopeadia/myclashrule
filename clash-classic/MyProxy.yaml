@@ -2,6 +2,15 @@ payload:
   - DOMAIN,d1q6f0aelx0por.cloudfront.net
   - DOMAIN,d2wy8f7a9ursnm.cloudfront.net
   - DOMAIN,d36jcksde1wxzq.cloudfront.net
+  - DOMAIN,imap.112700.xyz
+  - DOMAIN,imap.intquest.com
+  - DOMAIN,imap.iswsh.com
+  - DOMAIN,mail.112700.xyz
+  - DOMAIN,mail.intquest.com
+  - DOMAIN,mail.iswsh.com
+  - DOMAIN,smtp.112700.xyz
+  - DOMAIN,smtp.intquest.com
+  - DOMAIN,smtp.iswsh.com
   - DOMAIN-KEYWORD,51cg
   - DOMAIN-KEYWORD,facebook
   - DOMAIN-KEYWORD,fbcdn
@@ -558,9 +567,6 @@ payload:
   - DOMAIN-SUFFIX,m.me
   - DOMAIN-SUFFIX,m.ndlib.cn
   - DOMAIN-SUFFIX,m.ndlib.com
-  - DOMAIN-SUFFIX,mail.112700.xyz
-  - DOMAIN-SUFFIX,mail.intquest.com
-  - DOMAIN-SUFFIX,mail.iswsh.com
   - DOMAIN-SUFFIX,makeitopen.com
   - DOMAIN-SUFFIX,markzuckerberg.com
   - DOMAIN-SUFFIX,mcmssc.la

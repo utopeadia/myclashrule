@@ -121,9 +121,15 @@ payload:
   - DOMAIN-SUFFIX,chatb.aijust.org
   - DOMAIN-SUFFIX,chatb.aifun.win
   - DOMAIN-SUFFIX,workspace.org
-  - DOMAIN-SUFFIX,mail.112700.xyz
-  - DOMAIN-SUFFIX,mail.intquest.com
-  - DOMAIN-SUFFIX,mail.iswsh.com
+  - DOMAIN,mail.112700.xyz
+  - DOMAIN,smtp.112700.xyz
+  - DOMAIN,imap.112700.xyz
+  - DOMAIN,mail.intquest.com
+  - DOMAIN,smtp.intquest.com
+  - DOMAIN,imap.intquest.com
+  - DOMAIN,mail.iswsh.com
+  - DOMAIN,smtp.iswsh.com
+  - DOMAIN,imap.iswsh.com
   - DOMAIN-SUFFIX,imagehaha.com
   - DOMAIN-SUFFIX,66img.cc
   - DOMAIN-SUFFIX,cdn.ainvest.com
