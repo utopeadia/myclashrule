@@ -109,6 +109,7 @@ DOMAIN-SUFFIX,voidtools.com
 DOMAIN-SUFFIX,pwnedpasswords.com
 DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,tawk.to
+
 DOMAIN-SUFFIX,url.112700.xyz
 DOMAIN-SUFFIX,sub.876521.xyz
 DOMAIN-SUFFIX,yf.876521.xyz
@@ -131,9 +132,15 @@ DOMAIN-SUFFIX,img.wush.cc
 DOMAIN-SUFFIX,chatb.aijust.org
 DOMAIN-SUFFIX,chatb.aifun.win
 DOMAIN-SUFFIX,workspace.org
-DOMAIN-SUFFIX,mail.112700.xyz
-DOMAIN-SUFFIX,mail.intquest.com
-DOMAIN-SUFFIX,mail.iswsh.com
+DOMAIN,mail.112700.xyz
+DOMAIN,smtp.112700.xyz
+DOMAIN,imap.112700.xyz
+DOMAIN,mail.intquest.com
+DOMAIN,smtp.intquest.com
+DOMAIN,imap.intquest.com
+DOMAIN,mail.iswsh.com
+DOMAIN,smtp.iswsh.com
+DOMAIN,imap.iswsh.com
 DOMAIN-SUFFIX,imagehaha.com
 DOMAIN-SUFFIX,66img.cc
 DOMAIN-SUFFIX,cdn.ainvest.com
