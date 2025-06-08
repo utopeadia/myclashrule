@@ -333,6 +333,7 @@ IP-CIDR,3.112.214.42/32,no-resolve
 IP-CIDR,3.112.235.148/32,no-resolve
 IP-CIDR,3.115.82.155/32,no-resolve
 IP-CIDR,36.151.195.29/32,no-resolve
+IP-CIDR,36.151.65.71/32,no-resolve
 IP-CIDR,36.227.253.49/32,no-resolve
 IP-CIDR,36.228.199.37/32,no-resolve
 IP-CIDR,43.207.164.222/32,no-resolve
