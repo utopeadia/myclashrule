@@ -306,7 +306,7 @@ sniffer:
     - 2001:4860:4860::8844/128
 
 hosts:
-  mtalk.google.com: [142.250.107.188,'2404:6800:4008:c19::bc']Add commentMore actions
+  mtalk.google.com: [142.250.107.188,'2404:6800:4008:c19::bc']
   # alt1-mtalk.google.com: [142.251.186.188, 142.250.141.188, '2607:f8b0:4023:c0b::bc']
   # alt2-mtalk.google.com: [142.250.152.188, 142.251.186.188, 142.250.141.188]
   # alt3-mtalk.google.com: [142.250.157.188,'2607:f8b0:4003:c0a::bc']
