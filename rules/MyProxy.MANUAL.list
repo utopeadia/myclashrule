@@ -141,6 +141,9 @@ DOMAIN,imap.intquest.com
 DOMAIN,mail.iswsh.com
 DOMAIN,smtp.iswsh.com
 DOMAIN,imap.iswsh.com
+DOMAIN,mail.iwsh.eu
+DOMAIN,smtp.iwsh.eu
+DOMAIN,imap.iwsh.eu
 DOMAIN-SUFFIX,imagehaha.com
 DOMAIN-SUFFIX,66img.cc
 DOMAIN-SUFFIX,cdn.ainvest.com
