@@ -646,7 +646,6 @@ payload:
   - DOMAIN-SUFFIX,s3.iswsh.com
   - DOMAIN-SUFFIX,s3api.iswsh.com
   - DOMAIN-SUFFIX,sda1.dev
-  - DOMAIN-SUFFIX,share.iswsh.com
   - DOMAIN-SUFFIX,shared.oaifree.com
   - DOMAIN-SUFFIX,shopfacebook.com
   - DOMAIN-SUFFIX,shucdn.com
