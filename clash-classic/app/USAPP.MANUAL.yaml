@@ -9,6 +9,7 @@ payload:
   - DOMAIN-SUFFIX,us-assets.i.posthog.com
   - DOMAIN-SUFFIX,us.i.posthog.com
   - DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
+  - DOMAIN-SUFFIX,rclone.org
   - DOMAIN-SUFFIX,namecrane.com
   - DOMAIN-SUFFIX,colocrossing.com
   - DOMAIN-SUFFIX,cloudcone.com
