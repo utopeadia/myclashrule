@@ -4,14 +4,6 @@ DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,us-west-2.prod.pr.panorama.console.api.aws
 
-# flowith
-DOMAIN-SUFFIX,flowith.net
-DOMAIN-SUFFIX,flowith.featurebase.app
-DOMAIN-SUFFIX,edge.flo.ing
-DOMAIN-SUFFIX,us-assets.i.posthog.com
-DOMAIN-SUFFIX,us.i.posthog.com
-DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
-
 # 其他服务
 DOMAIN-SUFFIX,rclone.org
 DOMAIN-SUFFIX,namecrane.com
@@ -32,7 +24,6 @@ DOMAIN-SUFFIX,heapanalytics.com
 DOMAIN-SUFFIX,qualtrics.com
 DOMAIN-SUFFIX,weatheroffer.com
 DOMAIN-SUFFIX,browser-intake-datadoghq.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,tavily.com
 DOMAIN-SUFFIX,tavily.us.auth0.com
 DOMAIN-KEYWORD,1password
@@ -46,24 +37,8 @@ DOMAIN-SUFFIX,us1.kuxueyun.com
 DOMAIN-SUFFIX,ca.kuxueyun.com
 DOMAIN-SUFFIX,follow.is
 DOMAIN-SUFFIX,diygod.dev
-PROCESS-NAME,transferwise
-PROCESS-NAME-REGEX,transferwise
-DOMAIN-SUFFIX,wise.com
-DOMAIN-KEYWORD,transferwise
-DOMAIN-SUFFIX,vote.gov
-DOMAIN-SUFFIX,reshot.ai
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,hf.space
-DOMAIN-SUFFIX,t-mobile.com
-DOMAIN-SUFFIX,ultramobile.com
-PROCESS-NAME,com.uvnv.ultramobile
-DOMAIN-SUFFIX,llmsresearch.com
-DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
-DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,s.luoveyq.space
 DOMAIN-SUFFIX,fwhwill.win
 DOMAIN-SUFFIX,api.aijust.org
@@ -83,85 +58,11 @@ DOMAIN-SUFFIX,usakile0.112700.xyz
 DOMAIN-SUFFIX,nezha.112700.xyz
 DOMAIN-SUFFIX,usccsny.luoveyq.space
 DOMAIN-SUFFIX,usalist.iswsh.com
-DOMAIN-KEYWORD,voice.google
-DOMAIN-KEYWORD,voice.telephony
-DOMAIN-SUFFIX,voice.google.com
-DOMAIN-SUFFIX,voice.telephony.goog
 DOMAIN-SUFFIX,build.nvidia.com
 IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
 
-# GoogleNotebooklm
-DOMAIN-SUFFIX,notebooklm.google.com
-DOMAIN-SUFFIX,notebooklm.google
-
-# Trae IDE
-DOMAIN-SUFFIX,trae.ai
-DOMAIN-SUFFIX,byteoversea.com
-DOMAIN-SUFFIX,bytedapm.com
-DOMAIN-SUFFIX,bytetos.com
-DOMAIN-SUFFIX,byteintl.com
-DOMAIN-SUFFIX,byteintlapi.com
-DOMAIN-SUFFIX,itobsnssdk.com
-DOMAIN-SUFFIX,marscode.com
-PROCESS-NAME,Trae Helper
-PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
-# Claude其他
-DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-KEYWORD,claudeusercontent
-PROCESS-NAME,com.anthropic.claude
-PROCESS-NAME-REGEX,com\.anthropic\.claude
-PROCESS-NAME-REGEX,^(?=.*anthropic)(?=.*claude).*$
-# ChatGPT其他
-DOMAIN-SUFFIX,chat.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,sora.com
-PROCESS-NAME,com.openai.chatgpt
-PROCESS-NAME-REGEX,com\.openai\.chatgpt
-PROCESS-NAME-REGEX,^(?=.*openai)(?=.*chatgpt).*$
-# X.ai
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,grok.com
-PROCESS-NAME,ai.x.grok
-PROCESS-NAME-REGEX,ai\.x\.grok
-PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
-# LLM竞技场
-DOMAIN-SUFFIX,lmsys.org
-# Groq
-DOMAIN-SUFFIX,groq.com
-# poe
-DOMAIN-SUFFIX,poe.com
-PROCESS-NAME,com.poe.android
-# cohere
-DOMAIN-KEYWORD,cohere
-# coze
-DOMAIN-SUFFIX,coze.com
-# JetBrains AI 
-DOMAIN-SUFFIX,grazie.ai
-DOMAIN-SUFFIX,grazie.aws.intellij.net
-# KLing可灵
-DOMAIN-SUFFIX,klingai.com
-# SiderAI
-DOMAIN-SUFFIX,sider.ai
-# codeium&windsurf
-DOMAIN-SUFFIX,codeiumdata.com
-DOMAIN-SUFFIX,codeium.com
-# hcompany.ai
-DOMAIN-SUFFIX,hcompany.ai
-DOMAIN-KEYWORD,hcompany
-# PearAi
-DOMAIN-SUFFIX,us.i.posthog.com
-DOMAIN-SUFFIX,pearai.b-cdn.net
-DOMAIN-SUFFIX,trypear.ai
-# perplexity
-DOMAIN-SUFFIX,perplexity.ai
-PROCESS-NAME,ai.perplexity.app.android
-PROCESS-NAME-REGEX,^(?=.*ai)(?=.*perplexity).*$
-# Manus
-DOMAIN-SUFFIX,manus.im
-DOMAIN-SUFFIX,manus.space
-DOMAIN-SUFFIX,manuscdn.com
 
 # VPS
 IP-CIDR,23.94.180.0/24,no-resolve
@@ -183,12 +84,3 @@ IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
 IP-CIDR6,2602:fa4f:900::/48,no-resolve
 IP-CIDR6,2602:f988:80::/48,no-resolve
 IP-CIDR6,2602:f988:90::/48,no-resolve
-
-# US EDU
-DOMAIN-SUFFIX,umass.edu
-DOMAIN-SUFFIX,cvtc.edu
-DOMAIN-SUFFIX,sunybroome.edu
-DOMAIN-SUFFIX,nau.edu
-DOMAIN-SUFFIX,arizona.edu
-DOMAIN-SUFFIX,utah.edu
-DOMAIN-SUFFIX,colostate.edu

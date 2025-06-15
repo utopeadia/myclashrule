@@ -1,0 +1,106 @@
+DOMAIN-SUFFIX,challenges.cloudflare.com
+PROCESS-NAME,transferwise
+PROCESS-NAME-REGEX,transferwise
+DOMAIN-SUFFIX,wise.com
+DOMAIN-KEYWORD,transferwise
+DOMAIN-SUFFIX,vote.gov
+DOMAIN-SUFFIX,reshot.ai
+DOMAIN-SUFFIX,t-mobile.com
+DOMAIN-SUFFIX,ultramobile.com
+PROCESS-NAME,com.uvnv.ultramobile
+DOMAIN-SUFFIX,llmsresearch.com
+DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-KEYWORD,voice.google
+DOMAIN-KEYWORD,voice.telephony
+DOMAIN-SUFFIX,voice.google.com
+DOMAIN-SUFFIX,voice.telephony.goog
+# flowith
+DOMAIN-SUFFIX,flowith.net
+DOMAIN-SUFFIX,flowith.featurebase.app
+DOMAIN-SUFFIX,edge.flo.ing
+DOMAIN-SUFFIX,us-assets.i.posthog.com
+DOMAIN-SUFFIX,us.i.posthog.com
+DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
+# GoogleNotebooklm
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,notebooklm.google
+# Trae IDE
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,byteintl.com
+DOMAIN-SUFFIX,byteintlapi.com
+DOMAIN-SUFFIX,itobsnssdk.com
+DOMAIN-SUFFIX,marscode.com
+PROCESS-NAME,Trae Helper
+PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
+# Claude其他
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-KEYWORD,claudeusercontent
+PROCESS-NAME,com.anthropic.claude
+PROCESS-NAME-REGEX,com\.anthropic\.claude
+PROCESS-NAME-REGEX,^(?=.*anthropic)(?=.*claude).*$
+# ChatGPT其他
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,sora.com
+PROCESS-NAME,com.openai.chatgpt
+PROCESS-NAME-REGEX,com\.openai\.chatgpt
+PROCESS-NAME-REGEX,^(?=.*openai)(?=.*chatgpt).*$
+# X.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+PROCESS-NAME,ai.x.grok
+PROCESS-NAME-REGEX,ai\.x\.grok
+PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
+# LLM竞技场
+DOMAIN-SUFFIX,lmsys.org
+# Groq
+DOMAIN-SUFFIX,groq.com
+# poe
+DOMAIN-SUFFIX,poe.com
+PROCESS-NAME,com.poe.android
+# cohere
+DOMAIN-KEYWORD,cohere
+# coze
+DOMAIN-SUFFIX,coze.com
+# JetBrains AI 
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+# KLing可灵
+DOMAIN-SUFFIX,klingai.com
+# SiderAI
+DOMAIN-SUFFIX,sider.ai
+# codeium&windsurf
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN-SUFFIX,codeium.com
+# hcompany.ai
+DOMAIN-SUFFIX,hcompany.ai
+DOMAIN-KEYWORD,hcompany
+# PearAi
+DOMAIN-SUFFIX,us.i.posthog.com
+DOMAIN-SUFFIX,pearai.b-cdn.net
+DOMAIN-SUFFIX,trypear.ai
+# perplexity
+DOMAIN-SUFFIX,perplexity.ai
+PROCESS-NAME,ai.perplexity.app.android
+PROCESS-NAME-REGEX,^(?=.*ai)(?=.*perplexity).*$
+# Manus
+DOMAIN-SUFFIX,manus.im
+DOMAIN-SUFFIX,manus.space
+DOMAIN-SUFFIX,manuscdn.com
+
+# US EDU
+DOMAIN-SUFFIX,umass.edu
+DOMAIN-SUFFIX,cvtc.edu
+DOMAIN-SUFFIX,sunybroome.edu
+DOMAIN-SUFFIX,nau.edu
+DOMAIN-SUFFIX,arizona.edu
+DOMAIN-SUFFIX,utah.edu
+DOMAIN-SUFFIX,colostate.edu
