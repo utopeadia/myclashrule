@@ -57,12 +57,12 @@ DOMAIN-SUFFIX,usccs0.112700.xyz
 DOMAIN-SUFFIX,usakile0.112700.xyz
 DOMAIN-SUFFIX,nezha.112700.xyz
 DOMAIN-SUFFIX,usccsny.luoveyq.space
+DOMAIN-SUFFIX,usdav.iswsh.com
 DOMAIN-SUFFIX,usalist.iswsh.com
 DOMAIN-SUFFIX,build.nvidia.com
 IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
-
 
 # VPS
 IP-CIDR,23.94.180.0/24,no-resolve
