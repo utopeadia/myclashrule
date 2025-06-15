@@ -86,6 +86,7 @@ payload:
   - DOMAIN-SUFFIX,g3u2sdaxp05z881zrxgy3zoqm05whqj0.04.09.hk.6l6.site
   - DOMAIN-SUFFIX,g5yu6awptkjwouh6gjzvh4unp25hhzn1.04.01.fr.6l6.site
   - DOMAIN-SUFFIX,ga8q1widchu9ent02gwye1lagohx6mrk.04.02.uk.6l6.site
+  - DOMAIN-SUFFIX,guangdong-cn.digital-nvme.com
   - DOMAIN-SUFFIX,h3zjefhbzk645es9onczq9k2kl4co24t.04.01.de.6l6.site
   - DOMAIN-SUFFIX,h8uht3qo6ly3lib9bdq3b3xfox9o9yevq7f5.biliapi.xyz
   - DOMAIN-SUFFIX,h9q9sa3kxlldu3vrp2zq1n8k9snnftc4.04.02.jp.6l6.site
@@ -249,6 +250,7 @@ payload:
   - IP-CIDR,108.181.23.249/32,no-resolve
   - IP-CIDR,108.181.23.255/32,no-resolve
   - IP-CIDR,108.181.4.223/32,no-resolve
+  - IP-CIDR,111.45.33.54/32,no-resolve
   - IP-CIDR,112.120.48.132/32,no-resolve
   - IP-CIDR,112.120.48.14/32,no-resolve
   - IP-CIDR,112.120.48.162/32,no-resolve
@@ -260,8 +262,8 @@ payload:
   - IP-CIDR,113.57.36.161/32,no-resolve
   - IP-CIDR,114.37.202.90/32,no-resolve
   - IP-CIDR,116.251.216.70/32,no-resolve
-  - IP-CIDR,118.167.5.244/32,no-resolve
-  - IP-CIDR,118.167.6.75/32,no-resolve
+  - IP-CIDR,118.167.3.107/32,no-resolve
+  - IP-CIDR,118.167.6.110/32,no-resolve
   - IP-CIDR,119.167.163.161/32,no-resolve
   - IP-CIDR,120.198.71.182/32,no-resolve
   - IP-CIDR,120.233.128.78/32,no-resolve
@@ -275,7 +277,6 @@ payload:
   - IP-CIDR,125.122.37.55/32,no-resolve
   - IP-CIDR,129.146.95.165/32,no-resolve
   - IP-CIDR,129.148.39.249/32,no-resolve
-  - IP-CIDR,13.112.164.43/32,no-resolve
   - IP-CIDR,13.213.64.212/32,no-resolve
   - IP-CIDR,13.229.122.251/32,no-resolve
   - IP-CIDR,13.229.82.53/32,no-resolve
@@ -327,8 +328,9 @@ payload:
   - IP-CIDR,168.138.184.187/32,no-resolve
   - IP-CIDR,178.128.84.251/32,no-resolve
   - IP-CIDR,18.136.196.137/32,no-resolve
+  - IP-CIDR,18.139.199.149/32,no-resolve
   - IP-CIDR,18.141.158.36/32,no-resolve
-  - IP-CIDR,18.162.146.95/32,no-resolve
+  - IP-CIDR,18.162.151.56/32,no-resolve
   - IP-CIDR,18.179.206.207/32,no-resolve
   - IP-CIDR,183.2.150.7/32,no-resolve
   - IP-CIDR,192.18.133.190/32,no-resolve
@@ -377,7 +379,7 @@ payload:
   - IP-CIDR,35.78.248.243/32,no-resolve
   - IP-CIDR,36.151.195.29/32,no-resolve
   - IP-CIDR,36.228.221.228/32,no-resolve
-  - IP-CIDR,43.200.36.159/32,no-resolve
+  - IP-CIDR,43.201.12.40/32,no-resolve
   - IP-CIDR,43.207.164.222/32,no-resolve
   - IP-CIDR,46.232.106.177/32,no-resolve
   - IP-CIDR,47.129.54.37/32,no-resolve
@@ -388,11 +390,11 @@ payload:
   - IP-CIDR,54.179.89.113/32,no-resolve
   - IP-CIDR,54.199.150.15/32,no-resolve
   - IP-CIDR,54.199.247.31/32,no-resolve
+  - IP-CIDR,54.238.44.68/32,no-resolve
   - IP-CIDR,54.238.57.53/32,no-resolve
   - IP-CIDR,54.249.56.94/32,no-resolve
   - IP-CIDR,54.249.86.118/32,no-resolve
   - IP-CIDR,54.251.188.53/32,no-resolve
-  - IP-CIDR,54.251.241.41/32,no-resolve
   - IP-CIDR,54.255.139.254/32,no-resolve
   - IP-CIDR,54.65.206.120/32,no-resolve
   - IP-CIDR,57.182.23.113/32,no-resolve
@@ -413,8 +415,8 @@ payload:
   - IP-CIDR6,2406:da14:cfb:5500:917b:37fc:a540:773a/128,no-resolve
   - IP-CIDR6,2406:da18:576:3b00:c351:506e:63fc:ef2/128,no-resolve
   - IP-CIDR6,2406:da18:a28:7600:fa19:b91f:8385:e742/128,no-resolve
-  - IP-CIDR6,2406:da1e:170:d300:c03b:953d:a874:57a/128,no-resolve
   - IP-CIDR6,2406:da1e:186:9d52:e1f:f766:5da0:5ef4/128,no-resolve
+  - IP-CIDR6,2406:da1e:c4a:2f00:fe3d:f64d:2fa3:9661/128,no-resolve
   - IP-CIDR6,2408:864e:c04:d:22ac:86ef:122a:dc30/128,no-resolve
   - IP-CIDR6,2409:8c30:1000:1b00:5:335d:a28d:b8ae/128,no-resolve
   - IP-CIDR6,2409:8c30:1000:1b00:5:34a3:4ad6:d4e/128,no-resolve
