@@ -382,6 +382,9 @@ DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,engagement.ai
+DOMAIN-SUFFIX,revved.com
+DOMAIN-SUFFIX,qontak.com
 PROCESS-NAME,transferwise
 PROCESS-NAME-REGEX,transferwise
 DOMAIN-SUFFIX,wise.com
