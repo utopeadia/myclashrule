@@ -22,6 +22,9 @@ payload:
   - DOMAIN-SUFFIX,iflix.com
   - PROCESS-NAME,iflix.play
   - PROCESS-NAME-REGEX,iflix\.play
+  - IP-CIDR,92.112.21.0/24,no-resolve
+  - IP-CIDR,92.112.22.0/24,no-resolve
+  - IP-CIDR,92.112.23.0/24,no-resolve
   - IP-CIDR,5.253.36.0/24,no-resolve
   - IP-CIDR,38.181.72.0/24,no-resolve
   - IP-CIDR,46.203.98.0/24,no-resolve
