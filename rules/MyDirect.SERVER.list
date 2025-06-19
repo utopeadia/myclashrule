@@ -210,6 +210,7 @@ DOMAIN-SUFFIX,zyx7klo63ah67m4i.mzstatic.cloud
 IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,1.161.47.214/32,no-resolve
 IP-CIDR,1.162.155.85/32,no-resolve
+IP-CIDR,1.198.249.253/32,no-resolve
 IP-CIDR,1.198.251.229/32,no-resolve
 IP-CIDR,103.169.126.67/32,no-resolve
 IP-CIDR,103.213.4.51/32,no-resolve
