@@ -31,3 +31,5 @@ IP-CIDR6,2620:0:ccd::2/128,no-resolve
 # 其他
 DOMAIN-SUFFIX,login.tailscale.com
 DOMAIN-SUFFIX,www.tailscale.com
+DOMAIN,jms-support.eurekaselect.com
+DOMAIN-SUFFIX,manuscriptpoint.com
