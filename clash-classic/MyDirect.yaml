@@ -4,6 +4,8 @@ payload:
   - DOMAIN-SUFFIX,siliconflow.cn
   - DOMAIN-SUFFIX,worldfirst.com
   - DOMAIN-SUFFIX,worldfirst.com.cn
+  - DOMAIN-SUFFIX,tailscale.io
+  - DOMAIN-SUFFIX,tailscale.com
   - IP-CIDR,192.168.0.0/16,no-resolve
   - DOMAIN-SUFFIX,lala.gg
   - DOMAIN-SUFFIX,10099.com
