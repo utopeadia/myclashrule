@@ -3,6 +3,7 @@ DOMAIN-SUFFIX,safepal.com
 DOMAIN-SUFFIX,isafepal.com
 DOMAIN-SUFFIX,walletconnect.org
 DOMAIN-SUFFIX,web3modal.org
+PROCESS-NAME,io.safepal.wallet
 # Bybit
 DOMAIN-SUFFIX,bybit.app
 DOMAIN-SUFFIX,bybit.com
