@@ -1,4 +1,8 @@
 payload:
+  - DOMAIN-SUFFIX,safepal.com
+  - DOMAIN-SUFFIX,isafepal.com
+  - DOMAIN-SUFFIX,walletconnect.org
+  - DOMAIN-SUFFIX,web3modal.org
   - DOMAIN-SUFFIX,bybit.app
   - DOMAIN-SUFFIX,bybit.com
   - DOMAIN-SUFFIX,bycsi.com
