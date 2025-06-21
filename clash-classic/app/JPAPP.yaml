@@ -3,6 +3,7 @@ payload:
   - DOMAIN-SUFFIX,isafepal.com
   - DOMAIN-SUFFIX,walletconnect.org
   - DOMAIN-SUFFIX,web3modal.org
+  - PROCESS-NAME,io.safepal.wallet
   - DOMAIN-SUFFIX,bybit.app
   - DOMAIN-SUFFIX,bybit.com
   - DOMAIN-SUFFIX,bycsi.com
