@@ -2,18 +2,13 @@ payload:
   - DOMAIN,d1q6f0aelx0por.cloudfront.net
   - DOMAIN,d2wy8f7a9ursnm.cloudfront.net
   - DOMAIN,d36jcksde1wxzq.cloudfront.net
-  - DOMAIN,imap.112700.xyz
-  - DOMAIN,imap.intquest.com
-  - DOMAIN,imap.iswsh.com
-  - DOMAIN,imap.iwsh.eu
   - DOMAIN,mail.112700.xyz
+  - DOMAIN,mail.agiq.eu
+  - DOMAIN,mail.aijust.org
+  - DOMAIN,mail.ainq.de
   - DOMAIN,mail.intquest.com
   - DOMAIN,mail.iswsh.com
   - DOMAIN,mail.iwsh.eu
-  - DOMAIN,smtp.112700.xyz
-  - DOMAIN,smtp.intquest.com
-  - DOMAIN,smtp.iswsh.com
-  - DOMAIN,smtp.iwsh.eu
   - DOMAIN-KEYWORD,51cg
   - DOMAIN-KEYWORD,facebook
   - DOMAIN-KEYWORD,fbcdn
