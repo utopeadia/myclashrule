@@ -36,6 +36,8 @@ payload:
   - DOMAIN-SUFFIX,agilebits.com
   - DOMAIN-SUFFIX,akile.io
   - DOMAIN-SUFFIX,alist.iswsh.com
+  - DOMAIN-SUFFIX,api-ap-southeast-2.qiniuapi.com
+  - DOMAIN-SUFFIX,api-ap-southeast-3.qiniuapi.com
   - DOMAIN-SUFFIX,api.nn.ci
   - DOMAIN-SUFFIX,askfacebook.net
   - DOMAIN-SUFFIX,askfacebook.org
@@ -532,6 +534,9 @@ payload:
   - DOMAIN-SUFFIX,intagrm.com
   - DOMAIN-SUFFIX,internet.org
   - DOMAIN-SUFFIX,intgram.com
+  - DOMAIN-SUFFIX,iovip-ap-southeast-2.qiniuio.com
+  - DOMAIN-SUFFIX,iovip-ap-southeast-3.qiniuio.com
+  - DOMAIN-SUFFIX,iovip-as0.qiniuio.com
   - DOMAIN-SUFFIX,ip6.static.sl-reverse.com
   - DOMAIN-SUFFIX,ipcheck.ing
   - DOMAIN-SUFFIX,ipify.org
@@ -637,6 +642,12 @@ payload:
   - DOMAIN-SUFFIX,rocksdb.com
   - DOMAIN-SUFFIX,rocksdb.net
   - DOMAIN-SUFFIX,rocksdb.org
+  - DOMAIN-SUFFIX,rs-ap-southeast-2.qiniuapi.com
+  - DOMAIN-SUFFIX,rs-ap-southeast-3.qiniuapi.com
+  - DOMAIN-SUFFIX,rs-as0.qiniuapi.com
+  - DOMAIN-SUFFIX,rsf-ap-southeast-2.qiniuapi.com
+  - DOMAIN-SUFFIX,rsf-ap-southeast-3.qiniuapi.com
+  - DOMAIN-SUFFIX,rsf-as0.qiniuapi.com
   - DOMAIN-SUFFIX,s3.iswsh.com
   - DOMAIN-SUFFIX,s3api.iswsh.com
   - DOMAIN-SUFFIX,sda1.dev
@@ -656,6 +667,9 @@ payload:
   - DOMAIN-SUFFIX,toplayerserver.com
   - DOMAIN-SUFFIX,ubuntu.com
   - DOMAIN-SUFFIX,unavatar.webp.se
+  - DOMAIN-SUFFIX,up-ap-southeast-2.qiniup.com
+  - DOMAIN-SUFFIX,up-ap-southeast-3.qiniup.com
+  - DOMAIN-SUFFIX,up-as0.qiniup.com
   - DOMAIN-SUFFIX,url.112700.xyz
   - DOMAIN-SUFFIX,urlimage.cc
   - DOMAIN-SUFFIX,v2ex.com
