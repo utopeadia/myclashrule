@@ -3,6 +3,10 @@ payload:
   - DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
   - DOMAIN-SUFFIX,us-west-2.prod.pr.panorama.console.api.aws
+  - DOMAIN-SUFFIX,up-na0.qiniup.com
+  - DOMAIN-SUFFIX,iovip-na0.qiniuio.com
+  - DOMAIN-SUFFIX,rs-na0.qiniuapi.com
+  - DOMAIN-SUFFIX,rsf-na0.qiniuapi.com
   - DOMAIN-SUFFIX,rclone.org
   - DOMAIN-SUFFIX,namecrane.com
   - DOMAIN-SUFFIX,colocrossing.com
