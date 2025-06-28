@@ -4590,7 +4590,7 @@ payload:
   - IP-CIDR,124.14.0.0/15,no-resolve
   - IP-CIDR,124.16.0.0/15,no-resolve
   - IP-CIDR,124.20.0.0/16,no-resolve
-  - IP-CIDR,124.21.0.0/18,no-resolve
+  - IP-CIDR,124.21.32.0/19,no-resolve
   - IP-CIDR,124.21.96.0/19,no-resolve
   - IP-CIDR,124.21.128.0/17,no-resolve
   - IP-CIDR,124.22.0.0/15,no-resolve
