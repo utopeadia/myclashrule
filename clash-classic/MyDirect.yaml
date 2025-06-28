@@ -23,6 +23,19 @@ payload:
   - DOMAIN-SUFFIX,gslb.livehwc3.cn
   - DOMAIN-SUFFIX,neixin.cn
   - DOMAIN-SUFFIX,open.kuaishouzt.com
+  - DOMAIN-SUFFIX,BGP.4444442.xyz
+  - DOMAIN-SUFFIX,gdyd.4444442.xyz
+  - DOMAIN-SUFFIX,th.4444442.xyz
+  - DOMAIN-SUFFIX,scyd.4444442.xyz
+  - DOMAIN-SUFFIX,lt.4444442.xyz
+  - DOMAIN-SUFFIX,nbdx.4444442.xyz
+  - DOMAIN-SUFFIX,zjdx.4444442.xyz
+  - DOMAIN-SUFFIX,qqa813.198139.xyz
+  - DOMAIN-SUFFIX,qqb12.198139.xyz
+  - DOMAIN-SUFFIX,i.cu.iepl.my
+  - DOMAIN-SUFFIX,tun.tizi888.me
+  - IP-CIDR,110.42.62.0/24,no-resolve
+  - IP-CIDR,220.205.16.0/24,no-resolve
   - DOMAIN-REGEX,^pass[a-z0-9-]+\.876521\.xyz
   - DOMAIN-SUFFIX,0edw2vu7stvjcmo2u1p9czeh638evkou.04.02.us.6l6.site
   - DOMAIN-SUFFIX,0gxcrvnu76jc5uiggnye63g74tp7f45p.04.03.hk.6l6.site
