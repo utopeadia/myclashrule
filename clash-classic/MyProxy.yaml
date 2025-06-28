@@ -76,6 +76,7 @@ payload:
   - DOMAIN-SUFFIX,hulihanman.com
   - DOMAIN-SUFFIX,idoujiang.com
   - DOMAIN-SUFFIX,im.ge
+  - DOMAIN-SUFFIX,image.iswsh.com
   - DOMAIN-SUFFIX,imagehaha.com
   - DOMAIN-SUFFIX,img.iswsh.com
   - DOMAIN-SUFFIX,img.wush.cc
@@ -113,6 +114,7 @@ payload:
   - DOMAIN-SUFFIX,naixi.net
   - DOMAIN-SUFFIX,nasdav.iswsh.com
   - DOMAIN-SUFFIX,nathost.com
+  - DOMAIN-SUFFIX,news.112700.xyz
   - DOMAIN-SUFFIX,nezha.tech
   - DOMAIN-SUFFIX,nodeloc.com
   - DOMAIN-SUFFIX,nodequality.com
@@ -139,6 +141,7 @@ payload:
   - DOMAIN-SUFFIX,s3.iswsh.com
   - DOMAIN-SUFFIX,s3api.iswsh.com
   - DOMAIN-SUFFIX,sda1.dev
+  - DOMAIN-SUFFIX,search.iswsh.com
   - DOMAIN-SUFFIX,shared.oaifree.com
   - DOMAIN-SUFFIX,shucdn.com
   - DOMAIN-SUFFIX,sub.876521.xyz
@@ -153,6 +156,7 @@ payload:
   - DOMAIN-SUFFIX,v2ex.com
   - DOMAIN-SUFFIX,voidtools.com
   - DOMAIN-SUFFIX,vvxs.xyz
+  - DOMAIN-SUFFIX,wallos.iswsh.com
   - DOMAIN-SUFFIX,wan.video
   - DOMAIN-SUFFIX,wanxai.com
   - DOMAIN-SUFFIX,wap.ac
