@@ -1061,6 +1061,9 @@ PROCESS-NAME-REGEX,^(?=.*ai)(?=.*perplexity).*$
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manus.space
 DOMAIN-SUFFIX,manuscdn.com
+# FacebookMetaAI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,llama.com
 
 # US EDU
 DOMAIN-SUFFIX,umass.edu
