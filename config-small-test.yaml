@@ -7,6 +7,7 @@ proxy-providers:
       enable: true
       interval: 180
       url: https://dash.cloudflare.com
+    filter: "(?i)港|hk|hongkong|hong kong"
 
 port: 53710
 socks-port: 53211
