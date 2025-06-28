@@ -83,12 +83,14 @@ dns:
     - https://doh.pub/dns-query#skip-cert-verify=true
     - https://223.5.5.5/dns-query#skip-cert-verify=true
   default-nameserver:
-    - 180.184.1.1
+    - 219.146.1.66
+    - 202.102.128.68
     - 119.29.29.29
     - 223.6.6.6
     - 123.125.81.6
   nameserver:
-    - 180.184.1.1
+    - 219.146.1.66
+    - 202.102.128.68
     - 119.29.29.29
     - 223.6.6.6
     - 123.125.81.6
