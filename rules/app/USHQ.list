@@ -968,6 +968,7 @@ DOMAIN-SUFFIX,qontak.com
 PROCESS-NAME,transferwise
 PROCESS-NAME-REGEX,transferwise
 DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,moscwise.com
 DOMAIN-KEYWORD,transferwise
 DOMAIN-SUFFIX,vote.gov
 DOMAIN-SUFFIX,reshot.ai
