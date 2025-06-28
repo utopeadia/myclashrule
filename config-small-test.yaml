@@ -331,6 +331,7 @@ experimental:
 proxy-groups:
   - name: 🚀 主要代理
     type: select
+    include-all: true
     proxies:
       - ⚡️ 延迟优先
       - 🔥 大流量故障转移
@@ -346,6 +347,7 @@ proxy-groups:
       - DIRECT
   - name: 🗞 CERT教育科研网
     type: select
+    include-all: true
     proxies:
       - DIRECT
       - 🗞 学术专用故障转移
@@ -353,6 +355,7 @@ proxy-groups:
       - 🗞 学术专用手选
   - name: 📚 学术直连
     type: select
+    include-all: true
     proxies:
       - 🗞 学术专用故障转移
       - 🗞 学术专用延迟优先
@@ -361,15 +364,19 @@ proxy-groups:
       - 🚀 主要代理
   - name: 🌶️ CQGAS节点
     type: select
+    include-all: true
     filter: (CQGAS)
   - name: 🦽 手动切换
     type: select
+    include-all: true
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|教育|校园|学术|校内|回家|GoHome|GOHOME|CQGAS)))
   - name: 🚤 大流量手选
     type: select
+    include-all: true
     filter: (^(?!.*(Emby|emby|EMBY))(?!.*((?<!\S)(?:(?:[3-9]|[1-9]\d+)(?:\.\d*)?|2\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?!.*(备用))(?=.*(LF|大流量|低倍|公益|直连|自建D|\|L\||0\.[0-9]+(?:\s|-)?(?:倍|×|x|X)|[xX](?:\s|-)?0\.[0-9]+)).+$)
   - name: 🎥 私域流媒体
     type: select
+    include-all: true
     proxies:
       - 🔥 大流量故障转移
       - 🚤 大流量手选
@@ -386,9 +393,11 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🎭 流媒体手选
     type: select
+    include-all: true
     filter: (ACA.*Emby|Emby.*ACA|好鸭.*Emby|Emby.*好鸭|SYNStream|Emby)
   - name: 🏡 回家节点
     type: select
+    include-all: true
     proxies:
       - 🏘 回家专用故障转移
       - 🏘 回家专用延迟优先
@@ -396,6 +405,7 @@ proxy-groups:
       - DIRECT
   - name: 🐟 漏网之鱼
     type: select
+    include-all: true
     proxies:
       - 🚀 主要代理
       - DIRECT
@@ -411,6 +421,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🇸🇬 新加坡节点
     type: select
+    include-all: true
     proxies:
       - 🇸🇬 新加坡故障转移
       - 🇸🇬 新加坡延迟优先
@@ -418,6 +429,7 @@ proxy-groups:
       - 🇸🇬 新加坡手选
   - name: 🇺🇲 美国节点
     type: select
+    include-all: true
     proxies:
       - 🇺🇲 美国故障转移
       - 🇺🇲 美国延迟优先
@@ -425,6 +437,7 @@ proxy-groups:
       - 🇺🇲 美国手选
   - name: 🇭🇰 香港节点
     type: select
+    include-all: true
     proxies:
       - 🇭🇰 香港故障转移
       - 🇭🇰 香港延迟优先
@@ -432,6 +445,7 @@ proxy-groups:
       - 🇭🇰 香港手选
   - name: 🇯🇵 日本节点
     type: select
+    include-all: true
     proxies:
       - 🇯🇵 日本故障转移
       - 🇯🇵 日本延迟优先
@@ -439,6 +453,7 @@ proxy-groups:
       - 🇯🇵 日本手选
   - name: 🇪🇺 西北欧节点
     type: select
+    include-all: true
     proxies:
       - 🇪🇺 西北欧故障转移
       - 🇪🇺 西北欧延迟优先
@@ -446,9 +461,11 @@ proxy-groups:
       - 🇪🇺 西北欧手选
   - name: 🐉 湾湾节点
     type: select
+    include-all: true
     filter: (台|新北|彰化|TW|Taiwan|澎湖)
   - name: 🔐 公共故障转移
     type: select
+    include-all: true
     proxies:
       - 🇸🇬 新加坡公共故障转移
       - 🇺🇲 美国公共故障转移
@@ -457,6 +474,7 @@ proxy-groups:
       - 🇪🇺 西北欧公共故障转移
   - name: 📹 油管视频
     type: select
+    include-all: true
     proxies:
       - 🚀 主要代理
       - 🔥 大流量故障转移
@@ -472,6 +490,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 📝 微软高可用
     type: select
+    include-all: true
     proxies:
       - 🇺🇲 美国节点
       - 🚀 主要代理
@@ -487,6 +506,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: Ⓜ️ 微软服务
     type: select
+    include-all: true
     proxies:
       - 💵 美国隐私
       - 🇺🇲 美国节点
@@ -503,6 +523,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🎲 游戏平台
     type: select
+    include-all: true
     proxies:
       - 🚀 主要代理
       - 🦽 手动切换
@@ -518,6 +539,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🍏 苹果服务
     type: select
+    include-all: true
     proxies:
       - 🇺🇲 美国节点
       - DIRECT
@@ -533,6 +555,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: ☁️ 微软云盘
     type: select
+    include-all: true
     proxies:
       - 🔐 公共故障转移
       - 🔥 大流量故障转移
@@ -549,6 +572,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 💬 电报消息
     type: select
+    include-all: true
     proxies:
       - 🚀 主要代理
       - 🇺🇲 美国节点
@@ -564,6 +588,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 👮 美国严格应用
     type: select
+    include-all: true
     proxies:
       - 🇺🇲 美国高质故障转移
       - 🇺🇲 美国节点
@@ -580,6 +605,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🗽 美国应用
     type: select
+    include-all: true
     proxies:
       - 🇺🇲 美国节点
       - 🇺🇲 美国高质故障转移
@@ -596,6 +622,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🤠 美国公共
     type: select
+    include-all: true
     proxies:
       - 💵 美国隐私
       - 🇺🇲 美国节点
@@ -612,6 +639,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🍀 香港应用
     type: select
+    include-all: true
     proxies:
       - 🇭🇰 香港节点
       - 🚀 主要代理
@@ -627,6 +655,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🏰 西北欧应用
     type: select
+    include-all: true
     proxies:
       - 🇪🇺 西北欧节点
       - 🚀 主要代理
@@ -642,6 +671,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: ☢ 日本应用
     type: select
+    include-all: true
     proxies:
       - 🇯🇵 日本节点
       - 🚀 主要代理
@@ -657,6 +687,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: ⛲️ 新加坡应用
     type: select
+    include-all: true
     proxies:
       - 🇸🇬 新加坡节点
       - 🚀 主要代理
@@ -672,6 +703,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🧋 台湾应用
     type: select
+    include-all: true
     proxies:
       - 🐉 湾湾节点
       - ⚡️ 延迟优先
@@ -687,6 +719,7 @@ proxy-groups:
       - DIRECT
   - name: 📺 B站分流
     type: select
+    include-all: true
     proxies:
       - DIRECT
       - 🇭🇰 香港节点
@@ -702,6 +735,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 📢 谷歌服务
     type: select
+    include-all: true
     proxies:
       - 🇺🇲 美国节点
       - 🚀 主要代理
@@ -717,6 +751,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🕹 代理游戏下载
     type: select
+    include-all: true
     proxies:
       - 🔥 大流量故障转移
       - 🚤 大流量手选
@@ -732,6 +767,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 👾 直连游戏下载
     type: select
+    include-all: true
     proxies:
       - DIRECT
       - 🚀 主要代理
@@ -747,6 +783,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🎞 大流量服务
     type: select
+    include-all: true
     proxies:
       - 🔥 大流量故障转移
       - 🚤 大流量手选
@@ -762,6 +799,7 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: 🛍 eBay购物
     type: select
+    include-all: true
     proxies:
       - DIRECT
       - 🚀 主要代理
@@ -777,154 +815,186 @@ proxy-groups:
       - 🐉 湾湾节点
   - name: ⛔ 禁止访问
     type: select
+    include-all: true
     proxies:
       - REJECT
       - DIRECT
   - name: 🚄 本地直连
     type: select
+    include-all: true
     proxies:
       - DIRECT
   - name: 🗞 学术专用手选
     type: select
+    include-all: true
     filter: (教育|校园|学术|校内)
   - name: 🏘 回家专用手选
     type: select
+    include-all: true
     filter: (回家|gohome|GoHome|GOHOME)
   - name: 🇸🇬 新加坡手选
     type: select
+    include-all: true
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
   - name: 🇺🇲 美国手选
     type: select
+    include-all: true
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
   - name: 🇭🇰 香港手选
     type: select
+    include-all: true
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
   - name: 🇯🇵 日本手选
     type: select
+    include-all: true
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
   - name: 🇪🇺 西北欧手选
     type: select
+    include-all: true
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
   - name: ⚡️ 延迟优先
     type: url-test
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     tolerance: 50
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(0\.[0-9]+(?:\s|-)?(?:倍|×|x|X)|[xX](?:\s|-)?0\.[0-9]+))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S))).+$)
   - name: 🔥 大流量故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(Emby|emby|EMBY))(?!.*((?<!\S)(?:(?:[3-9]|[1-9]\d+)(?:\.\d*)?|2\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?!.*(备用))(?=.*(LF|大流量|低倍|公益|直连|\|L\||0\.[0-9]+(?:\s|-)?(?:倍|×|x|X)|[xX](?:\s|-)?0\.[0-9]+)).+$)
   - name: 🇸🇬 新加坡故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
   - name: 🇺🇲 美国高质故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
   - name: 🇺🇲 美国故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
   - name: 🇭🇰 香港故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
   - name: 🇯🇵 日本故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
   - name: 🇪🇺 西北欧故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
   - name: 🇸🇬 新加坡延迟优先
     type: url-test
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     tolerance: 50
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
   - name: 🇺🇲 美国延迟优先
     type: url-test
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     tolerance: 50
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
   - name: 🇭🇰 香港延迟优先
     type: url-test
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     tolerance: 50
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
   - name: 🇯🇵 日本延迟优先
     type: url-test
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     tolerance: 50
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
   - name: 🇪🇺 西北欧延迟优先
     type: url-test
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     tolerance: 50
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
   - name: 🇸🇬 新加坡公共故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
   - name: 🇺🇲 美国公共故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
   - name: 🇭🇰 香港公共故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
   - name: 🇯🇵 日本公共故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
   - name: 🇪🇺 西北欧公共故障转移
     type: fallback
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
   - name: 🗞 学术专用延迟优先
     type: url-test
+    include-all: true
     url: http://121.251.251.207
     interval: 60
     tolerance: 5
     filter: (^(?!.*(LB))(?=.*(教育|校园|学术|校内)).+$)
   - name: 🗞 学术专用故障转移
     type: fallback
+    include-all: true
     url: http://121.251.251.207
     interval: 30
     filter: (^(?!.*(LB))(?=.*(教育|校园|学术|校内)).+$)
   - name: 🏘 回家专用延迟优先
     type: url-test
+    include-all: true
     url: http://192.168.67.88:443
     interval: 60
     tolerance: 5
     filter: (^(?!.*(LB))(?=.*(回家|gohome|GoHome|GOHOME)).+$)
   - name: 🏘 回家专用故障转移
     type: fallback
+    include-all: true
     url: http://192.168.67.88:443
     interval: 30
     filter: (^(?!.*(LB))(?=.*(回家|gohome|GoHome|GOHOME)).+$)
   - name: 💵 美国隐私
     type: url-test
+    include-all: true
     url: https://dash.cloudflare.com
     interval: 60
     tolerance: 50
