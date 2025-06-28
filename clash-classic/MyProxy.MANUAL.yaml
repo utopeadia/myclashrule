@@ -22,8 +22,6 @@ payload:
   - DOMAIN-SUFFIX,githubuniverse.com
   - DOMAIN-SUFFIX,githubusercontent.com
   - DOMAIN-SUFFIX,attemptd.work
-  - DOMAIN-SUFFIX,meta.ai
-  - DOMAIN-SUFFIX,llama.com
   - IP-CIDR,49.232.25.145/32,no-resolve
   - DOMAIN-SUFFIX,longtengxiaoshuo.org
   - DOMAIN-SUFFIX,kmh004.com

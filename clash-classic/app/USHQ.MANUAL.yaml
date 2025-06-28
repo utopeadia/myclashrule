@@ -80,6 +80,8 @@ payload:
   - DOMAIN-SUFFIX,manus.im
   - DOMAIN-SUFFIX,manus.space
   - DOMAIN-SUFFIX,manuscdn.com
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,umass.edu
   - DOMAIN-SUFFIX,cvtc.edu
   - DOMAIN-SUFFIX,sunybroome.edu
