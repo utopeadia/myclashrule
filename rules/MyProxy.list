@@ -2,7 +2,6 @@
 # AUTHOR: blackmatrix7
 # DOMAIN-SUFFIX: 4
 # DOMAIN: 3
-# FacebookMetaAI
 # Github
 # NAME: Docker
 # Other
@@ -117,14 +116,12 @@ DOMAIN-SUFFIX,larksuiteimgpre.com
 DOMAIN-SUFFIX,larksuitepre.com
 DOMAIN-SUFFIX,lf6-cdnjs.zstaticcdn.com
 DOMAIN-SUFFIX,lf6-unpkg.zstaticcdn.com
-DOMAIN-SUFFIX,llama.com
 DOMAIN-SUFFIX,longtengxiaoshuo.org
 DOMAIN-SUFFIX,m.dybz123.com
 DOMAIN-SUFFIX,m.ndlib.cn
 DOMAIN-SUFFIX,m.ndlib.com
 DOMAIN-SUFFIX,mcmssc.la
 DOMAIN-SUFFIX,memos.iswsh.com
-DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,music.liuzhijin.cn
 DOMAIN-SUFFIX,naixi.net
 DOMAIN-SUFFIX,nasdav.iswsh.com
