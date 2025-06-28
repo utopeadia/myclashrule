@@ -983,6 +983,8 @@ proxy-groups:
   - name: 🏘 回家专用延迟优先
     type: url-test
     include-all: true
+    proxies:
+      - DIRECT
     url: http://192.168.67.88:443
     interval: 60
     tolerance: 5
@@ -990,6 +992,8 @@ proxy-groups:
   - name: 🏘 回家专用故障转移
     type: fallback
     include-all: true
+    proxies:
+      - DIRECT
     url: http://192.168.67.88:443
     interval: 30
     filter: (^(?!.*(LB))(?=.*(回家|gohome|GoHome|GOHOME)).+$)
