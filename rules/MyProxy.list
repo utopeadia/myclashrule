@@ -1,14 +1,19 @@
 
 # AUTHOR: blackmatrix7
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 30
 # DOMAIN-SUFFIX: 4
 # DOMAIN: 3
-# Github
+# Github补充
 # NAME: Docker
+# NAME: GitHub
 # Other
 # QwenLLM
 # REPO: https://github.com/blackmatrix7/ios_rule_script
+# TOTAL: 31
 # TOTAL: 7
 # UPDATED: 2025-06-06 09:17:43
+# UPDATED: 2025-06-12 02:06:19
 # afusekt
 # read
 # 七牛云东南亚
@@ -23,6 +28,7 @@ DOMAIN,mail.intquest.com
 DOMAIN,mail.iswsh.com
 DOMAIN,mail.iwsh.eu
 DOMAIN-KEYWORD,51cg
+DOMAIN-KEYWORD,github
 DOMAIN-SUFFIX,18mh.net
 DOMAIN-SUFFIX,20img.com
 DOMAIN-SUFFIX,21img.com
@@ -40,6 +46,7 @@ DOMAIN-SUFFIX,alist.iswsh.com
 DOMAIN-SUFFIX,api-ap-southeast-2.qiniuapi.com
 DOMAIN-SUFFIX,api-ap-southeast-3.qiniuapi.com
 DOMAIN-SUFFIX,api.nn.ci
+DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,attemptd.work
 DOMAIN-SUFFIX,avatars-githubusercontent-webp.webp.se
 DOMAIN-SUFFIX,browsecraft.com
@@ -57,6 +64,7 @@ DOMAIN-SUFFIX,compose-spec.io
 DOMAIN-SUFFIX,dalao.net
 DOMAIN-SUFFIX,darkreader.org
 DOMAIN-SUFFIX,deeplx.org
+DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,dnsmgr.iswsh.com
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
@@ -67,7 +75,12 @@ DOMAIN-SUFFIX,fastgpt.iswsh.com
 DOMAIN-SUFFIX,file.iswsh.com
 DOMAIN-SUFFIX,freeembyguide.eu.org
 DOMAIN-SUFFIX,gaozehk.com
+DOMAIN-SUFFIX,ghcr.io
+DOMAIN-SUFFIX,git.io
 DOMAIN-SUFFIX,gitea.iswsh.com
+DOMAIN-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net
+DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
+DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com
 DOMAIN-SUFFIX,github.blog
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.community
@@ -124,6 +137,7 @@ DOMAIN-SUFFIX,m.ndlib.com
 DOMAIN-SUFFIX,mcmssc.la
 DOMAIN-SUFFIX,memos.iswsh.com
 DOMAIN-SUFFIX,music.liuzhijin.cn
+DOMAIN-SUFFIX,myoctocat.com
 DOMAIN-SUFFIX,naixi.net
 DOMAIN-SUFFIX,nasdav.iswsh.com
 DOMAIN-SUFFIX,nathost.com
@@ -132,8 +146,12 @@ DOMAIN-SUFFIX,nezha.tech
 DOMAIN-SUFFIX,nodeloc.com
 DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,novel.seseclub.com
+DOMAIN-SUFFIX,npm.community
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,ntdm9.com
 DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,opensource.guide
 DOMAIN-SUFFIX,papakatsu.co
 DOMAIN-SUFFIX,passwd.iswsh.com
 DOMAIN-SUFFIX,photo.iswsh.com
@@ -144,6 +162,9 @@ DOMAIN-SUFFIX,qpic.w
 DOMAIN-SUFFIX,qpic.ws
 DOMAIN-SUFFIX,qwen.ai
 DOMAIN-SUFFIX,qwenlm.ai
+DOMAIN-SUFFIX,rawgit.com
+DOMAIN-SUFFIX,rawgithub.com
+DOMAIN-SUFFIX,repo.new
 DOMAIN-SUFFIX,rkddn.com
 DOMAIN-SUFFIX,rs-ap-southeast-2.qiniuapi.com
 DOMAIN-SUFFIX,rs-ap-southeast-3.qiniuapi.com
@@ -159,6 +180,7 @@ DOMAIN-SUFFIX,shared.oaifree.com
 DOMAIN-SUFFIX,shucdn.com
 DOMAIN-SUFFIX,sub.876521.xyz
 DOMAIN-SUFFIX,tawk.to
+DOMAIN-SUFFIX,thegithubshop.com
 DOMAIN-SUFFIX,ubuntu.com
 DOMAIN-SUFFIX,unavatar.webp.se
 DOMAIN-SUFFIX,up-ap-southeast-2.qiniup.com
