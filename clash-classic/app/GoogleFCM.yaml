@@ -41,7 +41,6 @@ payload:
   - IP-CIDR,74.125.24.188/32,no-resolve
   - IP-CIDR,74.125.28.188/32,no-resolve
   - PROCESS-NAME,com.google.android.gms
-  - PROCESS-NAME-REGEX,android\.gms
   - DOMAIN-SUFFIX,mtalk.google.com
   - DOMAIN-SUFFIX,mtalk4.google.com
   - DOMAIN-SUFFIX,mtalk-staging.google.com

@@ -4,8 +4,6 @@ payload:
   - DOMAIN-SUFFIX,wanxai.com
   - DOMAIN-SUFFIX,wan.video
   - PROCESS-NAME,ai.qwenlm.chat.android
-  - PROCESS-NAME-REGEX,ai\.qwenlm\.chat\.android
-  - PROCESS-NAME-REGEX,^(?=.*ai)(?=.*qwenlm).*$
   - DOMAIN-SUFFIX,github.blog
   - DOMAIN-SUFFIX,github.com
   - DOMAIN-SUFFIX,github.community
