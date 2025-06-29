@@ -1,0 +1,1475 @@
+proxy-providers:
+  provider1:
+    type: http
+    url: "https://xxxxxxxxxxxxxxx.yaml"
+    interval: 21600
+    health-check:
+      enable: true
+      interval: 180
+      url: https://dash.cloudflare.com
+    filter: "(?i)港|hk|hongkong|hong kong"
+
+port: 53710
+socks-port: 53211
+redir-port: 53712
+tproxy-port: 53713
+mixed-port: 53714
+allow-lan: false
+bind-address: "*"
+ipv6: true
+external-controller: 0.0.0.0:9090
+secret: "zQ!h90n@BBp"
+mode: rule
+log-level: info
+global-client-fingerprint: chrome
+global-ua: mymihomo
+tcp-concurrent: true
+unified-delay: false
+keep-alive-interval: 15
+keep-alive-idle: 180
+geodata-mode: true
+geodata-loader: memconservative
+geo-auto-update: true
+geo-update-interval: 12
+geosite-matcher: succinct
+geox-url: # Geo 数据库配置，用于地理位置和 ASN 匹配
+  geoip: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat" # GeoIP 数据库
+  geosite: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat" # GeoSite 数据库
+  mmdb: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.metadb" # GeoIP mmdb 数据库
+  asn: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb" # ASN 数据库
+tun:
+  enable: true
+  stack: gvisor
+  device: utun0
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+  gso: true
+  gso-max-size: 65536
+  udp-timeout: 300
+  endpoint-independent-nat: true
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  route-exclude-address:
+    - 192.168.191.0/24
+    - 192.168.192.0/24
+    - 10.10.10.0/24
+    - 100.64.0.0/10
+    - 10.0.0.0/24
+    - 10.14.14.0/24
+    - 10.14.12.0/24
+
+dns:
+  enable: true
+  ipv6: true
+  cache-algorithm: arc
+  prefer-h3: true
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  nameserver-policy:
+    "geosite:googlefcm":
+      - https://doh.pub/dns-query#skip-cert-verify=true
+      - https://223.5.5.5/dns-query#skip-cert-verify=true
+    "geosite:gfw":
+      - https://doh.opendns.com/dns-query#🚀 主要代理&skip-cert-verify=true
+      - https://1.1.1.1/dns-query#🚀 主要代理&skip-cert-verify=true
+      - https://8.8.8.8/dns-query#🚀 主要代理&skip-cert-verify=true
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query#skip-cert-verify=true
+    - https://223.5.5.5/dns-query#skip-cert-verify=true
+  default-nameserver:
+    - 219.146.1.66
+    - 202.102.128.68
+    - 119.29.29.29
+    - 223.6.6.6
+    - 123.125.81.6
+  nameserver:
+    - 219.146.1.66
+    - 202.102.128.68
+    - 119.29.29.29
+    - 223.6.6.6
+    - 123.125.81.6
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - "stun.*.*"
+    - "stun.*.*.*"
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "+.stun.*.*.*.*.*"
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "*.localhost"
+    - "+.battlenet.com.cn"
+    - "+.cfprefer1.xyz"
+    - "+.cmbchina.com"
+    - "+.cmbimg.com"
+    - "+.cmpassport.com"
+    - "+.henzanapp.com"
+    - "+.kuxueyun.com"
+    - "+.logon.battle.net"
+    - "+.logon.battlenet.com.cn"
+    - "+.media.dssott.com"
+    - "+.mediatek.com"
+    - "+.mi.com"
+    - "+.mijia.tech"
+    - "+.miwifi.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "+.music.163.com"
+    - "+.music.migu.cn"
+    - "+.n0808.com"
+    - "+.ntp.org"
+    - "+.pconline.com.cn"
+    - "+.pingan.com.cn"
+    - "+.pool.ntp.org"
+    - "+.push.apple.com"
+    - "+.qq.com"
+    - "+.sandai.net"
+    - "+.services.googleapis.cn"
+    - "+.srv.nintendo.net"
+    - "+.steamcontent.com"
+    - "+.stun.playstation.net"
+    - "+.tencent.com"
+    - "+.u-tools.cn"
+    - "+.wargaming.net"
+    - "+.wechat.com"
+    - "+.weixin.qq.com"
+    - "+.wetab.link"
+    - "+.wggames.cn"
+    - "+.wopsmail.net"
+    - "+.wpsmail.net"
+    - "+.wotgame.cn"
+    - "+.wowsgame.cn"
+    - "+.xiaomi.net"
+    - "+.xn--ngstr-lra8j.cn"
+    - "+.y.qq.com"
+    - "*.*.xboxlive.com"
+    - "*.126.net"
+    - "*.example"
+    - "*.ff14.sdo.com"
+    - "*.ffxiv.com"
+    - "*.finalfantasyxiv.com"
+    - "*.home.arpa"
+    - "*.invalid"
+    - "*.kuwo.cn"
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.mcdn.bilivideo.cn"
+    - "*.microsoftonline.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - "*.n.n.srv.nintendo.net"
+    - "*.ntp.org.*"
+    - "*.ntp.org.cn"
+    - "*.router.asus.com"
+    - "*.square-enix.com"
+    - "*.steamcontent.com"
+    - "*.test"
+    - "*.time.edu.cn"
+    - "*.xiami.com"
+    - "amobile.music.tc.qq.com"
+    - "api-jooxtt.sanook.com"
+    - "api.joox.com"
+    - "aqqmusic.tc.qq.com"
+    - "connect.rom.miui.com"
+    - "dl.stream.qqmusic.qq.com"
+    - "ff.dorado.sdo.com"
+    - "heartbeat.belkin.com"
+    - "isure.stream.qqmusic.qq.com"
+    - "joox.com"
+    - "lens.l.google.com"
+    - "local.adguard.org"
+    - "localhost.ptlogin2.qq.com"
+    - "localhost.sec.qq.com"
+    - "localhost.work.weixin.qq.com"
+    - "mesu.apple.com"
+    - "mobileoc.music.tc.qq.com"
+    - "music.taihe.com"
+    - "musicapi.taihe.com"
+    - "na.b.g-tun.com"
+    - "ntp.*.cn"
+    - "ntp.*.com"
+    - "ntp.ntsc.ac.cn"
+    - "ntp1.*.cn"
+    - "ntp1.*.com"
+    - "ntp2.*.cn"
+    - "ntp2.*.com"
+    - "ntp3.*.cn"
+    - "ntp3.*.com"
+    - "ntp4.*.cn"
+    - "ntp4.*.com"
+    - "ntp5.*.cn"
+    - "ntp5.*.com"
+    - "ntp6.*.cn"
+    - "ntp6.*.com"
+    - "ntp7.*.cn"
+    - "ntp7.*.com"
+    - "proxy.golang.org"
+    - "shark007.net"
+    - "songsearch.kugou.com"
+    - "streamoc.music.tc.qq.com"
+    - "stun.l.google.com"
+    - "swcdn.apple.com"
+    - "swdist.apple.com"
+    - "swdownload.apple.com"
+    - "swquery.apple.com"
+    - "swscan.apple.com"
+    - "time.*.apple.com"
+    - "time.*.com"
+    - "time.*.edu.cn"
+    - "time.*.gov"
+    - "time.is"
+    - "time.windows.com"
+    - "time-ios.apple.com"
+    - "time1.*.com"
+    - "time1.cloud.tencent.com"
+    - "time2.*.com"
+    - "time3.*.com"
+    - "time4.*.com"
+    - "time5.*.com"
+    - "time6.*.com"
+    - "time7.*.com"
+    - "trackercdn.kugou.com"
+    - "xbox.*.*.microsoft.com"
+    - "xbox.*.microsoft.com"
+    - "xnotify.xboxlive.com"
+    - "mtalk.google.com"
+    - "mtalk4.google.com"
+    - "alt1-mtalk.google.com"
+    - "alt2-mtalk.google.com"
+    - "alt3-mtalk.google.com"
+    - "alt4-mtalk.google.com"
+    - "alt5-mtalk.google.com"
+    - "alt6-mtalk.google.com"
+    - "alt7-mtalk.google.com"
+    - "alt8-mtalk.google.com"
+    - WORKGROUP
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080, 8082-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+      override-destination: true
+    QUIC:
+      ports: [443, 8443]
+      override-destination: true
+  force-domain:
+    - +.v2ex.com
+  skip-domain:
+    - Mijia Cloud
+    - dlg.io.mi.com
+    - +.apple.com
+    - +.rc.sunlogin.net
+    - time.windows.com
+    - courier.push.apple.com
+    - +.jd.com
+    - rbsxbxp-mim.vivox.com
+    - rbsxbxp.www.vivox.com
+    - rbsxbxp-ws.vivox.com
+    - rbspsxp.www.vivox.com
+    - rbspsxp-mim.vivox.com
+    - rbspsxp-ws.vivox.com
+    - rbswxp.www.vivox.com
+    - rbswxp-mim.vivox.com
+    - disp-rbspsp-5-1.vivox.com
+    - disp-rbsxbp-5-1.vivox.com
+    - proxy.rbsxbp.vivox.com
+    - proxy.rbspsp.vivox.com
+    - proxy.rbswp.vivox.com
+    - rbswp.vivox.com
+    - rbsxbp.vivox.com
+    - rbspsp.vivox.com
+    - rbspsp.www.vivox.com
+    - rbswp.www.vivox.com
+    - rbsxbp.www.vivox.com
+    - rbsxbxp.vivox.com
+    - rbspsxp.vivox.com
+    - rbswxp.vivox.com
+    - basic-static-server.infinitynewtab.com
+    - hp3.mail.netease.com
+    - +.mail.netease.com
+  skip-dst-address:
+    - 223.5.5.5/32
+    - 223.6.6.6/32
+    - 119.29.29.29/32
+    - 1.1.1.1/32
+    - 8.8.8.8/32
+    - 101.101.101.101/32
+    - 110.242.69.63/32
+    - 221.194.154.187/32
+    - 36.248.45.62/32
+    - 2001:4860:4860::8888/128
+    - 2001:4860:4860::8844/128
+
+hosts:
+  mtalk.google.com: [142.250.107.188, "2404:6800:4008:c19::bc"]
+  alt2-mtalk.google.com: [142.250.115.188]
+  alt6-mtalk.google.com: [142.250.115.188]
+  alt7-mtalk.google.com: [192.178.131.188, "2607:f8b0:4002:c08::bc"]
+  alt8-mtalk.google.com: [209.85.144.188]
+
+# 实验性功能配置
+experimental:
+  quic-go-disable-gso: true # 禁用 QUIC 协议中的 GSO (Generic Segmentation Offload) 功能
+  quic-go-disable-ecn: true #禁用ECN
+  dialer-ip4p-convert: false # 启用IP4P地址转换
+
+proxy-groups:
+  - name: 🚀 主要代理
+    type: select
+    include-all: true
+    proxies:
+      - ⚡️ 延迟优先
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+      - DIRECT
+  - name: 🗞 CERT教育科研网
+    type: select
+    include-all: true
+    proxies:
+      - DIRECT
+      - 🗞 学术专用故障转移
+      - 🗞 学术专用延迟优先
+      - 🗞 学术专用手选
+  - name: 📚 学术直连
+    type: select
+    include-all: true
+    proxies:
+      - 🗞 学术专用故障转移
+      - 🗞 学术专用延迟优先
+      - 🗞 学术专用手选
+      - DIRECT
+      - 🚀 主要代理
+  - name: 🌶️ CQGAS节点
+    type: select
+    include-all: true
+    filter: (CQGAS)
+  - name: 🦽 手动切换
+    type: select
+    include-all: true
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|教育|校园|学术|校内|回家|GoHome|GOHOME|CQGAS)))
+  - name: 🚤 大流量手选
+    type: select
+    include-all: true
+    filter: (^(?!.*(Emby|emby|EMBY))(?!.*((?<!\S)(?:(?:[3-9]|[1-9]\d+)(?:\.\d*)?|2\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?!.*(备用))(?=.*(LF|大流量|低倍|公益|直连|自建D|\|L\||0\.[0-9]+(?:\s|-)?(?:倍|×|x|X)|[xX](?:\s|-)?0\.[0-9]+)).+$)
+  - name: 🎥 私域流媒体
+    type: select
+    include-all: true
+    proxies:
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🎭 流媒体手选
+      - 🚀 主要代理
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - DIRECT
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🎭 流媒体手选
+    type: select
+    include-all: true
+    filter: (ACA.*Emby|Emby.*ACA|好鸭.*Emby|Emby.*好鸭|SYNStream|Emby)
+  - name: 🏡 回家节点
+    type: select
+    include-all: true
+    proxies:
+      - 🏘 回家专用故障转移
+      - 🏘 回家专用延迟优先
+      - 🏘 回家专用手选
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    include-all: true
+    proxies:
+      - DIRECT
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🇸🇬 新加坡节点
+    type: select
+    include-all: true
+    proxies:
+      - 🇸🇬 新加坡SMART
+      - 🇸🇬 新加坡故障转移
+      - 🇸🇬 新加坡延迟优先
+      - 🇸🇬 新加坡公共故障转移
+      - 🇸🇬 新加坡手选
+  - name: 🇺🇲 美国节点
+    type: select
+    include-all: true
+    proxies:
+      - 🇺🇲 美国SMART
+      - 🇺🇲 美国故障转移
+      - 🇺🇲 美国延迟优先
+      - 🇺🇲 美国公共故障转移
+      - 🇺🇲 美国手选
+  - name: 🇭🇰 香港节点
+    type: select
+    include-all: true
+    proxies:
+      - 🇭🇰 香港SMART
+      - 🇭🇰 香港故障转移
+      - 🇭🇰 香港延迟优先
+      - 🇭🇰 香港公共故障转移
+      - 🇭🇰 香港手选
+  - name: 🇯🇵 日本节点
+    type: select
+    include-all: true
+    proxies:
+      - 🇯🇵 日本SMART
+      - 🇯🇵 日本故障转移
+      - 🇯🇵 日本延迟优先
+      - 🇯🇵 日本公共故障转移
+      - 🇯🇵 日本手选
+  - name: 🇪🇺 西北欧节点
+    type: select
+    include-all: true
+    proxies:
+      - 🇪🇺 西北欧SMART
+      - 🇪🇺 西北欧故障转移
+      - 🇪🇺 西北欧延迟优先
+      - 🇪🇺 西北欧公共故障转移
+      - 🇪🇺 西北欧手选
+  - name: 🐉 湾湾节点
+    type: select
+    include-all: true
+    filter: (台|新北|彰化|TW|Taiwan|澎湖)
+  - name: 🔐 公共故障转移
+    type: select
+    include-all: true
+    proxies:
+      - 🇸🇬 新加坡公共故障转移
+      - 🇺🇲 美国公共故障转移
+      - 🇭🇰 香港公共故障转移
+      - 🇯🇵 日本公共故障转移
+      - 🇪🇺 西北欧公共故障转移
+  - name: 📹 油管视频
+    type: select
+    include-all: true
+    proxies:
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - DIRECT
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 📝 微软高可用
+    type: select
+    include-all: true
+    proxies:
+      - 🇺🇲 美国节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: Ⓜ️ 微软服务
+    type: select
+    include-all: true
+    proxies:
+      - 💵 美国隐私
+      - 🇺🇲 美国节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🎲 游戏平台
+    type: select
+    include-all: true
+    proxies:
+      - 🚀 主要代理
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🍏 苹果服务
+    type: select
+    include-all: true
+    proxies:
+      - 🇺🇲 美国节点
+      - DIRECT
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: ☁️ 微软云盘
+    type: select
+    include-all: true
+    proxies:
+      - 🔐 公共故障转移
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 💵 美国隐私
+      - DIRECT
+      - 🇺🇲 美国节点
+      - 🚀 主要代理
+      - 🦽 手动切换
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 💬 电报消息
+    type: select
+    include-all: true
+    proxies:
+      - 🚀 主要代理
+      - 🇺🇲 美国节点
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 👮 美国严格应用
+    type: select
+    include-all: true
+    proxies:
+      - 🇺🇲 美国高质故障转移
+      - 🇺🇲 美国节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🗽 美国应用
+    type: select
+    include-all: true
+    proxies:
+      - 🇺🇲 美国节点
+      - 🇺🇲 美国高质故障转移
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🤠 美国公共
+    type: select
+    include-all: true
+    proxies:
+      - 💵 美国隐私
+      - 🇺🇲 美国节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🍀 香港应用
+    type: select
+    include-all: true
+    proxies:
+      - 🇭🇰 香港节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🏰 西北欧应用
+    type: select
+    include-all: true
+    proxies:
+      - 🇪🇺 西北欧节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🐉 湾湾节点
+  - name: ☢ 日本应用
+    type: select
+    include-all: true
+    proxies:
+      - 🇯🇵 日本节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: ⛲️ 新加坡应用
+    type: select
+    include-all: true
+    proxies:
+      - 🇸🇬 新加坡节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🧋 台湾应用
+    type: select
+    include-all: true
+    proxies:
+      - 🐉 湾湾节点
+      - ⚡️ 延迟优先
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - DIRECT
+  - name: 📺 B站分流
+    type: select
+    include-all: true
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 📢 谷歌服务
+    type: select
+    include-all: true
+    proxies:
+      - 🇺🇲 美国节点
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🕹 代理游戏下载
+    type: select
+    include-all: true
+    proxies:
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🚀 主要代理
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 👾 直连游戏下载
+    type: select
+    include-all: true
+    proxies:
+      - DIRECT
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🎞 大流量服务
+    type: select
+    include-all: true
+    proxies:
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🚀 主要代理
+      - DIRECT
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: 🛍 eBay购物
+    type: select
+    include-all: true
+    proxies:
+      - DIRECT
+      - 🚀 主要代理
+      - 🔥 大流量故障转移
+      - 🚤 大流量手选
+      - 🦽 手动切换
+      - 🔐 公共故障转移
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇪🇺 西北欧节点
+      - 🐉 湾湾节点
+  - name: ⛔ 禁止访问
+    type: select
+    include-all: true
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🚄 本地直连
+    type: select
+    include-all: true
+    proxies:
+      - DIRECT
+  - name: 🗞 学术专用手选
+    type: select
+    include-all: true
+    filter: (教育|校园|学术|校内)
+  - name: 🏘 回家专用手选
+    type: select
+    include-all: true
+    filter: (回家|gohome|GoHome|GOHOME)
+  - name: 🇸🇬 新加坡手选
+    type: select
+    include-all: true
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
+  - name: 🇺🇲 美国手选
+    type: select
+    include-all: true
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
+  - name: 🇭🇰 香港手选
+    type: select
+    include-all: true
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
+  - name: 🇯🇵 日本手选
+    type: select
+    include-all: true
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
+  - name: 🇪🇺 西北欧手选
+    type: select
+    include-all: true
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
+  - name: ⚡️ 延迟优先
+    type: url-test
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    tolerance: 50
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(0\.[0-9]+(?:\s|-)?(?:倍|×|x|X)|[xX](?:\s|-)?0\.[0-9]+))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S))).+$)
+  - name: 🔥 大流量故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(Emby|emby|EMBY))(?!.*((?<!\S)(?:(?:[3-9]|[1-9]\d+)(?:\.\d*)?|2\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?!.*(备用))(?=.*(LF|大流量|低倍|公益|直连|\|L\||0\.[0-9]+(?:\s|-)?(?:倍|×|x|X)|[xX](?:\s|-)?0\.[0-9]+)).+$)
+  - name: 🇸🇬 新加坡SMART
+    type: smart
+    include-all: true
+    policy-priority: "自转发:1.5" 
+    uselightgbm: true
+    collectdata: true
+    strategy: sticky-sessions
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
+  - name: 🇺🇲 美国SMART
+    type: smart
+    include-all: true
+    policy-priority: "自转发:1.5" 
+    uselightgbm: true
+    collectdata: true
+    strategy: sticky-sessions
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
+  - name: 🇭🇰 香港SMART
+    type: smart
+    include-all: true
+    policy-priority: "自转发:1.5" 
+    uselightgbm: true
+    collectdata: true
+    strategy: sticky-sessions
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
+  - name: 🇯🇵 日本SMART
+    type: smart
+    include-all: true
+    policy-priority: "自转发:1.5" 
+    uselightgbm: true
+    collectdata: true
+    strategy: sticky-sessions
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
+  - name: 🇪🇺 西北欧SMART
+    type: smart
+    include-all: true
+    policy-priority: "自转发:1.5" 
+    uselightgbm: true
+    collectdata: true
+    strategy: sticky-sessions
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
+  - name: 🇸🇬 新加坡故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
+  - name: 🇺🇲 美国高质故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
+  - name: 🇺🇲 美国故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
+  - name: 🇭🇰 香港故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
+  - name: 🇯🇵 日本故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
+  - name: 🇪🇺 西北欧故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
+  - name: 🇸🇬 新加坡延迟优先
+    type: url-test
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    tolerance: 50
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
+  - name: 🇺🇲 美国延迟优先
+    type: url-test
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    tolerance: 50
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
+  - name: 🇭🇰 香港延迟优先
+    type: url-test
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    tolerance: 50
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
+  - name: 🇯🇵 日本延迟优先
+    type: url-test
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    tolerance: 50
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
+  - name: 🇪🇺 西北欧延迟优先
+    type: url-test
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    tolerance: 50
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(留子))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
+  - name: 🇸🇬 新加坡公共故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(新加坡|坡|狮城|淡马|SG|Singapore)).+$)
+  - name: 🇺🇲 美国公共故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
+  - name: 🇭🇰 香港公共故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong)).+$)
+  - name: 🇯🇵 日本公共故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(日本|川日|东京|大阪|霓虹|泉日|埼玉|沪日|深日|JP|Japan)).+$)
+  - name: 🇪🇺 西北欧公共故障转移
+    type: fallback
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    filter: (^(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L|自建D|自转发))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(西北欧|德国|GER|Germany|法国|FR|France|英格兰|UK|英国|United Kingdom|UnitedKingdom|荷兰|NLD|Netherlands|卢森堡|LUX|Luxembourg|比利时|BEL|Belgium|奥地利|AUT|Austria|爱尔兰|IRL|Ireland|西班牙|ESP|Spain|葡萄牙|PRT|Portugal|意大利|ITA|Italy|丹麦|DNK|Denmark|挪威|NOR|Norwa|瑞士|CHE|Switzerland|瑞典|SWE|Sweden|芬兰|FIN|Finland|冰岛|ISL|Iceland)).+$)
+  - name: 🗞 学术专用延迟优先
+    type: url-test
+    include-all: true
+    url: http://121.251.251.207
+    interval: 60
+    tolerance: 5
+    filter: (^(?!.*(LB))(?=.*(教育|校园|学术|校内)).+$)
+  - name: 🗞 学术专用故障转移
+    type: fallback
+    include-all: true
+    url: http://121.251.251.207
+    interval: 30
+    filter: (^(?!.*(LB))(?=.*(教育|校园|学术|校内)).+$)
+  - name: 🏘 回家专用延迟优先
+    type: url-test
+    include-all: true
+    proxies:
+      - DIRECT
+    url: http://192.168.67.88:443
+    interval: 60
+    tolerance: 5
+    filter: (^(?!.*(LB))(?=.*(回家|gohome|GoHome|GOHOME)).+$)
+  - name: 🏘 回家专用故障转移
+    type: fallback
+    include-all: true
+    proxies:
+      - DIRECT
+    url: http://192.168.67.88:443
+    interval: 30
+    filter: (^(?!.*(LB))(?=.*(回家|gohome|GoHome|GOHOME)).+$)
+  - name: 💵 美国隐私
+    type: url-test
+    include-all: true
+    url: https://dash.cloudflare.com
+    interval: 60
+    tolerance: 50
+    filter: (^(?!.*(自转发))(?!.*(SG-L|US-L|JP-L|HK-L|UK-L|TW-L|EU-L|自建L))(?!.*(教育|校园|学术|校内))(?!.*(Emby|emby|EMBY))(?!.*(回家|gohome|GoHome|GOHOME|CQGAS))(?!.*(?:LFB|BANME|公益|直连|IPV6|IPv6|🚫SSH|备用|尼日利亚|\[LS\]|\|L\|))(?!.*((?<!\S)(?:(?:[4-9]|[1-9]\d+)(?:\.\d*)?|3\.(?:[1-9]\d*|0\d*[1-9]\d*))(?:\s*[-xX×倍])(?!\S)))(?=.*(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|洛城|US|United States|LA|SJ|\bU\.S\.\b)).+$)
+
+rules:
+  - DOMAIN-SUFFIX,ai-assistant.upc.edu.cn,📚 学术直连
+  - DOMAIN-SUFFIX,xsdk.upc.edu.cn,📚 学术直连
+  - DOMAIN-SUFFIX,lan.upc.edu.cn,🚄 本地直连
+  - DOMAIN-SUFFIX,wlan.upc.edu.cn,🚄 本地直连
+  - DOMAIN-SUFFIX,v.upc.edu.cn,🚄 本地直连
+  - IP-CIDR,121.251.251.0/24,🚄 本地直连,no-resolve
+  - DOMAIN-SUFFIX,webvpn.upc.edu.cn,🚄 本地直连
+  - DOMAIN-SUFFIX,sslvpn.upc.edu.cn,🚄 本地直连
+  - DOMAIN-SUFFIX,www.upc.edu.cn,🚄 本地直连
+  - DOMAIN,raw.githubusercontent.com,🚀 主要代理
+  - DOMAIN,testingcf.jsdelivr.net,🚀 主要代理
+  - DOMAIN,fastly.jsdelivr.net,🚄 本地直连
+  - DOMAIN,cdn.jsdmirror.com,🚄 本地直连
+  - DOMAIN-SUFFIX,akams.cn,🚄 本地直连
+  - DOMAIN,www.msftconnecttest.com,🚄 本地直连
+  - DOMAIN,dns.msftncsi.com,🚄 本地直连
+  - DOMAIN,www.msftncsi.com,🚄 本地直连
+  - DOMAIN,dns.google,🚀 主要代理
+  - IP-CIDR,8.8.8.8/32,🚀 主要代理,no-resolve
+  - IP-CIDR,8.8.4.4/32,🚀 主要代理,no-resolve
+  - IP-CIDR6,2001:4860:4860::8888/128,🚀 主要代理,no-resolve
+  - IP-CIDR6,2001:4860:4860::8844/128,🚀 主要代理,no-resolve
+  - DOMAIN,dns.cloudflare.com,🚀 主要代理
+  - DOMAIN,cloudflare-dns.com,🚀 主要代理
+  - DOMAIN,one.one.one.one,🚀 主要代理
+  - IP-CIDR,1.1.1.1/32,🚀 主要代理,no-resolve
+  - IP-CIDR,1.1.1.2/32,🚀 主要代理,no-resolve
+  - IP-CIDR,1.0.0.1/32,🚀 主要代理,no-resolve
+  - IP-CIDR,101.101.101.101/32,🚀 主要代理,no-resolve
+  - IP-CIDR6,2606:4700:4700::1111/128,🚀 主要代理,no-resolve
+  - IP-CIDR6,2606:4700:4700::1001/128,🚀 主要代理,no-resolve
+  - DOMAIN-SUFFIX,opendns.com,🚀 主要代理
+  - DOMAIN,dns.umbrella.com,🚀 主要代理
+  - IP-CIDR,208.67.220.220/32,🚀 主要代理,no-resolve
+  - IP-CIDR,208.67.222.222/32,🚀 主要代理,no-resolve
+  - IP-CIDR,208.67.220.123/32,🚀 主要代理,no-resolve
+  - IP-CIDR,208.67.222.123/32,🚀 主要代理,no-resolve
+  - IP-CIDR,208.67.220.2/32,🚀 主要代理,no-resolve
+  - IP-CIDR,208.67.222.2/32,🚀 主要代理,no-resolve
+  - IP-CIDR6,2620:119:35::35/128,🚀 主要代理,no-resolve
+  - IP-CIDR6,2620:119:53::53/128,🚀 主要代理,no-resolve
+  - IP-CIDR6,2620:119:35::123/128,🚀 主要代理,no-resolve
+  - IP-CIDR6,2620:119:53::123/128,🚀 主要代理,no-resolve
+  - IP-CIDR6,2620:0:ccc::2/128,🚀 主要代理,no-resolve
+  - IP-CIDR6,2620:0:ccd::2/128,🚀 主要代理,no-resolve
+  - DOMAIN,dns.alidns.com,🚄 本地直连
+  - DOMAIN,doh.pub,🚄 本地直连
+  - DOMAIN,dot.pub,🚄 本地直连
+  - DOMAIN,doh-pure.onedns.net,🚄 本地直连
+  - DOMAIN,doh.360.cn,🚄 本地直连
+  - DOMAIN,dot.360.cn,🚄 本地直连
+  - DOMAIN-SUFFIX,dh-global-team.net,🚄 本地直连
+  - DOMAIN-SUFFIX,dh-dns.global-idt.net,🚄 本地直连
+  - IP-CIDR,162.14.132.109/32,🚄 本地直连,no-resolve
+  - IP-CIDR,36.112.139.253/32,🚄 本地直连,no-resolve
+  - IP-CIDR,125.88.223.158/32,🚄 本地直连,no-resolve
+  - IP-CIDR,110.185.101.40/32,🚄 本地直连,no-resolve
+  - IP-CIDR,119.29.29.29/32,🚄 本地直连,no-resolve
+  - IP-CIDR,223.5.5.5/32,🚄 本地直连,no-resolve
+  - IP-CIDR,223.6.6.6/32,🚄 本地直连,no-resolve
+  - IP-CIDR,180.76.76.76/32,🚄 本地直连,no-resolve
+  - IP-CIDR,114.114.114.114/32,🚄 本地直连,no-resolve
+  - IP-CIDR,114.114.115.115/32,🚄 本地直连,no-resolve
+  - IP-CIDR,114.114.114.119/32,🚄 本地直连,no-resolve
+  - IP-CIDR,114.114.115.119/32,🚄 本地直连,no-resolve
+  - IP-CIDR,114.114.114.110/32,🚄 本地直连,no-resolve
+  - IP-CIDR,114.114.115.110/32,🚄 本地直连,no-resolve
+  - IP-CIDR,123.125.81.6/32,🚄 本地直连,no-resolve
+  - IP-CIDR,1.12.12.12/32,🚄 本地直连,no-resolve
+  - IP-CIDR,120.53.53.53/32,🚄 本地直连,no-resolve
+  - IP-CIDR,117.50.10.10/32,🚄 本地直连,no-resolve
+  - IP-CIDR,52.80.52.52/32,🚄 本地直连,no-resolve
+  - IP-CIDR,1.2.4.8/32,🚄 本地直连,no-resolve
+  - IP-CIDR,210.2.4.8/32,🚄 本地直连,no-resolve
+  - IP-CIDR,101.226.4.6/32,🚄 本地直连,no-resolve
+  - IP-CIDR,218.30.118.6/32,🚄 本地直连,no-resolve
+  - IP-CIDR,123.125.81.6/32,🚄 本地直连,no-resolve
+  - IP-CIDR,140.207.198.6/32,🚄 本地直连,no-resolve
+  - IP-CIDR,180.184.1.1/32,🚄 本地直连,no-resolve
+  - IP-CIDR,180.184.2.2/32,🚄 本地直连,no-resolve
+  - IP-CIDR6,2400:da00::6666/64,🚄 本地直连,no-resolve
+  - IP-CIDR6,240c::6666/64,🚄 本地直连,no-resolve
+  - IP-CIDR6,2402:4e00::/64,🚄 本地直连,no-resolve
+  - IP-CIDR6,2402:4e00:1::/64,🚄 本地直连,no-resolve
+  - IP-CIDR6,2400:3200:baba::1/128,🚄 本地直连,no-resolve
+  - IP-CIDR6,2400:3200::1/128,🚄 本地直连,no-resolve
+  - IP-CIDR6,2404:c2c0:85d8:901::8/128,🚄 本地直连,no-resolve
+  - IP-CIDR6,2400:7fc0:849e:200::8/128,🚄 本地直连,no-resolve
+  - RULE-SET,A-ForcedDirect,🚄 本地直连
+  - RULE-SET,A-ForcedProxy,🚀 主要代理
+  - RULE-SET,LocalAreaNetwork,🚄 本地直连
+  - RULE-SET,UnBan,🚄 本地直连
+  - RULE-SET,GoogleFCM,🚄 本地直连
+  - RULE-SET,CNAPPEnhance,🚄 本地直连
+  - RULE-SET,MyReject,⛔ 禁止访问
+  - RULE-SET,ForcedReject,⛔ 禁止访问
+  - RULE-SET,eBay,🛍 eBay购物
+  - RULE-SET,USHQ,👮 美国严格应用
+  - RULE-SET,AcademicProxy,🗽 美国应用
+  - RULE-SET,AcademicDirect,📚 学术直连
+  - RULE-SET,LargePrivacy,🎞 大流量服务
+  - RULE-SET,LargeProxyDownload,🎞 大流量服务
+  - RULE-SET,PrivateStreaming,🎥 私域流媒体
+  - RULE-SET,Youtube,📹 油管视频
+  - RULE-SET,Google,📢 谷歌服务
+  - RULE-SET,Apple,🍏 苹果服务
+  - RULE-SET,MicrosoftHA,📝 微软高可用
+  - RULE-SET,Onedrive,☁️ 微软云盘
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,telegram,💬 电报消息
+  - RULE-SET,GameDLCN,👾 直连游戏下载
+  - RULE-SET,GameDL,🕹 代理游戏下载
+  - RULE-SET,Game,🎲 游戏平台
+  - RULE-SET,SGAPP,⛲️ 新加坡应用
+  - RULE-SET,UKAPP,🏰 西北欧应用
+  - RULE-SET,NorthwestEurope,🏰 西北欧应用
+  - RULE-SET,JPAPP,☢ 日本应用
+  - RULE-SET,USAPP,🗽 美国应用
+  - RULE-SET,USSpecial,🤠 美国公共
+  - RULE-SET,HKSpecial,🍀 香港应用
+  - RULE-SET,HKAPP,🍀 香港应用
+  - RULE-SET,TWAPP,🧋 台湾应用
+  - RULE-SET,BiliBili,📺 B站分流
+  - RULE-SET,CERTNET,🗞 CERT教育科研网
+  - RULE-SET,gohome,🏡 回家节点
+  - RULE-SET,cqgas,🌶️ CQGAS节点
+  - RULE-SET,MyDirect,🚄 本地直连
+  - RULE-SET,MyProxy,🚀 主要代理
+  - RULE-SET,MainProxy,🚀 主要代理
+  - GEOIP,CN,🚄 本地直连
+  - MATCH,🐟 漏网之鱼
+
+rule-providers:
+  A-ForcedDirect:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/A-ForcedDirect.yaml",
+      interval: 21600,
+    }
+  A-ForcedProxy:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/A-ForcedProxy.yaml",
+      interval: 21600,
+    }
+  LocalAreaNetwork:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/LocalAreaNetwork.yaml",
+      interval: 21600,
+    }
+  UnBan:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/UnBan.yaml",
+      interval: 21600,
+    }
+  GoogleFCM:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/GoogleFCM.yaml",
+      interval: 21600,
+    }
+  CNAPPEnhance:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/CNAPPEnhance.yaml",
+      interval: 21600,
+    }
+  MyReject:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/MyReject.yaml",
+      interval: 21600,
+    }
+  ForcedReject:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/ForcedReject.yaml",
+      interval: 21600,
+    }
+  eBay:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/eBay.yaml",
+      interval: 21600,
+    }
+  USHQ:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/USHQ.yaml",
+      interval: 21600,
+    }
+  AcademicProxy:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/AcademicProxy.yaml",
+      interval: 21600,
+    }
+  AcademicDirect:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/AcademicDirect.yaml",
+      interval: 21600,
+    }
+  LargePrivacy:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/LargePrivacy.yaml",
+      interval: 21600,
+    }
+  LargeProxyDownload:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/LargeProxyDownload.yaml",
+      interval: 21600,
+    }
+  PrivateStreaming:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/PrivateStreaming.yaml",
+      interval: 21600,
+    }
+  Youtube:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/Youtube.yaml",
+      interval: 21600,
+    }
+  Google:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/Google.yaml",
+      interval: 21600,
+    }
+  Apple:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/Apple.yaml",
+      interval: 21600,
+    }
+  MicrosoftHA:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/MicrosoftHA.yaml",
+      interval: 21600,
+    }
+  Onedrive:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/Onedrive.yaml",
+      interval: 21600,
+    }
+  Microsoft:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/Microsoft.yaml",
+      interval: 21600,
+    }
+  telegram:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/telegram.yaml",
+      interval: 21600,
+    }
+  GameDLCN:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/GameDLCN.yaml",
+      interval: 21600,
+    }
+  GameDL:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/GameDL.yaml",
+      interval: 21600,
+    }
+  Game:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/Game.yaml",
+      interval: 21600,
+    }
+  SGAPP:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/SGAPP.yaml",
+      interval: 21600,
+    }
+  UKAPP:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/UKAPP.yaml",
+      interval: 21600,
+    }
+  NorthwestEurope:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/NorthwestEurope.yaml",
+      interval: 21600,
+    }
+  JPAPP:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/JPAPP.yaml",
+      interval: 21600,
+    }
+  USAPP:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/USAPP.yaml",
+      interval: 21600,
+    }
+  USSpecial:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/USSpecial.yaml",
+      interval: 21600,
+    }
+  HKSpecial:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/HKSpecial.yaml",
+      interval: 21600,
+    }
+  HKAPP:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/HKAPP.yaml",
+      interval: 21600,
+    }
+  TWAPP:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/TWAPP.yaml",
+      interval: 21600,
+    }
+  BiliBili:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/app/BiliBili.yaml",
+      interval: 21600,
+    }
+  CERTNET:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/CERTNET.yaml",
+      interval: 21600,
+    }
+  gohome:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/gohome.yaml",
+      interval: 21600,
+    }
+  cqgas:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/cqgas.yaml",
+      interval: 21600,
+    }
+  MyDirect:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/MyDirect.yaml",
+      interval: 21600,
+    }
+  MyProxy:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/MyProxy.yaml",
+      interval: 21600,
+    }
+  MainProxy:
+    {
+      type: http,
+      behavior: classical,
+      url: "https://raw.githubusercontent.com/utopeadia/myclashrule/main/clash-classic/MainProxy.yaml",
+      interval: 21600,
+    }
