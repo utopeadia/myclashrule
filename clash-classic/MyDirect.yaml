@@ -353,6 +353,7 @@ payload:
   - IP-CIDR,18.136.196.137/32,no-resolve
   - IP-CIDR,18.141.158.36/32,no-resolve
   - IP-CIDR,18.162.116.111/32,no-resolve
+  - IP-CIDR,18.162.148.136/32,no-resolve
   - IP-CIDR,18.162.225.202/32,no-resolve
   - IP-CIDR,18.166.58.25/32,no-resolve
   - IP-CIDR,18.179.206.207/32,no-resolve
