@@ -17,16 +17,12 @@ DOMAIN-SUFFIX,ap-west-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,tencentcloud.com
 DOMAIN-SUFFIX,okx.com
 PROCESS-NAME,com.okinc.okex.gp
-PROCESS-NAME-REGEX,com\.okinc\.okex\.gp
 # Deepseek
 DOMAIN-SUFFIX,deepseek.com
 PROCESS-NAME,com.deepseek.chat
-PROCESS-NAME-REGEX,com\.deepseek\.chat
-PROCESS-NAME-REGEX,^(?=.*deepseek).*$
 # 腾讯视频海外版
 DOMAIN-SUFFIX,iflix.com
 PROCESS-NAME,iflix.play
-PROCESS-NAME-REGEX,iflix\.play
 # VPS
 IP-CIDR,92.112.21.0/24,no-resolve
 IP-CIDR,92.112.22.0/24,no-resolve

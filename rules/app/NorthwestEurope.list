@@ -21,12 +21,10 @@ DOMAIN-SUFFIX,betterbird.eu
 DOMAIN-SUFFIX,api-my-api-5hw5ou-b810d8-80-75-218-107.traefik.me
 DOMAIN-SUFFIX,ifastgb.com
 PROCESS-NAME,com.ifast.gb
-PROCESS-NAME-REGEX,com\.ifast\.gb
 
 # MistralAI
 DOMAIN-SUFFIX,mistral.ai
 PROCESS-NAME,ai.mistral.chat
-PROCESS-NAME-REGEX,^(?=.*ai)(?=.*mistral).*$
 # Amazon Simple Storage
 DOMAIN-SUFFIX,eu-north-1.amazonaws.com
 DOMAIN-SUFFIX,eu-west-1.amazonaws.com
