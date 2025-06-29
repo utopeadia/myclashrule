@@ -4,8 +4,6 @@ DOMAIN-SUFFIX,qwen.ai
 DOMAIN-SUFFIX,wanxai.com
 DOMAIN-SUFFIX,wan.video
 PROCESS-NAME,ai.qwenlm.chat.android
-PROCESS-NAME-REGEX,ai\.qwenlm\.chat\.android
-PROCESS-NAME-REGEX,^(?=.*ai)(?=.*qwenlm).*$
 
 # Github
 DOMAIN-SUFFIX,github.blog

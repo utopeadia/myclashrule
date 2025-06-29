@@ -966,7 +966,6 @@ DOMAIN-SUFFIX,engagement.ai
 DOMAIN-SUFFIX,revved.com
 DOMAIN-SUFFIX,qontak.com
 PROCESS-NAME,transferwise
-PROCESS-NAME-REGEX,transferwise
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,moscwise.com
 DOMAIN-KEYWORD,transferwise
@@ -1006,26 +1005,19 @@ DOMAIN-SUFFIX,byteintlapi.com
 DOMAIN-SUFFIX,itobsnssdk.com
 DOMAIN-SUFFIX,marscode.com
 PROCESS-NAME,Trae Helper
-PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
 # Claude其他
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-KEYWORD,claudeusercontent
 PROCESS-NAME,com.anthropic.claude
-PROCESS-NAME-REGEX,com\.anthropic\.claude
-PROCESS-NAME-REGEX,^(?=.*anthropic)(?=.*claude).*$
 # ChatGPT其他
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,sora.com
 PROCESS-NAME,com.openai.chatgpt
-PROCESS-NAME-REGEX,com\.openai\.chatgpt
-PROCESS-NAME-REGEX,^(?=.*openai)(?=.*chatgpt).*$
 # X.ai
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
 PROCESS-NAME,ai.x.grok
-PROCESS-NAME-REGEX,ai\.x\.grok
-PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
 # LLM竞技场
 DOMAIN-SUFFIX,lmsys.org
 # Groq
@@ -1057,7 +1049,6 @@ DOMAIN-SUFFIX,trypear.ai
 # perplexity
 DOMAIN-SUFFIX,perplexity.ai
 PROCESS-NAME,ai.perplexity.app.android
-PROCESS-NAME-REGEX,^(?=.*ai)(?=.*perplexity).*$
 # Manus
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manus.space

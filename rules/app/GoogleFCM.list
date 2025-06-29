@@ -49,7 +49,6 @@ IP-CIDR,74.125.28.188/32,no-resolve
 
 # Manual additions for GoogleFCM
 PROCESS-NAME,com.google.android.gms
-PROCESS-NAME-REGEX,android\.gms
 DOMAIN-SUFFIX,mtalk.google.com
 DOMAIN-SUFFIX,mtalk4.google.com
 DOMAIN-SUFFIX,mtalk-staging.google.com

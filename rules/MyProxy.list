@@ -183,5 +183,3 @@ DOMAIN-SUFFIX,yaoluxs.com
 DOMAIN-SUFFIX,yf.876521.xyz
 IP-CIDR,49.232.25.145/32,no-resolve
 PROCESS-NAME,ai.qwenlm.chat.android
-PROCESS-NAME-REGEX,^(?=.*ai)(?=.*qwenlm).*$
-PROCESS-NAME-REGEX,ai\.qwenlm\.chat\.android
