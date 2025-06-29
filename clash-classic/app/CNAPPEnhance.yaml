@@ -291,8 +291,6 @@ payload:
   - PROCESS-NAME,com.xunmeng.pinduoduo
   - PROCESS-NAME-REGEX,com\.xunmeng\.pinduoduo
   - PROCESS-NAME,com.sankuai.meituan
-  - PROCESS-NAME-REGEX,com\.sankuai\.meituan
-  - PROCESS-NAME-REGEX,^(?=.*sankuai)(?=.*meituan).*$
   - PROCESS-NAME,com.suning.mobile.ebuy
   - PROCESS-NAME-REGEX,com\.suning\.mobile\.ebuy
   - PROCESS-NAME,com.taobao.idlefish
@@ -482,6 +480,7 @@ payload:
   - PROCESS-NAME,com.vivo.health
   - PROCESS-NAME,com.sinovatech.unicom.ui
   - PROCESS-NAME-REGEX,sinovatech\.unicom
+  - PROCESS-NAME,com.ai.obc.cbn.app
   - PROCESS-NAME,cn.gov.tax.its
   - PROCESS-NAME,com.umetrip.android.msky.app
   - PROCESS-NAME,com.tuya.smartiot
