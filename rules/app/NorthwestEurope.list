@@ -22,6 +22,13 @@ DOMAIN-SUFFIX,api-my-api-5hw5ou-b810d8-80-75-218-107.traefik.me
 DOMAIN-SUFFIX,ifastgb.com
 PROCESS-NAME,com.ifast.gb
 
+# Bybit
+PROCESS-NAME,com.bybit.app
+DOMAIN-SUFFIX,bybit.app
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bycsi.com
+DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
+
 # MistralAI
 DOMAIN-SUFFIX,mistral.ai
 PROCESS-NAME,ai.mistral.chat
