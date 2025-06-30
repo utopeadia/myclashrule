@@ -4,12 +4,6 @@ DOMAIN-SUFFIX,safepal.com
 DOMAIN-SUFFIX,isafepal.com
 DOMAIN-SUFFIX,walletconnect.org
 DOMAIN-SUFFIX,web3modal.org
-# Bybit
-PROCESS-NAME,com.bybit.app
-DOMAIN-SUFFIX,bybit.app
-DOMAIN-SUFFIX,bybit.com
-DOMAIN-SUFFIX,bycsi.com
-DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
 # 其他加密货币
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,bnbstatic.com
